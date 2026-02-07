@@ -4,75 +4,267 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Организация Источники Надежды</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Иконка сердца для логотипа -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com">
+    <style>
+        :root {
+            --deep-forest: #1a2f1a;
+            --moss: #4a6741;
+            --pine-needle: #2d452d;
+            --mist: #f0f4f0;
+            --bark: #3e2723;
+            --wildflower: #d63384;
+            --sunlight: #f9fbe7;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            background-color: var(--deep-forest);
+            background-image: url('https://www.transparenttextures.com');
+            color: var(--mist);
+            scroll-behavior: smooth;
+        }
+
+        header {
+            background: linear-gradient(to bottom, rgba(26, 47, 26, 0.95), rgba(26, 47, 26, 0.8));
+            padding: 30px 20px;
+            text-align: center;
+            border-bottom: 2px solid var(--moss);
+        }
+
+        .logo-area {
+            font-size: 2.2rem;
+            font-weight: bold;
+            color: var(--sunlight);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo-area i { color: var(--wildflower); filter: drop-shadow(0 0 8px var(--wildflower)); }
+
+        /* Navigation Tiles (Wooden Style) */
+        .nav-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 20px;
+            padding: 30px 10%;
+            max-width: 1200px;
+            margin: 0 auto;
+            /* ДОБАВЛЕНИЕ ЛЕСНОГО ФОНА В МЕНЮ */
+            background-image: url('https://github.com/NEEMAN01/https-NEEMAN012.github.io/blob/main/view-spectacular-nature-landscape.jpg'); /* Замените на реальное прозрачное изображение, если есть */
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        /* Дополнительный полупрозрачный слой для читаемости текста на фоне меню */
+        .nav-grid::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(26, 47, 26, 0.7); /* Темный лес с прозрачностью 70% */
+            z-index: 0;
+        }
+
+        .nav-item {
+            background: rgba(74, 103, 65, 0.8); /* Фон плиток меню стал полупрозрачным */
+            padding: 25px;
+            text-decoration: none;
+            color: var(--sunlight);
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid var(--moss);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            position: relative; /* Важно, чтобы быть выше ::before */
+            z-index: 1;
+        }
+        
+        /* Остальные стили не менялись */
+
+        .nav-item i { font-size: 2rem; color: var(--mist); transition: 0.3s; }
+
+        .nav-item:hover {
+            transform: translateY(-10px) scale(1.05);
+            background: var(--moss);
+            border-color: var(--sunlight);
+        }
+
+        .nav-item:hover i { color: var(--sunlight); }
+
+        .hero {
+            position: relative;
+            height: 70vh;
+            margin: 0 5% 50px;
+            border-radius: 40px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+            border: 3px solid var(--moss);
+        }
+
+        .hero-bg {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: url('https://israel10.ru') center/cover no-repeat;
+            filter: brightness(0.6) sepia(0.2) contrast(1.1);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            background: rgba(26, 47, 26, 0.85);
+            padding: 50px;
+            border-radius: 30px;
+            text-align: center;
+            border: 1px solid var(--moss);
+            backdrop-filter: blur(10px);
+            max-width: 800px;
+        }
+
+        .hero-content h1 { font-size: 3rem; color: var(--sunlight); margin: 0; }
+
+        .content-container { padding: 0 10% 100px; max-width: 1200px; margin: 0 auto; }
+
+        .card {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 30px;
+            padding: 50px;
+            margin-bottom: 40px;
+            border: 1px solid rgba(74, 103, 65, 0.3);
+            backdrop-filter: blur(5px);
+            position: relative;
+        }
+
+        .card::before {
+            content: '🌿';
+            position: absolute;
+            top: -20px;
+            right: 30px;
+            font-size: 2rem;
+            opacity: 0.5;
+        }
+
+        .card h2 {
+            color: var(--sunlight);
+            font-size: 2.2rem;
+            border-bottom: 1px solid var(--moss);
+            padding-bottom: 15px;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--moss);
+            color: var(--sunlight);
+            padding: 15px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: 0.3s;
+            border: 1px solid transparent;
+        }
+
+        .btn:hover {
+            background: transparent;
+            border-color: var(--sunlight);
+            box-shadow: 0 0 15px var(--moss);
+        }
+
+        @media (max-width: 768px) {
+            .nav-grid { grid-template-columns: 1fr 1fr; padding: 20px 5%; }
+            .hero { height: 50vh; margin: 10px; border-radius: 20px; }
+            .hero-content h1 { font-size: 1.8rem; }
+            .card { padding: 30px; }
+        }
+    </style>
 </head>
 <body>
 
-    <header>
-        <div class="logo">
-            <i class="fas fa-heart"></i>
-            <span>Источники Надежды | Sources of Hope</span>
-        </div>
-        <nav>
-            <button class="menu-toggle" onclick="toggleMenu()">☰ Меню</button>
-        </nav>
-    </header>
-
-    <!-- Полноэкранное меню -->
-    <div id="fullMenu" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">&times;</a>
-        <div class="overlay-content">
-            <a href="#home" onclick="toggleMenu()">Главная / Home</a>
-            <a href="#repatriants" onclick="toggleMenu()">Репатрианты / Repatriants</a>
-            <a href="#canteen" onclick="toggleMenu()">Столовая / Canteen</a>
-            <a href="#news" onclick="toggleMenu()">Новости / News</a>
-            <a href="#about" onclick="toggleMenu()">О нас / About Us</a>
-        </div>
+<header>
+    <div class="logo-area">
+        <i class="fas fa-heart"></i>
+        <span>Источники Надежды</span>
     </div>
+</header>
 
-    <!-- Главная страница -->
-    <section id="home" class="hero">
-        <div class="hero-text">
-            <h1>Источники Надежды</h1>
-            <p>Частная благотворительная помощь репатриантам, малоимущим, детям войны и матерям-одиночкам</p>
-            <hr>
-            <p class="en">Private charitable assistance to repatriants, the needy, children of war, and single mothers</p>
-        </div>
-    </section>
+<nav class="nav-grid">
+    <a href="#repatriants" class="nav-item">
+        <i class="fas fa-leaf"></i>
+        <span>Репатрианты</span>
+    </a>
+    <a href="#canteen" class="nav-item">
+        <i class="fas fa-utensils"></i>
+        <span>Столовая</span>
+    </a>
+    <a href="#news" class="nav-item">
+        <i class="fas fa-scroll"></i>
+        <span>Проекты</span>
+    </a>
+    <a href="#about" class="nav-item">
+        <i class="fas fa-tree"></i>
+        <span>О нас</span>
+    </a>
+</nav>
 
-    <!-- Репатрианты -->
-    <section id="repatriants" class="content-section">
-        <img src="https://raw.githubusercontent.com" alt="Repatriants" class="section-img">
-        <h2>Репатрианты / Repatriants</h2>
+<div class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+        <h1>Источники Надежды</h1>
+        <i class="fas fa-hands-holding-heart" style="font-size: 4rem; color: var(--wildflower); margin: 20px 0; display: block;"></i>
+        <p style="font-size: 1.3rem;">Частная благотворительная помощь репатриантам, малоимущим, детям войны и матерям-одиночкам в Беэр-Шеве.</p>
+    </div>
+</div>
+
+<div class="content-container">
+    <section id="repatriants" class="card">
+        <h2><i class="fas fa-seedling"></i> Репатрианты</h2>
         <p><strong>Склад работает:</strong> 13:00–15:00 (Вс/Чт)</p>
         <p>Мы помогаем новым гражданам Израиля адаптироваться в Беэр-Шеве с первых дней. Наш центр на Ха-Исиим 12 предлагает физическую и консультационную поддержку.</p>
     </section>
 
-    <!-- Столовая -->
-    <section id="canteen" class="content-section dark">
-        <img src="https://raw.githubusercontent.com" alt="Canteen" class="section-img">
-        <h2>Столовая / Canteen</h2>
-        <p><strong>Работает:</strong> 13:00–15:00 (Вс/Чт)</p>
+    <section id="canteen" class="card">
+        <h2><i class="fas fa-mug-hot"></i> Столовая</h2>
         <p>Мы готовим ежедневно из свежих продуктов для поддержки тех, кто в этом нуждается.</p>
+        <p><strong>Часы работы:</strong> 13:00–15:00 (Вс/Чт)</p>
     </section>
 
-    <!-- О нас и Контакты -->
-    <section id="about" class="content-section">
-        <h2>О нас / About Us</h2>
-        <p>Мы — частная благотворительная организация в Беэр-Шеве. Наша работа строится на принципах прозрачности и прямой помощи: от человека к человеку.</p>
-        <div class="map-box">
-            <p><i class="fas fa-map-marker-alt"></i> Haisiyim 12, Beersheba</p>
-            <a href="https://www.google.com..." target="_blank" class="map-btn">Открыть карту / Open Map</a>
+    <section id="news" class="card">
+        <h2><i class="fas fa-mountain"></i> Новости и Проекты</h2>
+        <p>Ознакомьтесь с нашими текущими инициативами и годовыми отчетами.</p>
+        <a href="#" class="btn"><i class="fas fa-file-pdf"></i> Файл проектов</a>
+    </section>
+
+    <section id="about" class="card">
+        <h2><i class="fas fa-map-signs"></i> О нас и Контакты</h2>
+        <p>Мы — частная благотворительная организация в Беэр-Шеве. Работаем напрямую: от человека к человеку.</p>
+        <div style="background: rgba(0,0,0,0.2); padding: 20px; border-radius: 15px; margin: 20px 0;">
+            <p><i class="fas fa-compass"></i> <strong>Адрес:</strong> Haisiyim 12, Beersheba</p>
+            <p><i class="fas fa-phone-alt"></i> <strong>Куратор:</strong> 0544679766</p>
         </div>
+        <a href="https://www.google.com..." target="_blank" class="btn">Открыть лесную карту</a>
     </section>
+</div>
 
-    <script>
-        function toggleMenu() {
-            const menu = document.getElementById("fullMenu");
-            menu.style.height = menu.style.height === "100%" ? "0%" : "100%";
-        }
-    </script>
+<footer style="text-align: center; padding: 60px; color: var(--moss); font-style: italic;">
+    &copy; 2025 Организация "Источники Надежды". Охраняя надежду, как вековой лес.
+</footer>
+
 </body>
 </html>
