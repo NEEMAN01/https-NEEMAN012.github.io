@@ -2,18 +2,19 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <title>Источник Надежды | Беэр-Шева</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Центр Помощи "Источник Надежды" | Беэр-Шева</title>
     
+    <!-- Libraries -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com" rel="stylesheet">
     
     <style>
         @import url('https://fonts.googleapis.com');
-        html { scroll-behavior: smooth; font-family: 'Inter', sans-serif; -webkit-text-size-adjust: 100%; }
         
-        /* Forest Theme Colors */
+        html { scroll-behavior: smooth; font-family: 'Inter', sans-serif; }
         .forest-gradient { background: linear-gradient(135deg, #1b3022 0%, #2c5530 100%); }
+        
         .hero-pattern { 
             background: linear-gradient(rgba(27, 48, 34, 0.85), rgba(27, 48, 34, 0.85)), 
             url('https://images.unsplash.com'); 
@@ -21,169 +22,223 @@
         }
         
         .page-content { display: none; }
-        .page-active { display: block; animation: fadeIn 0.3s ease-out; }
-        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        .page-active { display: block; animation: fadeIn 0.4s ease-out; }
         
-        .status-open { color: #4ade80; font-weight: 900; }
-        .status-closed { color: #f87171; font-weight: 900; }
-
-        /* Universal App-Style Bottom Navigation for Mobile */
-        .mobile-nav {
-            position: fixed; bottom: 0; left: 0; right: 0;
-            background: rgba(255, 255, 255, 0.98);
-            backdrop-filter: blur(15px);
-            display: flex; justify-content: space-around;
-            padding: 12px 10px calc(12px + env(safe-area-inset-bottom));
-            border-top: 1px solid #e2e8f0;
-            z-index: 1000;
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        
+        .status-open { color: #4ade80; font-weight: 800; }
+        .status-closed { color: #f87171; font-weight: 800; }
+        
+        .gallery-img { transition: transform 0.3s ease; object-fit: cover; width: 100%; height: 300px; border-radius: 1rem; }
+        
+        /* Mobile fixes */
+        @media (max-width: 768px) {
+            .h-mobile { height: auto; padding: 2rem 1rem; }
+            h1 { font-size: 2.25rem !important; }
         }
-        .nav-item { display: flex; flex-direction: column; align-items: center; font-size: 10px; font-weight: 700; color: #64748b; cursor: pointer; }
-        .nav-item.active { color: #2c5530; }
-        .nav-item i { font-size: 22px; margin-bottom: 4px; }
-        
-        @media (min-width: 768px) { .mobile-nav { display: none; } body { padding-bottom: 0; } }
-        @media (max-width: 767px) { body { padding-bottom: 80px; } }
-
-        .gallery-card img { width: 100%; height: 280px; object-fit: cover; border-radius: 1.5rem; transition: transform 0.3s; }
-        .gallery-card img:hover { transform: scale(1.02); }
     </style>
 </head>
 <body class="bg-[#f1f4f0] text-slate-800 antialiased">
 
-    <!-- DESKTOP TOP BAR -->
-    <nav class="bg-white shadow-sm sticky top-0 z-50 border-b border-green-100 px-6 py-4">
-        <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <a href="#" onclick="showPage('home')" class="flex items-center gap-2">
-                <div class="bg-[#2c5530] p-2 rounded-lg text-white"><i class="fa-solid fa-house-chimney-window"></i></div>
-                <span class="font-black text-xl text-[#1b3022] uppercase tracking-tighter">Источник Надежды</span>
-            </a>
-            <!-- Desktop Menu -->
-            <div class="hidden md:flex space-x-8 font-bold text-slate-600">
-                <a href="#" onclick="showPage('repatriates')" class="hover:text-green-700">Репатрианты</a>
-                <a href="#" onclick="showPage('kitchen')" class="hover:text-green-700">Столовая</a>
-                <a href="#" onclick="showPage('gallery')" class="hover:text-green-700">Фото</a>
-                <a href="#" onclick="showPage('about')" class="hover:text-green-700">О нас</a>
+    <!-- 1. NAVIGATION (Universal Mobile/Desktop) -->
+    <nav class="bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-green-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="#" onclick="showPage('home')" class="flex items-center gap-2">
+                    <div class="bg-[#2c5530] p-2 rounded-lg text-white">
+                        <i class="fa-solid fa-house-chimney-window"></i>
+                    </div>
+                    <span class="font-extrabold text-lg sm:text-xl text-[#1b3022] leading-tight">"Источник Надежды"</span>
+                </a>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-6 font-semibold text-slate-600">
+                    <a href="#" onclick="showPage('repatriates')" class="hover:text-green-700 transition">Репатрианты</a>
+                    <a href="#" onclick="showPage('kitchen')" class="hover:text-green-700 transition">Столовая</a>
+                    <a href="#" onclick="showPage('gallery')" class="hover:text-green-700 transition">Фотогалерея</a>
+                    <a href="#" onclick="showPage('news')" class="hover:text-green-700 transition">Новости</a>
+                </div>
+
+                <div class="flex items-center gap-2">
+                    <a href="tel:+972544679766" class="bg-green-100 text-[#1b3022] p-3 rounded-full hover:bg-green-200 transition">
+                        <i class="fa-solid fa-phone"></i>
+                    </a>
+                    <button onclick="showPage('home'); setTimeout(() => document.getElementById('form-section').scrollIntoView(), 100)" 
+                            class="bg-[#2c5530] text-white px-5 py-2.5 rounded-xl font-bold hover:bg-[#1b3022] transition shadow-md text-sm">
+                        ПОМОЧЬ
+                    </button>
+                </div>
             </div>
-            <a href="tel:+972544679766" class="bg-green-600 text-white p-3 rounded-xl shadow-md"><i class="fa-solid fa-phone"></i></a>
         </div>
     </nav>
 
-    <!-- HOME PAGE -->
+    <!-- 2. HOME PAGE -->
     <main id="home" class="page-content page-active">
-        <header class="hero-pattern text-white py-20 px-6 text-center">
-            <h1 class="text-4xl md:text-6xl font-black mb-4 uppercase">Ha-Isiyim 12, Beersheba</h1>
-            <p class="text-green-50 mb-8 font-medium">Помощь репатриантам, малоимущим, детям войны и матерям-одиночкам.</p>
-            <div id="work-status" class="bg-white/10 backdrop-blur inline-block px-4 py-2 rounded-xl border border-white/20 mb-8 text-sm">Загрузка...</div>
-            <button onclick="document.getElementById('form-section').scrollIntoView()" class="block w-full md:w-auto md:inline-block bg-white text-[#1b3022] px-12 py-4 rounded-2xl font-black shadow-xl uppercase">Нужна помощь</button>
+        <header class="hero-pattern text-white py-20 px-4 text-center h-mobile">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-4xl md:text-6xl font-black mb-4 uppercase tracking-tighter">Ha-Isiyim 12, Beersheba</h1>
+                <p class="text-lg md:text-xl mb-8 text-green-50 px-2">Помощь репатриантам, малоимущим, детям войны и матерям-одиночкам.</p>
+                
+                <div class="bg-white/10 backdrop-blur inline-block px-5 py-3 rounded-2xl border border-white/20 mb-8">
+                    <span id="work-status" class="text-sm sm:text-base">Загрузка...</span>
+                    <span class="mx-2 opacity-30">|</span>
+                    <i class="fa-solid fa-clock mr-1"></i> 13:00 – 15:00
+                </div>
+
+                <div class="flex justify-center">
+                    <button onclick="document.getElementById('form-section').scrollIntoView()" 
+                            class="bg-white text-[#1b3022] w-full sm:w-auto px-10 py-4 rounded-2xl font-black shadow-2xl hover:bg-green-50 transition uppercase">
+                        Нужна помощь
+                    </button>
+                </div>
+            </div>
         </header>
 
         <!-- WHATSAPP FORM -->
-        <section id="form-section" class="py-16 forest-gradient text-white px-4">
-            <div class="max-w-xl mx-auto bg-white/10 backdrop-blur-md rounded-[2.5rem] p-8 border border-white/10 shadow-2xl">
-                <h3 class="text-2xl font-black mb-6 text-center uppercase tracking-tight">Листок Помощи</h3>
-                <form onsubmit="sendToWhatsApp(event)" class="space-y-4">
-                    <input type="text" id="name" required placeholder="Имя" class="w-full bg-white/20 border border-white/20 rounded-xl px-5 py-4 text-white placeholder-green-100 outline-none">
-                    <input type="tel" id="user_phone" required placeholder="Ваш телефон" class="w-full bg-white/20 border border-white/20 rounded-xl px-5 py-4 text-white placeholder-green-100 outline-none">
-                    <select id="status" required class="w-full bg-[#1b3022] border border-white/20 rounded-xl px-5 py-4 text-white outline-none">
-                        <option value="">Ваш статус...</option>
-                        <option value="Репатриант">Новый репатриант</option>
-                        <option value="Малоимущий">Малоимущий</option>
-                        <option value="Ребенок войны">Ребенок войны</option>
-                        <option value="Мать-одиночка">Мать-одиночка</option>
-                    </select>
-                    <textarea id="message" rows="3" placeholder="Что вам необходимо?" class="w-full bg-white/20 border border-white/20 rounded-xl px-5 py-4 text-white placeholder-green-100 outline-none"></textarea>
-                    <button type="submit" class="w-full bg-[#25D366] text-white py-5 rounded-2xl font-black text-xl flex items-center justify-center gap-3 shadow-xl hover:bg-[#128C7E] transition">
-                        <i class="fa-brands fa-whatsapp text-2xl"></i> ОТПРАВИТЬ
-                    </button>
-                </form>
+        <section id="form-section" class="py-16 forest-gradient text-white">
+            <div class="max-w-3xl mx-auto px-4">
+                <div class="bg-white/10 backdrop-blur-md rounded-[2rem] p-6 sm:p-10 shadow-2xl border border-white/10">
+                    <h3 class="text-3xl font-extrabold mb-8 text-center uppercase tracking-tight">Листок Помощи</h3>
+                    <form onsubmit="sendToWhatsApp(event)" class="space-y-4">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <input type="text" id="name" required placeholder="Имя" class="w-full bg-white/20 border border-white/20 rounded-xl px-5 py-3.5 outline-none text-white placeholder-green-100 focus:ring-2 focus:ring-white/30">
+                            <input type="tel" id="user_phone" required placeholder="Телефон" class="w-full bg-white/20 border border-white/20 rounded-xl px-5 py-3.5 outline-none text-white placeholder-green-100 focus:ring-2 focus:ring-white/30">
+                        </div>
+                        <select id="status" required class="w-full bg-[#2c5530] border border-white/20 rounded-xl px-5 py-3.5 outline-none text-white focus:ring-2 focus:ring-white/30">
+                            <option value="">Ваш статус...</option>
+                            <option value="Репатриант">Новый репатриант</option>
+                            <option value="Малоимущий">Малоимущий</option>
+                            <option value="Ребенок войны">Ребенок войны</option>
+                            <option value="Мать-одиночка">Мать-одиночка</option>
+                        </select>
+                        <textarea id="message" rows="3" placeholder="Что вам необходимо?" class="w-full bg-white/20 border border-white/20 rounded-xl px-5 py-3.5 outline-none text-white placeholder-green-100 focus:ring-2 focus:ring-white/30"></textarea>
+                        <button type="submit" id="submit-btn" class="w-full bg-[#25D366] text-white py-4 rounded-xl font-black text-lg hover:bg-[#128C7E] transition flex items-center justify-center gap-3 shadow-xl">
+                            <i class="fa-brands fa-whatsapp text-2xl"></i> ОТПРАВИТЬ В WHATSAPP
+                        </button>
+                    </form>
+                </div>
             </div>
         </section>
 
         <!-- MAP -->
-        <section class="py-16 px-4 max-w-7xl mx-auto">
-            <h3 class="text-2xl font-black text-[#1b3022] mb-8 uppercase text-center">Беэр-Шева, Ха-Исиим 12</h3>
-            <div class="h-[400px] rounded-[3rem] overflow-hidden shadow-2xl border-4 border-white mb-8">
-                <iframe width="100%" height="100%" frameborder="0" src="https://maps.google.com"></iframe>
+        <section class="py-16 max-w-7xl mx-auto px-4">
+            <div class="grid lg:grid-cols-3 gap-8 items-center">
+                <div class="text-center lg:text-left">
+                    <h3 class="text-2xl font-extrabold mb-2 text-[#1b3022]">Где мы находимся?</h3>
+                    <p class="text-slate-600 mb-6 font-bold uppercase">Ha-Isiyim 12, Beersheba</p>
+                    <a href="https://www.google.com" target="_blank" 
+                       class="inline-flex items-center gap-2 bg-[#2c5530] text-white px-8 py-4 rounded-2xl font-bold shadow-md hover:bg-green-900 transition">
+                        <i class="fa-solid fa-location-arrow"></i> GOOGLE MAPS
+                    </a>
+                </div>
+                <div class="lg:col-span-2 h-[350px] sm:h-[450px] rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white">
+                    <iframe width="100%" height="100%" frameborder="0" src="https://maps.google.com"></iframe>
+                </div>
             </div>
-            <a href="https://www.google.com" target="_blank" class="block w-full max-w-md mx-auto bg-[#2c5530] text-white py-5 rounded-2xl font-black text-center shadow-lg uppercase tracking-wider">Открыть Google Maps</a>
         </section>
     </main>
 
-    <!-- PHOTO GALLERY -->
-    <main id="gallery" class="page-content py-16 px-6 max-w-7xl mx-auto">
-        <h2 class="text-3xl font-black text-center mb-12 text-[#1b3022]">ФОТОГАЛЕРЕЯ</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div class="gallery-card">
-                <img src="https://lh3.googleusercontent.com" onerror="this.src='https://images.unsplash.com'">
-                <p class="mt-4 text-center font-bold text-green-800">Благотворительная столовая</p>
+    <!-- 3. PHOTO GALLERY -->
+    <main id="gallery" class="page-content py-12 max-w-7xl mx-auto px-4">
+        <h1 class="text-3xl font-extrabold text-[#1b3022] mb-8 text-center">ФОТОГАЛЕРЕЯ</h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- GOOGLE DRIVE PHOTO FIX (Direct display) -->
+            <div class="rounded-2xl overflow-hidden shadow-lg bg-white p-2">
+                <img src="https://lh3.googleusercontent.com" 
+                     onerror="this.src='https://images.unsplash.com'"
+                     alt="Столовая" class="gallery-img">
+                <p class="p-4 text-center font-bold text-green-900">Благотворительная кухня</p>
             </div>
-            <img src="https://images.unsplash.com" class="gallery-card rounded-[1.5rem]">
-            <img src="https://images.unsplash.com" class="gallery-card rounded-[1.5rem]">
+            
+            <img src="https://images.unsplash.com" class="gallery-img shadow-lg">
+            <img src="https://images.unsplash.com" class="gallery-img shadow-lg">
         </div>
     </main>
 
-    <!-- PAGES -->
-    <main id="kitchen" class="page-content py-20 px-6 max-w-xl mx-auto text-center">
-        <div class="bg-white p-12 rounded-[3rem] shadow-sm border-t-8 border-green-700">
-            <i class="fa-solid fa-bowl-hot text-7xl text-green-700 mb-6"></i>
-            <h2 class="text-3xl font-black mb-4">Горячие обеды</h2>
-            <p class="text-xl">Вс-Чт, 13:00 - 15:00. <br>Беэр-Шева, Ха-Исиим 12.</p>
+    <!-- OTHER PAGES (REPATRIATES, KITCHEN, ETC) -->
+    <main id="repatriates" class="page-content py-16 max-w-4xl mx-auto px-4">
+        <div class="bg-white p-8 rounded-[2rem] shadow-sm border-l-8 border-green-700">
+            <h1 class="text-3xl font-black text-[#1b3022] mb-6">Помощь Репатриантам</h1>
+            <p class="text-lg leading-relaxed">Мы помогаем новым гражданам адаптироваться в Негеве: вещи, мебель, консультации по заполнению бланков и поддержка олим хадашим.</p>
         </div>
     </main>
 
-    <main id="repatriates" class="page-content py-16 px-6 max-w-2xl mx-auto">
-        <div class="bg-white p-10 rounded-[3rem] shadow-sm border-l-8 border-green-700">
-            <h2 class="text-3xl font-black text-green-800 mb-6">Олим Хадашим</h2>
-            <p class="text-lg leading-relaxed">Мы помогаем репатриантам с мебелью, одеждой и юридическими вопросами. Добро пожаловать домой!</p>
+    <main id="kitchen" class="page-content py-16 max-w-4xl mx-auto px-4 text-center">
+        <div class="bg-white p-10 rounded-[2rem] shadow-sm">
+            <i class="fa-solid fa-bowl-hot text-6xl text-green-700 mb-6"></i>
+            <h1 class="text-3xl font-black text-[#1b3022] mb-4">Бесплатные Обеды</h1>
+            <p class="text-xl">Ежедневно (Вс-Чт) с 13:00 до 15:00 на улице Ha-Isiyim 12.</p>
         </div>
     </main>
 
-    <main id="about" class="page-content py-16 px-6 max-w-2xl mx-auto">
-        <div class="bg-white p-10 rounded-[3rem] shadow-sm">
-            <h2 class="text-3xl font-black mb-6 text-green-800">О Центре</h2>
-            <p class="text-slate-600 leading-relaxed">"Источник Надежды" — это частная организация в Беэр-Шеве. Мы работаем для прямой помощи тем, кто оказался в сложной ситуации. Каждый человек важен для нас.</p>
+    <main id="news" class="page-content py-16 max-w-4xl mx-auto px-4">
+        <h1 class="text-3xl font-black text-[#1b3022] mb-8">Новости</h1>
+        <div class="bg-white p-6 rounded-2xl border-l-4 border-green-700 shadow-md">
+            <span class="text-sm font-bold text-green-700 uppercase tracking-widest">Февраль 2026</span>
+            <h4 class="text-xl font-bold my-2">Зимняя помощь</h4>
+            <p class="text-slate-600">Раздаем обогреватели и теплые вещи пожилым репатриантам.</p>
         </div>
     </main>
 
-    <!-- MOBILE BOTTOM BAR -->
-    <div class="mobile-nav">
-        <div class="nav-item active" onclick="showMobilePage('home', this)"><i class="fa-solid fa-house"></i>Главная</div>
-        <div class="nav-item" onclick="showMobilePage('kitchen', this)"><i class="fa-solid fa-utensils"></i>Кухня</div>
-        <div class="nav-item" onclick="showMobilePage('gallery', this)"><i class="fa-solid fa-images"></i>Фото</div>
-        <div class="nav-item" onclick="showMobilePage('about', this)"><i class="fa-solid fa-circle-info"></i>О нас</div>
-    </div>
+    <main id="about" class="page-content py-16 max-w-4xl mx-auto px-4">
+        <h1 class="text-3xl font-black text-[#1b3022] mb-6">О Нас</h1>
+        <p class="text-lg leading-relaxed bg-white p-8 rounded-3xl shadow-sm">"Источник Надежды" — это частная организация в Беэр-Шеве, работающая для прямой поддержки жителей города. Мы ценим каждого человека и стремимся создать теплую атмосферу взаимопомощи.</p>
+    </main>
+
+    <!-- 4. FOOTER (Universal) -->
+    <footer class="bg-[#1b3022] text-green-100 py-12 text-center text-sm border-t border-green-900 mt-auto">
+        <div class="flex justify-center gap-10 mb-8 text-3xl">
+            <a href="https://wa.me" target="_blank" class="hover:scale-110 transition"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="tel:+972544679766" class="hover:scale-110 transition"><i class="fa-solid fa-phone"></i></a>
+        </div>
+        <p class="font-black uppercase tracking-widest text-base mb-2">Beersheba, Ha-Isiyim 12</p>
+        <p class="opacity-40">© 2026 "Источник Надежды"</p>
+    </footer>
 
     <script>
+        // Smooth Page Switching
         function showPage(pageId) {
             document.querySelectorAll('.page-content').forEach(p => p.classList.remove('page-active'));
-            const target = document.getElementById(pageId);
-            if(target) {
-                target.classList.add('page-active');
+            const activePage = document.getElementById(pageId);
+            if(activePage) {
+                activePage.classList.add('page-active');
                 window.scrollTo({top: 0, behavior: 'smooth'});
             }
         }
 
-        function showMobilePage(pageId, el) {
-            showPage(pageId);
-            document.querySelectorAll('.nav-item').forEach(i => i.classList.remove('active'));
-            el.classList.add('active');
+        // WhatsApp Logic
+        function sendToWhatsApp(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const phone = document.getElementById('user_phone').value;
+            const status = document.getElementById('status').value;
+            const message = document.getElementById('message').value;
+            const target = "972544679766";
+            
+            const text = `*Источник Надежды*%0A` +
+                         `*Имя:* ${name}%0A` +
+                         `*Телефон:* ${phone}%0A` +
+                         `*Статус:* ${status}%0A` +
+                         `*Запрос:* ${message}`;
+            
+            window.open(`https://api.whatsapp.com{target}&text=${text}`, '_blank');
         }
 
-        function sendToWhatsApp(e) {
-            e.preventDefault();
-            const text = `*Заявка: Источник Надежды*%0A*Имя:* ${document.getElementById('name').value}%0A*Телефон:* ${document.getElementById('user_phone').value}%0A*Статус:* ${document.getElementById('status').value}%0A*Запрос:* ${document.getElementById('message').value}`;
-            window.open(`https://wa.me{text}`, '_blank');
-        }
-
+        // Work Status Logic
         function updateWorkStatus() {
             const now = new Date();
-            const d = now.getDay(), h = now.getHours();
-            const el = document.getElementById('work-status');
-            // Sun(0) to Thu(4) | 13:00 to 15:00
-            if (d >= 0 && d <= 4 && h >= 13 && h < 15) el.innerHTML = '<span class="status-open">● СЕЙЧАС ОТКРЫТО</span>';
-            else el.innerHTML = '<span class="status-closed">○ СЕЙЧАС ЗАКРЫТО</span>';
+            const day = now.getDay(); 
+            const hour = now.getHours();
+            const statusEl = document.getElementById('work-status');
+            
+            // Open Sun(0) to Thu(4) | 13:00 - 15:00
+            if (day >= 0 && day <= 4 && hour >= 13 && hour < 15) {
+                statusEl.innerHTML = '<span class="status-open">● ОТКРЫТО СЕЙЧАС</span>';
+            } else {
+                statusEl.innerHTML = '<span class="status-closed">○ СЕЙЧАС ЗАКРЫТО</span>';
+            }
         }
-        
+
         updateWorkStatus();
         setInterval(updateWorkStatus, 60000);
     </script>
