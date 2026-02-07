@@ -3,248 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Центр Помощи Beer-sheba | Haisiyim 12 </title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com" rel="stylesheet">
-    <style>
-        html { scroll-behavior: smooth; }
-        .forest-gradient { background: linear-gradient(135deg, #1b3022 0%, #2c5530 100%); }
-        .hero-pattern { 
-            background: linear-gradient(rgba(27, 48, 34, 0.85), rgba(27, 48, 34, 0.85)), 
-            url('https://images.unsplash.com'); 
-            background-size: cover; background-position: center; 
-        }
-        .page-content { display: none; }
-        .page-active { display: block; animation: fadeIn 0.5s ease; }
-        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-        .status-open { color: #4ade80; font-weight: bold; }
-        .status-closed { color: #f87171; font-weight: bold; }
-        /* Галерея */
-        .gallery-img { transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: zoom-in; }
-        .gallery-img:hover { transform: scale(1.03); shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
-    </style>
+    <title>Организация Источники Надежды</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Иконка сердца для логотипа -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com">
 </head>
-<body class="bg-[#f1f4f0] text-slate-800 font-sans">
+<body>
 
-    <!-- 1. НАВИГАЦИЯ -->
-    <nav class="bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-green-100">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="flex justify-between items-center h-20">
-                <a href="#" onclick="showPage('home')" class="flex items-center gap-3">
-                    <div class="bg-[#2c5530] p-2 rounded-lg text-white"><i class="fa-solid fa-tree"></i></div>
-                    <span class="font-bold text-xl text-[#1b3022]">Центр Помощи"Источник Надежды"</span>
-                </a>
-                <div class="hidden lg:flex space-x-6 font-medium text-slate-600">
-                    <a href="#" onclick="showPage('repatriates')" class="hover:text-green-700 transition cursor-pointer">Репатрианты</a>
-                    <a href="#" onclick="showPage('kitchen')" class="hover:text-green-700 transition cursor-pointer">Столовая</a>
-                    <a href="#" onclick="showPage('gallery')" class="hover:text-green-700 transition cursor-pointer">Фотогалерея</a>
-                    <a href="#" onclick="showPage('news')" class="hover:text-green-700 transition cursor-pointer">Новости</a>
-                    <a href="#" onclick="showPage('about')" class="hover:text-green-700 transition cursor-pointer">О нас</a>
-                </div>
-                <div class="flex gap-3">
-                    <a href="tel:+972544679766" class="bg-green-100 text-[#1b3022] p-2.5 rounded-xl hover:bg-green-200 transition"><i class="fa-solid fa-phone"></i></a>
-                    <button onclick="showPage('home'); setTimeout(() => document.getElementById('form-section').scrollIntoView(), 100)" 
-                            class="bg-[#2c5530] text-white px-5 py-2 rounded-xl font-bold hover:bg-[#1b3022] transition">Помочь</button>
-                </div>
-            </div>
+    <header>
+        <div class="logo">
+            <i class="fas fa-heart"></i>
+            <span>Источники Надежды | Sources of Hope</span>
         </div>
-    </nav>
+        <nav>
+            <button class="menu-toggle" onclick="toggleMenu()">☰ Меню</button>
+        </nav>
+    </header>
 
-    <!-- 2. ГЛАВНАЯ СТРАНИЦА (HOME) -->
-    <main id="home" class="page-content page-active">
-        <header class="hero-pattern text-white py-24 px-6 text-center">
-            <div class="max-w-4xl mx-auto">
-                <h1 class="text-4xl md:text-6xl font-black mb-4 uppercase">"ИСТОЧНИК НАДЕЖДЫ"</h1>
-                <p class="text-lg md:text-xl mb-8 text-green-50">Частная благотворительная помощь репатриантам, малоимущим, детям войны и матерям-одиночкам.</p>
-                
-                <div class="bg-white/10 backdrop-blur inline-block px-6 py-3 rounded-2xl border border-white/20 mb-10">
-                    <span id="work-status">Определяем статус...</span>
-                    <span class="mx-2">|</span>
-                    <i class="fa-solid fa-clock mr-1"></i> Столовая: с13:00–15:00 (Вс/Чт)
-                </div>
-
-                <div class="flex justify-center">
-                    <button onclick="document.getElementById('form-section').scrollIntoView()" class="bg-white text-[#1b3022] px-10 py-4 rounded-2xl font-extrabold shadow-2xl hover:bg-green-50 transition uppercase tracking-wider">Нужна помощь</button>
-                </div>
-            </div>
-        </header>
-
-        <section id="form-section" class="py-20 forest-gradient text-white">
-            <div class="max-w-3xl mx-auto px-6">
-                <div class="bg-white/10 backdrop-blur-md rounded-[2.5rem] p-10 shadow-2xl border border-white/20">
-                    <h3 class="text-3xl font-bold mb-8 text-center">Листок Помощи</h3>
-                    <form onsubmit="sendToWhatsApp(event)" class="space-y-5">
-                        <div class="grid md:grid-cols-2 gap-5">
-                            <input type="text" id="name" required placeholder="Имя" class="w-full bg-white/20 border border-white/20 rounded-xl px-5 py-3 outline-none text-white placeholder-green-100">
-                            <input type="tel" id="user_phone" required placeholder="Телефон" class="w-full bg-white/20 border border-white/20 rounded-xl px-5 py-3 outline-none text-white placeholder-green-100">
-                        </div>
-                        <select id="status" required class="w-full bg-[#2c5530] border border-white/20 rounded-xl px-5 py-3 outline-none text-white">
-                            <option value="">Ваш статус...</option>
-                            <option value="Репатриант">Новый репатриант</option>
-                            <option value="Малоимущий">Малоимущий / Трудная ситуация</option>
-                            <option value="Ребенок войны">Ребенок войны</option>
-                            <option value="Мать-одиночка">Мать-одиночка</option>
-                        </select>
-                        <textarea id="message" rows="3" placeholder="Что вам необходимо?" class="w-full bg-white/20 border border-white/20 rounded-xl px-5 py-3 outline-none text-white placeholder-green-100"></textarea>
-                        <button type="submit" id="submit-btn" class="w-full bg-[#25D366] text-white py-4 rounded-xl font-black text-lg hover:bg-[#128C7E] transition flex items-center justify-center gap-2 shadow-xl">
-                            <i class="fa-brands fa-whatsapp text-2xl"></i> ОТПРАВИТЬ В WHATSAPP
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </section>
-
-        <!-- КАРТА -->
-        <section class="py-20 max-w-7xl mx-auto px-6 border-b border-green-100">
-            <div class="grid lg:grid-cols-3 gap-10 items-center">
-                <div>
-                    <h3 class="text-2xl font-bold mb-4 text-[#1b3022]">Как нас найти</h3>
-                    <p class="text-slate-600 mb-2 font-medium uppercase"> Haisiyim 12, Beersheba </p>
-                    <a href="https://www.google.com" target="_blank" 
-                       class="inline-flex items-center gap-2 bg-[#2c5530] text-white px-6 py-3 rounded-xl font-bold hover:bg-[#1b3022] transition shadow-md">
-                        <i class="fa-solid fa-location-arrow"></i> GOOGLE MAPS (МАРШРУТ)
-                    </a>
-                </div>
-                <div class="lg:col-span-2 h-[400px] rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white">
-                    <iframe width="100%" height="100%" frameborder="0" src="https://maps.google.com"></iframe>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- 3. СТРАНИЦА: ФОТОГАЛЕРЕЯ -->
-    <main id="gallery" class="page-content py-20 max-w-6xl mx-auto px-6">
-        <h1 class="text-4xl font-bold text-[#1b3022] mb-4 text-center">Фотогалерея Центра</h1>
-        <p class="text-center text-slate-500 mb-12">Жизнь нашего центра в фотографиях: кухня, помощь и будни волонтеров.</p>
-        
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Здесь имитация реальных фото благотворительного центра -->
-            <!-- ФОТО ИЗ ВАШЕЙ СТОЛОВОЙ (БЕЗ ССЫЛКИ) -->
-            <div class="rounded-2xl overflow-hidden shadow-md bg-white">
-                <!-- Ссылка на фото, но без тега <a> -->
-                <img src="https://scontent.fbtz1-1.fna.fbcdn.net" 
-                     alt="Столовая Источник Надежды" 
-                     class="gallery-img w-full h-64 object-cover"
-                     onerror="this.src='https://images.unsplash.com'">
-                <div class="p-4 bg-green-50">
-                    <p class="text-sm font-bold text-green-900">Наша столовая в работе</p>
-                </div>
-            </div>
-            <div class="rounded-2xl overflow-hidden shadow-sm">
-                <img src="https://images.unsplash.com" alt="Volunteers" class="gallery-img w-full h-64 object-cover">
-                <div class="p-4 bg-white"><p class="text-sm font-bold text-green-800">Раздача обедов</p></div>
-            </div>
-            <div class="rounded-2xl overflow-hidden shadow-sm">
-                <img src="https://images.unsplash.com" alt="Warehouse" class="gallery-img w-full h-64 object-cover">
-                <div class="p-4 bg-white"><p class="text-sm font-bold text-green-800">Склад гуманитарной помощи</p></div>
-            </div>
-            <div class="rounded-2xl overflow-hidden shadow-sm">
-                <img src="https://images.unsplash.com" alt="Help" class="gallery-img w-full h-64 object-cover">
-                <div class="p-4 bg-white"><p class="text-sm font-bold text-green-800">Помощь детям</p></div>
-            </div>
-            <div class="rounded-2xl overflow-hidden shadow-sm">
-                <img src="https://images.unsplash.com" alt="Elderly" class="gallery-img w-full h-64 object-cover">
-                <div class="p-4 bg-white"><p class="text-sm font-bold text-green-800">Забота о пожилых</p></div>
-            </div>
-            <div class="rounded-2xl overflow-hidden shadow-sm">
-                <img src="https://images.unsplash.com" alt="Center" class="gallery-img w-full h-64 object-cover">
-                <div class="p-4 bg-white"><p class="text-sm font-bold text-green-800">Репатрианты</p></div>
-            </div>
+    <!-- Полноэкранное меню -->
+    <div id="fullMenu" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="toggleMenu()">&times;</a>
+        <div class="overlay-content">
+            <a href="#home" onclick="toggleMenu()">Главная / Home</a>
+            <a href="#repatriants" onclick="toggleMenu()">Репатрианты / Repatriants</a>
+            <a href="#canteen" onclick="toggleMenu()">Столовая / Canteen</a>
+            <a href="#news" onclick="toggleMenu()">Новости / News</a>
+            <a href="#about" onclick="toggleMenu()">О нас / About Us</a>
         </div>
-    </main>
+    </div>
 
-    <!-- СТРАНИЦЫ: РЕПАТРИАНТЫ, СТОЛОВАЯ, НОВОСТИ, О НАС -->
-    <main id="repatriates" class="page-content py-20 max-w-4xl mx-auto px-6">
-        <h1 class="text-4xl font-bold text-[#1b3022] mb-8">Помощь Репатриантам</h1>
-        <div class="bg-white p-8 rounded-3xl shadow-sm leading-relaxed space-y-6 border-l-8 border-green-700">
-            <p class="text-lg">Мы помогаем новым гражданам Израиля адаптироваться в Беэр-Шеве с первых дней. Наш центр на Ха-Исиим 12 предлагаети физическую и консультационную поддержку.</p>
+    <!-- Главная страница -->
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1>Источники Надежды</h1>
+            <p>Частная благотворительная помощь репатриантам, малоимущим, детям войны и матерям-одиночкам</p>
+            <hr>
+            <p class="en">Private charitable assistance to repatriants, the needy, children of war, and single mothers</p>
         </div>
-    </main>
+    </section>
 
-    <main id="kitchen" class="page-content py-20 max-w-4xl mx-auto px-6 text-center">
-        <h1 class="text-4xl font-bold text-[#1b3022] mb-8">Благотворительная Столовая</h1>
-        <div class="bg-white p-12 rounded-[3rem] shadow-sm">
-            <i class="fa-solid fa-bowl-hot text-6xl text-green-700 mb-6"></i>
-            <h3 class="text-2xl font-bold mb-4">Горячие обеды на Haisiyim 12</h3>
-            <p class="text-slate-600 mb-8"> Вс/Чт: 13:00 – 15:00. Мы готовим ежедневно из свежих продуктов для поддержки тех, кто в этом нуждается.</p>
+    <!-- Репатрианты -->
+    <section id="repatriants" class="content-section">
+        <img src="https://raw.githubusercontent.com" alt="Repatriants" class="section-img">
+        <h2>Репатрианты / Repatriants</h2>
+        <p><strong>Склад работает:</strong> 13:00–15:00 (Вс/Чт)</p>
+        <p>Мы помогаем новым гражданам Израиля адаптироваться в Беэр-Шеве с первых дней. Наш центр на Ха-Исиим 12 предлагает физическую и консультационную поддержку.</p>
+    </section>
+
+    <!-- Столовая -->
+    <section id="canteen" class="content-section dark">
+        <img src="https://raw.githubusercontent.com" alt="Canteen" class="section-img">
+        <h2>Столовая / Canteen</h2>
+        <p><strong>Работает:</strong> 13:00–15:00 (Вс/Чт)</p>
+        <p>Мы готовим ежедневно из свежих продуктов для поддержки тех, кто в этом нуждается.</p>
+    </section>
+
+    <!-- О нас и Контакты -->
+    <section id="about" class="content-section">
+        <h2>О нас / About Us</h2>
+        <p>Мы — частная благотворительная организация в Беэр-Шеве. Наша работа строится на принципах прозрачности и прямой помощи: от человека к человеку.</p>
+        <div class="map-box">
+            <p><i class="fas fa-map-marker-alt"></i> Haisiyim 12, Beersheba</p>
+            <a href="https://www.google.com..." target="_blank" class="map-btn">Открыть карту / Open Map</a>
         </div>
-    </main>
+    </section>
 
-    <main id="news" class="page-content py-20 max-w-4xl mx-auto px-6">
-        <h1 class="text-4xl font-bold text-[#1b3022] mb-8">Новости Центра</h1>
-        <div class="space-y-6">
-            <article class="bg-white p-6 rounded-2xl border-l-4 border-green-700">
-                <span class="text-sm font-bold text-green-700">Февраль 2026</span>
-                <h4 class="text-xl font-bold my-2">Запуск программы «Теплое Сердце»</h4>
-                <p class="text-slate-600">Начата раздача веще для репатриантов.</p>
-            </article>
-        </div>
-    </main>
-
-    <main id="about" class="page-content py-20 max-w-4xl mx-auto px-6 leading-relaxed">
-        <h1 class="text-4xl font-bold text-[#1b3022] mb-8 uppercase">О нашей организации</h1>
-        <div class="bg-white p-10 rounded-3xl shadow-sm">
-            <p class="mb-6">Мы — частная благотворительная организация в Беэр-Шеве. Наша работа строится на принципах прозрачности и прямой помощи нуждающимся: от человека к человеку.</p>
-        </div>
-    </main>
-
-    <!-- 7. ФУТЕР -->
-    <footer class="bg-[#1b3022] text-green-100 py-12 text-center text-sm border-t border-green-900">
-        <div class="flex justify-center gap-8 mb-6 text-2xl">
-            <a href="https://wa.me" target="_blank" class="hover:text-white transition"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="tel:+972544679766" class="hover:text-white transition"><i class="fa-solid fa-phone"></i></a>
-        </div>
-        <p class="uppercase tracking-widest font-bold mb-2">Беэр-Шева, Ха-Исиим 12</p>
-        <p class="opacity-60">© 2026 Частная благотворительная организация.</p>
-    </footer>
-
-    <!-- СКРИПТЫ -->
     <script>
-        function showPage(pageId) {
-            document.querySelectorAll('.page-content').forEach(p => p.classList.remove('page-active'));
-            document.getElementById(pageId).classList.add('page-active');
-            window.scrollTo(0, 0);
+        function toggleMenu() {
+            const menu = document.getElementById("fullMenu");
+            menu.style.height = menu.style.height === "100%" ? "0%" : "100%";
         }
-
-        function sendToWhatsApp(event) {
-            event.preventDefault();
-            const name = document.getElementById('name').value;
-            const phone = document.getElementById('user_phone').value;
-            const status = document.getElementById('status').value;
-            const message = document.getElementById('message').value;
-            const targetPhone = "972544679766";
-            
-            const text = `*Новая заявка с сайта*%0A` +
-                         `*Имя:* ${name}%0A` +
-                         `*Телефон:* ${phone}%0A` +
-                         `*Статус:* ${status}%0A` +
-                         `*Запрос:* ${message}`;
-            
-            const wpUrl = `https://api.whatsapp.com{targetPhone}&text=${text}`;
-            const btn = document.getElementById('submit-btn');
-            
-            btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> ПЕРЕХОД...';
-            setTimeout(() => {
-                window.open(wpUrl, '_blank');
-                btn.innerHTML = '<i class="fa-brands fa-whatsapp text-2xl"></i> ОТПРАВИТЬ В WHATSAPP';
-            }, 800);
-        }
-
-        function updateWorkStatus() {
-            const now = new Date();
-            const day = now.getDay(); 
-            const hour = now.getHours();
-            const statusEl = document.getElementById('work-status');
-            
-            if (day >= 0 && day <= 4 && hour >= 12 && hour < 15) {
-                statusEl.innerHTML = '<span class="status-open">● СЕЙЧАС ОТКРЫТО</span>';
-            } else {
-                statusEl.innerHTML = '<span class="status-closed">○ СЕЙЧАС ЗАКРЫТО</span>';
-            }
-        }
-
-        updateWorkStatus();
-        setInterval(updateWorkStatus, 60000);
     </script>
 </body>
 </html>
