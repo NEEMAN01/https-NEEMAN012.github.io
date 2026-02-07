@@ -2,117 +2,91 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Центр Помощи "Источник Надежды" | Беэр-Шева</title>
-    
-    <!-- Libraries -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Центр Помощи Beer-sheba | Haisiyim 12 </title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com" rel="stylesheet">
-    
     <style>
-        @import url('https://fonts.googleapis.com');
-        
-        html { scroll-behavior: smooth; font-family: 'Inter', sans-serif; }
+        html { scroll-behavior: smooth; }
         .forest-gradient { background: linear-gradient(135deg, #1b3022 0%, #2c5530 100%); }
-        
         .hero-pattern { 
             background: linear-gradient(rgba(27, 48, 34, 0.85), rgba(27, 48, 34, 0.85)), 
             url('https://images.unsplash.com'); 
             background-size: cover; background-position: center; 
         }
-        
         .page-content { display: none; }
-        .page-active { display: block; animation: fadeIn 0.4s ease-out; }
-        
-        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
-        
-        .status-open { color: #4ade80; font-weight: 800; }
-        .status-closed { color: #f87171; font-weight: 800; }
-        
-        .gallery-img { transition: transform 0.3s ease; object-fit: cover; width: 100%; height: 300px; border-radius: 1rem; }
-        
-        /* Mobile fixes */
-        @media (max-width: 768px) {
-            .h-mobile { height: auto; padding: 2rem 1rem; }
-            h1 { font-size: 2.25rem !important; }
-        }
+        .page-active { display: block; animation: fadeIn 0.5s ease; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        .status-open { color: #4ade80; font-weight: bold; }
+        .status-closed { color: #f87171; font-weight: bold; }
+        /* Галерея */
+        .gallery-img { transition: transform 0.3s ease, box-shadow 0.3s ease; cursor: zoom-in; }
+        .gallery-img:hover { transform: scale(1.03); shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
     </style>
 </head>
-<body class="bg-[#f1f4f0] text-slate-800 antialiased">
+<body class="bg-[#f1f4f0] text-slate-800 font-sans">
 
-    <!-- 1. NAVIGATION (Universal Mobile/Desktop) -->
+    <!-- 1. НАВИГАЦИЯ -->
     <nav class="bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-green-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto px-6">
             <div class="flex justify-between items-center h-20">
-                <a href="#" onclick="showPage('home')" class="flex items-center gap-2">
-                    <div class="bg-[#2c5530] p-2 rounded-lg text-white">
-                        <i class="fa-solid fa-house-chimney-window"></i>
-                    </div>
-                    <span class="font-extrabold text-lg sm:text-xl text-[#1b3022] leading-tight">"Источник Надежды"</span>
+                <a href="#" onclick="showPage('home')" class="flex items-center gap-3">
+                    <div class="bg-[#2c5530] p-2 rounded-lg text-white"><i class="fa-solid fa-tree"></i></div>
+                    <span class="font-bold text-xl text-[#1b3022]">Центр Помощи"Источник Надежды"</span>
                 </a>
-                
-                <!-- Desktop Menu -->
-                <div class="hidden md:flex space-x-6 font-semibold text-slate-600">
-                    <a href="#" onclick="showPage('repatriates')" class="hover:text-green-700 transition">Репатрианты</a>
-                    <a href="#" onclick="showPage('kitchen')" class="hover:text-green-700 transition">Столовая</a>
-                    <a href="#" onclick="showPage('gallery')" class="hover:text-green-700 transition">Фотогалерея</a>
-                    <a href="#" onclick="showPage('news')" class="hover:text-green-700 transition">Новости</a>
+                <div class="hidden lg:flex space-x-6 font-medium text-slate-600">
+                    <a href="#" onclick="showPage('repatriates')" class="hover:text-green-700 transition cursor-pointer">Репатрианты</a>
+                    <a href="#" onclick="showPage('kitchen')" class="hover:text-green-700 transition cursor-pointer">Столовая</a>
+                    <a href="#" onclick="showPage('gallery')" class="hover:text-green-700 transition cursor-pointer">Фотогалерея</a>
+                    <a href="#" onclick="showPage('news')" class="hover:text-green-700 transition cursor-pointer">Новости</a>
+                    <a href="#" onclick="showPage('about')" class="hover:text-green-700 transition cursor-pointer">О нас</a>
                 </div>
-
-                <div class="flex items-center gap-2">
-                    <a href="tel:+972544679766" class="bg-green-100 text-[#1b3022] p-3 rounded-full hover:bg-green-200 transition">
-                        <i class="fa-solid fa-phone"></i>
-                    </a>
+                <div class="flex gap-3">
+                    <a href="tel:+972544679766" class="bg-green-100 text-[#1b3022] p-2.5 rounded-xl hover:bg-green-200 transition"><i class="fa-solid fa-phone"></i></a>
                     <button onclick="showPage('home'); setTimeout(() => document.getElementById('form-section').scrollIntoView(), 100)" 
-                            class="bg-[#2c5530] text-white px-5 py-2.5 rounded-xl font-bold hover:bg-[#1b3022] transition shadow-md text-sm">
-                        ПОМОЧЬ
-                    </button>
+                            class="bg-[#2c5530] text-white px-5 py-2 rounded-xl font-bold hover:bg-[#1b3022] transition">Помочь</button>
                 </div>
             </div>
         </div>
     </nav>
 
-    <!-- 2. HOME PAGE -->
+    <!-- 2. ГЛАВНАЯ СТРАНИЦА (HOME) -->
     <main id="home" class="page-content page-active">
-        <header class="hero-pattern text-white py-20 px-4 text-center h-mobile">
+        <header class="hero-pattern text-white py-24 px-6 text-center">
             <div class="max-w-4xl mx-auto">
-                <h1 class="text-4xl md:text-6xl font-black mb-4 uppercase tracking-tighter">Ha-Isiyim 12, Beersheba</h1>
-                <p class="text-lg md:text-xl mb-8 text-green-50 px-2">Помощь репатриантам, малоимущим, детям войны и матерям-одиночкам.</p>
+                <h1 class="text-4xl md:text-6xl font-black mb-4 uppercase">"ИСТОЧНИК НАДЕЖДЫ"</h1>
+                <p class="text-lg md:text-xl mb-8 text-green-50">Частная благотворительная помощь репатриантам, малоимущим, детям войны и матерям-одиночкам.</p>
                 
-                <div class="bg-white/10 backdrop-blur inline-block px-5 py-3 rounded-2xl border border-white/20 mb-8">
-                    <span id="work-status" class="text-sm sm:text-base">Загрузка...</span>
-                    <span class="mx-2 opacity-30">|</span>
-                    <i class="fa-solid fa-clock mr-1"></i> 13:00 – 15:00
+                <div class="bg-white/10 backdrop-blur inline-block px-6 py-3 rounded-2xl border border-white/20 mb-10">
+                    <span id="work-status">Определяем статус...</span>
+                    <span class="mx-2">|</span>
+                    <i class="fa-solid fa-clock mr-1"></i> Столовая: с13:00–15:00 (Вс/Чт)
                 </div>
 
                 <div class="flex justify-center">
-                    <button onclick="document.getElementById('form-section').scrollIntoView()" 
-                            class="bg-white text-[#1b3022] w-full sm:w-auto px-10 py-4 rounded-2xl font-black shadow-2xl hover:bg-green-50 transition uppercase">
-                        Нужна помощь
-                    </button>
+                    <button onclick="document.getElementById('form-section').scrollIntoView()" class="bg-white text-[#1b3022] px-10 py-4 rounded-2xl font-extrabold shadow-2xl hover:bg-green-50 transition uppercase tracking-wider">Нужна помощь</button>
                 </div>
             </div>
         </header>
 
-        <!-- WHATSAPP FORM -->
-        <section id="form-section" class="py-16 forest-gradient text-white">
-            <div class="max-w-3xl mx-auto px-4">
-                <div class="bg-white/10 backdrop-blur-md rounded-[2rem] p-6 sm:p-10 shadow-2xl border border-white/10">
-                    <h3 class="text-3xl font-extrabold mb-8 text-center uppercase tracking-tight">Листок Помощи</h3>
-                    <form onsubmit="sendToWhatsApp(event)" class="space-y-4">
-                        <div class="grid md:grid-cols-2 gap-4">
-                            <input type="text" id="name" required placeholder="Имя" class="w-full bg-white/20 border border-white/20 rounded-xl px-5 py-3.5 outline-none text-white placeholder-green-100 focus:ring-2 focus:ring-white/30">
-                            <input type="tel" id="user_phone" required placeholder="Телефон" class="w-full bg-white/20 border border-white/20 rounded-xl px-5 py-3.5 outline-none text-white placeholder-green-100 focus:ring-2 focus:ring-white/30">
+        <section id="form-section" class="py-20 forest-gradient text-white">
+            <div class="max-w-3xl mx-auto px-6">
+                <div class="bg-white/10 backdrop-blur-md rounded-[2.5rem] p-10 shadow-2xl border border-white/20">
+                    <h3 class="text-3xl font-bold mb-8 text-center">Листок Помощи</h3>
+                    <form onsubmit="sendToWhatsApp(event)" class="space-y-5">
+                        <div class="grid md:grid-cols-2 gap-5">
+                            <input type="text" id="name" required placeholder="Имя" class="w-full bg-white/20 border border-white/20 rounded-xl px-5 py-3 outline-none text-white placeholder-green-100">
+                            <input type="tel" id="user_phone" required placeholder="Телефон" class="w-full bg-white/20 border border-white/20 rounded-xl px-5 py-3 outline-none text-white placeholder-green-100">
                         </div>
-                        <select id="status" required class="w-full bg-[#2c5530] border border-white/20 rounded-xl px-5 py-3.5 outline-none text-white focus:ring-2 focus:ring-white/30">
+                        <select id="status" required class="w-full bg-[#2c5530] border border-white/20 rounded-xl px-5 py-3 outline-none text-white">
                             <option value="">Ваш статус...</option>
                             <option value="Репатриант">Новый репатриант</option>
-                            <option value="Малоимущий">Малоимущий</option>
+                            <option value="Малоимущий">Малоимущий / Трудная ситуация</option>
                             <option value="Ребенок войны">Ребенок войны</option>
                             <option value="Мать-одиночка">Мать-одиночка</option>
                         </select>
-                        <textarea id="message" rows="3" placeholder="Что вам необходимо?" class="w-full bg-white/20 border border-white/20 rounded-xl px-5 py-3.5 outline-none text-white placeholder-green-100 focus:ring-2 focus:ring-white/30"></textarea>
-                        <button type="submit" id="submit-btn" class="w-full bg-[#25D366] text-white py-4 rounded-xl font-black text-lg hover:bg-[#128C7E] transition flex items-center justify-center gap-3 shadow-xl">
+                        <textarea id="message" rows="3" placeholder="Что вам необходимо?" class="w-full bg-white/20 border border-white/20 rounded-xl px-5 py-3 outline-none text-white placeholder-green-100"></textarea>
+                        <button type="submit" id="submit-btn" class="w-full bg-[#25D366] text-white py-4 rounded-xl font-black text-lg hover:bg-[#128C7E] transition flex items-center justify-center gap-2 shadow-xl">
                             <i class="fa-brands fa-whatsapp text-2xl"></i> ОТПРАВИТЬ В WHATSAPP
                         </button>
                     </form>
@@ -120,120 +94,150 @@
             </div>
         </section>
 
-        <!-- MAP -->
-        <section class="py-16 max-w-7xl mx-auto px-4">
-            <div class="grid lg:grid-cols-3 gap-8 items-center">
-                <div class="text-center lg:text-left">
-                    <h3 class="text-2xl font-extrabold mb-2 text-[#1b3022]">Где мы находимся?</h3>
-                    <p class="text-slate-600 mb-6 font-bold uppercase">Ha-Isiyim 12, Beersheba</p>
+        <!-- КАРТА -->
+        <section class="py-20 max-w-7xl mx-auto px-6 border-b border-green-100">
+            <div class="grid lg:grid-cols-3 gap-10 items-center">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4 text-[#1b3022]">Как нас найти</h3>
+                    <p class="text-slate-600 mb-2 font-medium uppercase"> Haisiyim 12, Beersheba </p>
                     <a href="https://www.google.com" target="_blank" 
-                       class="inline-flex items-center gap-2 bg-[#2c5530] text-white px-8 py-4 rounded-2xl font-bold shadow-md hover:bg-green-900 transition">
-                        <i class="fa-solid fa-location-arrow"></i> GOOGLE MAPS
+                       class="inline-flex items-center gap-2 bg-[#2c5530] text-white px-6 py-3 rounded-xl font-bold hover:bg-[#1b3022] transition shadow-md">
+                        <i class="fa-solid fa-location-arrow"></i> GOOGLE MAPS (МАРШРУТ)
                     </a>
                 </div>
-                <div class="lg:col-span-2 h-[350px] sm:h-[450px] rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white">
+                <div class="lg:col-span-2 h-[400px] rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white">
                     <iframe width="100%" height="100%" frameborder="0" src="https://maps.google.com"></iframe>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- 3. PHOTO GALLERY -->
-    <main id="gallery" class="page-content py-12 max-w-7xl mx-auto px-4">
-        <h1 class="text-3xl font-extrabold text-[#1b3022] mb-8 text-center">ФОТОГАЛЕРЕЯ</h1>
+    <!-- 3. СТРАНИЦА: ФОТОГАЛЕРЕЯ -->
+    <main id="gallery" class="page-content py-20 max-w-6xl mx-auto px-6">
+        <h1 class="text-4xl font-bold text-[#1b3022] mb-4 text-center">Фотогалерея Центра</h1>
+        <p class="text-center text-slate-500 mb-12">Жизнь нашего центра в фотографиях: кухня, помощь и будни волонтеров.</p>
+        
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- GOOGLE DRIVE PHOTO FIX (Direct display) -->
-            <div class="rounded-2xl overflow-hidden shadow-lg bg-white p-2">
-                <img src="https://lh3.googleusercontent.com" 
-                     onerror="this.src='https://images.unsplash.com'"
-                     alt="Столовая" class="gallery-img">
-                <p class="p-4 text-center font-bold text-green-900">Благотворительная кухня</p>
+            <!-- Здесь имитация реальных фото благотворительного центра -->
+            <!-- ФОТО ИЗ ВАШЕЙ СТОЛОВОЙ (БЕЗ ССЫЛКИ) -->
+            <div class="rounded-2xl overflow-hidden shadow-md bg-white">
+                <!-- Ссылка на фото, но без тега <a> -->
+                <img src="https://scontent.fbtz1-1.fna.fbcdn.net" 
+                     alt="Столовая Источник Надежды" 
+                     class="gallery-img w-full h-64 object-cover"
+                     onerror="this.src='https://images.unsplash.com'">
+                <div class="p-4 bg-green-50">
+                    <p class="text-sm font-bold text-green-900">Наша столовая в работе</p>
+                </div>
             </div>
-            
-            <img src="https://images.unsplash.com" class="gallery-img shadow-lg">
-            <img src="https://images.unsplash.com" class="gallery-img shadow-lg">
+            <div class="rounded-2xl overflow-hidden shadow-sm">
+                <img src="https://images.unsplash.com" alt="Volunteers" class="gallery-img w-full h-64 object-cover">
+                <div class="p-4 bg-white"><p class="text-sm font-bold text-green-800">Раздача обедов</p></div>
+            </div>
+            <div class="rounded-2xl overflow-hidden shadow-sm">
+                <img src="https://images.unsplash.com" alt="Warehouse" class="gallery-img w-full h-64 object-cover">
+                <div class="p-4 bg-white"><p class="text-sm font-bold text-green-800">Склад гуманитарной помощи</p></div>
+            </div>
+            <div class="rounded-2xl overflow-hidden shadow-sm">
+                <img src="https://images.unsplash.com" alt="Help" class="gallery-img w-full h-64 object-cover">
+                <div class="p-4 bg-white"><p class="text-sm font-bold text-green-800">Помощь детям</p></div>
+            </div>
+            <div class="rounded-2xl overflow-hidden shadow-sm">
+                <img src="https://images.unsplash.com" alt="Elderly" class="gallery-img w-full h-64 object-cover">
+                <div class="p-4 bg-white"><p class="text-sm font-bold text-green-800">Забота о пожилых</p></div>
+            </div>
+            <div class="rounded-2xl overflow-hidden shadow-sm">
+                <img src="https://images.unsplash.com" alt="Center" class="gallery-img w-full h-64 object-cover">
+                <div class="p-4 bg-white"><p class="text-sm font-bold text-green-800">Репатрианты</p></div>
+            </div>
         </div>
     </main>
 
-    <!-- OTHER PAGES (REPATRIATES, KITCHEN, ETC) -->
-    <main id="repatriates" class="page-content py-16 max-w-4xl mx-auto px-4">
-        <div class="bg-white p-8 rounded-[2rem] shadow-sm border-l-8 border-green-700">
-            <h1 class="text-3xl font-black text-[#1b3022] mb-6">Помощь Репатриантам</h1>
-            <p class="text-lg leading-relaxed">Мы помогаем новым гражданам адаптироваться в Негеве: вещи, мебель, консультации по заполнению бланков и поддержка олим хадашим.</p>
+    <!-- СТРАНИЦЫ: РЕПАТРИАНТЫ, СТОЛОВАЯ, НОВОСТИ, О НАС -->
+    <main id="repatriates" class="page-content py-20 max-w-4xl mx-auto px-6">
+        <h1 class="text-4xl font-bold text-[#1b3022] mb-8">Помощь Репатриантам</h1>
+        <div class="bg-white p-8 rounded-3xl shadow-sm leading-relaxed space-y-6 border-l-8 border-green-700">
+            <p class="text-lg">Мы помогаем новым гражданам Израиля адаптироваться в Беэр-Шеве с первых дней. Наш центр на Ха-Исиим 12 предлагаети физическую и консультационную поддержку.</p>
         </div>
     </main>
 
-    <main id="kitchen" class="page-content py-16 max-w-4xl mx-auto px-4 text-center">
-        <div class="bg-white p-10 rounded-[2rem] shadow-sm">
+    <main id="kitchen" class="page-content py-20 max-w-4xl mx-auto px-6 text-center">
+        <h1 class="text-4xl font-bold text-[#1b3022] mb-8">Благотворительная Столовая</h1>
+        <div class="bg-white p-12 rounded-[3rem] shadow-sm">
             <i class="fa-solid fa-bowl-hot text-6xl text-green-700 mb-6"></i>
-            <h1 class="text-3xl font-black text-[#1b3022] mb-4">Бесплатные Обеды</h1>
-            <p class="text-xl">Ежедневно (Вс-Чт) с 13:00 до 15:00 на улице Ha-Isiyim 12.</p>
+            <h3 class="text-2xl font-bold mb-4">Горячие обеды на Haisiyim 12</h3>
+            <p class="text-slate-600 mb-8"> Вс/Чт: 13:00 – 15:00. Мы готовим ежедневно из свежих продуктов для поддержки тех, кто в этом нуждается.</p>
         </div>
     </main>
 
-    <main id="news" class="page-content py-16 max-w-4xl mx-auto px-4">
-        <h1 class="text-3xl font-black text-[#1b3022] mb-8">Новости</h1>
-        <div class="bg-white p-6 rounded-2xl border-l-4 border-green-700 shadow-md">
-            <span class="text-sm font-bold text-green-700 uppercase tracking-widest">Февраль 2026</span>
-            <h4 class="text-xl font-bold my-2">Зимняя помощь</h4>
-            <p class="text-slate-600">Раздаем обогреватели и теплые вещи пожилым репатриантам.</p>
+    <main id="news" class="page-content py-20 max-w-4xl mx-auto px-6">
+        <h1 class="text-4xl font-bold text-[#1b3022] mb-8">Новости Центра</h1>
+        <div class="space-y-6">
+            <article class="bg-white p-6 rounded-2xl border-l-4 border-green-700">
+                <span class="text-sm font-bold text-green-700">Февраль 2026</span>
+                <h4 class="text-xl font-bold my-2">Запуск программы «Теплое Сердце»</h4>
+                <p class="text-slate-600">Начата раздача веще для репатриантов.</p>
+            </article>
         </div>
     </main>
 
-    <main id="about" class="page-content py-16 max-w-4xl mx-auto px-4">
-        <h1 class="text-3xl font-black text-[#1b3022] mb-6">О Нас</h1>
-        <p class="text-lg leading-relaxed bg-white p-8 rounded-3xl shadow-sm">"Источник Надежды" — это частная организация в Беэр-Шеве, работающая для прямой поддержки жителей города. Мы ценим каждого человека и стремимся создать теплую атмосферу взаимопомощи.</p>
+    <main id="about" class="page-content py-20 max-w-4xl mx-auto px-6 leading-relaxed">
+        <h1 class="text-4xl font-bold text-[#1b3022] mb-8 uppercase">О нашей организации</h1>
+        <div class="bg-white p-10 rounded-3xl shadow-sm">
+            <p class="mb-6">Мы — частная благотворительная организация в Беэр-Шеве. Наша работа строится на принципах прозрачности и прямой помощи нуждающимся: от человека к человеку.</p>
+        </div>
     </main>
 
-    <!-- 4. FOOTER (Universal) -->
-    <footer class="bg-[#1b3022] text-green-100 py-12 text-center text-sm border-t border-green-900 mt-auto">
-        <div class="flex justify-center gap-10 mb-8 text-3xl">
-            <a href="https://wa.me" target="_blank" class="hover:scale-110 transition"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="tel:+972544679766" class="hover:scale-110 transition"><i class="fa-solid fa-phone"></i></a>
+    <!-- 7. ФУТЕР -->
+    <footer class="bg-[#1b3022] text-green-100 py-12 text-center text-sm border-t border-green-900">
+        <div class="flex justify-center gap-8 mb-6 text-2xl">
+            <a href="https://wa.me" target="_blank" class="hover:text-white transition"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="tel:+972544679766" class="hover:text-white transition"><i class="fa-solid fa-phone"></i></a>
         </div>
-        <p class="font-black uppercase tracking-widest text-base mb-2">Beersheba, Ha-Isiyim 12</p>
-        <p class="opacity-40">© 2026 "Источник Надежды"</p>
+        <p class="uppercase tracking-widest font-bold mb-2">Беэр-Шева, Ха-Исиим 12</p>
+        <p class="opacity-60">© 2026 Частная благотворительная организация.</p>
     </footer>
 
+    <!-- СКРИПТЫ -->
     <script>
-        // Smooth Page Switching
         function showPage(pageId) {
             document.querySelectorAll('.page-content').forEach(p => p.classList.remove('page-active'));
-            const activePage = document.getElementById(pageId);
-            if(activePage) {
-                activePage.classList.add('page-active');
-                window.scrollTo({top: 0, behavior: 'smooth'});
-            }
+            document.getElementById(pageId).classList.add('page-active');
+            window.scrollTo(0, 0);
         }
 
-        // WhatsApp Logic
         function sendToWhatsApp(event) {
             event.preventDefault();
             const name = document.getElementById('name').value;
             const phone = document.getElementById('user_phone').value;
             const status = document.getElementById('status').value;
             const message = document.getElementById('message').value;
-            const target = "972544679766";
+            const targetPhone = "972544679766";
             
-            const text = `*Источник Надежды*%0A` +
+            const text = `*Новая заявка с сайта*%0A` +
                          `*Имя:* ${name}%0A` +
                          `*Телефон:* ${phone}%0A` +
                          `*Статус:* ${status}%0A` +
                          `*Запрос:* ${message}`;
             
-            window.open(`https://api.whatsapp.com{target}&text=${text}`, '_blank');
+            const wpUrl = `https://api.whatsapp.com{targetPhone}&text=${text}`;
+            const btn = document.getElementById('submit-btn');
+            
+            btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> ПЕРЕХОД...';
+            setTimeout(() => {
+                window.open(wpUrl, '_blank');
+                btn.innerHTML = '<i class="fa-brands fa-whatsapp text-2xl"></i> ОТПРАВИТЬ В WHATSAPP';
+            }, 800);
         }
 
-        // Work Status Logic
         function updateWorkStatus() {
             const now = new Date();
             const day = now.getDay(); 
             const hour = now.getHours();
             const statusEl = document.getElementById('work-status');
             
-            // Open Sun(0) to Thu(4) | 13:00 - 15:00
-            if (day >= 0 && day <= 4 && hour >= 13 && hour < 15) {
-                statusEl.innerHTML = '<span class="status-open">● ОТКРЫТО СЕЙЧАС</span>';
+            if (day >= 0 && day <= 4 && hour >= 12 && hour < 15) {
+                statusEl.innerHTML = '<span class="status-open">● СЕЙЧАС ОТКРЫТО</span>';
             } else {
                 statusEl.innerHTML = '<span class="status-closed">○ СЕЙЧАС ЗАКРЫТО</span>';
             }
