@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Организация Источники Надежды</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
             --deep-forest: #1a2f1a;
@@ -20,12 +20,46 @@
             margin: 0;
             font-family: 'Georgia', serif;
             background-color: var(--deep-forest);
-            background-image: url('https://www.transparenttextures.com');
+            background-image: url('https://www.transparenttextures.com/patterns/dark-matter.png');
             color: var(--mist);
             scroll-behavior: smooth;
         }
 
+        /* --- СТИЛИ ДЛЯ ПЕРЕКЛЮЧЕНИЯ ЯЗЫКА --- */
+        body.lang-en [data-lang="ru"] { display: none !important; }
+        body.lang-ru [data-lang="en"] { display: none !important; }
+
+        .lang-switcher {
+            position: absolute;
+            top: 25px;
+            right: 25px;
+            display: flex;
+            gap: 10px;
+            z-index: 100;
+        }
+
+        .lang-btn {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid var(--moss);
+            color: var(--mist);
+            padding: 5px 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            font-family: inherit;
+            transition: all 0.3s ease;
+        }
+
+        .lang-btn:hover, .lang-btn.active {
+            background: var(--moss);
+            color: var(--sunlight);
+            border-color: var(--sunlight);
+            box-shadow: 0 0 10px rgba(74, 103, 65, 0.8);
+        }
+        /* ------------------------------------ */
+
         header {
+            position: relative;
             background: linear-gradient(to bottom, rgba(26, 47, 26, 0.95), rgba(26, 47, 26, 0.8));
             padding: 30px 20px;
             text-align: center;
@@ -45,7 +79,6 @@
 
         .logo-area i { color: var(--wildflower); filter: drop-shadow(0 0 8px var(--wildflower)); }
 
-        /* Navigation Tiles (Wooden Style) */
         .nav-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -53,27 +86,22 @@
             padding: 30px 10%;
             max-width: 1200px;
             margin: 0 auto;
-            /* ДОБАВЛЕНИЕ ЛЕСНОГО ФОНА В МЕНЮ */
-            background-image: url('https://github.com/NEEMAN01/https-NEEMAN012.github.io/blob/main/view-spectacular-nature-landscape.jpg'); /* Замените на реальное прозрачное изображение, если есть */
+            background-image: url('https://raw.githubusercontent.com/NEEMAN01/https-NEEMAN012.github.io/main/view-spectacular-nature-landscape.jpg');
             background-size: cover;
             background-position: center;
             position: relative;
         }
 
-        /* Дополнительный полупрозрачный слой для читаемости текста на фоне меню */
         .nav-grid::before {
             content: '';
             position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(26, 47, 26, 0.7); /* Темный лес с прозрачностью 70% */
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-color: rgba(26, 47, 26, 0.7);
             z-index: 0;
         }
 
         .nav-item {
-            background: rgba(74, 103, 65, 0.8); /* Фон плиток меню стал полупрозрачным */
+            background: rgba(74, 103, 65, 0.8);
             padding: 25px;
             text-decoration: none;
             color: var(--sunlight);
@@ -85,11 +113,9 @@
             flex-direction: column;
             gap: 12px;
             box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-            position: relative; /* Важно, чтобы быть выше ::before */
+            position: relative;
             z-index: 1;
         }
-        
-        /* Остальные стили не менялись */
 
         .nav-item i { font-size: 2rem; color: var(--mist); transition: 0.3s; }
 
@@ -103,7 +129,7 @@
 
         .hero {
             position: relative;
-            height: 70vh;
+            height: 60vh;
             margin: 0 5% 50px;
             border-radius: 40px;
             overflow: hidden;
@@ -117,7 +143,8 @@
         .hero-bg {
             position: absolute;
             top: 0; left: 0; width: 100%; height: 100%;
-            background: url('https://israel10.ru') center/cover no-repeat;
+            background: url('https://raw.githubusercontent.com/NEEMAN01/https-NEEMAN012.github.io/main/hero-bg.jpg') center/cover no-repeat;
+            background-color: var(--pine-needle);
             filter: brightness(0.6) sepia(0.2) contrast(1.1);
             z-index: 1;
         }
@@ -136,25 +163,60 @@
 
         .hero-content h1 { font-size: 3rem; color: var(--sunlight); margin: 0; }
 
-        .content-container { padding: 0 10% 100px; max-width: 1200px; margin: 0 auto; }
+        .content-container { padding: 0 5% 100px; max-width: 1200px; margin: 0 auto; }
 
         .card {
             background: rgba(255, 255, 255, 0.03);
             border-radius: 30px;
-            padding: 50px;
+            padding: 40px;
             margin-bottom: 40px;
             border: 1px solid rgba(74, 103, 65, 0.3);
             backdrop-filter: blur(5px);
             position: relative;
+            overflow: hidden;
         }
 
         .card::before {
             content: '🌿';
             position: absolute;
-            top: -20px;
-            right: 30px;
-            font-size: 2rem;
-            opacity: 0.5;
+            top: -10px;
+            right: 20px;
+            font-size: 3rem;
+            opacity: 0.1;
+        }
+
+        .card-inner {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .card-inner.reverse {
+            flex-direction: row-reverse;
+        }
+
+        .card-text {
+            flex: 1;
+        }
+
+        .card-image {
+            flex: 1;
+            max-width: 45%;
+        }
+
+        .card-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+            border: 3px solid rgba(74, 103, 65, 0.5);
+            transition: transform 0.4s ease, border-color 0.4s ease;
+            object-fit: cover;
+        }
+
+        .card-image img:hover {
+            transform: scale(1.03) translateY(-5px);
+            border-color: var(--sunlight);
         }
 
         .card h2 {
@@ -165,139 +227,249 @@
             margin-top: 0;
             display: flex;
             align-items: center;
-            gap: 20px;
+            gap: 15px;
         }
 
         .btn {
             display: inline-block;
             background: var(--moss);
             color: var(--sunlight);
-            padding: 15px 35px;
+            padding: 12px 30px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: bold;
-            margin-top: 20px;
+            margin-top: 15px;
             transition: 0.3s;
             border: 1px solid transparent;
         }
 
         .btn:hover {
-            background: transparent;
+            background: rgba(74, 103, 65, 0.5);
             border-color: var(--sunlight);
             box-shadow: 0 0 15px var(--moss);
         }
 
+        @media (max-width: 900px) {
+            .card-inner, .card-inner.reverse { flex-direction: column; gap: 20px; }
+            .card-image { max-width: 100%; }
+        }
+
         @media (max-width: 768px) {
+            .lang-switcher { top: 15px; right: 15px; }
             .nav-grid { grid-template-columns: 1fr 1fr; padding: 20px 5%; }
-            .hero { height: 50vh; margin: 10px; border-radius: 20px; }
+            .hero { height: auto; padding: 40px 10px; margin: 10px; border-radius: 20px; }
             .hero-content h1 { font-size: 1.8rem; }
-            .card { padding: 30px; }
+            .card { padding: 25px; }
+            .card h2 { font-size: 1.6rem; }
         }
     </style>
 </head>
-<body>
+<body class="lang-ru">
 
 <header>
+    <div class="lang-switcher">
+        <button class="lang-btn active" id="btn-ru" onclick="setLanguage('ru')">RU</button>
+        <button class="lang-btn" id="btn-en" onclick="setLanguage('en')">EN</button>
+    </div>
+
     <div class="logo-area">
         <i class="fas fa-heart"></i>
-        <span>Источники Надежды</span>
+        <span data-lang="ru">Источники Надежды</span>
+        <span data-lang="en">Streams of Hope</span>
     </div>
 </header>
 
 <nav class="nav-grid">
     <a href="#repatriants" class="nav-item">
         <i class="fas fa-leaf"></i>
-        <span>Репатрианты</span>
+        <span data-lang="ru">Репатрианты</span>
+        <span data-lang="en">Repatriates</span>
     </a>
     <a href="#canteen" class="nav-item">
         <i class="fas fa-utensils"></i>
-        <span>Столовая</span>
+        <span data-lang="ru">Столовая</span>
+        <span data-lang="en">Canteen</span>
     </a>
     <a href="#news" class="nav-item">
         <i class="fas fa-scroll"></i>
-        <span>Проекты</span>
+        <span data-lang="ru">Проекты</span>
+        <span data-lang="en">Projects</span>
     </a>
     <a href="#about" class="nav-item">
         <i class="fas fa-tree"></i>
-        <span>О нас</span>
+        <span data-lang="ru">О нас</span>
+        <span data-lang="en">About Us</span>
     </a>
 </nav>
 
 <div class="hero">
     <div class="hero-bg"></div>
     <div class="hero-content">
-        <h1>Источники Надежды</h1>
+        <h1>
+            <span data-lang="ru">Источники Надежды</span>
+            <span data-lang="en">Streams of Hope</span>
+        </h1>
         <i class="fas fa-hands-holding-heart" style="font-size: 4rem; color: var(--wildflower); margin: 20px 0; display: block;"></i>
-        <p style="font-size: 1.3rem;">Частная благотворительная помощь репатриантам, малоимущим, детям войны и матерям-одиночкам в Беэр-Шеве.</p>
+        <p style="font-size: 1.3rem;">
+            <span data-lang="ru">Частная благотворительная помощь репатриантам, малоимущим, детям войны и матерям-одиночкам в Беэр-Шеве.</span>
+            <span data-lang="en">Private charitable assistance for repatriates, low-income families, children of war, and single mothers in Beersheba.</span>
+        </p>
     </div>
 </div>
     
-<div class="container">
+<div class="content-container">
+    
     <section id="repatriants" class="card">
-        <h2 style="display: flex; align-items: center; gap: 12px; margin-bottom: 15px;">
-            <!-- Прямая ссылка на иконку от juicy_fish -->
-            <img src="https://cdn-icons-png.flaticon.com" 
-                 alt="Sustainability icon" 
-                 style="width: 35px; height: 35px; filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.2));"> 
-            Репатрианты
-        </h2>
-        
-        <div style="background: rgba(255,255,255,0.05); padding: 15px; border-radius: 10px;">
-            <p><strong><i class="far fa-clock"></i> Склад работает:</strong> 13:00–15:00 (Вс/Чт)</p>
-            <p>Мы помогаем новым гражданам Израиля адаптироваться в Беэр-Шеве с первых дней. Наш центр на Ха-Исиим 12 предлагает физическую и консультационную поддержку.</p>
-        </div>
-
-        <!-- Атрибуция внизу, оформлена как технический текст -->
-        <div style="font-size: 10px; opacity: 0.4; margin-top: 15px; text-align: right;">
-            <a href="https://www.flaticon.com" title="устойчивость иконки" target="_blank" style="color: inherit; text-decoration: none;">
-                Icon by juicy_fish - Flaticon
-            </a>
+        <div class="card-inner">
+            <div class="card-text">
+                <h2>
+                    <img src="https://cdn-icons-png.flaticon.com/512/3062/3062293.png" alt="Icon" style="width: 35px; height: 35px; filter: drop-shadow(0px 2px 4px rgba(0,0,0,0.2));"> 
+                    <span data-lang="ru">Репатрианты</span>
+                    <span data-lang="en">Repatriates</span>
+                </h2>
+                <div style="background: rgba(255,255,255,0.05); padding: 15px; border-radius: 10px; margin-bottom: 15px;">
+                    <p>
+                        <strong><i class="far fa-clock"></i> <span data-lang="ru">Склад работает:</span><span data-lang="en">Warehouse hours:</span></strong> 
+                        <span data-lang="ru">13:00–15:00 (Вс/Чт)</span><span data-lang="en">13:00–15:00 (Sun/Thu)</span>
+                    </p>
+                    <p>
+                        <span data-lang="ru">Мы помогаем новым гражданам Израиля адаптироваться в Беэр-Шеве с первых дней. Наш центр на Ха-Исиим 12 предлагает физическую и консультационную поддержку.</span>
+                        <span data-lang="en">We help new citizens of Israel adapt in Beersheba from their first days. Our center at Ha-Isiyim 12 offers both material and consultative support.</span>
+                    </p>
+                </div>
+                <div style="font-size: 10px; opacity: 0.4;">
+                    <a href="https://www.flaticon.com" target="_blank" style="color: inherit; text-decoration: none;">Icon by juicy_fish - Flaticon</a>
+                </div>
+            </div>
+            <div class="card-image">
+                <img src="https://raw.githubusercontent.com/NEEMAN01/https-NEEMAN012.github.io/main/repatriants-img.jpg" alt="Помощь" onerror="this.src='https://placehold.co/600x400/2d452d/f9fbe7?text=Image+1'">
+            </div>
         </div>
     </section>
-</div>
-
-
 
     <section id="canteen" class="card">
-        <h2><i class="fas fa-mug-hot"></i> Столовая</h2>
-        <p>Мы готовим ежедневно из свежих продуктов для поддержки тех, кто в этом нуждается.</p>
-        <p><strong>Часы работы:</strong> 13:00–15:00 (Вс/Чт)</p>
+        <div class="card-inner reverse">
+            <div class="card-text">
+                <h2>
+                    <i class="fas fa-mug-hot"></i> 
+                    <span data-lang="ru">Столовая</span>
+                    <span data-lang="en">Charity Canteen</span>
+                </h2>
+                <p>
+                    <span data-lang="ru">Мы готовим ежедневно из свежих продуктов для поддержки тех, кто в этом нуждается. Наша еда создана с любовью и заботой о каждом посетителе.</span>
+                    <span data-lang="en">We cook daily using fresh ingredients to support those in need. Our meals are prepared with love and care for every visitor.</span>
+                </p>
+                <div style="background: rgba(0,0,0,0.2); padding: 15px; border-radius: 10px; display: inline-block;">
+                    <p style="margin: 0;">
+                        <strong><span data-lang="ru">Часы работы:</span><span data-lang="en">Working hours:</span></strong> 
+                        <span data-lang="ru">13:00–15:00 (Вс/Чт)</span><span data-lang="en">13:00–15:00 (Sun/Thu)</span>
+                    </p>
+                </div>
+            </div>
+            <div class="card-image">
+                <img src="https://raw.githubusercontent.com/NEEMAN01/https-NEEMAN012.github.io/main/canteen-img.jpg" alt="Столовая" onerror="this.src='https://placehold.co/600x400/4a6741/f9fbe7?text=Image+2'">
+            </div>
+        </div>
     </section>
 
     <section id="news" class="card">
-        <h2><i class="fas fa-mountain"></i> Новости и Проекты</h2>
-        <p>Ознакомьтесь с нашими текущими инициативами и годовыми отчетами.</p>
-        <a href="https://drive.google.com/file/d/1ndCNeu-NTzoN9gHbXLLKzuBbMigKMB-m/view?usp=drive_link" class="btn" target="_blank">
-    <i class="fas fa-file-pdf"></i> Файл проектов
-</a>
+        <div class="card-inner">
+            <div class="card-text">
+                <h2>
+                    <i class="fas fa-mountain"></i> 
+                    <span data-lang="ru">Новости и Проекты</span>
+                    <span data-lang="en">News and Projects</span>
+                </h2>
+                <p>
+                    <span data-lang="ru">Ознакомьтесь с нашими текущими инициативами, волонтерскими акциями и годовыми отчетами о проделанной работе в Беэр-Шеве.</span>
+                    <span data-lang="en">Check out our current initiatives, volunteer actions, and annual reports on the charity work done in Beersheba.</span>
+                </p>
+                <a href="https://drive.google.com/file/d/1ndCNeu-NTzoN9gHbXLLKzuBbMigKMB-m/view?usp=drive_link" class="btn" target="_blank">
+                    <i class="fas fa-file-pdf"></i> 
+                    <span data-lang="ru">Файл проектов</span>
+                    <span data-lang="en">Projects File</span>
+                </a>
+            </div>
+            <div class="card-image">
+                <img src="https://raw.githubusercontent.com/NEEMAN01/https-NEEMAN012.github.io/main/news-img.jpg" alt="Проекты" onerror="this.src='https://placehold.co/600x400/2d452d/f9fbe7?text=Image+3'">
+            </div>
+        </div>
     </section>
 
     <section id="about" class="card">
-    <h2><i class="fas fa-map-signs"></i> О нас и Контакты</h2>
-    <p>Мы — частная благотворительная организация в Беэр-Шеве. Работаем напрямую: от человека к человеку.</p>
-    <div style="background: rgba(0,0,0,0.2); padding: 20px; border-radius: 15px; margin: 20px 0;">
-        <p><i class="fas fa-compass"></i> <strong>Адрес:</strong> Haisiyim 12, Beersheba</p>
-        <p><i class="fas fa-phone-alt"></i> <strong>Куратор:</strong> <a href="tel:0544679766" style="color: #fff; text-decoration: none;">0544679766</a></p>
-        <!-- Новые ссылки -->
-        <p><i class="fab fa-telegram-plane"></i> <strong>Telegram:</strong> <a href="https://t.me/streamshope" target="_blank" style="color: #fff; text-decoration: underline;">Присоединиться</a></p>
-        <p><i class="fab fa-youtube"></i> <strong>YouTube:</strong> <a href="https://www.youtube.com/@streamshope" target="_blank" style="color: #fff; text-decoration: underline;">Смотреть видео</a></p>
-    </div>
-    <a href="https://www.google.com" target="_blank" class="btn">Открыть карту</a>
-</section>
+        <div class="card-inner reverse">
+            <div class="card-text">
+                <h2>
+                    <i class="fas fa-map-signs"></i> 
+                    <span data-lang="ru">О нас и Контакты</span>
+                    <span data-lang="en">About Us & Contacts</span>
+                </h2>
+                <p>
+                    <span data-lang="ru">Мы — частная благотворительная организация в Беэр-Шеве. Работаем напрямую: от человека к человеку.</span>
+                    <span data-lang="en">We are a private charitable organization in Beersheba. We work directly: from person to person.</span>
+                </p>
+                <div style="background: rgba(0,0,0,0.2); padding: 20px; border-radius: 15px; margin: 20px 0;">
+                    <p style="margin-top: 0;">
+                        <i class="fas fa-compass"></i> 
+                        <strong><span data-lang="ru">Адрес:</span><span data-lang="en">Address:</span></strong> Haisiyim 12, Beersheba
+                    </p>
+                    <p>
+                        <i class="fas fa-phone-alt"></i> 
+                        <strong><span data-lang="ru">Куратор:</span><span data-lang="en">Coordinator:</span></strong> <a href="tel:0544679766" style="color: #fff; text-decoration: none;">0544679766</a>
+                    </p>
+                    <p>
+                        <i class="fab fa-telegram-plane"></i> 
+                        <strong>Telegram:</strong> <a href="https://t.me/streamshope" target="_blank" style="color: #fff; text-decoration: underline;"><span data-lang="ru">Присоединиться</span><span data-lang="en">Join Channel</span></a>
+                    </p>
+                    <p style="margin-bottom: 0;">
+                        <i class="fab fa-youtube"></i> 
+                        <strong>YouTube:</strong> <a href="https://www.youtube.com/@streamshope" target="_blank" style="color: #fff; text-decoration: underline;"><span data-lang="ru">Смотреть видео</span><span data-lang="en">Watch Video</span></a>
+                    </p>
+                </div>
+                <a href="https://www.google.com/maps/search/Haisiyim+12,+Beersheba" target="_blank" class="btn">
+                    <i class="fas fa-map-marker-alt"></i> 
+                    <span data-lang="ru">Открыть карту</span>
+                    <span data-lang="en">Open Map</span>
+                </a>
+            </div>
+            <div class="card-image">
+                <img src="https://raw.githubusercontent.com/NEEMAN01/https-NEEMAN012.github.io/main/about-img.jpg" alt="О нас" onerror="this.src='https://placehold.co/600x400/4a6741/f9fbe7?text=Image+4'">
+            </div>
+        </div>
+    </section>
 
 </div>
 
-<footer style="text-align: center; padding: 60px; color: var(--moss); font-style: italic;">
-    &copy; 2025 Организация "Источники Надежды".
+<footer style="text-align: center; padding: 40px; color: var(--moss); font-style: italic; background: rgba(0,0,0,0.2);">
+    <span data-lang="ru">© 2025 Организация "Источники Надежды". Сделано с любовью.</span>
+    <span data-lang="en">© 2025 "Streams of Hope" Organization. Made with love.</span>
 </footer>
+
+<script>
+    function setLanguage(lang) {
+        // Меняем класс у body, чтобы CSS показал нужный текст
+        document.body.className = 'lang-' + lang;
+        
+        // Обновляем активную кнопку
+        document.getElementById('btn-ru').classList.toggle('active', lang === 'ru');
+        document.getElementById('btn-en').classList.toggle('active', lang === 'en');
+        
+        // Меняем заголовок вкладки в браузере
+        if (lang === 'ru') {
+            document.title = 'Организация Источники Надежды';
+        } else {
+            document.title = 'Streams of Hope Organization';
+        }
+        
+        // Сохраняем выбор в память браузера (localStorage)
+        localStorage.setItem('siteLang', lang);
+    }
+
+    // Проверяем, заходил ли пользователь раньше, и включаем его язык
+    // Если заходит впервые - ставим русский по умолчанию
+    const savedLang = localStorage.getItem('siteLang') || 'ru';
+    setLanguage(savedLang);
+</script>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
