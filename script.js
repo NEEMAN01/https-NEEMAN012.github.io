@@ -1,8 +1,61 @@
+const PAGE_TITLES = {
+  "index.html": {
+    "ru": "Источники Надежды — благотворительная помощь в Беэр-Шеве",
+    "en": "Streams of Hope — Charity Support in Beersheba",
+    "he": "מקורות התקווה — סיוע צדקה בבאר שבע"
+  },
+  "gallery.html": {
+    "ru": "Галерея — Источники Надежды",
+    "en": "Gallery — Streams of Hope",
+    "he": "גלריה — מקורות התקווה"
+  },
+  "repatriants-gallery.html": {
+    "ru": "Галерея репатриантов — Источники Надежды",
+    "en": "Repatriants Gallery — Streams of Hope",
+    "he": "גלריית העולים החדשים — מקורות התקווה"
+  },
+  "canteen-gallery.html": {
+    "ru": "Галерея столовой — Источники Надежды",
+    "en": "Canteen Gallery — Streams of Hope",
+    "he": "גלריית בית התמחוי — מקורות התקווה"
+  },
+  "college-gallery.html": {
+    "ru": "Галерея колледжа — Источники Надежды",
+    "en": "College Gallery — Streams of Hope",
+    "he": "גלריית המכללה — מקורות התקווה"
+  },
+  "holocaust-survivors-gallery.html": {
+    "ru": "Пережившие Холокост — Галерея",
+    "en": "Holocaust Survivors — Gallery",
+    "he": "ניצולי השואה — גלריה"
+  },
+  "holidays-gallery.html": {
+    "ru": "Праздники — Галерея",
+    "en": "Holidays — Gallery",
+    "he": "חגים — גלריה"
+  },
+  "friends-gallery.html": {
+    "ru": "Галерея наших друзей — Источники Надежды",
+    "en": "Our Friends Gallery — Streams of Hope",
+    "he": "גלריית החברים שלנו — מקורות התקווה"
+  },
+  "documents.html": {
+    "ru": "Документы и обращения — Источники Надежды",
+    "en": "Documents & Appeals — Streams of Hope",
+    "he": "מסמכים ופניות — מקורות התקווה"
+  },
+  "needs-of-war-03-2026.html": {
+    "ru": "Нужды войны — Источники Надежды",
+    "en": "Needs of War — Streams of Hope",
+    "he": "צרכי המלחמה — מקורות התקווה"
+  }
+};
+
 function renderWeeklyContent(lang) {
   const data = window.WEEKLY_CONTENT;
   if (!data) return;
 
-  const safeLang = lang === "en" ? "en" : "ru";
+  const safeLang = ["ru", "en", "he"].includes(lang) ? lang : "ru";
 
   const weekLabel = document.getElementById("weekly-week-label");
   const parashaTitle = document.getElementById("weekly-parasha-title");
@@ -13,7 +66,7 @@ function renderWeeklyContent(lang) {
 
   if (weekLabel) {
     const dateText = data.weekLabel?.[safeLang] || "";
-    const hebrewDate = data.weekLabel?.he || "";
+    const hebrewDate = data.weekLabel?.heDate || "";
     weekLabel.textContent = hebrewDate ? dateText + " • " + hebrewDate : dateText;
   }
 
@@ -22,19 +75,18 @@ function renderWeeklyContent(lang) {
   }
 
   if (parashaHe) {
-    parashaHe.textContent = data.parasha?.he || "";
+    parashaHe.hidden = safeLang === "he";
+    parashaHe.textContent = safeLang === "he" ? "" : (data.parasha?.he || "");
   }
 
   if (parashaReference) {
-    parashaReference.textContent = safeLang === "en"
-      ? (data.parasha?.referenceEn || "")
-      : (data.parasha?.referenceRu || "");
+    const key = safeLang === "he" ? "referenceHe" : (safeLang === "en" ? "referenceEn" : "referenceRu");
+    parashaReference.textContent = data.parasha?.[key] || "";
   }
 
   if (parashaNote) {
-    parashaNote.textContent = safeLang === "en"
-      ? (data.parasha?.noteEn || "")
-      : (data.parasha?.noteRu || "");
+    const key = safeLang === "he" ? "noteHe" : (safeLang === "en" ? "noteEn" : "noteRu");
+    parashaNote.textContent = data.parasha?.[key] || "";
   }
 
   if (holidayList) {
@@ -52,28 +104,28 @@ function renderWeeklyContent(lang) {
 
       const title = document.createElement("strong");
       title.textContent = holiday[safeLang] || "";
+      titleRow.append(title);
 
-      const hebrew = document.createElement("span");
-      hebrew.className = "holiday-hebrew";
-      hebrew.lang = "he";
-      hebrew.dir = "rtl";
-      hebrew.textContent = holiday.he || "";
-
-      titleRow.append(title, hebrew);
+      if (safeLang !== "he") {
+        const hebrew = document.createElement("span");
+        hebrew.className = "holiday-hebrew";
+        hebrew.lang = "he";
+        hebrew.dir = "rtl";
+        hebrew.textContent = holiday.he || "";
+        titleRow.append(hebrew);
+      }
 
       const date = document.createElement("span");
       date.className = "holiday-date";
-      date.textContent = safeLang === "en"
-        ? (holiday.dateEn || "")
-        : (holiday.dateRu || "");
+      const dateKey = safeLang === "he" ? "dateHe" : (safeLang === "en" ? "dateEn" : "dateRu");
+      date.textContent = holiday[dateKey] || "";
 
       main.append(titleRow, date);
 
       const badge = document.createElement("span");
       badge.className = "holiday-badge";
-      badge.textContent = safeLang === "en"
-        ? (holiday.badgeEn || "")
-        : (holiday.badgeRu || "");
+      const badgeKey = safeLang === "he" ? "badgeHe" : (safeLang === "en" ? "badgeEn" : "badgeRu");
+      badge.textContent = holiday[badgeKey] || "";
 
       item.append(main, badge);
       holidayList.append(item);
@@ -82,19 +134,22 @@ function renderWeeklyContent(lang) {
 }
 
 function setLanguage(lang) {
-  const safeLang = lang === "en" ? "en" : "ru";
-  document.body.classList.remove("lang-ru", "lang-en");
+  const safeLang = ["ru", "en", "he"].includes(lang) ? lang : "ru";
+
+  document.body.classList.remove("lang-ru", "lang-en", "lang-he");
   document.body.classList.add("lang-" + safeLang);
 
-  const ru = document.getElementById("btn-ru");
-  const en = document.getElementById("btn-en");
-  if (ru) ru.classList.toggle("active", safeLang === "ru");
-  if (en) en.classList.toggle("active", safeLang === "en");
+  ["ru", "en", "he"].forEach((code) => {
+    const button = document.getElementById("btn-" + code);
+    if (button) button.classList.toggle("active", safeLang === code);
+  });
 
   document.documentElement.lang = safeLang;
-  document.title = safeLang === "ru"
-    ? "Источники Надежды — благотворительная помощь в Беэр-Шеве"
-    : "Streams of Hope — Charity Support in Beersheba";
+  document.documentElement.dir = safeLang === "he" ? "rtl" : "ltr";
+
+  const page = window.location.pathname.split("/").pop() || "index.html";
+  const titles = PAGE_TITLES[page] || PAGE_TITLES["index.html"];
+  document.title = titles?.[safeLang] || titles?.ru || document.title;
 
   localStorage.setItem("siteLang", safeLang);
   renderWeeklyContent(safeLang);
