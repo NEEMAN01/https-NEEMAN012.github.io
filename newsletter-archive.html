@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Архив газеты — Источники Надежды</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css?v=20260921-15">
+</head>
+<body class="lang-ru">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark"><i class="fas fa-heart"></i></span>
+        <span class="brand-title">
+          <span data-lang="ru">Источники Надежды</span>
+          <span data-lang="en">Streams of Hope</span>
+          <span data-lang="he" lang="he" dir="rtl">מקורות התקווה</span>
+        </span>
+      </a>
+
+      <nav class="top-nav">
+        <a href="index.html#news"><span data-lang="ru">Новости</span><span data-lang="en">News</span><span data-lang="he" lang="he" dir="rtl">חדשות</span></a>
+        <a href="documents.html"><span data-lang="ru">Документы</span><span data-lang="en">Documents</span><span data-lang="he" lang="he" dir="rtl">מסמכים</span></a>
+      </nav>
+
+      <div class="lang-switcher">
+        <button class="lang-btn active" id="btn-ru" type="button" onclick="setLanguage('ru')">RU</button>
+        <button class="lang-btn" id="btn-en" type="button" onclick="setLanguage('en')">EN</button>
+        <button class="lang-btn" id="btn-he" type="button" onclick="setLanguage('he')">HE</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="subpage">
+    <section class="subpage-hero documents-hero">
+      <div class="section-inner">
+        <div class="eyebrow">
+          <i class="fas fa-newspaper"></i>
+          <span data-lang="ru">Архив газеты</span>
+          <span data-lang="en">Newsletter Archive</span>
+          <span data-lang="he" lang="he" dir="rtl">ארכיון העיתון</span>
+        </div>
+
+        <h1>
+          <span data-lang="ru">Газета «Источники Надежды»</span>
+          <span data-lang="en">Streams of Hope Newsletter</span>
+          <span data-lang="he" lang="he" dir="rtl">עיתון ״מקורות התקווה״</span>
+        </h1>
+
+        <p>
+          <span data-lang="ru">Все выпуски хранятся здесь. Новая газета будет добавляться в архив, а предыдущие выпуски останутся доступными для чтения.</span>
+          <span data-lang="en">All issues are kept here. New editions will be added to the archive while previous issues remain available to read.</span>
+          <span data-lang="he" lang="he" dir="rtl">כל הגיליונות נשמרים כאן. גיליונות חדשים יתווספו לארכיון והגיליונות הקודמים יישארו זמינים לקריאה.</span>
+        </p>
+
+        <a class="btn btn-secondary" href="index.html#news">
+          <i class="fas fa-arrow-left"></i>
+          <span data-lang="ru">Вернуться к новостям</span>
+          <span data-lang="en">Back to news</span>
+          <span data-lang="he" lang="he" dir="rtl">חזרה לחדשות</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section section-news">
+      <div class="section-inner documents-wrap">
+        <div class="documents-list">
+
+          <!-- Новые выпуски газеты добавляются выше старых. -->
+
+          <article class="archive-document-item">
+            <div class="archive-document-icon">
+              <i class="fas fa-newspaper"></i>
+            </div>
+
+            <div class="archive-document-copy">
+              <div class="archive-document-meta">
+                <span class="badge badge-document">
+                  <span data-lang="ru">Выпуск газеты</span>
+                  <span data-lang="en">Newsletter issue</span>
+                  <span data-lang="he" lang="he" dir="rtl">גיליון העיתון</span>
+                </span>
+                <time datetime="2026-03">03/2026</time>
+              </div>
+
+              <h2>
+                <span data-lang="ru">Выпуск 03/2026</span>
+                <span data-lang="en">March 2026 Issue</span>
+                <span data-lang="he" lang="he" dir="rtl">גיליון 03/2026</span>
+              </h2>
+
+              <p>
+                <span data-lang="ru">Русско-английский выпуск о работе организации, событиях и помощи людям в Беэр-Шеве.</span>
+                <span data-lang="en">A Russian-English edition about the organization’s work, activities and assistance in Beersheba.</span>
+                <span data-lang="he" lang="he" dir="rtl">גיליון ברוסית ובאנגלית על פעילות הארגון, האירועים והסיוע לאנשים בבאר שבע.</span>
+              </p>
+
+              <div class="archive-document-actions">
+                <a class="btn btn-document" href="News%20Letter%2003%3A26%20russ%3Aeng.pdf" target="_blank" rel="noopener">
+                  <i class="fas fa-book-open"></i>
+                  <span data-lang="ru">Читать выпуск</span>
+                  <span data-lang="en">Read issue</span>
+                  <span data-lang="he" lang="he" dir="rtl">קריאת הגיליון</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    © <span id="current-year">2026</span>
+    <span data-lang="ru"> «Источники Надежды».</span>
+    <span data-lang="en"> “Streams of Hope”.</span>
+    <span data-lang="he" lang="he" dir="rtl">״מקורות התקווה״.</span>
+  </footer>
+
+  <script src="script.js?v=20260921-15"></script>
+</body>
+</html>
