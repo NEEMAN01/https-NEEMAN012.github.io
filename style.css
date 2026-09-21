@@ -266,7 +266,7 @@ a { color: inherit; }
   position: relative;
   z-index: 10;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 16px;
 }
 
@@ -925,7 +925,7 @@ a { color: inherit; }
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 18px;
 }
 
@@ -1302,4 +1302,85 @@ a { color: inherit; }
 @media (max-width: 640px) {
   .gallery-category-grid { grid-template-columns: 1fr; }
   .holocaust-category-preview { height: 220px; }
+}
+
+
+/* ===== College section ===== */
+.quick-card.college {
+  --accent: #8fb4cf;
+  background:
+    linear-gradient(145deg, rgba(49,75,92,.94), rgba(29,49,37,.96));
+}
+
+.section-college {
+  background:
+    radial-gradient(circle at 86% 14%, rgba(143,180,207,.13), transparent 28%),
+    linear-gradient(180deg, rgba(31,52,65,.26), rgba(13,27,18,.08));
+  border-top: 1px solid rgba(143,180,207,.12);
+  border-bottom: 1px solid rgba(143,180,207,.08);
+}
+
+.section-college .section-kicker {
+  color: #a8cade;
+  background: linear-gradient(145deg, rgba(143,180,207,.16), rgba(255,255,255,.025));
+  border-color: rgba(143,180,207,.25);
+}
+
+.college-card {
+  border-color: rgba(143,180,207,.20);
+  box-shadow: inset 5px 0 0 rgba(143,180,207,.28);
+}
+
+.college-placeholder {
+  min-height: 390px;
+  border-radius: 26px;
+  border: 1px solid rgba(143,180,207,.16);
+  background:
+    radial-gradient(circle at 50% 35%, rgba(143,180,207,.15), transparent 24%),
+    linear-gradient(145deg, rgba(42,62,75,.76), rgba(22,42,30,.88));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  color: rgba(247,244,232,.72);
+  text-align: center;
+  padding: 30px;
+}
+
+.college-placeholder i {
+  font-size: 4rem;
+  color: #a8cade;
+  filter: drop-shadow(0 8px 20px rgba(0,0,0,.25));
+}
+
+.college-gallery-hero {
+  background:
+    radial-gradient(circle at 84% 18%, rgba(143,180,207,.18), transparent 30%),
+    linear-gradient(160deg, #283b47, #102017 70%);
+}
+
+.category-college {
+  border-color: rgba(143,180,207,.20);
+  background:
+    linear-gradient(180deg, rgba(143,180,207,.055), rgba(255,255,255,.025));
+}
+
+.category-college .gallery-category-icon {
+  color: #a8cade;
+}
+
+.college-category-preview {
+  height: 245px;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(circle at 50% 40%, rgba(143,180,207,.18), transparent 25%),
+    linear-gradient(145deg, #293c49, #223328);
+  color: #a8cade;
+  font-size: 4rem;
+}
+
+@media (max-width: 640px) {
+  .college-category-preview { height: 220px; }
 }
