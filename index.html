@@ -7,7 +7,7 @@
   <title>Источники Надежды — благотворительная помощь в Беэр-Шеве</title>
   <link rel="preconnect" href="https://cdnjs.cloudflare.com">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=20260921-2">
 </head>
 
 <body class="lang-ru">
@@ -112,21 +112,26 @@
     <section class="weekly-feature" id="jewish-week">
       <div class="weekly-feature-inner">
         <div class="weekly-feature-heading">
-          <div class="weekly-feature-symbol">
+          <div class="weekly-feature-symbol" aria-hidden="true">
             <i class="fas fa-scroll"></i>
           </div>
-          <div>
-            <span class="weekly-feature-eyebrow">
+
+          <div class="weekly-heading-copy">
+            <div class="weekly-feature-eyebrow">
               <span data-lang="ru">Еврейская неделя</span>
               <span data-lang="en">Jewish Week</span>
               <span class="weekly-feature-hebrew" lang="he" dir="rtl">השבוע</span>
-            </span>
+            </div>
+
             <h2>
               <span data-lang="ru">Тора и календарь Израиля</span>
               <span data-lang="en">Torah & Israel Calendar</span>
             </h2>
-            <p id="weekly-week-label" class="weekly-date"></p>
+
+            <p id="weekly-week-label" class="weekly-date">21–27 сентября 2026 • ט׳–ט״ו בתשרי תשפ״ז</p>
           </div>
+
+          <div class="weekly-heading-star" aria-hidden="true">✡</div>
         </div>
 
         <div class="weekly-feature-grid">
@@ -141,14 +146,14 @@
 
             <div class="torah-title-row">
               <div>
-                <h3 id="weekly-parasha-title"></h3>
-                <div id="weekly-parasha-he" class="torah-hebrew" lang="he" dir="rtl"></div>
+                <h3 id="weekly-parasha-title">Хаазину</h3>
+                <div id="weekly-parasha-he" class="torah-hebrew" lang="he" dir="rtl">האזינו</div>
               </div>
               <span class="torah-scroll-mark"><i class="fas fa-scroll"></i></span>
             </div>
 
-            <p id="weekly-parasha-reference" class="torah-reference"></p>
-            <p id="weekly-parasha-note" class="weekly-note"></p>
+            <p id="weekly-parasha-reference" class="torah-reference">Дварим 32:1–52</p>
+            <p id="weekly-parasha-note" class="weekly-note">Последняя недельная глава: Шаббат Шува, 19 сентября. Ближайший Шаббат, 26 сентября, — праздничное чтение Суккот I.</p>
           </article>
 
           <article class="weekly-panel holiday-panel">
@@ -160,14 +165,30 @@
               </span>
             </div>
 
-            <div id="weekly-holiday-list" class="holiday-list"></div>
-          </article>
-        </div>
+            <div id="weekly-holiday-list" class="holiday-list">
+              <div class="holiday-item">
+                <div class="holiday-main">
+                  <div class="holiday-title-row">
+                    <strong>Йом-Кипур</strong>
+                    <span class="holiday-hebrew" lang="he" dir="rtl">יום כיפור</span>
+                  </div>
+                  <span class="holiday-date">21 сентября 2026</span>
+                </div>
+                <span class="holiday-badge">Сегодня</span>
+              </div>
 
-        <div class="weekly-edit-note">
-          <i class="fas fa-pen"></i>
-          <span data-lang="ru">Этот блок можно обновлять каждую неделю: глава Торы и праздники хранятся отдельно от дизайна сайта.</span>
-          <span data-lang="en">This block can be updated every week: the Torah portion and holidays are stored separately from the site design.</span>
+              <div class="holiday-item">
+                <div class="holiday-main">
+                  <div class="holiday-title-row">
+                    <strong>Суккот</strong>
+                    <span class="holiday-hebrew" lang="he" dir="rtl">סוכות</span>
+                  </div>
+                  <span class="holiday-date">с вечера 25 сентября — 2 октября 2026</span>
+                </div>
+                <span class="holiday-badge">Ближайший праздник</span>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -461,7 +482,7 @@
     <span data-lang="ru">«Источники Надежды». Сделано с заботой.</span>
     <span data-lang="en">“Streams of Hope”. Made with care.</span>
   </footer>
-  <script src="weekly-content.js"></script>
-  <script src="script.js"></script>
+  <script src="weekly-content.js?v=20260921-2"></script>
+  <script src="script.js?v=20260921-2"></script>
 </body>
 </html>
