@@ -1,0 +1,51 @@
+name: Import repatriates collage
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/import-repatriates-collage.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download original repatriates collage
+        env:
+          SOURCE_URL: "https://d2jqrm6oza8nb6.cloudfront.net/datasets/2d12d174-b1c8-4d8a-a8c8-7d7031548b62.png?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiOTQzMmQzN2YyYTJjYTExNCIsImJ1Y2tldCI6InJ1bndheS1kYXRhc2V0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5MDE0NzcxMX0.yljXr3rrlU1ZphxxgcuaMqZe7K_RSkDpZKcjmXcglyc"
+        run: |
+          set -euo pipefail
+          mkdir -p assets/galleries/repatriants
+          curl -L --fail --retry 3 "$SOURCE_URL" -o assets/galleries/repatriants/repatriants-overview.png
+          file assets/galleries/repatriants/repatriants-overview.png
+          ls -lh assets/galleries/repatriants/repatriants-overview.png
+
+      - name: Show only the new collage on the page
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          p = Path("repatriants-gallery.html")
+          s = p.read_text(encoding="utf-8")
+          replacement = '''<section class="section section-support"><div class="section-inner"><div class="gallery-sheet-stack">
+          <a class="gallery-sheet" style="width:100%;max-width:1448px;justify-self:center" href="assets/galleries/repatriants/repatriants-overview.png?v=20260921-16" target="_blank" rel="noopener"><img src="assets/galleries/repatriants/repatriants-overview.png?v=20260921-16" alt="Репатрианты" width="1448" height="1086" loading="eager" decoding="async"></a>
+          </div></div></section></main>'''
+          s2, n = re.subn(r'<section class="section section-support">.*?</section></main>', replacement, s, count=1, flags=re.S)
+          if n != 1:
+              raise SystemExit("Could not replace repatriates gallery section")
+          p.write_text(s2, encoding="utf-8")
+          PY
+
+      - name: Commit full-quality collage
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/galleries/repatriants/repatriants-overview.png repatriants-gallery.html
+          git rm .github/workflows/import-repatriates-collage.yml
+          git commit -m "Restore full-quality repatriates collage"
+          git push
