@@ -1,0 +1,63 @@
+name: Import holiday collages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/import-holiday-collages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download original collages
+        env:
+          HOLIDAY_1: "https://d2jqrm6oza8nb6.cloudfront.net/datasets/622d31ca-8d73-4446-8a31-f2d40f7a8b0f.jpeg?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiN2FhMzhjNTdmN2JlNTY3MCIsImJ1Y2tldCI6InJ1bndheS1kYXRhc2V0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5MDEzMDY0N30.q_VHqXE4mofxr99wJAyW0q_u3nozF3HYpF1FG_y4E-s"
+          HOLIDAY_2: "https://d2jqrm6oza8nb6.cloudfront.net/datasets/240c7f94-ede8-43ce-adde-b493d2e3cb38.jpeg?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiMzhhOGUzMDA3ZDMwYjk5OCIsImJ1Y2tldCI6InJ1bndheS1kYXRhc2V0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5MDE0MTA1Nn0.sUcYx8soTijF_vGyHCikPEJZQOcYnS7v90-5Oa8daWI"
+          HOLIDAY_3: "https://d2jqrm6oza8nb6.cloudfront.net/datasets/b6b43623-fa11-4e9d-80b3-3fc434ce88bb.jpeg?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiMjRiZmJjZGUxMTgwZDc2MSIsImJ1Y2tldCI6InJ1bndheS1kYXRhc2V0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5MDExNjcwMn0.NfQnZRLbaKENUR4OtqtsKxPA62L_TGu_MJ3Ds2iCYEU"
+          HOLIDAY_4: "https://d2jqrm6oza8nb6.cloudfront.net/datasets/3838d277-76a1-49fe-862d-09f1295e3088.jpeg?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiNzg1MTlmNjBkZjI3ZGRlOSIsImJ1Y2tldCI6InJ1bndheS1kYXRhc2V0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5MDA4NzEzNn0.WI6yMVJwiB6M7jItrCoNGi7cCy8mzCfD9xKYPJQ_zLA"
+          HOLIDAY_5: "https://d2jqrm6oza8nb6.cloudfront.net/datasets/d9c65281-793a-4699-936c-103c16e86a5d.jpeg?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiNWVkNDYwODNjNmJkNGI1ZCIsImJ1Y2tldCI6InJ1bndheS1kYXRhc2V0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5MDEyODY0M30.DcUKy9a2s4cl2QX1RIjWb0Fra4GlcOoIqF4BspBSnJo"
+        run: |
+          set -euo pipefail
+          mkdir -p assets/galleries/holidays
+          curl -L --fail --retry 3 "$HOLIDAY_1" -o assets/galleries/holidays/rosh-hashanah-01.jpg
+          curl -L --fail --retry 3 "$HOLIDAY_2" -o assets/galleries/holidays/rosh-hashanah-02.jpg
+          curl -L --fail --retry 3 "$HOLIDAY_3" -o assets/galleries/holidays/rosh-hashanah-03.jpg
+          curl -L --fail --retry 3 "$HOLIDAY_4" -o assets/galleries/holidays/rosh-hashanah-04.jpg
+          curl -L --fail --retry 3 "$HOLIDAY_5" -o assets/galleries/holidays/rosh-hashanah-05.jpg
+          file assets/galleries/holidays/rosh-hashanah-*.jpg
+          ls -lh assets/galleries/holidays/rosh-hashanah-*.jpg
+
+      - name: Rebuild holiday gallery page
+        run: |
+          cat > holidays-gallery.html <<'HTML'
+          <!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Праздники — Галерея</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><link rel="stylesheet" href="style.css?v=20260921-8"></head><body class="lang-ru">
+          <header class="site-header"><div class="header-inner"><a class="brand" href="index.html"><span class="brand-mark"><i class="fas fa-heart"></i></span><span class="brand-title"><span data-lang="ru">Источники Надежды</span><span data-lang="en">Streams of Hope</span></span></a><nav class="top-nav"><a href="gallery.html"><span data-lang="ru">Общая галерея</span><span data-lang="en">Main gallery</span></a><a href="index.html"><span data-lang="ru">Главная</span><span data-lang="en">Home</span></a></nav><div class="lang-switcher"><button class="lang-btn active" id="btn-ru" type="button" onclick="setLanguage('ru')">RU</button><button class="lang-btn" id="btn-en" type="button" onclick="setLanguage('en')">EN</button></div></div></header>
+          <main class="subpage"><section class="subpage-hero gallery-hero"><div class="section-inner"><div class="eyebrow"><i class="fas fa-calendar-days"></i><span data-lang="ru">Праздники</span><span data-lang="en">Holidays</span></div><h1><span data-lang="ru">Галерея праздников</span><span data-lang="en">Holiday gallery</span></h1><p><span data-lang="ru">Фотографии праздничных встреч и мероприятий.</span><span data-lang="en">Photos from holiday gatherings and events.</span></p><a class="btn btn-secondary" href="gallery.html"><i class="fas fa-arrow-left"></i><span data-lang="ru">Назад в галерею</span><span data-lang="en">Back to gallery</span></a></div></section>
+          <section class="section gallery-categories-section"><div class="section-inner"><p class="gallery-photo-note"><span data-lang="ru">Нажмите на коллаж, чтобы открыть его в полном размере.</span><span data-lang="en">Click a collage to open it full size.</span></p><div class="gallery-sheet-stack">
+          <a class="gallery-sheet" style="width:100%;max-width:1122px;justify-self:center" href="assets/galleries/holidays/rosh-hashanah-01.jpg" target="_blank" rel="noopener"><img src="assets/galleries/holidays/rosh-hashanah-01.jpg" alt="Рош ха-Шана — выступления и речи" loading="eager"></a>
+          <a class="gallery-sheet" style="width:100%;max-width:1122px;justify-self:center" href="assets/galleries/holidays/rosh-hashanah-02.jpg" target="_blank" rel="noopener"><img src="assets/galleries/holidays/rosh-hashanah-02.jpg" alt="Рош ха-Шана — гости и семьи" loading="lazy"></a>
+          <a class="gallery-sheet" style="width:100%;max-width:1122px;justify-self:center" href="assets/galleries/holidays/rosh-hashanah-03.jpg" target="_blank" rel="noopener"><img src="assets/galleries/holidays/rosh-hashanah-03.jpg" alt="Рош ха-Шана — тёплые моменты" loading="lazy"></a>
+          <a class="gallery-sheet" style="width:100%;max-width:1122px;justify-self:center" href="assets/galleries/holidays/rosh-hashanah-04.jpg" target="_blank" rel="noopener"><img src="assets/galleries/holidays/rosh-hashanah-04.jpg" alt="Рош ха-Шана — за главным столом" loading="lazy"></a>
+          <a class="gallery-sheet" style="width:100%;max-width:1122px;justify-self:center" href="assets/galleries/holidays/rosh-hashanah-05.jpg" target="_blank" rel="noopener"><img src="assets/galleries/holidays/rosh-hashanah-05.jpg" alt="Рош ха-Шана — атмосфера и декор" loading="lazy"></a>
+          </div></div></section></main>
+          <footer class="site-footer">© <span id="current-year">2026</span> <span data-lang="ru">«Источники Надежды».</span><span data-lang="en">“Streams of Hope”.</span></footer><script src="script.js?v=20260921-8"></script></body></html>
+          HTML
+
+      - name: Commit imported collages
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add holidays-gallery.html assets/galleries/holidays/rosh-hashanah-*.jpg
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "Restore full-quality holiday collages"
+          git push
