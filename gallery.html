@@ -17,20 +17,14 @@
           <span data-lang="en">Streams of Hope</span>
         </span>
       </a>
+
       <nav class="top-nav">
-        <a href="index.html#canteen">
-          <span data-lang="ru">Столовая</span>
-          <span data-lang="en">Canteen</span>
-        </a>
-        <a href="index.html#news">
-          <span data-lang="ru">Новости</span>
-          <span data-lang="en">News</span>
-        </a>
-        <a href="index.html#projects">
-          <span data-lang="ru">Проекты</span>
-          <span data-lang="en">Projects</span>
-        </a>
+        <a href="index.html#repatriants"><span data-lang="ru">Репатрианты</span><span data-lang="en">Repatriates</span></a>
+        <a href="index.html#canteen"><span data-lang="ru">Столовая</span><span data-lang="en">Canteen</span></a>
+        <a href="#holidays"><span data-lang="ru">Праздники</span><span data-lang="en">Holidays</span></a>
+        <a href="index.html"><span data-lang="ru">Главная</span><span data-lang="en">Home</span></a>
       </nav>
+
       <div class="lang-switcher">
         <button class="lang-btn active" id="btn-ru" type="button" onclick="setLanguage('ru')">RU</button>
         <button class="lang-btn" id="btn-en" type="button" onclick="setLanguage('en')">EN</button>
@@ -43,48 +37,78 @@
       <div class="section-inner">
         <div class="eyebrow">
           <i class="fas fa-images"></i>
-          <span data-lang="ru">Фотогалерея</span>
-          <span data-lang="en">Photo gallery</span>
+          <span data-lang="ru">Общая галерея</span>
+          <span data-lang="en">Main gallery</span>
         </div>
         <h1>
           <span data-lang="ru">Галерея нашей работы</span>
           <span data-lang="en">Gallery of our work</span>
         </h1>
         <p>
-          <span data-lang="ru">Нажмите на фотографию, чтобы открыть её в полном размере.</span>
-          <span data-lang="en">Click a photo to open it at full size.</span>
+          <span data-lang="ru">Фотографии разделены по темам, чтобы всё было аккуратно и легко находилось.</span>
+          <span data-lang="en">Photos are organized by topic so everything is easy to find.</span>
         </p>
-        <a class="btn btn-secondary" href="index.html#canteen">
+        <a class="btn btn-secondary" href="index.html">
           <i class="fas fa-arrow-left"></i>
-          <span data-lang="ru">Вернуться на сайт</span>
-          <span data-lang="en">Back to site</span>
+          <span data-lang="ru">Вернуться на главную</span>
+          <span data-lang="en">Back to home</span>
         </a>
       </div>
     </section>
 
-    <section class="section section-canteen">
+    <section class="section gallery-categories-section">
       <div class="section-inner">
-        <div class="gallery-grid">
-          <a class="gallery-item" href="IMG_7371.JPG" target="_blank" rel="noopener">
-            <img src="IMG_7371.JPG" alt="Фото работы организации">
-          </a>
-          <a class="gallery-item" href="IMG_8197.JPG" target="_blank" rel="noopener">
-            <img src="IMG_8197.JPG" alt="Фото работы организации">
-          </a>
-          <a class="gallery-item" href="20230501_180810_37695002-eb08-40ba-8c47-6287a7b1fcea.JPG" target="_blank" rel="noopener">
-            <img src="20230501_180810_37695002-eb08-40ba-8c47-6287a7b1fcea.JPG" alt="Фото работы организации">
-          </a>
-          <a class="gallery-item" href="FB_IMG_1731443941478.JPG" target="_blank" rel="noopener">
-            <img src="FB_IMG_1731443941478.JPG" alt="Фото помощи">
-          </a>
-          <a class="gallery-item" href="20230130_075707_IMG_7825.JPG" target="_blank" rel="noopener">
-            <img src="20230130_075707_IMG_7825.JPG" alt="Фото проекта">
-          </a>
-          <a class="gallery-item" href="IMG-20241006-WA0001.JPG" target="_blank" rel="noopener">
-            <img src="IMG-20241006-WA0001.JPG" alt="Фото организации">
-          </a>
-        </div>
+        <div class="gallery-category-grid">
+          <article class="gallery-category-card category-repatriants">
+            <div class="gallery-category-preview">
+              <img src="FB_IMG_1731443941478.JPG" alt="Помощь репатриантам">
+            </div>
+            <div class="gallery-category-body">
+              <span class="gallery-category-icon"><i class="fas fa-people-carry-box"></i></span>
+              <h2><span data-lang="ru">Репатрианты</span><span data-lang="en">Repatriates</span></h2>
+              <p><span data-lang="ru">Помощь, склад, адаптация и поддержка новых репатриантов.</span><span data-lang="en">Assistance, warehouse support, adaptation and help for new repatriates.</span></p>
+              <a class="btn btn-accent" href="repatriants-gallery.html">
+                <i class="fas fa-images"></i>
+                <span data-lang="ru">Открыть галерею</span>
+                <span data-lang="en">Open gallery</span>
+              </a>
+            </div>
+          </article>
 
+          <article class="gallery-category-card category-canteen">
+            <div class="gallery-category-preview">
+              <img src="IMG_7371.JPG" alt="Благотворительная столовая">
+            </div>
+            <div class="gallery-category-body">
+              <span class="gallery-category-icon"><i class="fas fa-bowl-food"></i></span>
+              <h2><span data-lang="ru">Столовая</span><span data-lang="en">Canteen</span></h2>
+              <p><span data-lang="ru">Приготовление еды, работа столовой и помощь людям.</span><span data-lang="en">Meal preparation, canteen work and support for people.</span></p>
+              <a class="btn btn-accent" href="canteen-gallery.html">
+                <i class="fas fa-images"></i>
+                <span data-lang="ru">Открыть галерею</span>
+                <span data-lang="en">Open gallery</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="gallery-category-card category-holidays" id="holidays">
+            <div class="holiday-preview">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-menorah"></i>
+              <i class="fas fa-gift"></i>
+            </div>
+            <div class="gallery-category-body">
+              <span class="gallery-category-icon"><i class="fas fa-calendar-days"></i></span>
+              <h2><span data-lang="ru">Праздники</span><span data-lang="en">Holidays</span></h2>
+              <p><span data-lang="ru">Здесь будут фотографии праздничных встреч, мероприятий и особых дней.</span><span data-lang="en">This section will contain photos from holiday gatherings, events and special days.</span></p>
+              <div class="gallery-coming-soon">
+                <i class="fas fa-camera"></i>
+                <span data-lang="ru">Ждём фотографии</span>
+                <span data-lang="en">Photos coming soon</span>
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
     </section>
   </main>
@@ -94,6 +118,7 @@
     <span data-lang="ru"> «Источники Надежды».</span>
     <span data-lang="en"> “Streams of Hope”.</span>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
