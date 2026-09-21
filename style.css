@@ -1384,3 +1384,78 @@ a { color: inherit; }
 @media (max-width: 640px) {
   .college-category-preview { height: 220px; }
 }
+
+
+/* ===== Our Friends section ===== */
+.section-friends {
+  background:
+    radial-gradient(circle at 90% 14%, rgba(178,142,106,.12), transparent 28%),
+    linear-gradient(180deg, rgba(56,43,33,.22), rgba(13,27,18,.08));
+  border-top: 1px solid rgba(178,142,106,.12);
+  border-bottom: 1px solid rgba(178,142,106,.08);
+}
+
+.section-friends .section-kicker {
+  color: #d3b18d;
+  background: linear-gradient(145deg, rgba(178,142,106,.16), rgba(255,255,255,.025));
+  border-color: rgba(178,142,106,.25);
+}
+
+.friends-card {
+  border-color: rgba(178,142,106,.20);
+  box-shadow: inset 5px 0 0 rgba(178,142,106,.28);
+}
+
+.friends-placeholder {
+  min-height: 390px;
+  border-radius: 26px;
+  border: 1px solid rgba(178,142,106,.16);
+  background:
+    radial-gradient(circle at 50% 35%, rgba(178,142,106,.15), transparent 24%),
+    linear-gradient(145deg, rgba(62,49,40,.76), rgba(22,42,30,.88));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  color: rgba(247,244,232,.72);
+  text-align: center;
+  padding: 30px;
+}
+
+.friends-placeholder i {
+  font-size: 4rem;
+  color: #d3b18d;
+  filter: drop-shadow(0 8px 20px rgba(0,0,0,.25));
+}
+
+.friends-gallery-hero {
+  background:
+    radial-gradient(circle at 84% 18%, rgba(178,142,106,.18), transparent 30%),
+    linear-gradient(160deg, #3a2e26, #102017 70%);
+}
+
+.category-friends {
+  border-color: rgba(178,142,106,.20);
+  background:
+    linear-gradient(180deg, rgba(178,142,106,.055), rgba(255,255,255,.025));
+}
+
+.category-friends .gallery-category-icon {
+  color: #d3b18d;
+}
+
+.friends-category-preview {
+  height: 245px;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(circle at 50% 40%, rgba(178,142,106,.18), transparent 25%),
+    linear-gradient(145deg, #3c3028, #223328);
+  color: #d3b18d;
+  font-size: 4rem;
+}
+
+@media (max-width: 640px) {
+  .friends-category-preview { height: 220px; }
+}
