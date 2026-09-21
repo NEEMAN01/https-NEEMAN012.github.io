@@ -1,0 +1,30 @@
+name: Refresh Canteen gallery image path
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  refresh-canteen:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Copy current full-quality Canteen collage to a fresh path
+        shell: bash
+        run: |
+          set -euo pipefail
+          cp assets/galleries/canteen/canteen-overview.png assets/galleries/canteen/canteen-main.png
+      - name: Commit fresh Canteen image path
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/galleries/canteen/canteen-main.png
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Add fresh Canteen gallery image path'
+          git push
