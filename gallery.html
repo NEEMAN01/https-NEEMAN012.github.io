@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Галерея — Источники Надежды</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="lang-ru">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark"><i class="fas fa-heart"></i></span>
+        <span class="brand-title">
+          <span data-lang="ru">Источники Надежды</span>
+          <span data-lang="en">Streams of Hope</span>
+        </span>
+      </a>
+      <nav class="top-nav">
+        <a href="index.html#canteen">
+          <span data-lang="ru">Столовая</span>
+          <span data-lang="en">Canteen</span>
+        </a>
+        <a href="index.html#news">
+          <span data-lang="ru">Новости</span>
+          <span data-lang="en">News</span>
+        </a>
+        <a href="index.html#projects">
+          <span data-lang="ru">Проекты</span>
+          <span data-lang="en">Projects</span>
+        </a>
+      </nav>
+      <div class="lang-switcher">
+        <button class="lang-btn active" id="btn-ru" type="button" onclick="setLanguage('ru')">RU</button>
+        <button class="lang-btn" id="btn-en" type="button" onclick="setLanguage('en')">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="subpage">
+    <section class="subpage-hero gallery-hero">
+      <div class="section-inner">
+        <div class="eyebrow">
+          <i class="fas fa-images"></i>
+          <span data-lang="ru">Фотографии из GitHub</span>
+          <span data-lang="en">Photos stored on GitHub</span>
+        </div>
+        <h1>
+          <span data-lang="ru">Галерея нашей работы</span>
+          <span data-lang="en">Gallery of our work</span>
+        </h1>
+        <p>
+          <span data-lang="ru">Фотографии хранятся непосредственно в репозитории сайта. Нажмите на изображение, чтобы открыть оригинал.</span>
+          <span data-lang="en">These photos are stored directly in the website repository. Click an image to open the original.</span>
+        </p>
+        <a class="btn btn-secondary" href="index.html#canteen">
+          <i class="fas fa-arrow-left"></i>
+          <span data-lang="ru">Вернуться на сайт</span>
+          <span data-lang="en">Back to site</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section section-canteen">
+      <div class="section-inner">
+        <div class="gallery-grid">
+          <a class="gallery-item" href="IMG_7371.JPG" target="_blank" rel="noopener">
+            <img src="IMG_7371.JPG" alt="Фото работы организации">
+          </a>
+          <a class="gallery-item" href="IMG_8197.JPG" target="_blank" rel="noopener">
+            <img src="IMG_8197.JPG" alt="Фото работы организации">
+          </a>
+          <a class="gallery-item" href="20230501_180810_37695002-eb08-40ba-8c47-6287a7b1fcea.JPG" target="_blank" rel="noopener">
+            <img src="20230501_180810_37695002-eb08-40ba-8c47-6287a7b1fcea.JPG" alt="Фото работы организации">
+          </a>
+          <a class="gallery-item" href="FB_IMG_1731443941478.JPG" target="_blank" rel="noopener">
+            <img src="FB_IMG_1731443941478.JPG" alt="Фото помощи">
+          </a>
+          <a class="gallery-item" href="20230130_075707_IMG_7825.JPG" target="_blank" rel="noopener">
+            <img src="20230130_075707_IMG_7825.JPG" alt="Фото проекта">
+          </a>
+          <a class="gallery-item" href="IMG-20241006-WA0001.JPG" target="_blank" rel="noopener">
+            <img src="IMG-20241006-WA0001.JPG" alt="Фото организации">
+          </a>
+        </div>
+
+        <div class="subpage-actions">
+          <a class="btn btn-primary" href="https://github.com/NEEMAN01/https-NEEMAN012.github.io" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i>
+            <span data-lang="ru">Открыть репозиторий GitHub</span>
+            <span data-lang="en">Open GitHub repository</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    © <span id="current-year">2026</span>
+    <span data-lang="ru"> «Источники Надежды».</span>
+    <span data-lang="en"> “Streams of Hope”.</span>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
