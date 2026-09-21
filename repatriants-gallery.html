@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Галерея репатриантов — Источники Надежды</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="lang-ru">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark"><i class="fas fa-heart"></i></span>
+        <span class="brand-title"><span data-lang="ru">Источники Надежды</span><span data-lang="en">Streams of Hope</span></span>
+      </a>
+      <nav class="top-nav">
+        <a href="index.html#repatriants"><span data-lang="ru">Репатрианты</span><span data-lang="en">Repatriates</span></a>
+        <a href="gallery.html"><span data-lang="ru">Общая галерея</span><span data-lang="en">Main gallery</span></a>
+      </nav>
+      <div class="lang-switcher">
+        <button class="lang-btn active" id="btn-ru" type="button" onclick="setLanguage('ru')">RU</button>
+        <button class="lang-btn" id="btn-en" type="button" onclick="setLanguage('en')">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="subpage">
+    <section class="subpage-hero repatriants-gallery-hero">
+      <div class="section-inner">
+        <div class="eyebrow"><i class="fas fa-people-carry-box"></i>
+          <span data-lang="ru">Поддержка репатриантов</span><span data-lang="en">Support for repatriates</span>
+        </div>
+        <h1><span data-lang="ru">Галерея репатриантов</span><span data-lang="en">Repatriants gallery</span></h1>
+        <p><span data-lang="ru">Фотографии помощи, склада и поддержки новых репатриантов. Новые фотографии будут добавляться сюда.</span><span data-lang="en">Photos of assistance, warehouse support and help for new repatriates. New photos will be added here.</span></p>
+        <div class="subpage-actions">
+          <a class="btn btn-secondary" href="index.html#repatriants"><i class="fas fa-arrow-left"></i><span data-lang="ru">К разделу помощи</span><span data-lang="en">Back to support</span></a>
+          <a class="btn btn-ghost" href="gallery.html"><i class="fas fa-images"></i><span data-lang="ru">Общая галерея</span><span data-lang="en">Main gallery</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-support">
+      <div class="section-inner">
+        <div class="gallery-grid">
+          <a class="gallery-item" href="FB_IMG_1731443941478.JPG" target="_blank" rel="noopener">
+            <img src="FB_IMG_1731443941478.JPG" alt="Помощь репатриантам">
+          </a>
+          <div class="gallery-placeholder">
+            <i class="fas fa-camera"></i>
+            <strong><span data-lang="ru">Здесь будут новые фотографии</span><span data-lang="en">New photos will appear here</span></strong>
+          </div>
+          <div class="gallery-placeholder">
+            <i class="fas fa-camera"></i>
+            <strong><span data-lang="ru">Место для следующих фото</span><span data-lang="en">Space for upcoming photos</span></strong>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">© <span id="current-year">2026</span> <span data-lang="ru">«Источники Надежды».</span><span data-lang="en">“Streams of Hope”.</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
