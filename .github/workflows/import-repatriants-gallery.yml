@@ -1,0 +1,38 @@
+name: Import full-quality Repatriants collages
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  import-images:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download full-quality collages
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p assets/galleries/repatriants
+          curl -L --fail --retry 3 'https://d2ol7oe51mr4n9.cloudfront.net/user_3Ibd89dgpCttas0LZ5xvA6a3O4e/c332636f-3dfe-4c87-b2c0-a6a46c454ad3.png' -o assets/galleries/repatriants/repatriants-overview-1.png
+          curl -L --fail --retry 3 'https://d2ol7oe51mr4n9.cloudfront.net/user_3Ibd89dgpCttas0LZ5xvA6a3O4e/9501e5eb-b277-4e16-baa3-3c7aaae3f35f.png' -o assets/galleries/repatriants/repatriants-overview-2.png
+          test "$(stat -c%s assets/galleries/repatriants/repatriants-overview-1.png)" -gt 1000000
+          test "$(stat -c%s assets/galleries/repatriants/repatriants-overview-2.png)" -gt 1000000
+
+      - name: Commit collages
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/galleries/repatriants/repatriants-overview-1.png assets/galleries/repatriants/repatriants-overview-2.png
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git commit -m 'Replace repatriants collages with full-quality originals'
+          git push
