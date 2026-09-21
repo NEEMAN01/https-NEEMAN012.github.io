@@ -1824,3 +1824,330 @@ a { color: inherit; }
   background: rgba(255, 70, 70, .085);
   border-color: rgba(255, 92, 92, .18);
 }
+
+
+/* ===== Final responsive polish: navigation + Jewish Week ===== */
+
+/* The seven top cards now wrap symmetrically instead of leaving an awkward orphan. */
+.quick-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 18px;
+  max-width: var(--max);
+  margin: -58px auto 0;
+  padding: 0 24px;
+}
+
+.quick-card {
+  flex: 1 1 240px;
+  width: auto;
+  min-width: 230px;
+  max-width: 270px;
+  min-height: 178px;
+}
+
+@media (max-width: 900px) {
+  .quick-card {
+    flex-basis: 225px;
+    max-width: 265px;
+    min-width: 210px;
+  }
+}
+
+@media (max-width: 560px) {
+  .quick-grid {
+    gap: 14px;
+    padding: 0 16px;
+  }
+
+  .quick-card {
+    flex: 1 1 100%;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    min-height: 148px;
+  }
+}
+
+/* A framed editorial-style weekly card that remains easy to update. */
+.weekly-feature {
+  padding: 58px 24px 48px;
+}
+
+.weekly-feature::before {
+  display: none;
+}
+
+.weekly-feature-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  border-radius: 30px;
+  border: 1px solid rgba(212, 184, 116, .52);
+  background:
+    linear-gradient(145deg, rgba(39, 60, 42, .98), rgba(18, 37, 25, .98));
+  box-shadow:
+    0 24px 65px rgba(0,0,0,.30),
+    inset 0 0 0 5px rgba(255,255,255,.025);
+}
+
+.weekly-feature-inner::after {
+  content: none;
+}
+
+.weekly-feature-inner::before {
+  content: "";
+  position: absolute;
+  inset: 10px;
+  border: 1px solid rgba(215,197,138,.16);
+  border-radius: 22px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.weekly-feature-heading {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 18px;
+  align-items: center;
+  margin: 0;
+  padding: 28px 34px 24px;
+  border-bottom: 1px solid rgba(215,197,138,.24);
+  background:
+    radial-gradient(circle at 90% 5%, rgba(215,197,138,.13), transparent 30%),
+    linear-gradient(90deg, rgba(255,255,255,.035), transparent);
+}
+
+.weekly-heading-copy {
+  min-width: 0;
+}
+
+.weekly-feature-symbol {
+  width: 58px;
+  height: 58px;
+  flex: none;
+  border-radius: 50%;
+  color: #ead6a5;
+  background: rgba(215,197,138,.09);
+  border: 1px solid rgba(215,197,138,.28);
+  font-size: 1.3rem;
+}
+
+.weekly-feature-eyebrow {
+  color: #d9c28b;
+  font-size: .74rem;
+  letter-spacing: .12em;
+}
+
+.weekly-feature-hebrew {
+  color: #f0ddb0;
+  border-left-color: rgba(215,197,138,.30);
+}
+
+.weekly-feature-heading h2 {
+  margin: 6px 0 4px;
+  color: #fff9e9;
+  font-size: clamp(1.75rem, 3.6vw, 2.7rem);
+  letter-spacing: -.02em;
+}
+
+.weekly-date {
+  color: rgba(255,249,233,.62);
+  font-size: .88rem;
+}
+
+.weekly-heading-star {
+  color: rgba(234,214,165,.80);
+  font-size: 2.4rem;
+  line-height: 1;
+  filter: drop-shadow(0 5px 12px rgba(0,0,0,.20));
+}
+
+.weekly-feature-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, .92fr);
+  gap: 20px;
+  padding: 24px;
+}
+
+.weekly-panel {
+  padding: 25px;
+  border-radius: 20px;
+  color: #24352a;
+  border: 1px solid rgba(120,98,49,.20);
+  box-shadow:
+    0 12px 28px rgba(0,0,0,.13),
+    inset 0 1px 0 rgba(255,255,255,.70);
+}
+
+.torah-panel {
+  background:
+    radial-gradient(circle at 100% 0, rgba(182,145,65,.11), transparent 36%),
+    linear-gradient(145deg, #fbf5e7, #eee0bd);
+  border-color: rgba(157,121,45,.26);
+}
+
+.holiday-panel {
+  background:
+    radial-gradient(circle at 100% 0, rgba(74,112,83,.09), transparent 38%),
+    linear-gradient(145deg, #f3f6eb, #dfe8d9);
+  border-color: rgba(65,100,74,.18);
+}
+
+.weekly-panel-top {
+  margin-bottom: 18px;
+}
+
+.weekly-panel-icon {
+  width: 40px;
+  height: 40px;
+  color: #715929;
+  background: rgba(120,90,38,.08);
+  border-color: rgba(120,90,38,.15);
+}
+
+.holiday-panel .weekly-panel-icon {
+  color: #355a43;
+  background: rgba(53,90,67,.075);
+  border-color: rgba(53,90,67,.14);
+}
+
+.weekly-panel-label {
+  color: #6c624d;
+  font-size: .82rem;
+  letter-spacing: .055em;
+  text-transform: uppercase;
+}
+
+.holiday-panel .weekly-panel-label {
+  color: #526454;
+}
+
+.torah-title-row {
+  margin-bottom: 15px;
+  padding-bottom: 17px;
+  border-bottom-color: rgba(120,90,38,.16);
+}
+
+.torah-title-row h3 {
+  color: #274333;
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: -.03em;
+}
+
+.torah-hebrew {
+  color: #8b6b2e;
+  font-size: clamp(1.45rem, 3vw, 1.95rem);
+}
+
+.torah-scroll-mark {
+  color: #80652c;
+  background: rgba(128,101,44,.08);
+  border-color: rgba(128,101,44,.14);
+}
+
+.torah-reference {
+  color: #324b3a;
+  font-size: .95rem;
+}
+
+.weekly-note {
+  color: #5a665c;
+  font-size: .9rem;
+  line-height: 1.55;
+}
+
+.holiday-list {
+  gap: 11px;
+}
+
+.holiday-item {
+  grid-template-columns: minmax(0,1fr) auto;
+  gap: 12px;
+  padding: 14px 15px;
+  border-radius: 15px;
+  background: rgba(255,255,255,.46);
+  border-color: rgba(54,86,64,.12);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.50);
+}
+
+.holiday-title-row strong {
+  color: #2b4736;
+  font-size: 1rem;
+}
+
+.holiday-hebrew {
+  color: #6e855f;
+}
+
+.holiday-date {
+  color: #677068;
+  font-size: .79rem;
+}
+
+.holiday-badge {
+  color: #355a43;
+  background: rgba(66,102,76,.08);
+  border-color: rgba(66,102,76,.15);
+  font-size: .68rem;
+}
+
+@media (max-width: 820px) {
+  .weekly-feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .weekly-feature-heading {
+    grid-template-columns: auto minmax(0,1fr);
+  }
+
+  .weekly-heading-star {
+    display: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .weekly-feature {
+    padding: 44px 16px 34px;
+  }
+
+  .weekly-feature-inner {
+    border-radius: 24px;
+  }
+
+  .weekly-feature-heading {
+    padding: 22px 20px 20px;
+    gap: 13px;
+  }
+
+  .weekly-feature-symbol {
+    width: 48px;
+    height: 48px;
+  }
+
+  .weekly-feature-grid {
+    padding: 16px;
+    gap: 14px;
+  }
+
+  .weekly-panel {
+    padding: 19px;
+    border-radius: 18px;
+  }
+
+  .holiday-item {
+    grid-template-columns: 1fr;
+  }
+
+  .holiday-badge {
+    justify-self: start;
+  }
+}
