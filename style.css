@@ -2468,3 +2468,92 @@ a { color: inherit; }
     margin: 24px 0;
   }
 }
+
+
+/* ===== Needs of War compact fix ===== */
+.news-grid-two {
+  align-items: start;
+}
+
+.news-grid-two > .news-card {
+  min-height: 0;
+  height: auto;
+}
+
+.news-card-document {
+  min-height: 0 !important;
+  align-self: start;
+}
+
+.news-card-document .news-body {
+  flex: none;
+}
+
+.news-card-document .news-actions {
+  margin-top: 18px;
+  padding-top: 0;
+}
+
+.document-strip {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 20px 22px;
+  min-height: 92px;
+  background:
+    radial-gradient(circle at 100% 0, rgba(185, 155, 84, .08), transparent 40%),
+    linear-gradient(145deg, #34483a, #2a3b30);
+  border-bottom: 1px solid rgba(190, 163, 96, .14);
+}
+
+.document-strip-icon {
+  width: 48px;
+  height: 48px;
+  flex: 0 0 48px;
+  display: grid;
+  place-items: center;
+  border-radius: 15px;
+  color: #d2bd82;
+  background: rgba(187, 155, 82, .07);
+  border: 1px solid rgba(187, 155, 82, .14);
+  font-size: 1.15rem;
+}
+
+.document-strip-copy {
+  min-width: 0;
+  display: grid;
+  gap: 4px;
+}
+
+.document-strip-copy strong {
+  color: #f2eddd;
+  font-size: .85rem;
+  letter-spacing: .03em;
+}
+
+.document-strip-copy > span {
+  color: rgba(231, 237, 229, .52);
+  font-size: .78rem;
+}
+
+.document-news-body {
+  padding: 26px;
+}
+
+.document-news-body h3 {
+  margin-bottom: 12px;
+}
+
+.document-news-body p {
+  margin-bottom: 0;
+}
+
+@media (max-width: 980px) {
+  .news-grid-two {
+    align-items: stretch;
+  }
+
+  .news-card-document {
+    width: 100%;
+  }
+}
