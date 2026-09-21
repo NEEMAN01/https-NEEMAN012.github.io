@@ -1,0 +1,48 @@
+name: Import canteen collage
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/import-canteen-collage.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download original canteen collage
+        env:
+          SOURCE_URL: "https://d2jqrm6oza8nb6.cloudfront.net/datasets/3adaa0ac-5eae-44dc-861b-09cf9f074acd.png?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiYmM4ODZkNGViMjYyOWQ4NCIsImJ1Y2tldCI6InJ1bndheS1kYXRhc2V0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5MDE2MTQ4Nn0.vSOMLh2jMJlGaxkBXEd8ugHb-DQv10CGwMCBcNrt4hM"
+        run: |
+          set -euo pipefail
+          mkdir -p assets/galleries/canteen
+          curl -L --fail --retry 3 "$SOURCE_URL" -o assets/galleries/canteen/canteen-main.png
+          file assets/galleries/canteen/canteen-main.png
+          ls -lh assets/galleries/canteen/canteen-main.png
+
+      - name: Refresh gallery reference
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p = Path("canteen-gallery.html")
+          s = p.read_text(encoding="utf-8")
+          s = s.replace('class="gallery-sheet" href="assets/galleries/canteen/canteen-main.png?v=20260921-12"',
+                        'class="gallery-sheet" style="width:100%;max-width:1448px;justify-self:center" href="assets/galleries/canteen/canteen-main.png?v=20260921-15"')
+          s = s.replace('src="assets/galleries/canteen/canteen-main.png?v=20260921-12"',
+                        'src="assets/galleries/canteen/canteen-main.png?v=20260921-15"')
+          p.write_text(s, encoding="utf-8")
+          PY
+
+      - name: Commit full-quality collage
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/galleries/canteen/canteen-main.png canteen-gallery.html
+          git rm .github/workflows/import-canteen-collage.yml
+          git commit -m "Restore full-quality canteen collage"
+          git push
