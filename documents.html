@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Документы и обращения — Источники Надежды</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css?v=20260921-6">
+</head>
+<body class="lang-ru">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark"><i class="fas fa-heart"></i></span>
+        <span class="brand-title">
+          <span data-lang="ru">Источники Надежды</span>
+          <span data-lang="en">Streams of Hope</span>
+        </span>
+      </a>
+
+      <nav class="top-nav">
+        <a href="index.html#news"><span data-lang="ru">Новости</span><span data-lang="en">News</span></a>
+        <a href="index.html#projects"><span data-lang="ru">Проекты</span><span data-lang="en">Projects</span></a>
+      </nav>
+
+      <div class="lang-switcher">
+        <button class="lang-btn active" id="btn-ru" type="button" onclick="setLanguage('ru')">RU</button>
+        <button class="lang-btn" id="btn-en" type="button" onclick="setLanguage('en')">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="subpage">
+    <section class="subpage-hero documents-hero">
+      <div class="section-inner">
+        <div class="eyebrow">
+          <i class="fas fa-folder-open"></i>
+          <span data-lang="ru">Архив материалов</span>
+          <span data-lang="en">Document Archive</span>
+        </div>
+        <h1>
+          <span data-lang="ru">Документы и обращения</span>
+          <span data-lang="en">Documents & Appeals</span>
+        </h1>
+        <p>
+          <span data-lang="ru">Здесь хранятся отдельные публикации организации. У каждого материала указана дата, чтобы было понятно, к какому периоду он относится.</span>
+          <span data-lang="en">Individual organization publications are stored here. Each item includes its date so the historical context is clear.</span>
+        </p>
+        <a class="btn btn-secondary" href="index.html#news">
+          <i class="fas fa-arrow-left"></i>
+          <span data-lang="ru">Вернуться к новостям</span>
+          <span data-lang="en">Back to news</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section section-news">
+      <div class="section-inner documents-wrap">
+        <div class="documents-list">
+          <article class="archive-document-item">
+            <div class="archive-document-icon">
+              <i class="fas fa-file-lines"></i>
+            </div>
+
+            <div class="archive-document-copy">
+              <div class="archive-document-meta">
+                <span class="badge badge-document">
+                  <span data-lang="ru">Архивный материал</span>
+                  <span data-lang="en">Archived material</span>
+                </span>
+                <time datetime="2026-03-24">24/03/2026</time>
+              </div>
+
+              <h2>
+                <span data-lang="ru">Нужды войны</span>
+                <span data-lang="en">Needs of War</span>
+              </h2>
+
+              <p>
+                <span data-lang="ru">Обращение о помощи семье из Беэр-Шевы. Материал опубликован 24 марта 2026 года и сохранён в архиве как документ своего времени.</span>
+                <span data-lang="en">An appeal to help a family in Beersheba. Published on 24 March 2026 and preserved here as an archived document from that period.</span>
+              </p>
+
+              <div class="archive-file-row">
+                <i class="fas fa-paperclip"></i>
+                <span>needs-of-war-03-2026.html</span>
+              </div>
+
+              <div class="archive-document-actions">
+                <a class="btn btn-document" href="needs-of-war-03-2026.html">
+                  <i class="fas fa-book-open"></i>
+                  <span data-lang="ru">Прочитать материал</span>
+                  <span data-lang="en">Read document</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <div class="archive-add-note">
+            <i class="fas fa-plus"></i>
+            <span data-lang="ru">Новые документы и обращения можно добавлять сюда отдельными карточками.</span>
+            <span data-lang="en">New documents and appeals can be added here as separate entries.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    © <span id="current-year">2026</span>
+    <span data-lang="ru"> «Источники Надежды».</span>
+    <span data-lang="en"> “Streams of Hope”.</span>
+  </footer>
+
+  <script src="script.js?v=20260921-6"></script>
+</body>
+</html>
