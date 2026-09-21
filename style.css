@@ -2151,3 +2151,164 @@ a { color: inherit; }
     justify-self: start;
   }
 }
+
+
+/* ===== Organic dark palette for Torah & Israel Calendar ===== */
+.weekly-feature-inner {
+  border-color: rgba(176, 151, 88, .38);
+  background:
+    radial-gradient(circle at 88% 12%, rgba(167, 143, 82, .10), transparent 30%),
+    linear-gradient(145deg, #263b2c, #192d21 72%);
+}
+
+.weekly-feature-inner::before {
+  border-color: rgba(179, 154, 92, .12);
+}
+
+.weekly-feature-heading {
+  border-bottom-color: rgba(180, 153, 90, .18);
+  background:
+    radial-gradient(circle at 90% 5%, rgba(168,143,82,.09), transparent 30%),
+    linear-gradient(90deg, rgba(255,255,255,.025), transparent);
+}
+
+.weekly-feature-symbol {
+  color: #c9ad6a;
+  background: rgba(165,139,76,.07);
+  border-color: rgba(165,139,76,.20);
+}
+
+.weekly-feature-eyebrow,
+.weekly-feature-hebrew {
+  color: #bea363;
+}
+
+.weekly-heading-star {
+  color: rgba(196,167,100,.65);
+}
+
+.weekly-panel {
+  color: #e8eee6;
+  border-color: rgba(255,255,255,.07);
+  box-shadow:
+    0 12px 28px rgba(0,0,0,.16),
+    inset 0 1px 0 rgba(255,255,255,.035);
+}
+
+.torah-panel {
+  background:
+    radial-gradient(circle at 100% 0, rgba(174,145,78,.08), transparent 36%),
+    linear-gradient(145deg, #384833, #303d2d);
+  border-color: rgba(174,145,78,.16);
+}
+
+.holiday-panel {
+  background:
+    radial-gradient(circle at 100% 0, rgba(99,132,105,.08), transparent 38%),
+    linear-gradient(145deg, #304239, #29382f);
+  border-color: rgba(104,139,111,.13);
+}
+
+.weekly-panel-icon {
+  color: #c7ab6a;
+  background: rgba(191,160,88,.055);
+  border-color: rgba(191,160,88,.12);
+}
+
+.holiday-panel .weekly-panel-icon {
+  color: #9fbea8;
+  background: rgba(95,127,103,.065);
+  border-color: rgba(95,127,103,.12);
+}
+
+.weekly-panel-label {
+  color: rgba(238,233,213,.65);
+}
+
+.holiday-panel .weekly-panel-label {
+  color: rgba(215,230,217,.64);
+}
+
+.torah-title-row {
+  border-bottom-color: rgba(190,158,84,.12);
+}
+
+.torah-title-row h3 {
+  color: #f4f0df;
+}
+
+.torah-hebrew {
+  color: #c9ad6a;
+}
+
+.torah-scroll-mark {
+  color: #c2a565;
+  background: rgba(185,153,82,.055);
+  border-color: rgba(185,153,82,.11);
+}
+
+.torah-reference {
+  color: #dde6da;
+}
+
+.weekly-note {
+  color: rgba(224,231,222,.67);
+}
+
+.holiday-item {
+  background: rgba(255,255,255,.028);
+  border-color: rgba(164,190,169,.09);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.025);
+}
+
+.holiday-title-row strong {
+  color: #eef4ec;
+}
+
+.holiday-hebrew {
+  color: #9db9a2;
+}
+
+.holiday-date {
+  color: rgba(218,228,219,.58);
+}
+
+.holiday-badge {
+  color: #bfd0c1;
+  background: rgba(111,145,118,.08);
+  border-color: rgba(111,145,118,.13);
+}
+
+/* ===== Facebook project ===== */
+.project-card-facebook {
+  border-color: rgba(90, 117, 154, .18);
+  background:
+    linear-gradient(90deg, rgba(65, 87, 119, .07), rgba(255,255,255,.022));
+}
+
+.project-card-facebook .project-icon {
+  color: #9bb1cf;
+  background:
+    linear-gradient(145deg, rgba(80,105,143,.13), rgba(255,255,255,.025));
+  border-color: rgba(90,117,154,.16);
+}
+
+.btn-facebook {
+  background: #eef2f6;
+  color: #263345;
+  border: 1px solid rgba(255,255,255,.18);
+}
+
+.btn-facebook i {
+  color: #4267B2;
+}
+
+.btn-facebook:hover {
+  background: #fff;
+}
+
+.status-facebook {
+  color: #c7d7eb;
+  background: rgba(72,98,135,.09);
+  border-color: rgba(90,117,154,.16);
+}
