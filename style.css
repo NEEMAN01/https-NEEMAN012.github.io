@@ -2703,3 +2703,198 @@ a { color: inherit; }
     height: 56px;
   }
 }
+
+
+/* ===== Final Needs of War archive card ===== */
+.news-grid-two {
+  align-items: stretch;
+}
+
+.news-grid-two > .news-card {
+  height: 100%;
+}
+
+.archive-entry-card {
+  min-height: 100%;
+  border-color: rgba(184, 156, 88, .20);
+  background:
+    linear-gradient(145deg, rgba(37,62,46,.96), rgba(23,44,32,.98));
+}
+
+.archive-card-shell {
+  position: relative;
+  min-height: 100%;
+  height: 100%;
+  padding: 34px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border-radius: inherit;
+  background:
+    radial-gradient(circle at 90% 10%, rgba(190,158,83,.10), transparent 28%),
+    radial-gradient(circle at 12% 88%, rgba(105,145,112,.10), transparent 30%),
+    linear-gradient(145deg, #315340, #244534 62%, #203d2f);
+}
+
+.archive-card-shell::before {
+  content: "";
+  position: absolute;
+  inset: 14px;
+  border: 1px solid rgba(219,196,136,.13);
+  border-radius: 20px;
+  pointer-events: none;
+}
+
+.archive-card-shell::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 160px;
+  right: -42px;
+  bottom: -36px;
+  border-radius: 55% 45% 0 0;
+  border-top: 1px solid rgba(188,161,91,.14);
+  background:
+    radial-gradient(circle at 35% 35%, rgba(188,161,91,.08), transparent 60%);
+  transform: rotate(-7deg);
+  pointer-events: none;
+}
+
+.archive-card-top,
+.archive-card-title,
+.archive-card-actions {
+  position: relative;
+  z-index: 2;
+}
+
+.archive-card-top {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.archive-card-icon {
+  width: 62px;
+  height: 62px;
+  flex: 0 0 62px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: #e0c77f;
+  background: rgba(188,158,84,.09);
+  border: 1px solid rgba(188,158,84,.19);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.05);
+  font-size: 1.35rem;
+}
+
+.archive-card-label {
+  color: rgba(232,238,230,.66);
+  font-size: .77rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.archive-card-decoration {
+  position: absolute;
+  z-index: 1;
+  top: 72px;
+  right: 38px;
+  width: 190px;
+  height: 150px;
+  opacity: .34;
+  pointer-events: none;
+}
+
+.archive-card-decoration span {
+  position: absolute;
+  display: block;
+  width: 82px;
+  height: 112px;
+  border-radius: 12px;
+  border: 1px solid rgba(216,196,139,.26);
+  background: linear-gradient(145deg, rgba(228,214,174,.08), rgba(255,255,255,.025));
+  transform: rotate(8deg);
+}
+
+.archive-card-decoration span:nth-child(1) { left: 12px; top: 26px; }
+.archive-card-decoration span:nth-child(2) { left: 58px; top: 4px; transform: rotate(11deg); }
+.archive-card-decoration span:nth-child(3) { left: 102px; top: 34px; transform: rotate(14deg); }
+
+.archive-card-title {
+  margin-top: auto;
+  margin-bottom: 34px;
+}
+
+.archive-card-title h3 {
+  margin: 0;
+  max-width: 520px;
+  color: #f7f1df;
+  font-size: clamp(2.5rem, 5vw, 4.2rem);
+  line-height: .98;
+  letter-spacing: -.035em;
+}
+
+.archive-card-actions {
+  margin-top: auto;
+}
+
+.archive-open-btn {
+  min-height: 54px;
+  padding: 13px 20px;
+  gap: 10px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.14);
+}
+
+.archive-open-btn .fa-arrow-right {
+  margin-left: 4px;
+}
+
+@media (max-width: 980px) {
+  .archive-card-shell {
+    min-height: 430px;
+  }
+}
+
+@media (max-width: 640px) {
+  .archive-card-shell {
+    min-height: 380px;
+    padding: 26px 22px;
+  }
+
+  .archive-card-decoration {
+    width: 150px;
+    right: 18px;
+    opacity: .23;
+  }
+
+  .archive-card-title h3 {
+    font-size: clamp(2.4rem, 12vw, 3.4rem);
+  }
+}
+
+/* ===== Gallery contact sheets ===== */
+.gallery-sheet-stack {
+  display: grid;
+  gap: 18px;
+}
+
+.gallery-sheet {
+  overflow: hidden;
+  border-radius: 22px;
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(255,255,255,.025);
+  box-shadow: 0 16px 38px rgba(0,0,0,.22);
+}
+
+.gallery-sheet img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.gallery-photo-note {
+  margin: 0 0 18px;
+  color: rgba(238,244,237,.58);
+  font-size: .9rem;
+}
