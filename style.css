@@ -266,7 +266,7 @@ a { color: inherit; }
   position: relative;
   z-index: 10;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 16px;
 }
 
@@ -925,7 +925,7 @@ a { color: inherit; }
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0,1fr));
+  grid-template-columns: repeat(4, minmax(0,1fr));
   gap: 18px;
 }
 
@@ -1212,4 +1212,94 @@ a { color: inherit; }
   .quick-grid { grid-template-columns: 1fr; }
   .gallery-category-preview,
   .holiday-preview { height: 220px; }
+}
+
+
+/* ===== Holocaust Survivors section ===== */
+.quick-card.holocaust {
+  --accent: #d0b36c;
+  background:
+    linear-gradient(145deg, rgba(82,70,49,.94), rgba(31,49,35,.96));
+}
+
+.section-holocaust {
+  background:
+    radial-gradient(circle at 88% 14%, rgba(208,179,108,.12), transparent 28%),
+    linear-gradient(180deg, rgba(57,47,31,.24), rgba(13,27,18,.08));
+  border-top: 1px solid rgba(208,179,108,.12);
+  border-bottom: 1px solid rgba(208,179,108,.08);
+}
+
+.section-holocaust .section-kicker {
+  color: #d8bd7b;
+  background: linear-gradient(145deg, rgba(208,179,108,.16), rgba(255,255,255,.025));
+  border-color: rgba(208,179,108,.25);
+}
+
+.holocaust-card {
+  border-color: rgba(208,179,108,.20);
+  box-shadow: inset 5px 0 0 rgba(208,179,108,.28);
+}
+
+.holocaust-placeholder {
+  min-height: 390px;
+  border-radius: 26px;
+  border: 1px solid rgba(208,179,108,.16);
+  background:
+    radial-gradient(circle at 50% 35%, rgba(208,179,108,.14), transparent 24%),
+    linear-gradient(145deg, rgba(62,55,38,.72), rgba(23,42,29,.88));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  color: rgba(247,244,232,.72);
+  text-align: center;
+  padding: 30px;
+}
+
+.holocaust-placeholder i {
+  font-size: 4rem;
+  color: #d8bd7b;
+  filter: drop-shadow(0 8px 20px rgba(0,0,0,.25));
+}
+
+.holocaust-gallery-hero {
+  background:
+    radial-gradient(circle at 84% 18%, rgba(208,179,108,.18), transparent 30%),
+    linear-gradient(160deg, #3b3322, #102017 70%);
+}
+
+.category-holocaust {
+  border-color: rgba(208,179,108,.20);
+  background:
+    linear-gradient(180deg, rgba(208,179,108,.055), rgba(255,255,255,.025));
+}
+
+.category-holocaust .gallery-category-icon {
+  color: #d8bd7b;
+}
+
+.holocaust-category-preview {
+  height: 245px;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(circle at 50% 40%, rgba(208,179,108,.18), transparent 25%),
+    linear-gradient(145deg, #393523, #223328);
+  color: #d8bd7b;
+  font-size: 4rem;
+}
+
+@media (max-width: 1180px) {
+  .quick-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 1050px) {
+  .gallery-category-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+}
+
+@media (max-width: 640px) {
+  .gallery-category-grid { grid-template-columns: 1fr; }
+  .holocaust-category-preview { height: 220px; }
 }
