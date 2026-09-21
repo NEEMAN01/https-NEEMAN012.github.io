@@ -2312,3 +2312,159 @@ a { color: inherit; }
   background: rgba(72,98,135,.09);
   border-color: rgba(90,117,154,.16);
 }
+
+
+/* ===== News document cards ===== */
+.news-card-document {
+  border-color: rgba(151, 173, 151, .18);
+  background:
+    linear-gradient(145deg, rgba(42, 63, 47, .92), rgba(24, 43, 31, .96));
+}
+
+.document-file-preview {
+  min-height: 265px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background:
+    radial-gradient(circle at 100% 0, rgba(190, 167, 103, .10), transparent 34%),
+    linear-gradient(145deg, #354738, #2b3d31 62%, #25362b);
+  border-bottom: 1px solid rgba(190, 167, 103, .16);
+  position: relative;
+  overflow: hidden;
+}
+
+.document-file-preview::after {
+  content: "";
+  position: absolute;
+  inset: 14px;
+  border: 1px solid rgba(203, 183, 123, .11);
+  border-radius: 18px;
+  pointer-events: none;
+}
+
+.document-file-top,
+.document-file-title,
+.document-file-name {
+  position: relative;
+  z-index: 1;
+}
+
+.document-file-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.document-file-icon {
+  width: 56px;
+  height: 56px;
+  flex: 0 0 56px;
+  display: grid;
+  place-items: center;
+  border-radius: 17px;
+  color: #d8c183;
+  background: rgba(188, 158, 86, .08);
+  border: 1px solid rgba(188, 158, 86, .16);
+  font-size: 1.35rem;
+}
+
+.document-file-meta {
+  margin-left: auto;
+  text-align: right;
+  display: grid;
+  gap: 4px;
+}
+
+.document-file-type {
+  color: rgba(234, 239, 232, .62);
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.document-file-date {
+  color: rgba(234, 239, 232, .44);
+  font-size: .78rem;
+}
+
+.document-file-title {
+  margin: 30px 0;
+}
+
+.document-file-title strong {
+  display: block;
+  color: #f5f0df;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: .98;
+  letter-spacing: -.03em;
+}
+
+.document-file-title small {
+  display: block;
+  margin-top: 10px;
+  color: rgba(230, 238, 229, .64);
+  font-size: .98rem;
+}
+
+.document-file-name {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  align-self: flex-start;
+  max-width: 100%;
+  padding: 8px 11px;
+  border-radius: 999px;
+  color: rgba(233, 238, 231, .56);
+  background: rgba(255,255,255,.035);
+  border: 1px solid rgba(255,255,255,.07);
+  font-size: .75rem;
+}
+
+.document-file-name span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.badge-document {
+  color: #d5c59a;
+  background: rgba(181, 150, 77, .08);
+  border-color: rgba(181, 150, 77, .14);
+}
+
+.btn-document {
+  background: #e8e4d5;
+  color: #27362c;
+  border: 1px solid rgba(255,255,255,.18);
+}
+
+.btn-document:hover {
+  background: #f4f0e3;
+}
+
+.btn-document i {
+  color: #6b744c;
+}
+
+@media (max-width: 640px) {
+  .document-file-preview {
+    min-height: 235px;
+    padding: 22px;
+  }
+
+  .document-file-meta {
+    text-align: left;
+  }
+
+  .document-file-top {
+    align-items: center;
+  }
+
+  .document-file-title {
+    margin: 24px 0;
+  }
+}
