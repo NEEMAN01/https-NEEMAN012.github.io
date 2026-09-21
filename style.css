@@ -1789,3 +1789,38 @@ a { color: inherit; }
     align-items: flex-start;
   }
 }
+
+
+/* ===== House of Mercy YouTube project ===== */
+.project-card-youtube {
+  border-color: rgba(255, 92, 92, .20);
+  background:
+    linear-gradient(90deg, rgba(255, 70, 70, .065), rgba(255,255,255,.022));
+}
+
+.project-card-youtube .project-icon {
+  color: #ff6b6b;
+  background:
+    linear-gradient(145deg, rgba(255, 70, 70, .14), rgba(255,255,255,.025));
+  border-color: rgba(255, 92, 92, .18);
+}
+
+.btn-youtube {
+  background: #fff;
+  color: #201515;
+  border: 1px solid rgba(255,255,255,.20);
+}
+
+.btn-youtube i {
+  color: #d92d2d;
+}
+
+.btn-youtube:hover {
+  background: rgba(255,255,255,.90);
+}
+
+.status-youtube {
+  color: #ffd0d0;
+  background: rgba(255, 70, 70, .085);
+  border-color: rgba(255, 92, 92, .18);
+}
