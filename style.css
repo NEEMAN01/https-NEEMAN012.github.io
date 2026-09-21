@@ -32,8 +32,28 @@ body {
   line-height: 1.65;
 }
 
-body.lang-en [data-lang="ru"] { display: none !important; }
-body.lang-ru [data-lang="en"] { display: none !important; }
+body.lang-ru [data-lang="en"],
+body.lang-ru [data-lang="he"],
+body.lang-en [data-lang="ru"],
+body.lang-en [data-lang="he"],
+body.lang-he [data-lang="ru"],
+body.lang-he [data-lang="en"] { display: none !important; }
+
+body.lang-he {
+  direction: rtl;
+  text-align: right;
+}
+
+[data-lang="he"] {
+  font-family: Arial, "Noto Sans Hebrew", sans-serif;
+}
+
+body.lang-he .contact-item span,
+body.lang-he .info-pill,
+body.lang-he .meta,
+body.lang-he .holiday-date {
+  unicode-bidi: plaintext;
+}
 
 img { max-width: 100%; }
 
@@ -83,7 +103,8 @@ a { color: inherit; }
 }
 
 .top-nav {
-  margin-left: auto;
+  margin-left: 0;
+  margin-inline-start: auto;
   display: flex;
   align-items: center;
   gap: 6px;
@@ -106,7 +127,8 @@ a { color: inherit; }
 .lang-switcher {
   display: flex;
   gap: 6px;
-  margin-left: 10px;
+  margin-left: 0;
+  margin-inline-start: 10px;
 }
 
 .lang-btn {
