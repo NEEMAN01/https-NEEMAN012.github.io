@@ -109,6 +109,69 @@
       </a>
     </div>
 
+    <section class="weekly-feature" id="jewish-week">
+      <div class="weekly-feature-inner">
+        <div class="weekly-feature-heading">
+          <div class="weekly-feature-symbol">
+            <i class="fas fa-scroll"></i>
+          </div>
+          <div>
+            <span class="weekly-feature-eyebrow">
+              <span data-lang="ru">Еврейская неделя</span>
+              <span data-lang="en">Jewish Week</span>
+              <span class="weekly-feature-hebrew" lang="he" dir="rtl">השבוע</span>
+            </span>
+            <h2>
+              <span data-lang="ru">Тора и календарь Израиля</span>
+              <span data-lang="en">Torah & Israel Calendar</span>
+            </h2>
+            <p id="weekly-week-label" class="weekly-date"></p>
+          </div>
+        </div>
+
+        <div class="weekly-feature-grid">
+          <article class="weekly-panel torah-panel">
+            <div class="weekly-panel-top">
+              <span class="weekly-panel-icon"><i class="fas fa-book-open"></i></span>
+              <span class="weekly-panel-label">
+                <span data-lang="ru">Недельная глава Торы</span>
+                <span data-lang="en">Weekly Torah Portion</span>
+              </span>
+            </div>
+
+            <div class="torah-title-row">
+              <div>
+                <h3 id="weekly-parasha-title"></h3>
+                <div id="weekly-parasha-he" class="torah-hebrew" lang="he" dir="rtl"></div>
+              </div>
+              <span class="torah-scroll-mark"><i class="fas fa-scroll"></i></span>
+            </div>
+
+            <p id="weekly-parasha-reference" class="torah-reference"></p>
+            <p id="weekly-parasha-note" class="weekly-note"></p>
+          </article>
+
+          <article class="weekly-panel holiday-panel">
+            <div class="weekly-panel-top">
+              <span class="weekly-panel-icon"><i class="fas fa-calendar-days"></i></span>
+              <span class="weekly-panel-label">
+                <span data-lang="ru">Праздники Израиля</span>
+                <span data-lang="en">Israel Holidays</span>
+              </span>
+            </div>
+
+            <div id="weekly-holiday-list" class="holiday-list"></div>
+          </article>
+        </div>
+
+        <div class="weekly-edit-note">
+          <i class="fas fa-pen"></i>
+          <span data-lang="ru">Этот блок можно обновлять каждую неделю: глава Торы и праздники хранятся отдельно от дизайна сайта.</span>
+          <span data-lang="en">This block can be updated every week: the Torah portion and holidays are stored separately from the site design.</span>
+        </div>
+      </div>
+    </section>
+
     <section class="section section-support" id="repatriants">
       <div class="section-inner">
         <div class="section-heading">
@@ -376,6 +439,7 @@
     <span data-lang="ru">«Источники Надежды». Сделано с заботой.</span>
     <span data-lang="en">“Streams of Hope”. Made with care.</span>
   </footer>
+  <script src="weekly-content.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
