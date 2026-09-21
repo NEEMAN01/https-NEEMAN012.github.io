@@ -1,0 +1,36 @@
+name: Refresh gallery overview images
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  refresh-gallery-images:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download full-quality overview images
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p assets/galleries/canteen assets/galleries/holidays
+          curl -L --fail --retry 3 'https://d2ol7oe51mr4n9.cloudfront.net/user_3Ibd89dgpCttas0LZ5xvA6a3O4e/6f69b03b-bfa4-4e3a-a54d-8ae0fcc7757d.png' -o assets/galleries/canteen/canteen-overview.png
+          curl -L --fail --retry 3 'https://d2ol7oe51mr4n9.cloudfront.net/user_3Ibd89dgpCttas0LZ5xvA6a3O4e/b72e8aa0-c611-40dc-aa9c-171af1ea8e03.png' -o assets/galleries/holidays/holidays-overview.png
+
+      - name: Commit refreshed images
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/galleries/canteen/canteen-overview.png assets/galleries/holidays/holidays-overview.png
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git commit -m 'Refresh full-quality gallery overview images'
+          git push
