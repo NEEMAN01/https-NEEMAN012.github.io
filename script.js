@@ -58,9 +58,9 @@ function getLocalizedKey(lang, ru, en, he) {
 }
 
 function renderHolidayReadings(details, holiday, lang) {
-  details.replaceChildren();
-
   const readings = Array.isArray(holiday.readings) ? holiday.readings : [];
+  const nextContent = document.createDocumentFragment();
+
   if (!readings.length) {
     const empty = document.createElement("div");
     empty.className = "holiday-reading-empty";
@@ -69,7 +69,8 @@ function renderHolidayReadings(details, holiday, lang) {
       : (lang === "en"
         ? "No reading details were found for these dates."
         : "Для этих дат подробности чтений не найдены.");
-    details.append(empty);
+    nextContent.append(empty);
+    details.replaceChildren(nextContent);
     return;
   }
 
@@ -93,8 +94,11 @@ function renderHolidayReadings(details, holiday, lang) {
     haft.textContent = haftLabel + ": " + (reading[haftKey] || "—");
 
     row.append(heading, torah, haft);
-    details.append(row);
+    nextContent.append(row);
   });
+
+  // Replace only after the complete reading list is built.
+  details.replaceChildren(nextContent);
 }
 
 function renderWeeklyContent(lang) {
@@ -157,7 +161,7 @@ function renderWeeklyContent(lang) {
   }
 
   if (holidayList) {
-    holidayList.replaceChildren();
+    const nextHolidayList = document.createDocumentFragment();
 
     (data.holidays || []).forEach((holiday) => {
       const item = document.createElement("div");
@@ -229,8 +233,11 @@ function renderWeeklyContent(lang) {
       });
 
       item.append(main, actions, details);
-      holidayList.append(item);
+      nextHolidayList.append(item);
     });
+
+    // Atomic swap: if rendering throws, the already visible static calendar remains.
+    holidayList.replaceChildren(nextHolidayList);
   }
 }
 
