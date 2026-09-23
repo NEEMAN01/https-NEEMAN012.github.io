@@ -38,7 +38,6 @@ window.GALLERY_MANIFEST = {
     "repatriants": [
       {"path":"assets/galleries/repatriants/repatriants-overview.png","name":"repatriants-overview.png","kind":"legacy","added":""},
       {"path":"assets/galleries/repatriants/repatriants-overview-1.png","name":"repatriants-overview-1.png","kind":"legacy","added":""},
-      {"path":"assets/galleries/repatriants/repatriants-overview-2.png","name":"repatriants-overview-2.png","kind":"legacy","added":""},
       {"path":"assets/galleries/repatriants/repatriants-gallery-1.jpg","name":"repatriants-gallery-1.jpg","kind":"legacy","added":""},
       {"path":"assets/galleries/repatriants/repatriants-gallery-2.jpg","name":"repatriants-gallery-2.jpg","kind":"legacy","added":""}
     ]
