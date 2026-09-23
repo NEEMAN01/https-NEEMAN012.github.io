@@ -412,8 +412,9 @@
 
   async function buildLiveData() {
     var todayIso = localDateIso();
+    var startIso = addDays(todayIso, -14);
     var endIso = addDays(todayIso, 120);
-    var calendarUrl = "https://www.hebcal.com/hebcal?v=1&cfg=json&start=" + todayIso +
+    var calendarUrl = "https://www.hebcal.com/hebcal?v=1&cfg=json&start=" + startIso +
       "&end=" + endIso +
       "&maj=on&s=on&D=on&i=on&leyning=on";
 
