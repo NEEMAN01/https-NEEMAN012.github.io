@@ -3057,3 +3057,158 @@ body.lang-he .contact-item:focus-visible .contact-link-cue {
   color: rgba(238,244,237,.58);
   font-size: .9rem;
 }
+
+
+/* ===== Automatic Torah & Israel calendar details ===== */
+.torah-reading-lines {
+  display: grid;
+  gap: 7px;
+  margin-top: 2px;
+}
+
+.weekly-reading-date {
+  margin: 0;
+  color: rgba(226,233,224,.72);
+  font-size: .86rem;
+  line-height: 1.45;
+}
+
+.torah-reading-lines .torah-reference {
+  margin: 0;
+}
+
+.torah-haftarah {
+  color: rgba(226,233,224,.78);
+}
+
+.holiday-item-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 7px;
+}
+
+.holiday-readings-btn {
+  appearance: none;
+  border: 1px solid rgba(137,168,144,.16);
+  background: rgba(255,255,255,.035);
+  color: #d7e3d8;
+  min-height: 32px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font: inherit;
+  font-size: .72rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background .2s ease, border-color .2s ease, transform .2s ease;
+}
+
+.holiday-readings-btn:hover,
+.holiday-readings-btn:focus-visible {
+  background: rgba(124,158,132,.11);
+  border-color: rgba(157,190,164,.28);
+  transform: translateY(-1px);
+}
+
+.holiday-readings-btn:focus-visible {
+  outline: 2px solid rgba(190,167,103,.58);
+  outline-offset: 2px;
+}
+
+.holiday-readings-chevron {
+  transition: transform .2s ease;
+}
+
+.holiday-readings-btn[aria-expanded="true"] .holiday-readings-chevron {
+  transform: rotate(180deg);
+}
+
+.holiday-reading-details {
+  grid-column: 1 / -1;
+  margin-top: 2px;
+  padding: 12px 14px;
+  border-radius: 13px;
+  background: rgba(0,0,0,.10);
+  border: 1px solid rgba(157,190,164,.09);
+  color: rgba(229,236,228,.72);
+  font-size: .78rem;
+  line-height: 1.5;
+}
+
+.holiday-reading-details[hidden] {
+  display: none;
+}
+
+.holiday-reading-empty {
+  color: rgba(229,236,228,.62);
+}
+
+.holiday-reading-row {
+  display: grid;
+  gap: 3px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255,255,255,.055);
+}
+
+.holiday-reading-row:first-child {
+  padding-top: 0;
+}
+
+.holiday-reading-row:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.holiday-reading-row strong {
+  color: #f0f4ed;
+  font-size: .79rem;
+}
+
+.holiday-reading-row span {
+  color: rgba(229,236,228,.67);
+}
+
+.weekly-source {
+  position: relative;
+  z-index: 1;
+  padding: 0 26px 19px;
+  color: rgba(229,236,228,.37);
+  font-size: .68rem;
+  text-align: right;
+}
+
+.weekly-source a {
+  color: rgba(205,187,133,.60);
+  text-decoration: none;
+  border-bottom: 1px dotted rgba(205,187,133,.35);
+}
+
+.weekly-source a:hover {
+  color: #e0cc93;
+}
+
+body.lang-he .weekly-source {
+  text-align: left;
+}
+
+@media (max-width: 560px) {
+  .holiday-item-actions {
+    align-items: flex-start;
+  }
+
+  .holiday-readings-btn {
+    min-height: 34px;
+  }
+
+  .weekly-source {
+    padding: 0 18px 16px;
+    text-align: left;
+  }
+
+  body.lang-he .weekly-source {
+    text-align: right;
+  }
+}
