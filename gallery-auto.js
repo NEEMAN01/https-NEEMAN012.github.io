@@ -143,19 +143,20 @@
 
   function chooseItems(category) {
     var entries = ((manifest.categories || {})[category] || []).filter(isDisplayable);
-    var primary = entries.filter(function (item) { return item.kind !== "legacy"; });
 
-    if (primary.length) {
-      return primary.sort(sortNewestFirst);
-    }
-
+    // Automatic galleries keep old files permanently unless they are manually
+    // deleted from the repository. New dated photos are placed first.
     return entries
-      .filter(function (item) { return !/-gallery(?:-|\.|$)/i.test(item.name || ""); })
+      .filter(function (item) {
+        // Skip only tiny helper thumbnails named "*-gallery.jpg".
+        // Full-size old photos, overview sheets and collages stay visible.
+        return !/-gallery(?:-|\.|$)/i.test(item.name || "");
+      })
       .sort(function (a, b) {
-        var aOverview = /overview/i.test(a.name || "") ? 1 : 0;
-        var bOverview = /overview/i.test(b.name || "") ? 1 : 0;
-        if (aOverview !== bOverview) return bOverview - aOverview;
-        return (b.name || "").localeCompare(a.name || "");
+        var aLegacy = a.kind === "legacy" ? 1 : 0;
+        var bLegacy = b.kind === "legacy" ? 1 : 0;
+        if (aLegacy !== bLegacy) return aLegacy - bLegacy;
+        return sortNewestFirst(a, b);
       });
   }
 
