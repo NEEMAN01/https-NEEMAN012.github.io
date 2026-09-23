@@ -208,7 +208,22 @@
     var grid = document.createElement("div");
     grid.className = "gallery-auto-grid";
 
+    var hasRegular = items.some(function (item) { return item.kind !== "legacy"; });
+    var archiveDividerAdded = false;
+
     items.forEach(function (item, index) {
+      if (item.kind === "legacy" && hasRegular && !archiveDividerAdded) {
+        var divider = document.createElement("div");
+        divider.className = "gallery-auto-archive-divider";
+        divider.innerHTML =
+          '<i class="fas fa-box-archive" aria-hidden="true"></i>' +
+          '<span data-lang="ru">Архивные коллажи — нажмите, чтобы открыть</span>' +
+          '<span data-lang="en">Archived collages — tap to open</span>' +
+          '<span data-lang="he" lang="he" dir="rtl">קולאז׳ים מהארכיון — לחצו לפתיחה</span>';
+        grid.append(divider);
+        archiveDividerAdded = true;
+      }
+
       var link = document.createElement("a");
       link.className = "gallery-auto-card";
       if (item.kind === "legacy") link.classList.add("is-legacy");
@@ -225,6 +240,16 @@
       img.alt = humanize(item, category, currentLang()).title;
       img.loading = index < 2 ? "eager" : "lazy";
       img.decoding = "async";
+
+      if (item.kind === "legacy") {
+        var archiveBadge = document.createElement("span");
+        archiveBadge.className = "gallery-auto-archive-badge";
+        archiveBadge.innerHTML =
+          '<span data-lang="ru">Архив</span>' +
+          '<span data-lang="en">Archive</span>' +
+          '<span data-lang="he" lang="he" dir="rtl">ארכיון</span>';
+        media.append(archiveBadge);
+      }
 
       var cue = document.createElement("span");
       cue.className = "gallery-auto-open";
