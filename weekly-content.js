@@ -389,14 +389,26 @@
   }
 
   async function fetchJson(url) {
-    var response = await fetch(url, {
-      method: "GET",
-      credentials: "omit",
-      cache: "default",
-      headers: { "Accept": "application/json" }
-    });
-    if (!response.ok) throw new Error("Calendar request failed: " + response.status);
-    return response.json();
+    // Hebcal is an optional live refresh only. The page always has local fallback data.
+    // Abort quickly on blocked/slow networks so the site never waits on an external service.
+    var controller = typeof AbortController !== "undefined" ? new AbortController() : null;
+    var timer = window.setTimeout(function () {
+      if (controller) controller.abort();
+    }, 2500);
+
+    try {
+      var response = await fetch(url, {
+        method: "GET",
+        credentials: "omit",
+        cache: "default",
+        signal: controller ? controller.signal : undefined,
+        headers: { "Accept": "application/json" }
+      });
+      if (!response.ok) throw new Error("Calendar request failed: " + response.status);
+      return response.json();
+    } finally {
+      window.clearTimeout(timer);
+    }
   }
 
   async function getToday(todayIso) {
