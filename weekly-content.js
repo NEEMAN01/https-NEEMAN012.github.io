@@ -483,14 +483,54 @@
     } catch (e) {}
   }
 
-  async function loadWeeklyCalendarData() {
-    var cached = readCache();
-    if (cached) {
-      window.WEEKLY_CONTENT = cached;
-      emit();
-    }
+  function dataTimestamp(data) {
+    if (!data) return 0;
+    var raw = data.snapshotUpdatedAt || data.generatedAt || "";
+    var value = Date.parse(raw);
+    return Number.isFinite(value) ? value : 0;
+  }
+
+  async function readLocalSnapshot() {
+    if (window.__SNAPSHOT_BUILD__) return null;
 
     try {
+      var response = await fetch("weekly-snapshot.json", {
+        method: "GET",
+        credentials: "same-origin",
+        cache: "no-store",
+        headers: { "Accept": "application/json" }
+      });
+      if (!response.ok) return null;
+
+      var data = await response.json();
+      if (!data || !data.today || !data.parasha || !Array.isArray(data.holidays)) {
+        return null;
+      }
+      return data;
+    } catch (e) {
+      return null;
+    }
+  }
+
+  function chooseStoredData(localSnapshot, cached) {
+    if (localSnapshot && cached) {
+      return dataTimestamp(cached) > dataTimestamp(localSnapshot) ? cached : localSnapshot;
+    }
+    return localSnapshot || cached || FALLBACK;
+  }
+
+  async function loadWeeklyCalendarData() {
+    // Always show the newest stored copy first. This is served from the same
+    // GitHub Pages site and remains available even if Hebcal is blocked.
+    var localSnapshot = await readLocalSnapshot();
+    var cached = readCache();
+    var stored = chooseStoredData(localSnapshot, cached);
+
+    window.WEEKLY_CONTENT = stored;
+    emit();
+
+    try {
+      // Live Hebcal remains the primary updater whenever it is reachable.
       var live = await buildLiveData();
       window.WEEKLY_CONTENT = live;
       writeCache(live);
@@ -507,11 +547,9 @@
 
       return live;
     } catch (error) {
-      console.warn("Automatic Torah/holiday update failed; using cached or fallback data.", error);
-      if (!cached) {
-        window.WEEKLY_CONTENT = FALLBACK;
-        emit();
-      }
+      // Do not blank, reset or alter the visible block. Keep the latest stored
+      // snapshot exactly as it was until a later live refresh succeeds.
+      console.warn("Live Torah/holiday update unavailable; keeping the last saved calendar snapshot.", error);
       return window.WEEKLY_CONTENT;
     }
   }
