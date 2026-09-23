@@ -1,0 +1,31 @@
+name: Export complete site ZIP
+
+on:
+  push:
+    paths:
+      - ".github/workflows/export-site-zip.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out current site
+        uses: actions/checkout@v4
+
+      - name: Create complete site archive
+        run: |
+          zip -r Streams-of-Hope-site-backup.zip .             -x ".git/*"             -x "Streams-of-Hope-site-backup.zip"
+
+      - name: Upload complete archive
+        uses: actions/upload-artifact@v4
+        with:
+          name: streams-of-hope-complete-site
+          path: Streams-of-Hope-site-backup.zip
+          if-no-files-found: error
+          retention-days: 7
