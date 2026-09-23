@@ -2,7 +2,6 @@
   "use strict";
 
   var manifest = window.GALLERY_MANIFEST || { categories: {} };
-  var GITHUB_TREE_URL = "https://api.github.com/repos/NEEMAN01/https-NEEMAN012.github.io/git/trees/main?recursive=1";
 
   var CATEGORY_LABELS = {
     repatriants: { ru: "Репатрианты", en: "Repatriates", he: "עולים חדשים" },
@@ -279,59 +278,11 @@
     updateCategoryPreviews();
   }
 
-  function classifyPath(path) {
-    var file = basename(path);
-    var s = stem(file);
-    var hasStandardDate = /^\d{4}-\d{2}(?:-\d{2})?(?:-|_|$)/.test(s);
-    var legacy = !hasStandardDate && /(^|[-_])(overview|gallery|main)([-_]|$)/i.test(s);
-    return {
-      path: path,
-      name: file,
-      kind: legacy ? "legacy" : "photo",
-      added: ""
-    };
-  }
-
-  async function refreshManifestFromGitHub() {
-    try {
-      var response = await fetch(GITHUB_TREE_URL, {
-        headers: { "Accept": "application/vnd.github+json" },
-        cache: "no-store",
-        credentials: "omit"
-      });
-      if (!response.ok) throw new Error("GitHub gallery index request failed: " + response.status);
-
-      var data = await response.json();
-      var categories = {};
-
-      (data.tree || []).forEach(function (entry) {
-        if (entry.type !== "blob") return;
-        if (!/^assets\/galleries\/[^/]+\/[^/]+$/i.test(entry.path || "")) return;
-        if (!/\.(jpe?g|png|webp|gif)$/i.test(entry.path)) return;
-
-        var parts = entry.path.split("/");
-        var category = parts[2];
-        if (!categories[category]) categories[category] = [];
-        categories[category].push(classifyPath(entry.path));
-      });
-
-      if (Object.keys(categories).length) {
-        manifest = {
-          version: 2,
-          generatedAt: new Date().toISOString(),
-          categories: categories
-        };
-        window.GALLERY_MANIFEST = manifest;
-        renderAll();
-      }
-    } catch (error) {
-      console.warn("Live gallery index unavailable; using the local gallery manifest.", error);
-    }
-  }
+  // Gallery content is read only from the local manifest.
+  // This keeps the public site independent from api.github.com.
 
   document.addEventListener("DOMContentLoaded", function () {
     renderAll();
-    refreshManifestFromGitHub();
   });
   window.addEventListener("siteLanguageChanged", renderAll);
 })();
