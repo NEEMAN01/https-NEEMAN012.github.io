@@ -106,9 +106,9 @@
         ru: "Суккот",
         en: "Sukkot",
         he: "סוכות",
-        dateRu: "26 сентября 2026 – 2 октября 2026",
-        dateEn: "26 September 2026 – 2 October 2026",
-        dateHe: "26 בספטמבר 2026 – 2 באוקטובר 2026",
+        dateRu: "с вечера 25 сентября 2026 – 2 октября 2026",
+        dateEn: "evening of 25 September 2026 – 2 October 2026",
+        dateHe: "מערב 25 בספטמבר 2026 עד 2 באוקטובר 2026",
         hdateRu: "15 Тишрея 5787 – 21 Тишрея 5787",
         hdateEn: "15 Tishrei 5787 – 21 Tishrei 5787",
         hdateHe: "15 תשרי 5787 – 21 תשרי 5787",
@@ -138,9 +138,9 @@
         ru: "Шмини Ацерет и Симхат Тора",
         en: "Shmini Atzeret & Simchat Torah",
         he: "שמיני עצרת ושמחת תורה",
-        dateRu: "3 октября 2026",
-        dateEn: "3 October 2026",
-        dateHe: "3 באוקטובר 2026",
+        dateRu: "с вечера 2 октября 2026 – 3 октября 2026",
+        dateEn: "evening of 2 October 2026 – 3 October 2026",
+        dateHe: "מערב 2 באוקטובר 2026 עד 3 באוקטובר 2026",
         hdateRu: "22 Тишрея 5787",
         hdateEn: "22 Tishrei 5787",
         hdateHe: "22 תשרי 5787",
@@ -273,6 +273,15 @@
     return a === b ? a : a + " – " + b;
   }
 
+  function holidaySolarRange(startIso, endIso, lang) {
+    var eveIso = addDays(startIso, -1);
+    var eve = formatGregorian(eveIso, lang);
+    var end = formatGregorian(endIso, lang);
+    if (lang === "ru") return "с вечера " + eve + " – " + end;
+    if (lang === "he") return "מערב " + eve + " עד " + end;
+    return "evening of " + eve + " – " + end;
+  }
+
   function readingFromEvent(item) {
     var dateFields = makeDateFields(item.date, item.hdate, item.hebrewDate);
     var l = item.leyning || {};
@@ -319,9 +328,9 @@
         he: name.he,
         start: firstEvent.date,
         end: lastEvent.date,
-        dateRu: rangeDate(firstFields, lastFields, "ru", "dateRu"),
-        dateEn: rangeDate(firstFields, lastFields, "en", "dateEn"),
-        dateHe: rangeDate(firstFields, lastFields, "he", "dateHe"),
+        dateRu: holidaySolarRange(firstEvent.date, lastEvent.date, "ru"),
+        dateEn: holidaySolarRange(firstEvent.date, lastEvent.date, "en"),
+        dateHe: holidaySolarRange(firstEvent.date, lastEvent.date, "he"),
         hdateRu: rangeDate(firstFields, lastFields, "ru", "hdateRu"),
         hdateEn: rangeDate(firstFields, lastFields, "en", "hdateEn"),
         hdateHe: rangeDate(firstFields, lastFields, "he", "hdateHe"),
