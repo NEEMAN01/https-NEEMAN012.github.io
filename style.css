@@ -3649,55 +3649,42 @@ body.lang-he .weekly-source {
   }
 }
 
-/* ===== Gold artwork sizing fix 2026-09-23 ===== */
+/* ===== Gallery gold icon size + centering fix 2026-09-23 ===== */
 .gallery-static-cover {
+  display: grid;
   place-items: center;
+  overflow: hidden;
 }
 
-.gallery-cover-art {
-  position: relative;
-  z-index: 2;
-  width: min(50%, 124px);
-  height: min(50%, 124px);
+/* Higher specificity than the old generic .gallery-category-preview img rule. */
+.gallery-category-preview.gallery-static-cover > img.gallery-cover-art {
+  width: min(42%, 108px);
+  height: auto;
+  max-width: 108px;
+  max-height: 108px;
   object-fit: contain;
   display: block;
-  margin: auto;
+  margin: 0;
   align-self: center;
   justify-self: center;
-  filter: drop-shadow(0 14px 20px rgba(0,0,0,.26));
+  transform: none;
+  filter: drop-shadow(0 12px 18px rgba(0,0,0,.26));
   transition: transform .25s ease, filter .25s ease;
 }
 
-.gallery-category-card:hover .gallery-cover-art {
+.gallery-category-card:hover .gallery-category-preview.gallery-static-cover > img.gallery-cover-art {
   transform: translateY(-2px) scale(1.02);
-  filter: drop-shadow(0 17px 23px rgba(0,0,0,.30));
-}
-
-.section-icon-media {
-  display: grid;
-  place-items: center;
-}
-
-.section-icon-media img {
-  width: min(54%, 210px);
-  height: auto;
-  max-height: 210px;
-  object-fit: contain;
-  display: block;
-  margin: auto;
-  align-self: center;
-  justify-self: center;
-  filter: drop-shadow(0 18px 26px rgba(0,0,0,.28));
+  filter: drop-shadow(0 15px 21px rgba(0,0,0,.30));
 }
 
 @media (max-width: 640px) {
-  .gallery-cover-art {
-    width: min(46%, 102px);
-    height: min(46%, 102px);
+  .gallery-static-cover {
+    height: 180px;
   }
 
-  .section-icon-media img {
-    width: min(50%, 156px);
-    max-height: 156px;
+  .gallery-category-preview.gallery-static-cover > img.gallery-cover-art {
+    width: min(38%, 78px);
+    max-width: 78px;
+    max-height: 78px;
   }
 }
