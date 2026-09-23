@@ -3649,102 +3649,55 @@ body.lang-he .weekly-source {
   }
 }
 
-
-/* ===== Icon display fix 2026-09-23 ===== */
-.gallery-cover-art,
-.gallery-cover-icon-art {
-  position: relative;
-  z-index: 2;
-  width: min(56%, 140px);
-  height: min(56%, 140px);
-  display: grid;
+/* ===== Gold artwork sizing fix 2026-09-23 ===== */
+.gallery-static-cover {
   place-items: center;
-  align-self: center;
-  justify-self: center;
-  filter: drop-shadow(0 16px 22px rgba(0,0,0,.28));
-  transition: transform .25s ease, filter .25s ease;
 }
 
 .gallery-cover-art {
+  position: relative;
+  z-index: 2;
+  width: min(50%, 124px);
+  height: min(50%, 124px);
   object-fit: contain;
-}
-
-.gallery-cover-icon-art {
-  border-radius: 30px;
-  color: #e2c87e;
-  background: linear-gradient(145deg, rgba(215,197,138,.13), rgba(255,255,255,.035));
-  border: 1px solid rgba(215,197,138,.24);
-  box-shadow:
-    0 18px 38px rgba(0,0,0,.22),
-    inset 0 1px 0 rgba(255,255,255,.05);
-  font-size: 2.65rem;
-}
-
-.gallery-category-card:hover .gallery-cover-art,
-.gallery-category-card:hover .gallery-cover-icon-art {
-  transform: translateY(-3px) scale(1.025);
-  filter: drop-shadow(0 20px 26px rgba(0,0,0,.32));
-}
-
-.gallery-cover-icon-repatriants { color: #d7c58a; }
-.gallery-cover-icon-canteen { color: #e3b889; }
-.gallery-cover-icon-friends { color: #cbb7df; }
-
-.section-icon-media img,
-.section-icon-media .section-icon-art {
-  width: min(58%, 228px);
-  height: auto;
-  max-height: 228px;
-  object-fit: contain;
-  justify-self: center;
+  display: block;
+  margin: auto;
   align-self: center;
-  filter: drop-shadow(0 22px 30px rgba(0,0,0,.30));
+  justify-self: center;
+  filter: drop-shadow(0 14px 20px rgba(0,0,0,.26));
+  transition: transform .25s ease, filter .25s ease;
 }
 
-.section-icon-art {
-  aspect-ratio: 1 / 1;
+.gallery-category-card:hover .gallery-cover-art {
+  transform: translateY(-2px) scale(1.02);
+  filter: drop-shadow(0 17px 23px rgba(0,0,0,.30));
+}
+
+.section-icon-media {
   display: grid;
   place-items: center;
-  border-radius: 34px;
-  color: #e2c87e;
-  background: linear-gradient(145deg, rgba(215,197,138,.13), rgba(255,255,255,.035));
-  border: 1px solid rgba(215,197,138,.24);
-  box-shadow:
-    0 18px 38px rgba(0,0,0,.22),
-    inset 0 1px 0 rgba(255,255,255,.05);
 }
 
-.section-icon-art i {
-  font-size: clamp(3.8rem, 7vw, 5.7rem);
+.section-icon-media img {
+  width: min(54%, 210px);
+  height: auto;
+  max-height: 210px;
+  object-fit: contain;
+  display: block;
+  margin: auto;
+  align-self: center;
+  justify-self: center;
+  filter: drop-shadow(0 18px 26px rgba(0,0,0,.28));
 }
-
-.section-icon-repatriants { color: #d7c58a; }
-.section-icon-canteen { color: #e3b889; }
-.section-icon-friends { color: #cbb7df; }
 
 @media (max-width: 640px) {
-  .gallery-cover-art,
-  .gallery-cover-icon-art {
-    width: min(50%, 112px);
-    height: min(50%, 112px);
+  .gallery-cover-art {
+    width: min(46%, 102px);
+    height: min(46%, 102px);
   }
 
-  .gallery-cover-icon-art {
-    border-radius: 24px;
-    font-size: 2.05rem;
-  }
-
-  .section-icon-media img,
-  .section-icon-media .section-icon-art {
-    width: min(52%, 168px);
-    max-height: 168px;
-  }
-
-  .section-icon-art {
-    border-radius: 24px;
-  }
-
-  .section-icon-art i {
-    font-size: clamp(3rem, 11vw, 4.3rem);
+  .section-icon-media img {
+    width: min(50%, 156px);
+    max-height: 156px;
   }
 }
