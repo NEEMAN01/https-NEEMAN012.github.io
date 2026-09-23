@@ -190,19 +190,10 @@
   function renderGallery(container) {
     var category = container.getAttribute("data-gallery-category");
     var items = chooseItems(category);
-    container.replaceChildren();
 
-    if (!items.length) {
-      var empty = document.createElement("div");
-      empty.className = "gallery-auto-empty";
-      empty.innerHTML =
-        '<i class="fas fa-images" aria-hidden="true"></i>' +
-        '<span data-lang="ru">Фотографии появятся здесь после добавления в галерею.</span>' +
-        '<span data-lang="en">Photos will appear here after they are added to the gallery.</span>' +
-        '<span data-lang="he" lang="he" dir="rtl">התמונות יופיעו כאן לאחר שיוספו לגלריה.</span>';
-      container.append(empty);
-      return;
-    }
+    // Progressive enhancement: never erase the static HTML fallback unless
+    // the complete enhanced gallery has been built successfully.
+    if (!items.length) return;
 
     var grid = document.createElement("div");
     grid.className = "gallery-auto-grid";
@@ -259,7 +250,8 @@
       grid.append(link);
     });
 
-    container.append(grid);
+    // Atomic swap: if anything above throws, the original static gallery stays visible.
+    container.replaceChildren(grid);
   }
 
   function updateCategoryPreviews() {
