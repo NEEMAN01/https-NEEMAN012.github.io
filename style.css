@@ -3885,3 +3885,64 @@ body.lang-he .weekly-source {
     right: 8px;
   }
 }
+
+
+/* ===== Contact map chooser 2026-09-23 ===== */
+.contact-address-card {
+  grid-template-columns: 44px minmax(0, 1fr);
+  align-items: start;
+}
+
+.contact-address-copy {
+  min-width: 0;
+  display: grid;
+  gap: 5px;
+  padding-top: 2px;
+}
+
+.contact-address-copy > strong {
+  color: var(--cream);
+  font-size: 1rem;
+  line-height: 1.25;
+}
+
+.contact-address-note {
+  color: rgba(238,244,237,.58);
+  font-size: .82rem;
+}
+
+.contact-map-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 4px;
+}
+
+.contact-map-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  padding: 6px 11px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: .79rem;
+  font-weight: 700;
+  color: var(--cream);
+  background: rgba(215,197,138,.08);
+  border: 1px solid rgba(215,197,138,.18);
+  transition: transform .2s ease, background .2s ease, border-color .2s ease;
+}
+
+.contact-map-links a:hover,
+.contact-map-links a:focus-visible {
+  transform: translateY(-1px);
+  background: rgba(215,197,138,.14);
+  border-color: rgba(215,197,138,.34);
+}
+
+@media (max-width: 640px) {
+  .contact-map-links a {
+    flex: 1 1 120px;
+  }
+}
