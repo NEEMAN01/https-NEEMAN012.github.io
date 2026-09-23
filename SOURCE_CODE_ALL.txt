@@ -1,0 +1,380 @@
+STREAMS OF HOPE — COMPLETE SOURCE CODE
+Repository: NEEMAN01/https-NEEMAN012.github.io
+Branch: main
+Snapshot commit at start: f2db9dc4f7c7da3b1397b92c42a4d4281205cb4e
+Generated: 2026-09-23
+
+Open this file in VS Code, Notepad++, Sublime Text, or another code editor.
+Each source file is separated by a FILE: header.
+
+====================================================================================================
+
+====================================================================================================
+FILE: .github/workflows/import-holiday-collages.yml
+====================================================================================================
+
+name: Import holiday collages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/import-holiday-collages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download original collages
+        env:
+          HOLIDAY_1: "https://d2jqrm6oza8nb6.cloudfront.net/datasets/622d31ca-8d73-4446-8a31-f2d40f7a8b0f.jpeg?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiN2FhMzhjNTdmN2JlNTY3MCIsImJ1Y2tldCI6InJ1bndheS1kYXRhc2V0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5MDEzMDY0N30.q_VHqXE4mofxr99wJAyW0q_u3nozF3HYpF1FG_y4E-s"
+          HOLIDAY_2: "https://d2jqrm6oza8nb6.cloudfront.net/datasets/240c7f94-ede8-43ce-adde-b493d2e3cb38.jpeg?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiMzhhOGUzMDA3ZDMwYjk5OCIsImJ1Y2tldCI6InJ1bndheS1kYXRhc2V0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5MDE0MTA1Nn0.sUcYx8soTijF_vGyHCikPEJZQOcYnS7v90-5Oa8daWI"
+          HOLIDAY_3: "https://d2jqrm6oza8nb6.cloudfront.net/datasets/b6b43623-fa11-4e9d-80b3-3fc434ce88bb.jpeg?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiMjRiZmJjZGUxMTgwZDc2MSIsImJ1Y2tldCI6InJ1bndheS1kYXRhc2V0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5MDExNjcwMn0.NfQnZRLbaKENUR4OtqtsKxPA62L_TGu_MJ3Ds2iCYEU"
+          HOLIDAY_4: "https://d2jqrm6oza8nb6.cloudfront.net/datasets/3838d277-76a1-49fe-862d-09f1295e3088.jpeg?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiNzg1MTlmNjBkZjI3ZGRlOSIsImJ1Y2tldCI6InJ1bndheS1kYXRhc2V0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5MDA4NzEzNn0.WI6yMVJwiB6M7jItrCoNGi7cCy8mzCfD9xKYPJQ_zLA"
+          HOLIDAY_5: "https://d2jqrm6oza8nb6.cloudfront.net/datasets/d9c65281-793a-4699-936c-103c16e86a5d.jpeg?_jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiNWVkNDYwODNjNmJkNGI1ZCIsImJ1Y2tldCI6InJ1bndheS1kYXRhc2V0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5MDEyODY0M30.DcUKy9a2s4cl2QX1RIjWb0Fra4GlcOoIqF4BspBSnJo"
+        run: |
+          set -euo pipefail
+          mkdir -p assets/galleries/holidays
+          curl -L --fail --retry 3 "$HOLIDAY_1" -o assets/galleries/holidays/rosh-hashanah-01.jpg
+          curl -L --fail --retry 3 "$HOLIDAY_2" -o assets/galleries/holidays/rosh-hashanah-02.jpg
+          curl -L --fail --retry 3 "$HOLIDAY_3" -o assets/galleries/holidays/rosh-hashanah-03.jpg
+          curl -L --fail --retry 3 "$HOLIDAY_4" -o assets/galleries/holidays/rosh-hashanah-04.jpg
+          curl -L --fail --retry 3 "$HOLIDAY_5" -o assets/galleries/holidays/rosh-hashanah-05.jpg
+          file assets/galleries/holidays/rosh-hashanah-*.jpg
+          ls -lh assets/galleries/holidays/rosh-hashanah-*.jpg
+
+      - name: Rebuild holiday gallery page
+        run: |
+          cat > holidays-gallery.html <<'HTML'
+          <!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Праздники — Галерея</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><link rel="stylesheet" href="style.css?v=20260921-8"></head><body class="lang-ru">
+          <header class="site-header"><div class="header-inner"><a class="brand" href="index.html"><span class="brand-mark"><i class="fas fa-heart"></i></span><span class="brand-title"><span data-lang="ru">Источники Надежды</span><span data-lang="en">Streams of Hope</span></span></a><nav class="top-nav"><a href="gallery.html"><span data-lang="ru">Общая галерея</span><span data-lang="en">Main gallery</span></a><a href="index.html"><span data-lang="ru">Главная</span><span data-lang="en">Home</span></a></nav><div class="lang-switcher"><button class="lang-btn active" id="btn-ru" type="button" onclick="setLanguage('ru')">RU</button><button class="lang-btn" id="btn-en" type="button" onclick="setLanguage('en')">EN</button></div></div></header>
+          <main class="subpage"><section class="subpage-hero gallery-hero"><div class="section-inner"><div class="eyebrow"><i class="fas fa-calendar-days"></i><span data-lang="ru">Праздники</span><span data-lang="en">Holidays</span></div><h1><span data-lang="ru">Галерея праздников</span><span data-lang="en">Holiday gallery</span></h1><p><span data-lang="ru">Фотографии праздничных встреч и мероприятий.</span><span data-lang="en">Photos from holiday gatherings and events.</span></p><a class="btn btn-secondary" href="gallery.html"><i class="fas fa-arrow-left"></i><span data-lang="ru">Назад в галерею</span><span data-lang="en">Back to gallery</span></a></div></section>
+          <section class="section gallery-categories-section"><div class="section-inner"><p class="gallery-photo-note"><span data-lang="ru">Нажмите на коллаж, чтобы открыть его в полном размере.</span><span data-lang="en">Click a collage to open it full size.</span></p><div class="gallery-sheet-stack">
+          <a class="gallery-sheet" style="width:100%;max-width:1122px;justify-self:center" href="assets/galleries/holidays/rosh-hashanah-01.jpg" target="_blank" rel="noopener"><img src="assets/galleries/holidays/rosh-hashanah-01.jpg" alt="Рош ха-Шана — выступления и речи" loading="eager"></a>
+          <a class="gallery-sheet" style="width:100%;max-width:1122px;justify-self:center" href="assets/galleries/holidays/rosh-hashanah-02.jpg" target="_blank" rel="noopener"><img src="assets/galleries/holidays/rosh-hashanah-02.jpg" alt="Рош ха-Шана — гости и семьи" loading="lazy"></a>
+          <a class="gallery-sheet" style="width:100%;max-width:1122px;justify-self:center" href="assets/galleries/holidays/rosh-hashanah-03.jpg" target="_blank" rel="noopener"><img src="assets/galleries/holidays/rosh-hashanah-03.jpg" alt="Рош ха-Шана — тёплые моменты" loading="lazy"></a>
+          <a class="gallery-sheet" style="width:100%;max-width:1122px;justify-self:center" href="assets/galleries/holidays/rosh-hashanah-04.jpg" target="_blank" rel="noopener"><img src="assets/galleries/holidays/rosh-hashanah-04.jpg" alt="Рош ха-Шана — за главным столом" loading="lazy"></a>
+          <a class="gallery-sheet" style="width:100%;max-width:1122px;justify-self:center" href="assets/galleries/holidays/rosh-hashanah-05.jpg" target="_blank" rel="noopener"><img src="assets/galleries/holidays/rosh-hashanah-05.jpg" alt="Рош ха-Шана — атмосфера и декор" loading="lazy"></a>
+          </div></div></section></main>
+          <footer class="site-footer">© <span id="current-year">2026</span> <span data-lang="ru">«Источники Надежды».</span><span data-lang="en">“Streams of Hope”.</span></footer><script src="script.js?v=20260921-8"></script></body></html>
+          HTML
+
+      - name: Commit imported collages
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add holidays-gallery.html assets/galleries/holidays/rosh-hashanah-*.jpg
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+          git commit -m "Restore full-quality holiday collages"
+          git push
+
+
+====================================================================================================
+FILE: .github/workflows/update-weekly-calendar.yml
+====================================================================================================
+
+name: Update Torah and Israel Calendar snapshot
+
+on:
+  schedule:
+    - cron: "17 */3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekly-calendar-snapshot
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Check out site
+        uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Build latest local snapshot
+        run: node scripts/update-weekly-snapshot.mjs
+
+      - name: Commit only when calendar changed
+        run: |
+          if git diff --quiet -- weekly-snapshot.json; then
+            echo "Calendar snapshot is already current."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add weekly-snapshot.json
+          git commit -m "Update Torah & Israel Calendar snapshot"
+          git push
+
+
+====================================================================================================
+FILE: README.md
+====================================================================================================
+
+# https-NEEMAN012.github.io
+
+====================================================================================================
+FILE: assets/galleries/README.md
+====================================================================================================
+
+# Gallery file naming
+
+New gallery photos are discovered automatically. No HTML page edit is required.
+
+## Recommended file name
+
+`YYYY-MM-topic-category-01.jpg`
+
+Examples:
+
+- `2026-09-help-repatriants-01.jpg`
+- `2026-09-canteen-meal-01.jpg`
+- `2026-09-holocaust-support-01.jpg`
+- `2026-09-college-meeting-01.jpg`
+- `2026-09-sukkot-holidays-01.jpg`
+- `2026-09-community-friends-01.jpg`
+
+Use `YYYY-MM-DD-...` when the exact day is important.
+
+## Folders
+
+- `repatriants/`
+- `canteen/`
+- `holocaust/`
+- `college/`
+- `holidays/`
+- `friends/`
+
+The website reads image files in these folders automatically. Date-prefixed photos are shown before older undated files.
+
+Files containing `overview`, `gallery` or `main` are treated as legacy/fallback collages when no individual photos are available.
+
+
+====================================================================================================
+FILE: assets/galleries/gallery-manifest.js
+====================================================================================================
+
+window.GALLERY_MANIFEST = {
+  "version": 1,
+  "generatedAt": "2026-09-23T00:00:00Z",
+  "categories": {
+    "canteen": [
+      {"path":"assets/galleries/canteen/canteen-community-care-september-2026.jpg","name":"canteen-community-care-september-2026.jpg","kind":"photo","added":""},
+      {"path":"assets/galleries/canteen/canteen-september-2026.jpg","name":"canteen-september-2026.jpg","kind":"photo","added":""},
+      {"path":"assets/galleries/canteen/canteen-main.png","name":"canteen-main.png","kind":"legacy","added":""},
+      {"path":"assets/galleries/canteen/canteen-gallery.jpg","name":"canteen-gallery.jpg","kind":"legacy","added":""}
+    ],
+    "college": [
+      {"path":"assets/galleries/college/christian-leadership-university-2024.jpg","name":"christian-leadership-university-2024.jpg","kind":"photo","added":""},
+      {"path":"assets/galleries/college/college-overview.png","name":"college-overview.png","kind":"legacy","added":""},
+      {"path":"assets/galleries/college/college-gallery.jpg","name":"college-gallery.jpg","kind":"legacy","added":""}
+    ],
+    "friends": [
+      {"path":"assets/galleries/friends/friends-community-collage-2026.jpg","name":"friends-community-collage-2026.jpg","kind":"photo","added":""},
+      {"path":"assets/galleries/friends/friends-faith-community-2026.jpg","name":"friends-faith-community-2026.jpg","kind":"photo","added":""},
+      {"path":"assets/galleries/friends/friends-faith-friendship-support-2026.jpg","name":"friends-faith-friendship-support-2026.jpg","kind":"photo","added":""},
+      {"path":"assets/galleries/friends/friends-supporters-couple-2026.jpg","name":"friends-supporters-couple-2026.jpg","kind":"photo","added":""},
+      {"path":"assets/galleries/friends/friends-supporters-family-2026.jpg","name":"friends-supporters-family-2026.jpg","kind":"photo","added":""},
+      {"path":"assets/galleries/friends/friends-supporters-group-2026.jpg","name":"friends-supporters-group-2026.jpg","kind":"photo","added":""},
+      {"path":"assets/galleries/friends/friends-overview.png","name":"friends-overview.png","kind":"legacy","added":""},
+      {"path":"assets/galleries/friends/friends-gallery.jpg","name":"friends-gallery.jpg","kind":"legacy","added":""}
+    ],
+    "holidays": [
+      {"path":"assets/galleries/holidays/rosh-hashanah-01.jpg","name":"rosh-hashanah-01.jpg","kind":"photo","added":""},
+      {"path":"assets/galleries/holidays/rosh-hashanah-02.jpg","name":"rosh-hashanah-02.jpg","kind":"photo","added":""},
+      {"path":"assets/galleries/holidays/rosh-hashanah-03.jpg","name":"rosh-hashanah-03.jpg","kind":"photo","added":""},
+      {"path":"assets/galleries/holidays/rosh-hashanah-04.jpg","name":"rosh-hashanah-04.jpg","kind":"photo","added":""},
+      {"path":"assets/galleries/holidays/rosh-hashanah-05.jpg","name":"rosh-hashanah-05.jpg","kind":"photo","added":""},
+      {"path":"assets/galleries/holidays/holidays-overview.png","name":"holidays-overview.png","kind":"legacy","added":""}
+    ],
+    "holocaust": [
+      {"path":"assets/galleries/holocaust/holocaust-overview.png","name":"holocaust-overview.png","kind":"legacy","added":""},
+      {"path":"assets/galleries/holocaust/holocaust-gallery.jpg","name":"holocaust-gallery.jpg","kind":"legacy","added":""}
+    ],
+    "repatriants": [
+      {"path":"assets/galleries/repatriants/repatriants-overview.png","name":"repatriants-overview.png","kind":"legacy","added":""},
+      {"path":"assets/galleries/repatriants/repatriants-overview-1.png","name":"repatriants-overview-1.png","kind":"legacy","added":""},
+      {"path":"assets/galleries/repatriants/repatriants-gallery-1.jpg","name":"repatriants-gallery-1.jpg","kind":"legacy","added":""},
+      {"path":"assets/galleries/repatriants/repatriants-gallery-2.jpg","name":"repatriants-gallery-2.jpg","kind":"legacy","added":""}
+    ]
+  }
+};
+
+
+====================================================================================================
+FILE: assets/icons/site-icons-a.css
+====================================================================================================
+
+/* Self-contained icon subset A. No CDN required. */
+.fas,.far,.fab{display:inline-block;width:1em;height:1em;min-width:1em;vertical-align:-.125em;background-color:currentColor;-webkit-mask:var(--fa-icon) center/contain no-repeat;mask:var(--fa-icon) center/contain no-repeat;font-style:normal;line-height:1;flex:0 0 auto;}
+.fa-facebook-f{--fa-icon:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20320%20512%22%3E%3Cpath%20d%3D%22M80%20299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7%2020.3-71.5%2072.7-71.5c16.3%200%2029.4%20.4%2037%201.2V7.9C291.4%204%20256.4%200%20236.2%200C129.3%200%2080%2050.5%2080%20159.4v42.1H14v97.8H80z%22%2F%3E%3C%2Fsvg%3E");}
+.fa-youtube{--fa-icon:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20576%20512%22%3E%3Cpath%20d%3D%22M549.655%20124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781%2064%20288%2064%20288%2064S117.22%2064%2074.629%2075.486c-23.497%206.322-42.003%2024.947-48.284%2048.597-11.412%2042.867-11.412%20132.305-11.412%20132.305s0%2089.438%2011.412%20132.305c6.281%2023.65%2024.787%2041.5%2048.284%2047.821C117.22%20448%20288%20448%20288%20448s170.78%200%20213.371-11.486c23.497-6.321%2042.003-24.171%2048.284-47.821%2011.412-42.867%2011.412-132.305%2011.412-132.305s0-89.438-11.412-132.305zm-317.51%20213.508V175.185l142.739%2081.205-142.739%2081.201z%22%2F%3E%3C%2Fsvg%3E");}
+.fa-telegram-plane{--fa-icon:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20496%20512%22%3E%3Cpath%20d%3D%22M248%2C8C111.033%2C8%2C0%2C119.033%2C0%2C256S111.033%2C504%2C248%2C504%2C496%2C392.967%2C496%2C256%2C384.967%2C8%2C248%2C8ZM362.952%2C176.66c-3.732%2C39.215-19.881%2C134.378-28.1%2C178.3-3.476%2C18.584-10.322%2C24.816-16.948%2C25.425-14.4%2C1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25%2C5.342-39.5%2C3.652-3.793%2C67.107-61.51%2C68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608%2C69.142-14.845%2C10.194-26.894%2C9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7%2C18.45-13.7%2C108.446-47.248%2C144.628-62.3c68.872-28.647%2C83.183-33.623%2C92.511-33.789%2C2.052-.034%2C6.639.474%2C9.61%2C2.885a10.452%2C10.452%2C0%2C0%2C1%2C3.53%2C6.716A43.765%2C43.765%2C0%2C0%2C1%2C362.952%2C176.66Z%22%2F%3E%3C%2Fsvg%3E");}
+.fa-clock{--fa-icon:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20d%3D%22M464%20256A208%20208%200%201%201%2048%20256a208%20208%200%201%201%20416%200zM0%20256a256%20256%200%201%200%20512%200A256%20256%200%201%200%200%20256zM232%20120l0%20136c0%208%204%2015.5%2010.7%2020l96%2064c11%207.4%2025.9%204.4%2033.3-6.7s4.4-25.9-6.7-33.3L280%20243.2%20280%20120c0-13.3-10.7-24-24-24s-24%2010.7-24%2024z%22%2F%3E%3C%2Fsvg%3E");}
+.fa-address-card{--fa-icon:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20576%20512%22%3E%3Cpath%20d%3D%22M64%2032C28.7%2032%200%2060.7%200%2096L0%20416c0%2035.3%2028.7%2064%2064%2064l448%200c35.3%200%2064-28.7%2064-64l0-320c0-35.3-28.7-64-64-64L64%2032zm80%20256l64%200c44.2%200%2080%2035.8%2080%2080c0%208.8-7.2%2016-16%2016L80%20384c-8.8%200-16-7.2-16-16c0-44.2%2035.8-80%2080-80zm-32-96a64%2064%200%201%201%20128%200%2064%2064%200%201%201%20-128%200zm256-32l128%200c8.8%200%2016%207.2%2016%2016s-7.2%2016-16%2016l-128%200c-8.8%200-16-7.2-16-16s7.2-16%2016-16zm0%2064l128%200c8.8%200%2016%207.2%2016%2016s-7.2%2016-16%2016l-128%200c-8.8%200-16-7.2-16-16s7.2-16%2016-16zm0%2064l128%200c8.8%200%2016%207.2%2016%2016s-7.2%2016-16%2016l-128%200c-8.8%200-16-7.2-16-16s7.2-16%2016-16z%22%2F%3E%3C%2Fsvg%3E");}
+.fa-arrow-left{--fa-icon:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20448%20512%22%3E%3Cpath%20d%3D%22M9.4%20233.4c-12.5%2012.5-12.5%2032.8%200%2045.3l160%20160c12.5%2012.5%2032.8%2012.5%2045.3%200s12.5-32.8%200-45.3L109.2%20288%20416%20288c17.7%200%2032-14.3%2032-32s-14.3-32-32-32l-306.7%200L214.6%20118.6c12.5-12.5%2012.5-32.8%200-45.3s-32.8-12.5-45.3%200l-160%20160z%22%2F%3E%3C%2Fsvg%3E");}
+.fa-arrow-right{--fa-icon:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20448%20512%22%3E%3Cpath%20d%3D%22M438.6%20278.6c12.5-12.5%2012.5-32.8%200-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3%200s-12.5%2032.8%200%2045.3L338.8%20224%2032%20224c-17.7%200-32%2014.3-32%2032s14.3%2032%2032%2032l306.7%200L233.4%20393.4c-12.5%2012.5-12.5%2032.8%200%2045.3s32.8%2012.5%2045.3%200l160-160z%22%2F%3E%3C%2Fsvg%3E");}
+.fa-arrow-up-right-from-square{--fa-icon:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20d%3D%22M320%200c-17.7%200-32%2014.3-32%2032s14.3%2032%2032%2032l82.7%200L201.4%20265.4c-12.5%2012.5-12.5%2032.8%200%2045.3s32.8%2012.5%2045.3%200L448%20109.3l0%2082.7c0%2017.7%2014.3%2032%2032%2032s32-14.3%2032-32l0-160c0-17.7-14.3-32-32-32L320%200zM80%2032C35.8%2032%200%2067.8%200%20112L0%20432c0%2044.2%2035.8%2080%2080%2080l320%200c44.2%200%2080-35.8%2080-80l0-112c0-17.7-14.3-32-32-32s-32%2014.3-32%2032l0%20112c0%208.8-7.2%2016-16%2016L80%20448c-8.8%200-16-7.2-16-16l0-320c0-8.8%207.2-16%2016-16l112%200c17.7%200%2032-14.3%2032-32s-14.3-32-32-32L80%2032z%22%2F%3E%3C%2Fsvg%3E");}
+.fa-book-open{--fa-icon:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20576%20512%22%3E%3Cpath%20d%3D%22M249.6%20471.5c10.8%203.8%2022.4-4.1%2022.4-15.5l0-377.4c0-4.2-1.6-8.4-5-11C247.4%2052%20202.4%2032%20144%2032C93.5%2032%2046.3%2045.3%2018.1%2056.1C6.8%2060.5%200%2071.7%200%2083.8L0%20454.1c0%2011.9%2012.8%2020.2%2024.1%2016.5C55.6%20460.1%20105.5%20448%20144%20448c33.9%200%2079%2014%20105.6%2023.5zm76.8%200C353%20462%20398.1%20448%20432%20448c38.5%200%2088.4%2012.1%20119.9%2022.6c11.3%203.8%2024.1-4.6%2024.1-16.5l0-370.3c0-12.1-6.8-23.3-18.1-27.6C529.7%2045.3%20482.5%2032%20432%2032c-58.4%200-103.4%2020-123%2035.6c-3.3%202.6-5%206.8-5%2011L304%20456c0%2011.4%2011.7%2019.3%2022.4%2015.5z%22%2F%3E%3C%2Fsvg%3E");}
+.fa-bowl-food{--fa-icon:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20d%3D%22M0%20192c0-35.3%2028.7-64%2064-64c.5%200%201.1%200%201.6%200C73%2091.5%20105.3%2064%20144%2064c15%200%2029%204.1%2040.9%2011.2C198.2%2049.6%20225.1%2032%20256%2032s57.8%2017.6%2071.1%2043.2C339%2068.1%20353%2064%20368%2064c38.7%200%2071%2027.5%2078.4%2064c.5%200%201.1%200%201.6%200c35.3%200%2064%2028.7%2064%2064c0%2011.7-3.1%2022.6-8.6%2032L8.6%20224C3.1%20214.6%200%20203.7%200%20192zm0%2091.4C0%20268.3%2012.3%20256%2027.4%20256l457.1%200c15.1%200%2027.4%2012.3%2027.4%2027.4c0%2070.5-44.4%20130.7-106.7%20154.1L403.5%20452c-2%2016-15.6%2028-31.8%2028l-231.5%200c-16.1%200-29.8-12-31.8-28l-1.8-14.4C44.4%20414.1%200%20353.9%200%20283.4z%22%2F%3E%3C%2Fsvg%3E");}
+.fa-box-archive{--fa-icon:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20d%3D%22M32%2032l448%200c17.7%200%2032%2014.3%2032%2032l0%2032c0%2017.7-14.3%2032-32%2032L32%20128C14.3%20128%200%20113.7%200%2096L0%2064C0%2046.3%2014.3%2032%2032%2032zm0%20128l448%200%200%20256c0%2035.3-28.7%2064-64%2064L96%20480c-35.3%200-64-28.7-64-64l0-256zm128%2080c0%208.8%207.2%2016%2016%2016l160%200c8.8%200%2016-7.2%2016-16s-7.2-16-16-16l-160%200c-8.8%200-16%207.2-16%2016z%22%2F%3E%3C%2Fsvg%3E");}
+.fa-calendar-days{--fa-icon:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20448%20512%22%3E%3Cpath%20d%3D%22M128%200c17.7%200%2032%2014.3%2032%2032l0%2032%20128%200%200-32c0-17.7%2014.3-32%2032-32s32%2014.3%2032%2032l0%2032%2048%200c26.5%200%2048%2021.5%2048%2048l0%2048L0%20160l0-48C0%2085.5%2021.5%2064%2048%2064l48%200%200-32c0-17.7%2014.3-32%2032-32zM0%20192l448%200%200%20272c0%2026.5-21.5%2048-48%2048L48%20512c-26.5%200-48-21.5-48-48L0%20192zm64%2080l0%2032c0%208.8%207.2%2016%2016%2016l32%200c8.8%200%2016-7.2%2016-16l0-32c0-8.8-7.2-16-16-16l-32%200c-8.8%200-16%207.2-16%2016zm128%200l0%2032c0%208.8%207.2%2016%2016%2016l32%200c8.8%200%2016-7.2%2016-16l0-32c0-8.8-7.2-16-16-16l-32%200c-8.8%200-16%207.2-16%2016zm144-16c-8.8%200-16%207.2-16%2016l0%2032c0%208.8%207.2%2016%2016%2016l32%200c8.8%200%2016-7.2%2016-16l0-32c0-8.8-7.2-16-16-16l-32%200zM64%20400l0%2032c0%208.8%207.2%2016%2016%2016l32%200c8.8%200%2016-7.2%2016-16l0-32c0-8.8-7.2-16-16-16l-32%200c-8.8%200-16%207.2-16%2016zm144-16c-8.8%200-16%207.2-16%2016l0%2032c0%208.8%207.2%2016%2016%2016l32%200c8.8%200%2016-7.2%2016-16l0-32c0-8.8-7.2-16-16-16l-32%200zm112%2016l0%2032c0%208.8%207.2%2016%2016%2016l32%200c8.8%200%2016-7.2%2016-16l0-32c0-8.8-7.2-16-16-16l-32%200c-8.8%200-16%207.2-16%2016z%22%2F%3E%3C%2Fsvg%3E");}
+.fa-chevron-down{--fa-icon:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20d%3D%22M233.4%20406.6c12.5%2012.5%2032.8%2012.5%2045.3%200l192-192c12.5-12.5%2012.5-32.8%200-45.3s-32.8-12.5-45.3%200L256%20338.7%2086.6%20169.4c-12.5-12.5-32.8-12.5-45.3%200s-12.5%2032.8%200%2045.3l192%20192z%22%2F%3E%3C%2Fsvg%3E");}
+.fa-envelope{--fa-icon:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20d%3D%22M48%2064C21.5%2064%200%2085.5%200%20112c0%2015.1%207.1%2029.3%2019.2%2038.4L236.8%20313.6c11.4%208.5%2027%208.5%2038.4%200L492.8%20150.4c12.1-9.1%2019.2-23.3%2019.2-38.4c0-26.5-21.5-48-48-48L48%2064zM0%20176L0%20384c0%2035.3%2028.7%2064%2064%2064l384%200c35.3%200%2064-28.7%2064-64l0-208L294.4%20339.2c-22.8%2017.1-54%2017.1-76.8%200L0%20176z%22%2F%3E%3C%2Fsvg%3E");}
+.fa-file-lines{--fa-icon:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20384%20512%22%3E%3Cpath%20d%3D%22M64%200C28.7%200%200%2028.7%200%2064L0%20448c0%2035.3%2028.7%2064%2064%2064l256%200c35.3%200%2064-28.7%2064-64l0-288-128%200c-17.7%200-32-14.3-32-32L224%200%2064%200zM256%200l0%20128%20128%200L256%200zM112%20256l160%200c8.8%200%2016%207.2%2016%2016s-7.2%2016-16%2016l-160%200c-8.8%200-16-7.2-16-16s7.2-16%2016-16zm0%2064l160%200c8.8%200%2016%207.2%2016%2016s-7.2%2016-16%2016l-160%200c-8.8%200-16-7.2-16-16s7.2-16%2016-16zm0%2064l160%200c8.8%200%2016%207.2%2016%2016s-7.2%2016-16%2016l-160%200c-8.8%200-16-7.2-16-16s7.2-16%2016-16z%22%2F%3E%3C%2Fsvg%3E");}
+.fa-file-pdf{--fa-icon:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20d%3D%22M0%2064C0%2028.7%2028.7%200%2064%200L224%200l0%20128c0%2017.7%2014.3%2032%2032%2032l128%200%200%20144-208%200c-35.3%200-64%2028.7-64%2064l0%20144-48%200c-35.3%200-64-28.7-64-64L0%2064zm384%2064l-128%200L256%200%20384%20128zM176%20352l32%200c30.9%200%2056%2025.1%2056%2056s-25.1%2056-56%2056l-16%200%200%2032c0%208.8-7.2%2016-16%2016s-16-7.2-16-16l0-48%200-80c0-8.8%207.2-16%2016-16zm32%2080c13.3%200%2024-10.7%2024-24s-10.7-24-24-24l-16%200%200%2048%2016%200zm96-80l32%200c26.5%200%2048%2021.5%2048%2048l0%2064c0%2026.5-21.5%2048-48%2048l-32%200c-8.8%200-16-7.2-16-16l0-128c0-8.8%207.2-16%2016-16zm32%20128c8.8%200%2016-7.2%2016-16l0-64c0-8.8-7.2-16-16-16l-16%200%200%2096%2016%200zm80-112c0-8.8%207.2-16%2016-16l48%200c8.8%200%2016%207.2%2016%2016s-7.2%2016-16%2016l-32%200%200%2032%2032%200c8.8%200%2016%207.2%2016%2016s-7.2%2016-16%2016l-32%200%200%2048c0%208.8-7.2%2016-16%2016s-16-7.2-16-16l0-64%200-64z%22%2F%3E%3C%2Fsvg%3E");}
+.fa-folder-open{--fa-icon:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20576%20512%22%3E%3Cpath%20d%3D%22M88.7%20223.8L0%20375.8%200%2096C0%2060.7%2028.7%2032%2064%2032l117.5%200c17%200%2033.3%206.7%2045.3%2018.7l26.5%2026.5c12%2012%2028.3%2018.7%2045.3%2018.7L416%2096c35.3%200%2064%2028.7%2064%2064l0%2032-336%200c-22.8%200-43.8%2012.1-55.3%2031.8zm27.6%2016.1C122.1%20230%20132.6%20224%20144%20224l400%200c11.5%200%2022%206.1%2027.7%2016.1s5.7%2022.2-.1%2032.1l-112%20192C453.9%20474%20443.4%20480%20432%20480L32%20480c-11.5%200-22-6.1-27.7-16.1s-5.7-22.2%20.1-32.1l112-192z%22%2F%3E%3C%2Fsvg%3E");}
+
+
+====================================================================================================
+FILE: assets/icons/site-icons-b.css
+====================================================================================================
+
+/* Self-contained icon subset B. No CDN required. */
+.fa-graduation-cap{--fa-icon:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20512%22%3E%3Cpath%20d%3D%22M320%2032c-8.1%200-16.1%201.4-23.7%204.1L15.8%20137.4C6.3%20140.9%200%20149.9%200%20160s6.3%2019.1%2015.8%2022.6l57.9%2020.9C57.3%20229.3%2048%20259.8%2048%20291.9l0%2028.1c0%2028.4-10.8%2057.7-22.3%2080.8c-6.5%2013-13.9%2025.8-22.5%2037.6C0%20442.7-.9%20448.3%20.9%20453.4s6%208.9%2011.2%2010.2l64%2016c4.2%201.1%208.7%20.3%2012.4-2s6.3-6.1%207.1-10.4c8.6-42.8%204.3-81.2-2.1-108.7C90.3%20344.3%2086%20329.8%2080%20316.5l0-24.6c0-30.2%2010.2-58.7%2027.9-81.5c12.9-15.5%2029.6-28%2049.2-35.7l157-61.7c8.2-3.2%2017.5%20.8%2020.7%209s-.8%2017.5-9%2020.7l-157%2061.7c-12.4%204.9-23.3%2012.4-32.2%2021.6l159.6%2057.6c7.6%202.7%2015.6%204.1%2023.7%204.1s16.1-1.4%2023.7-4.1L624.2%20182.6c9.5-3.4%2015.8-12.5%2015.8-22.6s-6.3-19.1-15.8-22.6L343.7%2036.1C336.1%2033.4%20328.1%2032%20320%2032zM128%20408c0%2035.3%2086%2072%20192%2072s192-36.7%20192-72L496.7%20262.6%20354.5%20314c-11.1%204-22.8%206-34.5%206s-23.5-2-34.5-6L143.3%20262.6%20128%20408z%22%2F%3E%3C%2Fsvg%3E");}
+.fa-handshake{--fa-icon:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20512%22%3E%3Cpath%20d%3D%22M323.4%2085.2l-96.8%2078.4c-16.1%2013-19.2%2036.4-7%2053.1c12.9%2017.8%2038%2021.3%2055.3%207.8l99.3-77.2c7-5.4%2017-4.2%2022.5%202.8s4.2%2017-2.8%2022.5l-20.9%2016.2L512%20316.8%20512%20128l-.7%200-3.9-2.5L434.8%2079c-15.3-9.8-33.2-15-51.4-15c-21.8%200-43%207.5-60%2021.2zm22.8%20124.4l-51.7%2040.2C263%20274.4%20217.3%20268%20193.7%20235.6c-22.2-30.5-16.6-73.1%2012.7-96.8l83.2-67.3c-11.6-4.9-24.1-7.4-36.8-7.4C234%2064%20215.7%2069.6%20200%2080l-72%2048%200%20224%2028.2%200%2091.4%2083.4c19.6%2017.9%2049.9%2016.5%2067.8-3.1c5.5-6.1%209.2-13.2%2011.1-20.6l17%2015.6c19.5%2017.9%2049.9%2016.6%2067.8-2.9c4.5-4.9%207.8-10.6%209.9-16.5c19.4%2013%2045.8%2010.3%2062.1-7.5c17.9-19.5%2016.6-49.9-2.9-67.8l-134.2-123zM16%20128c-8.8%200-16%207.2-16%2016L0%20352c0%2017.7%2014.3%2032%2032%2032l32%200c17.7%200%2032-14.3%2032-32l0-224-80%200zM48%20320a16%2016%200%201%201%200%2032%2016%2016%200%201%201%200-32zM544%20128l0%20224c0%2017.7%2014.3%2032%2032%2032l32%200c17.7%200%2032-14.3%2032-32l0-208c0-8.8-7.2-16-16-16l-80%200zm32%20208a16%2016%200%201%201%2032%200%2016%2016%200%201%201%20-32%200z%22%2F%3E%3C%2Fsvg%3E");}
+.fa-heart{--fa-icon:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20d%3D%22M47.6%20300.4L228.3%20469.1c7.5%207%2017.4%2010.9%2027.7%2010.9s20.2-3.9%2027.7-10.9L464.4%20300.4c30.4-28.3%2047.6-68%2047.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347%2036.5%20300.6%2051.4%20268%2084L256%2096%20244%2084c-32.6-32.6-79-47.5-124.6-39.9C50.5%2055.6%200%20115.2%200%20185.1v5.8c0%2041.5%2017.2%2081.2%2047.6%20109.5z%22%2F%3E%3C%2Fsvg%3E");}
+.fa-images{--fa-icon:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20576%20512%22%3E%3Cpath%20d%3D%22M160%2032c-35.3%200-64%2028.7-64%2064l0%20224c0%2035.3%2028.7%2064%2064%2064l352%200c35.3%200%2064-28.7%2064-64l0-224c0-35.3-28.7-64-64-64L160%2032zM396%20138.7l96%20144c4.9%207.4%205.4%2016.8%201.2%2024.6S480.9%20320%20472%20320l-144%200-48%200-80%200c-9.2%200-17.6-5.3-21.6-13.6s-2.9-18.2%202.9-25.4l64-80c4.6-5.7%2011.4-9%2018.7-9s14.2%203.3%2018.7%209l17.3%2021.6%2056-84C360.5%20132%20368%20128%20376%20128s15.5%204%2020%2010.7zM192%20128a32%2032%200%201%201%2064%200%2032%2032%200%201%201%20-64%200zM48%20120c0-13.3-10.7-24-24-24S0%20106.7%200%20120L0%20344c0%2075.1%2060.9%20136%20136%20136l320%200c13.3%200%2024-10.7%2024-24s-10.7-24-24-24l-320%200c-48.6%200-88-39.4-88-88l0-224z%22%2F%3E%3C%2Fsvg%3E");}
+.fa-location-dot{--fa-icon:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20384%20512%22%3E%3Cpath%20d%3D%22M215.7%20499.2C267%20435%20384%20279.4%20384%20192C384%2086%20298%200%20192%200S0%2086%200%20192c0%2087.4%20117%20243%20168.3%20307.2c12.3%2015.3%2035.1%2015.3%2047.4%200zM192%20128a64%2064%200%201%201%200%20128%2064%2064%200%201%201%200-128z%22%2F%3E%3C%2Fsvg%3E");}
+.fa-newspaper{--fa-icon:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20d%3D%22M96%2096c0-35.3%2028.7-64%2064-64l288%200c35.3%200%2064%2028.7%2064%2064l0%20320c0%2035.3-28.7%2064-64%2064L80%20480c-44.2%200-80-35.8-80-80L0%20128c0-17.7%2014.3-32%2032-32s32%2014.3%2032%2032l0%20272c0%208.8%207.2%2016%2016%2016s16-7.2%2016-16L96%2096zm64%2024l0%2080c0%2013.3%2010.7%2024%2024%2024l112%200c13.3%200%2024-10.7%2024-24l0-80c0-13.3-10.7-24-24-24L184%2096c-13.3%200-24%2010.7-24%2024zm208-8c0%208.8%207.2%2016%2016%2016l48%200c8.8%200%2016-7.2%2016-16s-7.2-16-16-16l-48%200c-8.8%200-16%207.2-16%2016zm0%2096c0%208.8%207.2%2016%2016%2016l48%200c8.8%200%2016-7.2%2016-16s-7.2-16-16-16l-48%200c-8.8%200-16%207.2-16%2016zM160%20304c0%208.8%207.2%2016%2016%2016l256%200c8.8%200%2016-7.2%2016-16s-7.2-16-16-16l-256%200c-8.8%200-16%207.2-16%2016zm0%2096c0%208.8%207.2%2016%2016%2016l256%200c8.8%200%2016-7.2%2016-16s-7.2-16-16-16l-256%200c-8.8%200-16%207.2-16%2016z%22%2F%3E%3C%2Fsvg%3E");}
+.fa-people-carry-box{--fa-icon:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20512%22%3E%3Cpath%20d%3D%22M80%2048a48%2048%200%201%201%2096%200A48%2048%200%201%201%2080%2048zm64%20193.7l0%2065.1%2051%2051c7.1%207.1%2011.8%2016.2%2013.4%2026.1l15.2%2090.9c2.9%2017.4-8.9%2033.9-26.3%2036.8s-33.9-8.9-36.8-26.3l-14.3-85.9L66.8%20320C54.8%20308%2048%20291.7%2048%20274.7l0-88.1c0-32.4%2026.2-58.6%2058.6-58.6c24.1%200%2046.5%2012%2059.9%2032l47.4%2071.1%2010.1%205%200-76.2c0-17.7%2014.3-32%2032-32l128%200c17.7%200%2032%2014.3%2032%2032l0%2076.2%2010.1-5L473.5%20160c13.3-20%2035.8-32%2059.9-32c32.4%200%2058.6%2026.2%2058.6%2058.6l0%2088.1c0%2017-6.7%2033.3-18.7%2045.3l-79.4%2079.4-14.3%2085.9c-2.9%2017.4-19.4%2029.2-36.8%2026.3s-29.2-19.4-26.3-36.8l15.2-90.9c1.6-9.9%206.3-19%2013.4-26.1l51-51%200-65.1-19%2028.5c-4.6%207-11%2012.6-18.5%2016.3l-59.6%2029.8c-2.4%201.3-4.9%202.2-7.6%202.8c-2.6%20.6-5.3%20.9-7.9%20.8l-126.7%200c-2.5%20.1-5-.2-7.5-.7c-2.9-.6-5.6-1.6-8.1-3l-59.5-29.8c-7.5-3.7-13.8-9.4-18.5-16.3l-19-28.5zM2.3%20468.1L50.1%20348.6l49.2%2049.2-37.6%2094c-6.6%2016.4-25.2%2024.4-41.6%2017.8S-4.3%20484.5%202.3%20468.1zM512%200a48%2048%200%201%201%200%2096%2048%2048%200%201%201%200-96zm77.9%20348.6l47.8%20119.5c6.6%2016.4-1.4%2035-17.8%2041.6s-35-1.4-41.6-17.8l-37.6-94%2049.2-49.2z%22%2F%3E%3C%2Fsvg%3E");}
+.fa-people-group{--fa-icon:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20640%20512%22%3E%3Cpath%20d%3D%22M72%2088a56%2056%200%201%201%20112%200A56%2056%200%201%201%2072%2088zM64%20245.7C54%20256.9%2048%20271.8%2048%20288s6%2031.1%2016%2042.3l0-84.7zm144.4-49.3C178.7%20222.7%20160%20261.2%20160%20304c0%2034.3%2012%2065.8%2032%2090.5l0%2021.5c0%2017.7-14.3%2032-32%2032l-64%200c-17.7%200-32-14.3-32-32l0-26.8C26.2%20371.2%200%20332.7%200%20288c0-61.9%2050.1-112%20112-112l32%200c24%200%2046.2%207.5%2064.4%2020.3zM448%20416l0-21.5c20-24.7%2032-56.2%2032-90.5c0-42.8-18.7-81.3-48.4-107.7C449.8%20183.5%20472%20176%20496%20176l32%200c61.9%200%20112%2050.1%20112%20112c0%2044.7-26.2%2083.2-64%20101.2l0%2026.8c0%2017.7-14.3%2032-32%2032l-64%200c-17.7%200-32-14.3-32-32zm8-328a56%2056%200%201%201%20112%200A56%2056%200%201%201%20456%2088zM576%20245.7l0%2084.7c10-11.3%2016-26.1%2016-42.3s-6-31.1-16-42.3zM320%2032a64%2064%200%201%201%200%20128%2064%2064%200%201%201%200-128zM240%20304c0%2016.2%206%2031%2016%2042.3l0-84.7c-10%2011.3-16%2026.1-16%2042.3zm144-42.3l0%2084.7c10-11.3%2016-26.1%2016-42.3s-6-31.1-16-42.3zM448%20304c0%2044.7-26.2%2083.2-64%20101.2l0%2042.8c0%2017.7-14.3%2032-32%2032l-64%200c-17.7%200-32-14.3-32-32l0-42.8c-37.8-18-64-56.5-64-101.2c0-61.9%2050.1-112%20112-112l32%200c61.9%200%20112%2050.1%20112%20112z%22%2F%3E%3C%2Fsvg%3E");}
+.fa-phone{--fa-icon:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20d%3D%22M164.9%2024.6c-7.7-18.6-28-28.5-47.4-23.2l-88%2024C12.1%2030.2%200%2046%200%2064C0%20311.4%20200.6%20512%20448%20512c18%200%2033.8-12.1%2038.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3%2011.6L304.7%20368C234.3%20334.7%20177.3%20277.7%20144%20207.3L193.3%20167c13.7-11.2%2018.4-30%2011.6-46.3l-40-96z%22%2F%3E%3C%2Fsvg%3E");}
+.fa-phone-volume{--fa-icon:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20d%3D%22M280%200C408.1%200%20512%20103.9%20512%20232c0%2013.3-10.7%2024-24%2024s-24-10.7-24-24c0-101.6-82.4-184-184-184c-13.3%200-24-10.7-24-24s10.7-24%2024-24zm8%20192a32%2032%200%201%201%200%2064%2032%2032%200%201%201%200-64zm-32-72c0-13.3%2010.7-24%2024-24c75.1%200%20136%2060.9%20136%20136c0%2013.3-10.7%2024-24%2024s-24-10.7-24-24c0-48.6-39.4-88-88-88c-13.3%200-24-10.7-24-24zM117.5%201.4c19.4-5.3%2039.7%204.6%2047.4%2023.2l40%2096c6.8%2016.3%202.1%2035.2-11.6%2046.3L144%20207.3c33.3%2070.4%2090.3%20127.4%20160.7%20160.7L345%20318.7c11.2-13.7%2030-18.4%2046.3-11.6l96%2040c18.6%207.7%2028.5%2028%2023.2%2047.4l-24%2088C481.8%20499.9%20466%20512%20448%20512C200.6%20512%200%20311.4%200%2064C0%2046%2012.1%2030.2%2029.5%2025.4l88-24z%22%2F%3E%3C%2Fsvg%3E");}
+.fa-scroll{--fa-icon:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20576%20512%22%3E%3Cpath%20d%3D%22M0%2080l0%2048c0%2017.7%2014.3%2032%2032%2032l16%200%2048%200%200-80c0-26.5-21.5-48-48-48S0%2053.5%200%2080zM112%2032c10%2013.4%2016%2030%2016%2048l0%20304c0%2035.3%2028.7%2064%2064%2064s64-28.7%2064-64l0-5.3c0-32.4%2026.3-58.7%2058.7-58.7L480%20320l0-192c0-53-43-96-96-96L112%2032zM464%20480c61.9%200%20112-50.1%20112-112c0-8.8-7.2-16-16-16l-245.3%200c-14.7%200-26.7%2011.9-26.7%2026.7l0%205.3c0%2053-43%2096-96%2096l176%200%2096%200z%22%2F%3E%3C%2Fsvg%3E");}
+.fa-seedling{--fa-icon:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20d%3D%22M512%2032c0%20113.6-84.6%20207.5-194.2%20222c-7.1-53.4-30.6-101.6-65.3-139.3C290.8%2046.3%20364%200%20448%200l32%200c17.7%200%2032%2014.3%2032%2032zM0%2096C0%2078.3%2014.3%2064%2032%2064l32%200c123.7%200%20224%20100.3%20224%20224l0%2032%200%20160c0%2017.7-14.3%2032-32%2032s-32-14.3-32-32l0-160C100.3%20320%200%20219.7%200%2096z%22%2F%3E%3C%2Fsvg%3E");}
+.fa-star-of-david{--fa-icon:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20d%3D%22M404.2%20309.5L383.1%20344l42.3%200-21.1-34.5zM371.4%20256l-54-88-122.8%200-54%2088%2054%2088%20122.8%200%2054-88zm65.7%200l53.4%2087c3.6%205.9%205.5%2012.7%205.5%2019.6c0%2020.7-16.8%2037.4-37.4%2037.4l-109.8%200-56.2%2091.5C284.8%20504.3%20270.9%20512%20256%20512s-28.8-7.7-36.6-20.5L163.3%20400%2053.4%20400C32.8%20400%2016%20383.2%2016%20362.6c0-6.9%201.9-13.7%205.5-19.6l53.4-87L21.5%20169c-3.6-5.9-5.5-12.7-5.5-19.6C16%20128.8%2032.8%20112%2053.4%20112l109.8%200%2056.2-91.5C227.2%207.7%20241.1%200%20256%200s28.8%207.7%2036.6%2020.5L348.7%20112l109.8%200c20.7%200%2037.4%2016.8%2037.4%2037.4c0%206.9-1.9%2013.7-5.5%2019.6l-53.4%2087zm-54-88l21.1%2034.5L425.4%20168l-42.3%200zM283%20112L256%2068l-27%2044%2054%200zM128.9%20168l-42.3%200%2021.1%2034.5L128.9%20168zM107.8%20309.5L86.6%20344l42.3%200-21.1-34.5zM229%20400l27%2044%2027-44-54%200z%22%2F%3E%3C%2Fsvg%3E");}
+.fa-up-right-from-square{--fa-icon:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%3E%3Cpath%20d%3D%22M352%200c-12.9%200-24.6%207.8-29.6%2019.8s-2.2%2025.7%206.9%2034.9L370.7%2096%20201.4%20265.4c-12.5%2012.5-12.5%2032.8%200%2045.3s32.8%2012.5%2045.3%200L416%20141.3l41.4%2041.4c9.2%209.2%2022.9%2011.9%2034.9%206.9s19.8-16.6%2019.8-29.6l0-128c0-17.7-14.3-32-32-32L352%200zM80%2032C35.8%2032%200%2067.8%200%20112L0%20432c0%2044.2%2035.8%2080%2080%2080l320%200c44.2%200%2080-35.8%2080-80l0-112c0-17.7-14.3-32-32-32s-32%2014.3-32%2032l0%20112c0%208.8-7.2%2016-16%2016L80%20448c-8.8%200-16-7.2-16-16l0-320c0-8.8%207.2-16%2016-16l112%200c17.7%200%2032-14.3%2032-32s-14.3-32-32-32L80%2032z%22%2F%3E%3C%2Fsvg%3E");}
+.fa-utensils{--fa-icon:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20448%20512%22%3E%3Cpath%20d%3D%22M416%200C400%200%20288%2032%20288%20176l0%20112c0%2035.3%2028.7%2064%2064%2064l32%200%200%20128c0%2017.7%2014.3%2032%2032%2032s32-14.3%2032-32l0-128%200-112%200-208c0-17.7-14.3-32-32-32zM64%2016C64%207.8%2057.9%201%2049.7%20.1S34.2%204.6%2032.4%2012.5L2.1%20148.8C.7%20155.1%200%20161.5%200%20167.9c0%2045.9%2035.1%2083.6%2080%2087.7L80%20480c0%2017.7%2014.3%2032%2032%2032s32-14.3%2032-32l0-224.4c44.9-4.1%2080-41.8%2080-87.7c0-6.4-.7-12.8-2.1-19.1L191.6%2012.5c-1.8-8-9.3-13.3-17.4-12.4S160%207.8%20160%2016l0%20134.2c0%205.4-4.4%209.8-9.8%209.8c-5.1%200-9.3-3.9-9.8-9L127.9%2014.6C127.2%206.3%20120.3%200%20112%200s-15.2%206.3-15.9%2014.6L83.7%20151c-.5%205.1-4.7%209-9.8%209c-5.4%200-9.8-4.4-9.8-9.8L64%2016zm48.3%20152l-.3%200-.3%200%20.3-.7%20.3%20.7z%22%2F%3E%3C%2Fsvg%3E");}
+.fa-hands-holding-heart{--fa-icon:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20576%20512%22%3E%3Cpath%20d%3D%22M163.9%20136.9c-29.4-29.8-29.4-78.2%200-108s77-29.8%20106.4%200l17.7%2018%2017.7-18c29.4-29.8%2077-29.8%20106.4%200s29.4%2078.2%200%20108L310.5%20240.1c-6.2%206.3-14.3%209.4-22.5%209.4s-16.3-3.1-22.5-9.4L163.9%20136.9zM568.2%20336.3c13.1%2017.8%209.3%2042.8-8.5%2055.9L433.1%20485.5c-23.4%2017.2-51.6%2026.5-80.7%2026.5L192%20512%2032%20512c-17.7%200-32-14.3-32-32l0-64c0-17.7%2014.3-32%2032-32l36.8%200%2044.9-36c22.7-18.2%2050.9-28%2080-28l78.3%200%2016%200%2064%200c17.7%200%2032%2014.3%2032%2032s-14.3%2032-32%2032l-64%200-16%200c-8.8%200-16%207.2-16%2016s7.2%2016%2016%2016l120.6%200%20119.7-88.2c17.8-13.1%2042.8-9.3%2055.9%208.5zM193.6%20384c0%200%200%200%200%200l-.9%200c.3%200%20.6%200%20.9%200z%22%2F%3E%3C%2Fsvg%3E");}
+
+
+====================================================================================================
+FILE: canteen-gallery.html
+====================================================================================================
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Галерея столовой — Источники Надежды</title>
+<link rel="stylesheet" href="assets/icons/site-icons-a.css?v=20260923-1">
+  <link rel="stylesheet" href="assets/icons/site-icons-b.css?v=20260923-1">
+  <link rel="stylesheet" href="style.css?v=20260923-22">
+</head>
+<body class="lang-ru">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark"><i class="fas fa-heart"></i></span>
+        <span class="brand-title"><span data-lang="ru">Источники Надежды</span><span data-lang="en">Streams of Hope</span><span data-lang="he" lang="he" dir="rtl">מקורות התקווה</span></span>
+      </a>
+      <nav class="top-nav">
+        <a href="index.html#canteen"><span data-lang="ru">К столовой</span><span data-lang="en">Back to canteen</span><span data-lang="he" lang="he" dir="rtl">לבית התמחוי</span></a>
+        <a href="gallery.html"><span data-lang="ru">Общая галерея</span><span data-lang="en">Main gallery</span><span data-lang="he" lang="he" dir="rtl">גלריה כללית</span></a>
+      </nav>
+      <div class="lang-switcher">
+        <button class="lang-btn active" id="btn-ru" type="button" onclick="setLanguage('ru')">RU</button>
+        <button class="lang-btn" id="btn-en" type="button" onclick="setLanguage('en')">EN</button><button class="lang-btn" id="btn-he" type="button" onclick="setLanguage('he')">HE</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="subpage">
+    <section class="subpage-hero canteen-gallery-hero">
+      <div class="section-inner">
+        <div class="eyebrow">
+          <i class="fas fa-images"></i>
+          <span data-lang="ru">Благотворительная столовая</span>
+          <span data-lang="en">Charity canteen</span>
+          <span data-lang="he" lang="he" dir="rtl">בית התמחוי</span>
+        </div>
+        <h1><span data-lang="ru">Галерея столовой</span><span data-lang="en">Canteen gallery</span><span data-lang="he" lang="he" dir="rtl">גלריית בית התמחוי</span></h1>
+        <p><span data-lang="ru">Фотографии работы благотворительной столовой.</span><span data-lang="en">Photos from the charity canteen.</span><span data-lang="he" lang="he" dir="rtl">תמונות מפעילות בית התמחוי.</span></p>
+        <div class="subpage-actions">
+          <a class="btn btn-secondary" href="index.html#canteen"><i class="fas fa-arrow-left"></i><span data-lang="ru">К столовой</span><span data-lang="en">Back to canteen</span><span data-lang="he" lang="he" dir="rtl">לבית התמחוי</span></a>
+          <a class="btn btn-ghost" href="gallery.html"><i class="fas fa-images"></i><span data-lang="ru">Общая галерея</span><span data-lang="en">Main gallery</span><span data-lang="he" lang="he" dir="rtl">גלריה כללית</span></a>
+
+
+          <a class="gallery-sheet" style="width:100%;max-width:1536px;justify-self:center" href="assets/galleries/canteen/canteen-community-care-september-2026.jpg?v=20260922-1" target="_blank" rel="noopener">
+            <img src="assets/galleries/canteen/canteen-community-care-september-2026.jpg?v=20260922-1" alt="Community Care — September 2026" width="1536" height="1024" loading="lazy" decoding="async">
+          </a>
+
+          <a class="gallery-sheet" style="width:100%;max-width:1448px;justify-self:center" href="assets/galleries/canteen/canteen-september-2026.jpg?v=20260922-1" target="_blank" rel="noopener">
+            <img src="assets/galleries/canteen/canteen-september-2026.jpg?v=20260922-1" alt="Canteen — September 2026" width="1448" height="1086" loading="lazy" decoding="async">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-canteen">
+      <div class="section-inner">
+        
+        <div class="gallery-auto" data-gallery-category="canteen">
+    <div class="gallery-auto-grid gallery-static-fallback">
+      <a class="gallery-auto-card gallery-static-card" href="assets/galleries/canteen/canteen-community-care-september-2026.jpg" target="_blank" rel="noopener">
+        <div class="gallery-auto-media">
+          <img src="assets/galleries/canteen/canteen-community-care-september-2026.jpg" alt="Canteen Community Care September 2026" loading="eager" decoding="async">
+          <span class="gallery-auto-open" aria-hidden="true"><i class="fas fa-up-right-from-square"></i></span>
+        </div>
+        <div class="gallery-auto-caption">
+          <span data-lang="ru"><strong>Canteen Community Care September 2026</strong></span>
+          <span data-lang="en"><strong>Canteen Community Care September 2026</strong></span>
+          <span data-lang="he" lang="he" dir="rtl"><strong>Canteen Community Care September 2026</strong></span>
+        </div>
+      </a>
+      <a class="gallery-auto-card gallery-static-card" href="assets/galleries/canteen/canteen-september-2026.jpg" target="_blank" rel="noopener">
+        <div class="gallery-auto-media">
+          <img src="assets/galleries/canteen/canteen-september-2026.jpg" alt="Canteen September 2026" loading="eager" decoding="async">
+          <span class="gallery-auto-open" aria-hidden="true"><i class="fas fa-up-right-from-square"></i></span>
+        </div>
+        <div class="gallery-auto-caption">
+          <span data-lang="ru"><strong>Canteen September 2026</strong></span>
+          <span data-lang="en"><strong>Canteen September 2026</strong></span>
+          <span data-lang="he" lang="he" dir="rtl"><strong>Canteen September 2026</strong></span>
+        </div>
+      </a>
+      <a class="gallery-auto-card gallery-static-card" href="assets/galleries/canteen/canteen-main.png" target="_blank" rel="noopener">
+        <div class="gallery-auto-media">
+          <img src="assets/galleries/canteen/canteen-main.png" alt="Canteen Main" loading="lazy" decoding="async">
+          <span class="gallery-auto-open" aria-hidden="true"><i class="fas fa-up-right-from-square"></i></span>
+        </div>
+        <div class="gallery-auto-caption">
+          <span data-lang="ru"><strong>Canteen Main</strong></span>
+          <span data-lang="en"><strong>Canteen Main</strong></span>
+          <span data-lang="he" lang="he" dir="rtl"><strong>Canteen Main</strong></span>
+        </div>
+      </a>
+    </div>
+</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">© <span id="current-year">2026</span> <span data-lang="ru">«Источники Надежды».</span><span data-lang="en">“Streams of Hope”.</span><span data-lang="he" lang="he" dir="rtl">״מקורות התקווה״.</span></footer>
+  <script src="assets/galleries/gallery-manifest.js?v=20260923-1"></script>
+  <script src="gallery-auto.js?v=20260923-5"></script>
+  <script src="script.js?v=20260923-18"></script>
+</body>
+</html>
