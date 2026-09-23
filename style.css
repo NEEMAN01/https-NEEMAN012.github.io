@@ -3570,3 +3570,81 @@ body.lang-he .weekly-source {
     font-size: .82rem;
   }
 }
+
+
+/* ===== Custom gold artwork icons ===== */
+.gallery-cover-art {
+  position: relative;
+  z-index: 2;
+  width: min(66%, 164px);
+  height: min(66%, 164px);
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 16px 22px rgba(0,0,0,.28));
+  transition: transform .25s ease, filter .25s ease;
+}
+
+.gallery-category-card:hover .gallery-cover-art {
+  transform: translateY(-3px) scale(1.025);
+  filter: drop-shadow(0 20px 26px rgba(0,0,0,.32));
+}
+
+.section-icon-media {
+  display: grid;
+  place-items: center;
+  min-height: 390px;
+  padding: 42px;
+  background:
+    radial-gradient(circle at 50% 42%, rgba(215,197,138,.14), transparent 33%),
+    linear-gradient(145deg, rgba(38,72,49,.96), rgba(20,48,31,.98));
+  border: 1px solid rgba(215,197,138,.15);
+}
+
+.section-icon-media img {
+  width: min(70%, 280px);
+  height: auto;
+  max-height: 280px;
+  object-fit: contain;
+  filter: drop-shadow(0 22px 30px rgba(0,0,0,.30));
+}
+
+.section-canteen .section-icon-media {
+  background:
+    radial-gradient(circle at 50% 42%, rgba(219,160,131,.13), transparent 33%),
+    linear-gradient(145deg, rgba(66,55,38,.96), rgba(27,48,32,.98));
+}
+
+.section-college .section-icon-media {
+  background:
+    radial-gradient(circle at 50% 42%, rgba(143,180,207,.12), transparent 33%),
+    linear-gradient(145deg, rgba(39,61,67,.96), rgba(24,47,34,.98));
+}
+
+.section-holocaust .section-icon-media {
+  background:
+    radial-gradient(circle at 50% 42%, rgba(208,179,108,.14), transparent 33%),
+    linear-gradient(145deg, rgba(65,57,37,.96), rgba(27,47,32,.98));
+}
+
+.section-friends .section-icon-media {
+  background:
+    radial-gradient(circle at 50% 42%, rgba(203,183,223,.12), transparent 33%),
+    linear-gradient(145deg, rgba(60,52,67,.94), rgba(25,47,32,.98));
+}
+
+@media (max-width: 640px) {
+  .gallery-cover-art {
+    width: min(64%, 126px);
+    height: min(64%, 126px);
+  }
+
+  .section-icon-media {
+    min-height: 260px;
+    padding: 30px;
+  }
+
+  .section-icon-media img {
+    width: min(68%, 210px);
+    max-height: 210px;
+  }
+}
