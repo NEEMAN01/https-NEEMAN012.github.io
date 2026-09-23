@@ -3757,3 +3757,70 @@ body.lang-he .weekly-source {
     max-height: 130px;
   }
 }
+
+
+/* ===== Gallery botanical gold frame 2026-09-23 ===== */
+.gallery-category-preview.gallery-static-cover {
+  position: relative;
+  isolation: isolate;
+  box-shadow:
+    inset 0 0 0 1px rgba(224,198,124,.12),
+    inset 0 -28px 44px rgba(0,0,0,.06);
+}
+
+.gallery-category-preview.gallery-static-cover::before,
+.gallery-category-preview.gallery-static-cover::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 12px;
+  width: 142px;
+  height: 78px;
+  pointer-events: none;
+  opacity: .62;
+  border: 0;
+  border-radius: 0;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  filter: drop-shadow(0 2px 3px rgba(0,0,0,.18));
+}
+
+.gallery-category-preview.gallery-static-cover::before {
+  left: 10px;
+  right: auto;
+  bottom: auto;
+  transform: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 90'%3E%3Cg fill='none' stroke='%23d9c37d' stroke-width='2.1' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 83C35 70 49 39 86 28C112 20 138 22 174 6'/%3E%3Cpath d='M31 67C29 53 24 44 17 36'/%3E%3Cpath d='M58 48C54 35 49 27 40 18'/%3E%3Cpath d='M88 27C85 17 80 10 73 4'/%3E%3Cpath d='M116 24C122 15 130 9 139 4'/%3E%3Cpath d='M143 17C151 18 160 17 169 13'/%3E%3C/g%3E%3Cg fill='%23e6d497' opacity='.9'%3E%3Cellipse cx='15' cy='35' rx='4' ry='7' transform='rotate(-38 15 35)'/%3E%3Cellipse cx='34' cy='55' rx='4' ry='7' transform='rotate(25 34 55)'/%3E%3Cellipse cx='38' cy='17' rx='4' ry='7' transform='rotate(-32 38 17)'/%3E%3Cellipse cx='62' cy='38' rx='4' ry='7' transform='rotate(34 62 38)'/%3E%3Cellipse cx='72' cy='4' rx='4' ry='7' transform='rotate(-28 72 4)'/%3E%3Cellipse cx='93' cy='21' rx='4' ry='7' transform='rotate(35 93 21)'/%3E%3Cellipse cx='141' cy='5' rx='4' ry='7' transform='rotate(40 141 5)'/%3E%3Cellipse cx='153' cy='17' rx='4' ry='7' transform='rotate(-58 153 17)'/%3E%3C/g%3E%3Cg fill='%23f0e2b1'%3E%3Ccircle cx='25' cy='61' r='2.4'/%3E%3Ccircle cx='47' cy='45' r='2.2'/%3E%3Ccircle cx='103' cy='25' r='2.3'/%3E%3Ccircle cx='164' cy='13' r='2.2'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.gallery-category-preview.gallery-static-cover::after {
+  right: 10px;
+  left: auto;
+  bottom: auto;
+  transform: scaleX(-1);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 90'%3E%3Cg fill='none' stroke='%23d9c37d' stroke-width='2.1' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 83C35 70 49 39 86 28C112 20 138 22 174 6'/%3E%3Cpath d='M31 67C29 53 24 44 17 36'/%3E%3Cpath d='M58 48C54 35 49 27 40 18'/%3E%3Cpath d='M88 27C85 17 80 10 73 4'/%3E%3Cpath d='M116 24C122 15 130 9 139 4'/%3E%3Cpath d='M143 17C151 18 160 17 169 13'/%3E%3C/g%3E%3Cg fill='%23e6d497' opacity='.9'%3E%3Cellipse cx='15' cy='35' rx='4' ry='7' transform='rotate(-38 15 35)'/%3E%3Cellipse cx='34' cy='55' rx='4' ry='7' transform='rotate(25 34 55)'/%3E%3Cellipse cx='38' cy='17' rx='4' ry='7' transform='rotate(-32 38 17)'/%3E%3Cellipse cx='62' cy='38' rx='4' ry='7' transform='rotate(34 62 38)'/%3E%3Cellipse cx='72' cy='4' rx='4' ry='7' transform='rotate(-28 72 4)'/%3E%3Cellipse cx='93' cy='21' rx='4' ry='7' transform='rotate(35 93 21)'/%3E%3Cellipse cx='141' cy='5' rx='4' ry='7' transform='rotate(40 141 5)'/%3E%3Cellipse cx='153' cy='17' rx='4' ry='7' transform='rotate(-58 153 17)'/%3E%3C/g%3E%3Cg fill='%23f0e2b1'%3E%3Ccircle cx='25' cy='61' r='2.4'/%3E%3Ccircle cx='47' cy='45' r='2.2'/%3E%3Ccircle cx='103' cy='25' r='2.3'/%3E%3Ccircle cx='164' cy='13' r='2.2'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.gallery-category-preview.gallery-static-cover > img.gallery-cover-art {
+  z-index: 2;
+}
+
+@media (max-width: 640px) {
+  .gallery-category-preview.gallery-static-cover::before,
+  .gallery-category-preview.gallery-static-cover::after {
+    top: 9px;
+    width: 88px;
+    height: 52px;
+    opacity: .52;
+  }
+
+  .gallery-category-preview.gallery-static-cover::before {
+    left: 5px;
+  }
+
+  .gallery-category-preview.gallery-static-cover::after {
+    right: 5px;
+  }
+}
