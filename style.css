@@ -3343,21 +3343,24 @@ body.lang-he .weekly-source {
 }
 
 .gallery-auto-card.is-legacy {
-  grid-column: 1 / -1;
-  max-width: 1448px;
+  grid-column: auto;
   width: 100%;
-  justify-self: center;
+  max-width: none;
+  justify-self: stretch;
+  opacity: .96;
 }
 
 .gallery-auto-card.is-legacy .gallery-auto-media {
-  aspect-ratio: auto;
+  aspect-ratio: 4 / 3;
   min-height: 0;
-  background: rgba(255,255,255,.018);
+  background:
+    radial-gradient(circle at 50% 40%, rgba(215,197,138,.06), transparent 44%),
+    #122219;
 }
 
 .gallery-auto-card.is-legacy .gallery-auto-media img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: contain;
 }
 
