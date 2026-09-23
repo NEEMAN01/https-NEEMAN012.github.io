@@ -7025,3 +7025,111 @@ FILE: weekly-content.js
   window.WEEKLY_CONTENT = FALLBACK;
   window.loadWeeklyCalendarData = loadWeeklyCalendarData;
 })();
+
+====================================================================================================
+FILE: weekly-snapshot.json
+====================================================================================================
+
+{
+  "source": "local-snapshot",
+  "generatedAt": "2026-09-23T11:50:00.000Z",
+  "today": {
+    "dateRu": "23 сентября 2026",
+    "dateEn": "23 September 2026",
+    "dateHe": "23 בספטמבר 2026",
+    "hdateRu": "12 Тишрея 5787",
+    "hdateEn": "12 Tishrei 5787",
+    "hdateHe": "י״ב בתשרי תשפ״ז"
+  },
+  "parasha": {
+    "ru": "Суккот",
+    "en": "Sukkot",
+    "he": "סוכות",
+    "dateRu": "26 сентября 2026",
+    "dateEn": "26 September 2026",
+    "dateHe": "26 בספטמבר 2026",
+    "hdateRu": "15 Тишрея 5787",
+    "hdateEn": "15 Tishrei 5787",
+    "hdateHe": "ט״ו בתשרי תשפ״ז",
+    "torahRu": "Ваикра 22:26–23:44; Бемидбар 29:12–16",
+    "torahEn": "Leviticus 22:26–23:44; Numbers 29:12–16",
+    "torahHe": "ויקרא 22:26–23:44; במדבר 29:12–16",
+    "haftarahRu": "Захария 14:1–21",
+    "haftarahEn": "Zechariah 14:1–21",
+    "haftarahHe": "זכריה 14:1–21",
+    "noteRu": "Расписание чтения для Израиля. Данные обновляются автоматически.",
+    "noteEn": "Israel reading schedule. Data updates automatically.",
+    "noteHe": "סדר הקריאה בישראל. הנתונים מתעדכנים אוטומטית."
+  },
+  "holidays": [
+    {
+      "id": "sukkot-2026",
+      "key": "sukkot",
+      "ru": "Суккот",
+      "en": "Sukkot",
+      "he": "סוכות",
+      "dateRu": "с вечера 25 сентября 2026 – 2 октября 2026",
+      "dateEn": "evening of 25 September 2026 – 2 October 2026",
+      "dateHe": "מערב 25 בספטמבר 2026 עד 2 באוקטובר 2026",
+      "hdateRu": "15 Тишрея 5787 – 21 Тишрея 5787",
+      "hdateEn": "15 Tishrei 5787 – 21 Tishrei 5787",
+      "hdateHe": "15 תשרי 5787 – 21 תשרי 5787",
+      "badgeRu": "Ближайший праздник",
+      "badgeEn": "Upcoming holiday",
+      "badgeHe": "החג הקרוב",
+      "readings": [
+        {
+          "dateRu": "26 сентября 2026",
+          "dateEn": "26 September 2026",
+          "dateHe": "26 בספטמבר 2026",
+          "hdateRu": "15 Тишрея 5787",
+          "hdateEn": "15 Tishrei 5787",
+          "hdateHe": "15 תשרי 5787",
+          "torahRu": "Ваикра 22:26–23:44; Бемидбар 29:12–16",
+          "torahEn": "Leviticus 22:26–23:44; Numbers 29:12–16",
+          "torahHe": "ויקרא 22:26–23:44; במדבר 29:12–16",
+          "haftarahRu": "Захария 14:1–21",
+          "haftarahEn": "Zechariah 14:1–21",
+          "haftarahHe": "זכריה 14:1–21"
+        }
+      ]
+    },
+    {
+      "id": "shmini-simchat-2026",
+      "key": "shmini-simchat",
+      "ru": "Шмини Ацерет и Симхат Тора",
+      "en": "Shmini Atzeret & Simchat Torah",
+      "he": "שמיני עצרת ושמחת תורה",
+      "dateRu": "с вечера 2 октября 2026 – 3 октября 2026",
+      "dateEn": "evening of 2 October 2026 – 3 October 2026",
+      "dateHe": "מערב 2 באוקטובר 2026 עד 3 באוקטובר 2026",
+      "hdateRu": "22 Тишрея 5787",
+      "hdateEn": "22 Tishrei 5787",
+      "hdateHe": "22 תשרי 5787",
+      "badgeRu": "Следующий праздник",
+      "badgeEn": "Next holiday",
+      "badgeHe": "החג הבא",
+      "readings": [
+        {
+          "dateRu": "3 октября 2026",
+          "dateEn": "3 October 2026",
+          "dateHe": "3 באוקטובר 2026",
+          "hdateRu": "22 Тишрея 5787",
+          "hdateEn": "22 Tishrei 5787",
+          "hdateHe": "22 תשרי 5787",
+          "torahRu": "Дварим 33:1–34:12; Берешит 1:1–2:3; Бемидбар 29:35–30:1; Коэлет 1:1–12:14",
+          "torahEn": "Deuteronomy 33:1–34:12; Genesis 1:1–2:3; Numbers 29:35–30:1; Ecclesiastes 1:1–12:14",
+          "torahHe": "דברים 33:1–34:12; בראשית 1:1–2:3; במדבר 29:35–30:1; קהלת 1:1–12:14",
+          "haftarahRu": "Иегошуа 1:1–18",
+          "haftarahEn": "Joshua 1:1–18",
+          "haftarahHe": "יהושע 1:1–18"
+        }
+      ]
+    }
+  ]
+}
+
+
+====================================================================================================
+END OF SOURCE CODE SNAPSHOT
+====================================================================================================
