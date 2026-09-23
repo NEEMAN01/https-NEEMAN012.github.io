@@ -51,6 +51,52 @@ const PAGE_TITLES = {
   }
 };
 
+function getLocalizedKey(lang, ru, en, he) {
+  if (lang === "he") return he;
+  if (lang === "en") return en;
+  return ru;
+}
+
+function renderHolidayReadings(details, holiday, lang) {
+  details.replaceChildren();
+
+  const readings = Array.isArray(holiday.readings) ? holiday.readings : [];
+  if (!readings.length) {
+    const empty = document.createElement("div");
+    empty.className = "holiday-reading-empty";
+    empty.textContent = lang === "he"
+      ? "ליום זה לא נמצאו פרטי קריאה."
+      : (lang === "en"
+        ? "No reading details were found for these dates."
+        : "Для этих дат подробности чтений не найдены.");
+    details.append(empty);
+    return;
+  }
+
+  readings.forEach((reading) => {
+    const row = document.createElement("div");
+    row.className = "holiday-reading-row";
+
+    const heading = document.createElement("strong");
+    const dateKey = getLocalizedKey(lang, "dateRu", "dateEn", "dateHe");
+    const hdateKey = getLocalizedKey(lang, "hdateRu", "hdateEn", "hdateHe");
+    heading.textContent = "☀ " + (reading[dateKey] || "") + " • 🌙 " + (reading[hdateKey] || "");
+
+    const torah = document.createElement("span");
+    const torahKey = getLocalizedKey(lang, "torahRu", "torahEn", "torahHe");
+    const torahLabel = lang === "he" ? "תורה" : (lang === "en" ? "Torah" : "Тора");
+    torah.textContent = torahLabel + ": " + (reading[torahKey] || "—");
+
+    const haft = document.createElement("span");
+    const haftKey = getLocalizedKey(lang, "haftarahRu", "haftarahEn", "haftarahHe");
+    const haftLabel = lang === "he" ? "הפטרה" : (lang === "en" ? "Haftarah" : "Афтара");
+    haft.textContent = haftLabel + ": " + (reading[haftKey] || "—");
+
+    row.append(heading, torah, haft);
+    details.append(row);
+  });
+}
+
 function renderWeeklyContent(lang) {
   const data = window.WEEKLY_CONTENT;
   if (!data) return;
@@ -60,33 +106,54 @@ function renderWeeklyContent(lang) {
   const weekLabel = document.getElementById("weekly-week-label");
   const parashaTitle = document.getElementById("weekly-parasha-title");
   const parashaHe = document.getElementById("weekly-parasha-he");
+  const parashaDate = document.getElementById("weekly-parasha-date");
   const parashaReference = document.getElementById("weekly-parasha-reference");
+  const haftarahReference = document.getElementById("weekly-haftarah-reference");
   const parashaNote = document.getElementById("weekly-parasha-note");
   const holidayList = document.getElementById("weekly-holiday-list");
 
+  const todayDateKey = getLocalizedKey(safeLang, "dateRu", "dateEn", "dateHe");
+  const todayHDateKey = getLocalizedKey(safeLang, "hdateRu", "hdateEn", "hdateHe");
+
   if (weekLabel) {
-    const dateText = data.weekLabel?.[safeLang] || "";
-    const hebrewDate = data.weekLabel?.heDate || "";
-    weekLabel.textContent = hebrewDate ? dateText + " • " + hebrewDate : dateText;
+    const solar = data.today && data.today[todayDateKey] ? data.today[todayDateKey] : "";
+    const lunar = data.today && data.today[todayHDateKey] ? data.today[todayHDateKey] : "";
+    weekLabel.textContent = "☀ " + solar + " • 🌙 " + lunar;
   }
 
   if (parashaTitle) {
-    parashaTitle.textContent = data.parasha?.[safeLang] || "";
+    parashaTitle.textContent = data.parasha && data.parasha[safeLang] ? data.parasha[safeLang] : "";
   }
 
   if (parashaHe) {
     parashaHe.hidden = safeLang === "he";
-    parashaHe.textContent = safeLang === "he" ? "" : (data.parasha?.he || "");
+    parashaHe.textContent = safeLang === "he" ? "" : ((data.parasha && data.parasha.he) || "");
+  }
+
+  const readingDateKey = getLocalizedKey(safeLang, "dateRu", "dateEn", "dateHe");
+  const readingHDateKey = getLocalizedKey(safeLang, "hdateRu", "hdateEn", "hdateHe");
+  const torahKey = getLocalizedKey(safeLang, "torahRu", "torahEn", "torahHe");
+  const haftarahKey = getLocalizedKey(safeLang, "haftarahRu", "haftarahEn", "haftarahHe");
+
+  if (parashaDate) {
+    const solar = data.parasha && data.parasha[readingDateKey] ? data.parasha[readingDateKey] : "";
+    const lunar = data.parasha && data.parasha[readingHDateKey] ? data.parasha[readingHDateKey] : "";
+    parashaDate.textContent = "☀ " + solar + " • 🌙 " + lunar;
   }
 
   if (parashaReference) {
-    const key = safeLang === "he" ? "referenceHe" : (safeLang === "en" ? "referenceEn" : "referenceRu");
-    parashaReference.textContent = data.parasha?.[key] || "";
+    const label = safeLang === "he" ? "תורה" : (safeLang === "en" ? "Torah" : "Тора");
+    parashaReference.textContent = label + ": " + ((data.parasha && data.parasha[torahKey]) || "—");
+  }
+
+  if (haftarahReference) {
+    const label = safeLang === "he" ? "הפטרה" : (safeLang === "en" ? "Haftarah" : "Афтара");
+    haftarahReference.textContent = label + ": " + ((data.parasha && data.parasha[haftarahKey]) || "—");
   }
 
   if (parashaNote) {
-    const key = safeLang === "he" ? "noteHe" : (safeLang === "en" ? "noteEn" : "noteRu");
-    parashaNote.textContent = data.parasha?.[key] || "";
+    const noteKey = getLocalizedKey(safeLang, "noteRu", "noteEn", "noteHe");
+    parashaNote.textContent = (data.parasha && data.parasha[noteKey]) || "";
   }
 
   if (holidayList) {
@@ -117,17 +184,51 @@ function renderWeeklyContent(lang) {
 
       const date = document.createElement("span");
       date.className = "holiday-date";
-      const dateKey = safeLang === "he" ? "dateHe" : (safeLang === "en" ? "dateEn" : "dateRu");
-      date.textContent = holiday[dateKey] || "";
+      const dateKey = getLocalizedKey(safeLang, "dateRu", "dateEn", "dateHe");
+      const hdateKey = getLocalizedKey(safeLang, "hdateRu", "hdateEn", "hdateHe");
+      date.textContent = "☀ " + (holiday[dateKey] || "") + " • 🌙 " + (holiday[hdateKey] || "");
 
       main.append(titleRow, date);
 
+      const actions = document.createElement("div");
+      actions.className = "holiday-item-actions";
+
       const badge = document.createElement("span");
       badge.className = "holiday-badge";
-      const badgeKey = safeLang === "he" ? "badgeHe" : (safeLang === "en" ? "badgeEn" : "badgeRu");
+      const badgeKey = getLocalizedKey(safeLang, "badgeRu", "badgeEn", "badgeHe");
       badge.textContent = holiday[badgeKey] || "";
 
-      item.append(main, badge);
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "holiday-readings-btn";
+      button.setAttribute("aria-expanded", "false");
+
+      const bookIcon = document.createElement("i");
+      bookIcon.className = "fas fa-book-open";
+      bookIcon.setAttribute("aria-hidden", "true");
+
+      const buttonText = document.createElement("span");
+      buttonText.textContent = safeLang === "he" ? "קריאות" : (safeLang === "en" ? "Readings" : "Чтения");
+
+      const arrowIcon = document.createElement("i");
+      arrowIcon.className = "fas fa-chevron-down holiday-readings-chevron";
+      arrowIcon.setAttribute("aria-hidden", "true");
+
+      button.append(bookIcon, buttonText, arrowIcon);
+      actions.append(badge, button);
+
+      const details = document.createElement("div");
+      details.className = "holiday-reading-details";
+      details.hidden = true;
+      renderHolidayReadings(details, holiday, safeLang);
+
+      button.addEventListener("click", () => {
+        const opening = details.hidden;
+        details.hidden = !opening;
+        button.setAttribute("aria-expanded", opening ? "true" : "false");
+      });
+
+      item.append(main, actions, details);
       holidayList.append(item);
     });
   }
@@ -149,15 +250,24 @@ function setLanguage(lang) {
 
   const page = window.location.pathname.split("/").pop() || "index.html";
   const titles = PAGE_TITLES[page] || PAGE_TITLES["index.html"];
-  document.title = titles?.[safeLang] || titles?.ru || document.title;
+  document.title = (titles && titles[safeLang]) || (titles && titles.ru) || document.title;
 
   localStorage.setItem("siteLang", safeLang);
   renderWeeklyContent(safeLang);
 }
 
+window.addEventListener("weeklyContentUpdated", () => {
+  const lang = localStorage.getItem("siteLang") || "ru";
+  renderWeeklyContent(lang);
+});
+
 document.addEventListener("DOMContentLoaded", () => {
   const savedLang = localStorage.getItem("siteLang") || "ru";
   setLanguage(savedLang);
+
+  if (typeof window.loadWeeklyCalendarData === "function") {
+    window.loadWeeklyCalendarData().catch(() => {});
+  }
 
   const year = document.getElementById("current-year");
   if (year) year.textContent = new Date().getFullYear();
