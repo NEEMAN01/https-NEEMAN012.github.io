@@ -378,3 +378,1478 @@ FILE: canteen-gallery.html
   <script src="script.js?v=20260923-18"></script>
 </body>
 </html>
+
+====================================================================================================
+FILE: college-gallery.html
+====================================================================================================
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Галерея колледжа — Источники Надежды</title>
+<link rel="stylesheet" href="assets/icons/site-icons-a.css?v=20260923-1">
+  <link rel="stylesheet" href="assets/icons/site-icons-b.css?v=20260923-1">
+  <link rel="stylesheet" href="style.css?v=20260923-22">
+</head>
+<body class="lang-ru">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark"><i class="fas fa-heart"></i></span>
+        <span class="brand-title"><span data-lang="ru">Источники Надежды</span><span data-lang="en">Streams of Hope</span><span data-lang="he" lang="he" dir="rtl">מקורות התקווה</span></span>
+      </a>
+      <nav class="top-nav">
+        <a href="index.html#college"><span data-lang="ru">Назад к разделу</span><span data-lang="en">Back to section</span><span data-lang="he" lang="he" dir="rtl">חזרה למדור</span></a>
+        <a href="gallery.html"><span data-lang="ru">Общая галерея</span><span data-lang="en">Main gallery</span><span data-lang="he" lang="he" dir="rtl">גלריה כללית</span></a>
+      </nav>
+      <div class="lang-switcher">
+        <button class="lang-btn active" id="btn-ru" type="button" onclick="setLanguage('ru')">RU</button>
+        <button class="lang-btn" id="btn-en" type="button" onclick="setLanguage('en')">EN</button><button class="lang-btn" id="btn-he" type="button" onclick="setLanguage('he')">HE</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="subpage">
+    <section class="subpage-hero college-gallery-hero">
+      <div class="section-inner">
+        <div class="eyebrow">
+          <i class="fas fa-images"></i>
+          <span data-lang="ru">Колледж</span>
+          <span data-lang="en">College</span>
+          <span data-lang="he" lang="he" dir="rtl">מכללה</span>
+        </div>
+        <h1><span data-lang="ru">Галерея колледжа</span><span data-lang="en">College gallery</span><span data-lang="he" lang="he" dir="rtl">גלריית המכללה</span></h1>
+        <p><span data-lang="ru">Фотографии учёбы и встреч колледжа.</span><span data-lang="en">Photos from studies and college meetings.</span><span data-lang="he" lang="he" dir="rtl">תמונות מהלימודים ומהמפגשים במכללה.</span></p>
+        <div class="subpage-actions">
+          <a class="btn btn-secondary" href="index.html#college"><i class="fas fa-arrow-left"></i><span data-lang="ru">Назад к разделу</span><span data-lang="en">Back to section</span><span data-lang="he" lang="he" dir="rtl">חזרה למדור</span></a>
+          <a class="btn btn-ghost" href="gallery.html"><i class="fas fa-images"></i><span data-lang="ru">Общая галерея</span><span data-lang="en">Main gallery</span><span data-lang="he" lang="he" dir="rtl">גלריה כללית</span></a>
+
+
+          <a class="gallery-sheet" style="width:100%;max-width:1448px;justify-self:center" href="assets/galleries/college/christian-leadership-university-2024.jpg?v=20260923-1" target="_blank" rel="noopener">
+            <img src="assets/galleries/college/christian-leadership-university-2024.jpg?v=20260923-1" alt="Christian Leadership University — College 2024" width="1448" height="1086" loading="lazy" decoding="async">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-college">
+      <div class="section-inner">
+        
+        <div class="gallery-auto" data-gallery-category="college">
+    <div class="gallery-auto-grid gallery-static-fallback">
+      <a class="gallery-auto-card gallery-static-card" href="assets/galleries/college/christian-leadership-university-2024.jpg" target="_blank" rel="noopener">
+        <div class="gallery-auto-media">
+          <img src="assets/galleries/college/christian-leadership-university-2024.jpg" alt="Christian Leadership University 2024" loading="eager" decoding="async">
+          <span class="gallery-auto-open" aria-hidden="true"><i class="fas fa-up-right-from-square"></i></span>
+        </div>
+        <div class="gallery-auto-caption">
+          <span data-lang="ru"><strong>Christian Leadership University 2024</strong></span>
+          <span data-lang="en"><strong>Christian Leadership University 2024</strong></span>
+          <span data-lang="he" lang="he" dir="rtl"><strong>Christian Leadership University 2024</strong></span>
+        </div>
+      </a>
+      <a class="gallery-auto-card gallery-static-card" href="assets/galleries/college/college-overview.png" target="_blank" rel="noopener">
+        <div class="gallery-auto-media">
+          <img src="assets/galleries/college/college-overview.png" alt="College Overview" loading="eager" decoding="async">
+          <span class="gallery-auto-open" aria-hidden="true"><i class="fas fa-up-right-from-square"></i></span>
+        </div>
+        <div class="gallery-auto-caption">
+          <span data-lang="ru"><strong>College Overview</strong></span>
+          <span data-lang="en"><strong>College Overview</strong></span>
+          <span data-lang="he" lang="he" dir="rtl"><strong>College Overview</strong></span>
+        </div>
+      </a>
+    </div>
+</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">© <span id="current-year">2026</span> <span data-lang="ru">«Источники Надежды».</span><span data-lang="en">“Streams of Hope”.</span><span data-lang="he" lang="he" dir="rtl">״מקורות התקווה״.</span></footer>
+  <script src="assets/galleries/gallery-manifest.js?v=20260923-1"></script>
+  <script src="gallery-auto.js?v=20260923-5"></script>
+  <script src="script.js?v=20260923-18"></script>
+</body>
+</html>
+
+====================================================================================================
+FILE: documents.html
+====================================================================================================
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Документы и обращения — Источники Надежды</title>
+<link rel="stylesheet" href="assets/icons/site-icons-a.css?v=20260923-1">
+  <link rel="stylesheet" href="assets/icons/site-icons-b.css?v=20260923-1">
+  <link rel="stylesheet" href="style.css?v=20260921-14">
+</head>
+<body class="lang-ru">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark"><i class="fas fa-heart"></i></span>
+        <span class="brand-title">
+          <span data-lang="ru">Источники Надежды</span>
+          <span data-lang="en">Streams of Hope</span>
+          <span data-lang="he" lang="he" dir="rtl">מקורות התקווה</span>
+        </span>
+      </a>
+
+      <nav class="top-nav">
+        <a href="index.html#news"><span data-lang="ru">Новости</span><span data-lang="en">News</span><span data-lang="he" lang="he" dir="rtl">חדשות</span></a>
+        <a href="index.html#projects"><span data-lang="ru">Проекты</span><span data-lang="en">Projects</span><span data-lang="he" lang="he" dir="rtl">פרויקטים</span></a>
+      </nav>
+
+      <div class="lang-switcher">
+        <button class="lang-btn active" id="btn-ru" type="button" onclick="setLanguage('ru')">RU</button>
+        <button class="lang-btn" id="btn-en" type="button" onclick="setLanguage('en')">EN</button><button class="lang-btn" id="btn-he" type="button" onclick="setLanguage('he')">HE</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="subpage">
+    <section class="subpage-hero documents-hero">
+      <div class="section-inner">
+        <div class="eyebrow">
+          <i class="fas fa-folder-open"></i>
+          <span data-lang="ru">Архив материалов</span>
+          <span data-lang="en">Document Archive</span>
+          <span data-lang="he" lang="he" dir="rtl">ארכיון חומרים</span>
+        </div>
+        <h1>
+          <span data-lang="ru">Документы и обращения</span>
+          <span data-lang="en">Documents & Appeals</span>
+          <span data-lang="he" lang="he" dir="rtl">מסמכים ופניות</span>
+        </h1>
+        <a class="btn btn-secondary" href="index.html#news">
+          <i class="fas fa-arrow-left"></i>
+          <span data-lang="ru">Вернуться к новостям</span>
+          <span data-lang="en">Back to news</span>
+          <span data-lang="he" lang="he" dir="rtl">חזרה לחדשות</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section section-news">
+      <div class="section-inner documents-wrap">
+        <div class="documents-list">
+          <article class="archive-document-item">
+            <div class="archive-document-icon">
+              <i class="fas fa-file-lines"></i>
+            </div>
+
+            <div class="archive-document-copy">
+              <div class="archive-document-meta">
+                <span class="badge badge-document">
+                  <span data-lang="ru">Архивный материал</span>
+                  <span data-lang="en">Archived material</span>
+                  <span data-lang="he" lang="he" dir="rtl">חומר ארכיוני</span>
+                </span>
+                <time datetime="2026-03-24">24/03/2026</time>
+              </div>
+
+              <h2>
+                <span data-lang="ru">Нужды войны</span>
+                <span data-lang="en">Needs of War</span>
+                <span data-lang="he" lang="he" dir="rtl">צרכי המלחמה</span>
+              </h2>
+
+              <p>
+                <span data-lang="ru">Обращение о помощи семье из Беэр-Шевы. Материал опубликован 24 марта 2026 года и сохранён в архиве как документ своего времени.</span>
+                <span data-lang="en">An appeal to help a family in Beersheba. Published on 24 March 2026 and preserved here as an archived document from that period.</span>
+                <span data-lang="he" lang="he" dir="rtl">פנייה לסיוע למשפחה מבאר שבע. החומר פורסם ב־24 במרץ 2026 ונשמר בארכיון כמסמך מתקופתו.</span>
+              </p>
+
+              <div class="archive-document-actions">
+                <a class="btn btn-document" href="needs-of-war-03-2026.html">
+                  <i class="fas fa-book-open"></i>
+                  <span data-lang="ru">Прочитать материал</span>
+                  <span data-lang="en">Read document</span>
+                  <span data-lang="he" lang="he" dir="rtl">לקריאת החומר</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    © <span id="current-year">2026</span>
+    <span data-lang="ru"> «Источники Надежды».</span>
+    <span data-lang="en"> “Streams of Hope”.</span>
+    <span data-lang="he" lang="he" dir="rtl">״מקורות התקווה״.</span>
+  </footer>
+
+  <script src="script.js?v=20260923-18"></script>
+</body>
+</html>
+
+====================================================================================================
+FILE: friends-gallery.html
+====================================================================================================
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Галерея наших друзей — Источники Надежды</title>
+<link rel="stylesheet" href="assets/icons/site-icons-a.css?v=20260923-1">
+  <link rel="stylesheet" href="assets/icons/site-icons-b.css?v=20260923-1">
+  <link rel="stylesheet" href="style.css?v=20260923-20">
+</head>
+<body class="lang-ru">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark"><i class="fas fa-heart"></i></span>
+        <span class="brand-title"><span data-lang="ru">Источники Надежды</span><span data-lang="en">Streams of Hope</span><span data-lang="he" lang="he" dir="rtl">מקורות התקווה</span></span>
+      </a>
+      <nav class="top-nav">
+        <a href="index.html#friends"><span data-lang="ru">Назад к разделу</span><span data-lang="en">Back to section</span><span data-lang="he" lang="he" dir="rtl">חזרה למדור</span></a>
+        <a href="gallery.html"><span data-lang="ru">Общая галерея</span><span data-lang="en">Main gallery</span><span data-lang="he" lang="he" dir="rtl">גלריה כללית</span></a>
+      </nav>
+      <div class="lang-switcher">
+        <button class="lang-btn active" id="btn-ru" type="button" onclick="setLanguage('ru')">RU</button>
+        <button class="lang-btn" id="btn-en" type="button" onclick="setLanguage('en')">EN</button><button class="lang-btn" id="btn-he" type="button" onclick="setLanguage('he')">HE</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="subpage">
+    <section class="subpage-hero friends-gallery-hero">
+      <div class="section-inner">
+        <div class="eyebrow">
+          <i class="fas fa-images"></i>
+          <span data-lang="ru">Наши друзья</span>
+          <span data-lang="en">Our Friends</span>
+          <span data-lang="he" lang="he" dir="rtl">החברים שלנו</span>
+        </div>
+        <h1><span data-lang="ru">Галерея наших друзей</span><span data-lang="en">Our Friends gallery</span><span data-lang="he" lang="he" dir="rtl">גלריית החברים שלנו</span></h1>
+        <p><span data-lang="ru">Фотографии наших друзей и партнёров.</span><span data-lang="en">Photos of our friends and partners.</span><span data-lang="he" lang="he" dir="rtl">תמונות של החברים והשותפים שלנו.</span></p>
+        <div class="subpage-actions">
+          <a class="btn btn-secondary" href="index.html#friends"><i class="fas fa-arrow-left"></i><span data-lang="ru">Назад к разделу</span><span data-lang="en">Back to section</span><span data-lang="he" lang="he" dir="rtl">חזרה למדור</span></a>
+          <a class="btn btn-ghost" href="gallery.html"><i class="fas fa-images"></i><span data-lang="ru">Общая галерея</span><span data-lang="en">Main gallery</span><span data-lang="he" lang="he" dir="rtl">גלריה כללית</span></a>
+
+
+          <a class="gallery-sheet" style="width:100%;max-width:1448px;justify-self:center" href="assets/galleries/friends/friends-faith-community-2026.jpg?v=20260922-1" target="_blank" rel="noopener">
+            <img src="assets/galleries/friends/friends-faith-community-2026.jpg?v=20260922-1" alt="Our Friends — faith, friendship and support" width="1448" height="1086" loading="lazy" decoding="async">
+          </a>
+
+
+          <a class="gallery-sheet" style="width:100%;max-width:1448px;justify-self:center" href="assets/galleries/friends/friends-faith-friendship-support-2026.jpg?v=20260922-1" target="_blank" rel="noopener">
+            <img src="assets/galleries/friends/friends-faith-friendship-support-2026.jpg?v=20260922-1" alt="Our Friends — together in faith, friendship and support" width="1448" height="1086" loading="lazy" decoding="async">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-friends">
+      <div class="section-inner">
+        
+        <div class="gallery-sheet-stack">
+          <a class="gallery-sheet" style="width:100%;max-width:1448px;justify-self:center" href="assets/galleries/friends/friends-overview.png?v=20260921-9" target="_blank" rel="noopener">
+            <img src="assets/galleries/friends/friends-overview.png?v=20260921-9" alt="Галерея наших друзей" width="1448" height="1086" loading="eager" decoding="async">
+          </a>
+
+          <a class="gallery-sheet" style="width:100%;max-width:1536px;justify-self:center" href="assets/galleries/friends/friends-community-collage-2026.jpg?v=20260922-1" target="_blank" rel="noopener">
+            <img src="assets/galleries/friends/friends-community-collage-2026.jpg?v=20260922-1" alt="Наши друзья — община и добрые дела" width="1536" height="864" loading="lazy" decoding="async">
+          </a>
+
+          <a class="gallery-sheet" style="width:100%;max-width:1448px;justify-self:center" href="assets/galleries/friends/friends-supporters-couple-2026.jpg?v=20260922-1" target="_blank" rel="noopener">
+            <img src="assets/galleries/friends/friends-supporters-couple-2026.jpg?v=20260922-1" alt="Наши друзья и партнёры" width="1448" height="1086" loading="lazy" decoding="async">
+          </a>
+
+          <a class="gallery-sheet" style="width:100%;max-width:1448px;justify-self:center" href="assets/galleries/friends/friends-supporters-family-2026.jpg?v=20260922-1" target="_blank" rel="noopener">
+            <img src="assets/galleries/friends/friends-supporters-family-2026.jpg?v=20260922-1" alt="Наши друзья и партнёры — семья" width="1448" height="1086" loading="lazy" decoding="async">
+          </a>
+
+          <a class="gallery-sheet" style="width:100%;max-width:1448px;justify-self:center" href="assets/galleries/friends/friends-supporters-group-2026.jpg?v=20260922-1" target="_blank" rel="noopener">
+            <img src="assets/galleries/friends/friends-supporters-group-2026.jpg?v=20260922-1" alt="Наши друзья и партнёры" width="1448" height="1086" loading="lazy" decoding="async">
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">© <span id="current-year">2026</span> <span data-lang="ru">«Источники Надежды».</span><span data-lang="en">“Streams of Hope”.</span><span data-lang="he" lang="he" dir="rtl">״מקורות התקווה״.</span></footer>
+  <script src="script.js?v=20260923-18"></script>
+</body>
+</html>
+
+====================================================================================================
+FILE: gallery-auto.js
+====================================================================================================
+
+(function () {
+  "use strict";
+
+  var manifest = window.GALLERY_MANIFEST || { categories: {} };
+
+  var CATEGORY_LABELS = {
+    repatriants: { ru: "Репатрианты", en: "Repatriates", he: "עולים חדשים" },
+    canteen: { ru: "Столовая", en: "Canteen", he: "בית תמחוי" },
+    holocaust: { ru: "Пережившие Холокост", en: "Holocaust Survivors", he: "ניצולי השואה" },
+    college: { ru: "Колледж", en: "College", he: "מכללה" },
+    holidays: { ru: "Праздники", en: "Holidays", he: "חגים" },
+    friends: { ru: "Наши друзья", en: "Our Friends", he: "החברים שלנו" }
+  };
+
+  var WORDS = {
+    help: { ru: "Помощь", en: "Help", he: "סיוע" },
+    support: { ru: "Поддержка", en: "Support", he: "תמיכה" },
+    care: { ru: "Забота", en: "Care", he: "דאגה" },
+    community: { ru: "Община", en: "Community", he: "קהילה" },
+    meal: { ru: "Питание", en: "Meal", he: "ארוחה" },
+    meals: { ru: "Питание", en: "Meals", he: "ארוחות" },
+    food: { ru: "Питание", en: "Food", he: "מזון" },
+    family: { ru: "Семья", en: "Family", he: "משפחה" },
+    group: { ru: "Группа", en: "Group", he: "קבוצה" },
+    faith: { ru: "Вера", en: "Faith", he: "אמונה" },
+    friendship: { ru: "Дружба", en: "Friendship", he: "חברות" },
+    supporters: { ru: "Друзья и партнёры", en: "Supporters", he: "תומכים ושותפים" },
+    christian: { ru: "Христианский", en: "Christian", he: "נוצרי" },
+    leadership: { ru: "Лидерство", en: "Leadership", he: "מנהיגות" },
+    university: { ru: "Университет", en: "University", he: "אוניברסיטה" },
+    rosh: { ru: "Рош", en: "Rosh", he: "ראש" },
+    hashanah: { ru: "ха-Шана", en: "Hashanah", he: "השנה" },
+    baptism: { ru: "Крещение", en: "Baptism", he: "טבילה" }
+  };
+
+  var MONTHS_RU = [
+    "", "января", "февраля", "марта", "апреля", "мая", "июня",
+    "июля", "августа", "сентября", "октября", "ноября", "декабря"
+  ];
+  var MONTHS_EN = [
+    "", "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"
+  ];
+
+  function currentLang() {
+    if (document.body.classList.contains("lang-he")) return "he";
+    if (document.body.classList.contains("lang-en")) return "en";
+    return "ru";
+  }
+
+  function basename(path) {
+    return String(path || "").split("/").pop() || "";
+  }
+
+  function stem(path) {
+    return basename(path).replace(/\.[^.]+$/, "");
+  }
+
+  function parseDateFromName(name) {
+    var s = stem(name);
+    var m = s.match(/^(\d{4})-(\d{2})(?:-(\d{2}))?(?:-|_|$)/);
+    if (!m) return null;
+    return {
+      year: Number(m[1]),
+      month: Number(m[2]),
+      day: m[3] ? Number(m[3]) : null,
+      prefix: m[0]
+    };
+  }
+
+  function formatDate(date, lang) {
+    if (!date) return "";
+    if (lang === "he") {
+      return date.day
+        ? date.day + "." + String(date.month).padStart(2, "0") + "." + date.year
+        : String(date.month).padStart(2, "0") + "/" + date.year;
+    }
+    if (lang === "en") {
+      return date.day
+        ? date.day + " " + MONTHS_EN[date.month] + " " + date.year
+        : MONTHS_EN[date.month] + " " + date.year;
+    }
+    return date.day
+      ? date.day + " " + MONTHS_RU[date.month] + " " + date.year
+      : MONTHS_RU[date.month] + " " + date.year;
+  }
+
+  function humanize(item, category, lang) {
+    var name = stem(item.name || item.path || "");
+    var date = parseDateFromName(name);
+    if (date) name = name.slice(date.prefix.length);
+
+    name = name
+      .replace(/[_]+/g, "-")
+      .replace(/-(?:0?\d{1,3})$/g, "")
+      .replace(new RegExp("(^|-)" + category + "(-|$)", "gi"), "-")
+      .replace(/^-+|-+$/g, "");
+
+    var categoryLabel = (CATEGORY_LABELS[category] && CATEGORY_LABELS[category][lang]) || category;
+    var tokens = name ? name.split("-").filter(Boolean) : [];
+    var translated = tokens.map(function (token) {
+      var key = token.toLowerCase();
+      if (WORDS[key]) return WORDS[key][lang] || WORDS[key].en;
+      return token.charAt(0).toUpperCase() + token.slice(1);
+    });
+
+    var title = translated.join(" ").trim();
+    if (!title) title = categoryLabel;
+
+    var generic = tokens.length === 1 && ["help", "support", "care"].indexOf(tokens[0].toLowerCase()) !== -1;
+    if (generic) title = title + " • " + categoryLabel;
+
+    return {
+      title: title,
+      date: formatDate(date, lang)
+    };
+  }
+
+  function isDisplayable(item) {
+    return item && item.path && /\.(jpe?g|png|webp|gif)$/i.test(item.path);
+  }
+
+  function sortNewestFirst(a, b) {
+    var aDate = parseDateFromName(a.name || a.path || "");
+    var bDate = parseDateFromName(b.name || b.path || "");
+
+    if (aDate && bDate) {
+      var ak = aDate.year * 10000 + aDate.month * 100 + (aDate.day || 0);
+      var bk = bDate.year * 10000 + bDate.month * 100 + (bDate.day || 0);
+      if (ak !== bk) return bk - ak;
+    } else if (aDate) {
+      return -1;
+    } else if (bDate) {
+      return 1;
+    }
+
+    var da = a.added || "";
+    var db = b.added || "";
+    if (da !== db) return db.localeCompare(da);
+    return (b.name || "").localeCompare(a.name || "");
+  }
+
+  function chooseItems(category) {
+    var entries = ((manifest.categories || {})[category] || []).filter(isDisplayable);
+
+    // Automatic galleries keep old files permanently unless they are manually
+    // deleted from the repository. New dated photos are placed first.
+    return entries
+      .filter(function (item) {
+        // Skip only tiny helper thumbnails named "*-gallery.jpg".
+        // Full-size old photos, overview sheets and collages stay visible.
+        return !/-gallery(?:-|\.|$)/i.test(item.name || "");
+      })
+      .sort(function (a, b) {
+        var aLegacy = a.kind === "legacy" ? 1 : 0;
+        var bLegacy = b.kind === "legacy" ? 1 : 0;
+        if (aLegacy !== bLegacy) return aLegacy - bLegacy;
+        return sortNewestFirst(a, b);
+      });
+  }
+
+  function createCaption(item, category) {
+    var caption = document.createElement("div");
+    caption.className = "gallery-auto-caption";
+
+    ["ru", "en", "he"].forEach(function (lang) {
+      var meta = humanize(item, category, lang);
+      var wrap = document.createElement("span");
+      wrap.setAttribute("data-lang", lang);
+      if (lang === "he") {
+        wrap.lang = "he";
+        wrap.dir = "rtl";
+      }
+
+      var title = document.createElement("strong");
+      title.textContent = meta.title;
+      wrap.append(title);
+
+      if (meta.date) {
+        var date = document.createElement("small");
+        date.textContent = meta.date;
+        wrap.append(date);
+      }
+      caption.append(wrap);
+    });
+
+    return caption;
+  }
+
+  function renderGallery(container) {
+    var category = container.getAttribute("data-gallery-category");
+    var items = chooseItems(category);
+
+    // Progressive enhancement: never erase the static HTML fallback unless
+    // the complete enhanced gallery has been built successfully.
+    if (!items.length) return;
+
+    var grid = document.createElement("div");
+    grid.className = "gallery-auto-grid";
+
+    var hasRegular = items.some(function (item) { return item.kind !== "legacy"; });
+    var archiveDividerAdded = false;
+
+    items.forEach(function (item, index) {
+      if (item.kind === "legacy" && hasRegular && !archiveDividerAdded) {
+        var divider = document.createElement("div");
+        divider.className = "gallery-auto-archive-divider";
+        divider.innerHTML =
+          '<i class="fas fa-box-archive" aria-hidden="true"></i>' +
+          '<span data-lang="ru">Архивные коллажи — нажмите, чтобы открыть</span>' +
+          '<span data-lang="en">Archived collages — tap to open</span>' +
+          '<span data-lang="he" lang="he" dir="rtl">קולאז׳ים מהארכיון — לחצו לפתיחה</span>';
+        grid.append(divider);
+        archiveDividerAdded = true;
+      }
+
+      var link = document.createElement("a");
+      link.className = "gallery-auto-card";
+      if (item.kind === "legacy") link.classList.add("is-legacy");
+      link.href = item.path;
+      link.target = "_blank";
+      link.rel = "noopener";
+      link.setAttribute("aria-label", "Open " + basename(item.path));
+
+      var media = document.createElement("div");
+      media.className = "gallery-auto-media";
+
+      var img = document.createElement("img");
+      img.src = item.path;
+      img.alt = humanize(item, category, currentLang()).title;
+      img.loading = index < 2 ? "eager" : "lazy";
+      img.decoding = "async";
+
+      if (item.kind === "legacy") {
+        var archiveBadge = document.createElement("span");
+        archiveBadge.className = "gallery-auto-archive-badge";
+        archiveBadge.innerHTML =
+          '<span data-lang="ru">Архив</span>' +
+          '<span data-lang="en">Archive</span>' +
+          '<span data-lang="he" lang="he" dir="rtl">ארכיון</span>';
+        media.append(archiveBadge);
+      }
+
+      var cue = document.createElement("span");
+      cue.className = "gallery-auto-open";
+      cue.innerHTML = '<i class="fas fa-up-right-from-square" aria-hidden="true"></i>';
+
+      media.append(img, cue);
+      link.append(media, createCaption(item, category));
+      grid.append(link);
+    });
+
+    // Atomic swap: if anything above throws, the original static gallery stays visible.
+    container.replaceChildren(grid);
+  }
+
+  function updateCategoryPreviews() {
+    document.querySelectorAll("[data-gallery-preview]").forEach(function (img) {
+      var category = img.getAttribute("data-gallery-preview");
+      var items = chooseItems(category);
+      if (!items.length) return;
+      img.src = items[0].path;
+      img.removeAttribute("width");
+      img.removeAttribute("height");
+    });
+  }
+
+  function renderAll() {
+    document.querySelectorAll(".gallery-auto[data-gallery-category]").forEach(renderGallery);
+    updateCategoryPreviews();
+  }
+
+  // Gallery content is read only from the local manifest.
+  // This keeps the public site independent from api.github.com.
+
+  document.addEventListener("DOMContentLoaded", function () {
+    renderAll();
+  });
+  window.addEventListener("siteLanguageChanged", renderAll);
+})();
+
+====================================================================================================
+FILE: gallery.html
+====================================================================================================
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <title>Галерея — Источники Надежды</title>
+<link rel="stylesheet" href="assets/icons/site-icons-a.css?v=20260923-1">
+  <link rel="stylesheet" href="assets/icons/site-icons-b.css?v=20260923-1">
+  <link rel="stylesheet" href="style.css?v=20260923-29">
+</head>
+<body class="lang-ru">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark"><i class="fas fa-heart"></i></span>
+        <span class="brand-title">
+          <span data-lang="ru">Источники Надежды</span>
+          <span data-lang="en">Streams of Hope</span>
+          <span data-lang="he" lang="he" dir="rtl">מקורות התקווה</span>
+        </span>
+      </a>
+
+      <nav class="top-nav">
+        <a href="index.html#repatriants"><span data-lang="ru">Репатрианты</span><span data-lang="en">Repatriates</span><span data-lang="he" lang="he" dir="rtl">עולים חדשים</span></a>
+        <a href="index.html#canteen"><span data-lang="ru">Столовая</span><span data-lang="en">Canteen</span><span data-lang="he" lang="he" dir="rtl">בית תמחוי</span></a>
+        <a href="college-gallery.html"><span data-lang="ru">Колледж</span><span data-lang="en">College</span><span data-lang="he" lang="he" dir="rtl">מכללה</span></a>
+        <a href="holocaust-survivors-gallery.html"><span data-lang="ru">Пережившие Холокост</span><span data-lang="en">Holocaust Survivors</span><span data-lang="he" lang="he" dir="rtl">ניצולי השואה</span></a>
+        <a href="holidays-gallery.html"><span data-lang="ru">Праздники</span><span data-lang="en">Holidays</span><span data-lang="he" lang="he" dir="rtl">חגים</span></a>
+        <a href="index.html"><span data-lang="ru">Главная</span><span data-lang="en">Home</span><span data-lang="he" lang="he" dir="rtl">דף הבית</span></a>
+      </nav>
+
+      <div class="lang-switcher">
+        <button class="lang-btn active" id="btn-ru" type="button" onclick="setLanguage('ru')">RU</button>
+        <button class="lang-btn" id="btn-en" type="button" onclick="setLanguage('en')">EN</button><button class="lang-btn" id="btn-he" type="button" onclick="setLanguage('he')">HE</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="subpage">
+    <section class="subpage-hero gallery-hero">
+      <div class="section-inner">
+        <div class="eyebrow">
+          <i class="fas fa-images"></i>
+          <span data-lang="ru">Общая галерея</span>
+          <span data-lang="en">Main gallery</span>
+          <span data-lang="he" lang="he" dir="rtl">גלריה כללית</span>
+        </div>
+        <h1>
+          <span data-lang="ru">Галерея нашей работы</span>
+          <span data-lang="en">Gallery of our work</span>
+          <span data-lang="he" lang="he" dir="rtl">גלריית הפעילות שלנו</span>
+        </h1>
+        
+        <a class="btn btn-secondary" href="index.html">
+          <i class="fas fa-arrow-left"></i>
+          <span data-lang="ru">Вернуться на главную</span>
+          <span data-lang="en">Back to home</span>
+          <span data-lang="he" lang="he" dir="rtl">חזרה לדף הבית</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section gallery-categories-section">
+      <div class="section-inner">
+        <div class="gallery-category-grid">
+          <article class="gallery-category-card category-repatriants">
+            <div class="gallery-category-preview gallery-static-cover cover-repatriants" aria-hidden="true">
+              <img class="gallery-cover-art" src="assets/icons/repatriants-final.webp" alt="">
+            </div>
+            <div class="gallery-category-body">
+              <span class="gallery-category-icon"><i class="fas fa-people-carry-box"></i></span>
+              <h2><span data-lang="ru">Репатрианты</span><span data-lang="en">Repatriates</span><span data-lang="he" lang="he" dir="rtl">עולים חדשים</span></h2>
+              <p><span data-lang="ru">Помощь, склад, адаптация и поддержка новых репатриантов.</span><span data-lang="en">Assistance, warehouse support, adaptation and help for new repatriates.</span><span data-lang="he" lang="he" dir="rtl">סיוע, מחסן, קליטה ותמיכה בעולים חדשים.</span></p>
+              <a class="btn btn-accent" href="repatriants-gallery.html">
+                <i class="fas fa-images"></i>
+                <span data-lang="ru">Открыть галерею</span>
+                <span data-lang="en">Open gallery</span>
+                <span data-lang="he" lang="he" dir="rtl">פתיחת הגלריה</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="gallery-category-card category-canteen">
+            <div class="gallery-category-preview gallery-static-cover cover-canteen" aria-hidden="true">
+              <img class="gallery-cover-art" src="assets/icons/canteen-final.webp" alt="">
+            </div>
+            <div class="gallery-category-body">
+              <span class="gallery-category-icon"><i class="fas fa-bowl-food"></i></span>
+              <h2><span data-lang="ru">Столовая</span><span data-lang="en">Canteen</span><span data-lang="he" lang="he" dir="rtl">בית תמחוי</span></h2>
+              <p><span data-lang="ru">Приготовление еды, работа столовой и помощь людям.</span><span data-lang="en">Meal preparation, canteen work and support for people.</span><span data-lang="he" lang="he" dir="rtl">הכנת אוכל, פעילות בית התמחוי וסיוע לאנשים.</span></p>
+              <a class="btn btn-accent" href="canteen-gallery.html">
+                <i class="fas fa-images"></i>
+                <span data-lang="ru">Открыть галерею</span>
+                <span data-lang="en">Open gallery</span>
+                <span data-lang="he" lang="he" dir="rtl">פתיחת הגלריה</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="gallery-category-card category-college">
+            <div class="gallery-category-preview gallery-static-cover cover-college" aria-hidden="true">
+              <img class="gallery-cover-art" src="assets/icons/college-final.webp" alt="">
+            </div>
+            <div class="gallery-category-body">
+              <span class="gallery-category-icon"><i class="fas fa-graduation-cap"></i></span>
+              <h2><span data-lang="ru">Колледж</span><span data-lang="en">College</span><span data-lang="he" lang="he" dir="rtl">מכללה</span></h2>
+              <p><span data-lang="ru">Учёба, встречи, занятия и мероприятия колледжа.</span><span data-lang="en">Studies, meetings, classes and college activities.</span><span data-lang="he" lang="he" dir="rtl">לימודים, מפגשים, שיעורים ופעילויות המכללה.</span></p>
+              <a class="btn btn-accent" href="college-gallery.html">
+                <i class="fas fa-images"></i>
+                <span data-lang="ru">Открыть галерею</span>
+                <span data-lang="en">Open gallery</span>
+                <span data-lang="he" lang="he" dir="rtl">פתיחת הגלריה</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="gallery-category-card category-holocaust">
+            <div class="gallery-category-preview gallery-static-cover cover-holocaust" aria-hidden="true">
+              <img class="gallery-cover-art" src="assets/icons/holocaust-final.webp" alt="">
+            </div>
+            <div class="gallery-category-body">
+              <span class="gallery-category-icon"><i class="fas fa-star-of-david"></i></span>
+              <h2><span data-lang="ru">Пережившие Холокост</span><span data-lang="en">Holocaust Survivors</span><span data-lang="he" lang="he" dir="rtl">ניצולי השואה</span></h2>
+              <p><span data-lang="ru">Встречи, поддержка и помощь пережившим Холокост.</span><span data-lang="en">Meetings, support and assistance for Holocaust survivors.</span><span data-lang="he" lang="he" dir="rtl">מפגשים, תמיכה וסיוע לניצולי השואה.</span></p>
+              <a class="btn btn-accent" href="holocaust-survivors-gallery.html">
+                <i class="fas fa-images"></i>
+                <span data-lang="ru">Открыть галерею</span>
+                <span data-lang="en">Open gallery</span>
+                <span data-lang="he" lang="he" dir="rtl">פתיחת הגלריה</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="gallery-category-card category-friends">
+            <div class="gallery-category-preview gallery-static-cover cover-friends" aria-hidden="true">
+              <img class="gallery-cover-art" src="assets/icons/friends-final.webp" alt="">
+            </div>
+            <div class="gallery-category-body">
+              <span class="gallery-category-icon"><i class="fas fa-people-group"></i></span>
+              <h2><span data-lang="ru">Наши друзья</span><span data-lang="en">Our Friends</span><span data-lang="he" lang="he" dir="rtl">החברים שלנו</span></h2>
+              <p><span data-lang="ru">Друзья, партнёры и люди, которые помогают организации.</span><span data-lang="en">Friends, partners and people who support the organization.</span><span data-lang="he" lang="he" dir="rtl">חברים, שותפים ואנשים התומכים בארגון.</span></p>
+              <a class="btn btn-accent" href="friends-gallery.html">
+                <i class="fas fa-images"></i>
+                <span data-lang="ru">Открыть галерею</span>
+                <span data-lang="en">Open gallery</span>
+                <span data-lang="he" lang="he" dir="rtl">פתיחת הגלריה</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="gallery-category-card category-holidays" id="holidays">
+            <div class="gallery-category-preview gallery-static-cover cover-holidays" aria-hidden="true">
+              <img class="gallery-cover-art" src="assets/icons/holidays-final.webp" alt="">
+            </div>
+            <div class="gallery-category-body">
+              <span class="gallery-category-icon"><i class="fas fa-calendar-days"></i></span>
+              <h2><span data-lang="ru">Праздники</span><span data-lang="en">Holidays</span><span data-lang="he" lang="he" dir="rtl">חגים</span></h2>
+              <p><span data-lang="ru">Праздничные встречи, мероприятия и особые дни.</span><span data-lang="en">Holiday gatherings, events and special days.</span><span data-lang="he" lang="he" dir="rtl">מפגשי חג, אירועים וימים מיוחדים.</span></p>
+              <a class="btn btn-accent" href="holidays-gallery.html">
+                <i class="fas fa-images"></i>
+                <span data-lang="ru">Открыть галерею</span>
+                <span data-lang="en">Open gallery</span>
+                <span data-lang="he" lang="he" dir="rtl">פתיחת הגלריה</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    © <span id="current-year">2026</span>
+    <span data-lang="ru"> «Источники Надежды».</span>
+    <span data-lang="en"> “Streams of Hope”.</span>
+    <span data-lang="he" lang="he" dir="rtl">״מקורות התקווה״.</span>
+  </footer>
+  <script src="script.js?v=20260923-18"></script>
+</body>
+</html>
+
+====================================================================================================
+FILE: holidays-gallery.html
+====================================================================================================
+
+<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Праздники — Галерея</title>
+<link rel="stylesheet" href="assets/icons/site-icons-a.css?v=20260923-1">
+  <link rel="stylesheet" href="assets/icons/site-icons-b.css?v=20260923-1"><link rel="stylesheet" href="style.css?v=20260923-22"></head><body class="lang-ru">
+<header class="site-header"><div class="header-inner"><a class="brand" href="index.html"><span class="brand-mark"><i class="fas fa-heart"></i></span><span class="brand-title"><span data-lang="ru">Источники Надежды</span><span data-lang="en">Streams of Hope</span><span data-lang="he" lang="he" dir="rtl">מקורות התקווה</span></span></a><nav class="top-nav"><a href="gallery.html"><span data-lang="ru">Общая галерея</span><span data-lang="en">Main gallery</span><span data-lang="he" lang="he" dir="rtl">גלריה כללית</span></a><a href="index.html"><span data-lang="ru">Главная</span><span data-lang="en">Home</span><span data-lang="he" lang="he" dir="rtl">דף הבית</span></a></nav><div class="lang-switcher"><button class="lang-btn active" id="btn-ru" type="button" onclick="setLanguage('ru')">RU</button><button class="lang-btn" id="btn-en" type="button" onclick="setLanguage('en')">EN</button><button class="lang-btn" id="btn-he" type="button" onclick="setLanguage('he')">HE</button></div></div></header>
+<main class="subpage"><section class="subpage-hero gallery-hero"><div class="section-inner"><div class="eyebrow"><i class="fas fa-calendar-days"></i><span data-lang="ru">Праздники</span><span data-lang="en">Holidays</span><span data-lang="he" lang="he" dir="rtl">חגים</span></div><h1><span data-lang="ru">Галерея праздников</span><span data-lang="en">Holiday gallery</span><span data-lang="he" lang="he" dir="rtl">גלריית החגים</span></h1><p><span data-lang="ru">Фотографии праздничных встреч и мероприятий.</span><span data-lang="en">Photos from holiday gatherings and events.</span><span data-lang="he" lang="he" dir="rtl">תמונות ממפגשי חג ואירועים.</span></p><a class="btn btn-secondary" href="gallery.html"><i class="fas fa-arrow-left"></i><span data-lang="ru">Назад в галерею</span><span data-lang="en">Back to gallery</span><span data-lang="he" lang="he" dir="rtl">חזרה לגלריה</span></a></div></section>
+<section class="section gallery-categories-section"><div class="section-inner"><div class="gallery-auto" data-gallery-category="holidays">
+    <div class="gallery-auto-grid gallery-static-fallback">
+      <a class="gallery-auto-card gallery-static-card" href="assets/galleries/holidays/rosh-hashanah-01.jpg" target="_blank" rel="noopener">
+        <div class="gallery-auto-media">
+          <img src="assets/galleries/holidays/rosh-hashanah-01.jpg" alt="Rosh Hashanah 01" loading="eager" decoding="async">
+          <span class="gallery-auto-open" aria-hidden="true"><i class="fas fa-up-right-from-square"></i></span>
+        </div>
+        <div class="gallery-auto-caption">
+          <span data-lang="ru"><strong>Rosh Hashanah 01</strong></span>
+          <span data-lang="en"><strong>Rosh Hashanah 01</strong></span>
+          <span data-lang="he" lang="he" dir="rtl"><strong>Rosh Hashanah 01</strong></span>
+        </div>
+      </a>
+      <a class="gallery-auto-card gallery-static-card" href="assets/galleries/holidays/rosh-hashanah-02.jpg" target="_blank" rel="noopener">
+        <div class="gallery-auto-media">
+          <img src="assets/galleries/holidays/rosh-hashanah-02.jpg" alt="Rosh Hashanah 02" loading="eager" decoding="async">
+          <span class="gallery-auto-open" aria-hidden="true"><i class="fas fa-up-right-from-square"></i></span>
+        </div>
+        <div class="gallery-auto-caption">
+          <span data-lang="ru"><strong>Rosh Hashanah 02</strong></span>
+          <span data-lang="en"><strong>Rosh Hashanah 02</strong></span>
+          <span data-lang="he" lang="he" dir="rtl"><strong>Rosh Hashanah 02</strong></span>
+        </div>
+      </a>
+      <a class="gallery-auto-card gallery-static-card" href="assets/galleries/holidays/rosh-hashanah-03.jpg" target="_blank" rel="noopener">
+        <div class="gallery-auto-media">
+          <img src="assets/galleries/holidays/rosh-hashanah-03.jpg" alt="Rosh Hashanah 03" loading="lazy" decoding="async">
+          <span class="gallery-auto-open" aria-hidden="true"><i class="fas fa-up-right-from-square"></i></span>
+        </div>
+        <div class="gallery-auto-caption">
+          <span data-lang="ru"><strong>Rosh Hashanah 03</strong></span>
+          <span data-lang="en"><strong>Rosh Hashanah 03</strong></span>
+          <span data-lang="he" lang="he" dir="rtl"><strong>Rosh Hashanah 03</strong></span>
+        </div>
+      </a>
+      <a class="gallery-auto-card gallery-static-card" href="assets/galleries/holidays/rosh-hashanah-04.jpg" target="_blank" rel="noopener">
+        <div class="gallery-auto-media">
+          <img src="assets/galleries/holidays/rosh-hashanah-04.jpg" alt="Rosh Hashanah 04" loading="lazy" decoding="async">
+          <span class="gallery-auto-open" aria-hidden="true"><i class="fas fa-up-right-from-square"></i></span>
+        </div>
+        <div class="gallery-auto-caption">
+          <span data-lang="ru"><strong>Rosh Hashanah 04</strong></span>
+          <span data-lang="en"><strong>Rosh Hashanah 04</strong></span>
+          <span data-lang="he" lang="he" dir="rtl"><strong>Rosh Hashanah 04</strong></span>
+        </div>
+      </a>
+      <a class="gallery-auto-card gallery-static-card" href="assets/galleries/holidays/rosh-hashanah-05.jpg" target="_blank" rel="noopener">
+        <div class="gallery-auto-media">
+          <img src="assets/galleries/holidays/rosh-hashanah-05.jpg" alt="Rosh Hashanah 05" loading="lazy" decoding="async">
+          <span class="gallery-auto-open" aria-hidden="true"><i class="fas fa-up-right-from-square"></i></span>
+        </div>
+        <div class="gallery-auto-caption">
+          <span data-lang="ru"><strong>Rosh Hashanah 05</strong></span>
+          <span data-lang="en"><strong>Rosh Hashanah 05</strong></span>
+          <span data-lang="he" lang="he" dir="rtl"><strong>Rosh Hashanah 05</strong></span>
+        </div>
+      </a>
+      <a class="gallery-auto-card gallery-static-card" href="assets/galleries/holidays/holidays-overview.png" target="_blank" rel="noopener">
+        <div class="gallery-auto-media">
+          <img src="assets/galleries/holidays/holidays-overview.png" alt="Holidays Overview" loading="lazy" decoding="async">
+          <span class="gallery-auto-open" aria-hidden="true"><i class="fas fa-up-right-from-square"></i></span>
+        </div>
+        <div class="gallery-auto-caption">
+          <span data-lang="ru"><strong>Holidays Overview</strong></span>
+          <span data-lang="en"><strong>Holidays Overview</strong></span>
+          <span data-lang="he" lang="he" dir="rtl"><strong>Holidays Overview</strong></span>
+        </div>
+      </a>
+    </div>
+</div></div></section></main>
+<footer class="site-footer">© <span id="current-year">2026</span> <span data-lang="ru">«Источники Надежды».</span><span data-lang="en">“Streams of Hope”.</span><span data-lang="he" lang="he" dir="rtl">״מקורות התקווה״.</span></footer><script src="assets/galleries/gallery-manifest.js?v=20260923-1"></script>
+  <script src="gallery-auto.js?v=20260923-5"></script>
+  <script src="script.js?v=20260923-18"></script></body></html>
+
+
+====================================================================================================
+FILE: holocaust-survivors-gallery.html
+====================================================================================================
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Пережившие Холокост — Галерея</title>
+<link rel="stylesheet" href="assets/icons/site-icons-a.css?v=20260923-1">
+  <link rel="stylesheet" href="assets/icons/site-icons-b.css?v=20260923-1">
+  <link rel="stylesheet" href="style.css?v=20260923-22">
+</head>
+<body class="lang-ru">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html"><span class="brand-mark"><i class="fas fa-heart"></i></span><span class="brand-title"><span data-lang="ru">Источники Надежды</span><span data-lang="en">Streams of Hope</span><span data-lang="he" lang="he" dir="rtl">מקורות התקווה</span></span></a>
+      <nav class="top-nav"><a href="index.html#holocaust-survivors"><span data-lang="ru">Назад к разделу</span><span data-lang="en">Back to section</span><span data-lang="he" lang="he" dir="rtl">חזרה למדור</span></a><a href="gallery.html"><span data-lang="ru">Общая галерея</span><span data-lang="en">Main gallery</span><span data-lang="he" lang="he" dir="rtl">גלריה כללית</span></a></nav>
+      <div class="lang-switcher"><button class="lang-btn active" id="btn-ru" type="button" onclick="setLanguage('ru')">RU</button><button class="lang-btn" id="btn-en" type="button" onclick="setLanguage('en')">EN</button><button class="lang-btn" id="btn-he" type="button" onclick="setLanguage('he')">HE</button></div>
+    </div>
+  </header>
+  <main class="subpage">
+    <section class="subpage-hero holocaust-gallery-hero"><div class="section-inner"><div class="eyebrow"><i class="fas fa-star-of-david"></i><span data-lang="ru">Пережившие Холокост</span><span data-lang="en">Holocaust Survivors</span><span data-lang="he" lang="he" dir="rtl">ניצולי השואה</span></div><h1><span data-lang="ru">Галерея</span><span data-lang="en">Gallery</span><span data-lang="he" lang="he" dir="rtl">גלריה</span></h1><p><span data-lang="ru">Фотографии встреч, поддержки и помощи пережившим Холокост.</span><span data-lang="en">Photos from meetings, support and assistance for Holocaust survivors.</span><span data-lang="he" lang="he" dir="rtl">תמונות ממפגשים, תמיכה וסיוע לניצולי השואה.</span></p><div class="subpage-actions"><a class="btn btn-secondary" href="index.html#holocaust-survivors"><i class="fas fa-arrow-left"></i><span data-lang="ru">Назад к разделу</span><span data-lang="en">Back to section</span><span data-lang="he" lang="he" dir="rtl">חזרה למדור</span></a><a class="btn btn-ghost" href="gallery.html"><i class="fas fa-images"></i><span data-lang="ru">Общая галерея</span><span data-lang="en">Main gallery</span><span data-lang="he" lang="he" dir="rtl">גלריה כללית</span></a></div></div></section>
+    <section class="section section-holocaust"><div class="section-inner"><div class="gallery-auto" data-gallery-category="holocaust">
+    <div class="gallery-auto-grid gallery-static-fallback">
+      <a class="gallery-auto-card gallery-static-card" href="assets/galleries/holocaust/holocaust-overview.png" target="_blank" rel="noopener">
+        <div class="gallery-auto-media">
+          <img src="assets/galleries/holocaust/holocaust-overview.png" alt="Holocaust Overview" loading="eager" decoding="async">
+          <span class="gallery-auto-open" aria-hidden="true"><i class="fas fa-up-right-from-square"></i></span>
+        </div>
+        <div class="gallery-auto-caption">
+          <span data-lang="ru"><strong>Holocaust Overview</strong></span>
+          <span data-lang="en"><strong>Holocaust Overview</strong></span>
+          <span data-lang="he" lang="he" dir="rtl"><strong>Holocaust Overview</strong></span>
+        </div>
+      </a>
+    </div>
+</div></div></section>
+  </main>
+  <footer class="site-footer">© <span id="current-year">2026</span> <span data-lang="ru">«Источники Надежды».</span><span data-lang="en">“Streams of Hope”.</span><span data-lang="he" lang="he" dir="rtl">״מקורות התקווה״.</span></footer>
+  <script src="assets/galleries/gallery-manifest.js?v=20260923-1"></script>
+  <script src="gallery-auto.js?v=20260923-5"></script>
+  <script src="script.js?v=20260923-18"></script>
+</body>
+</html>
+
+
+====================================================================================================
+FILE: index.html
+====================================================================================================
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <meta name="description" content="Источники Надежды — частная благотворительная помощь репатриантам, малоимущим, детям войны и матерям-одиночкам в Беэр-Шеве.">
+  <title>Источники Надежды — благотворительная помощь в Беэр-Шеве</title>
+<link rel="stylesheet" href="assets/icons/site-icons-a.css?v=20260923-1">
+  <link rel="stylesheet" href="assets/icons/site-icons-b.css?v=20260923-1">
+  <link rel="stylesheet" href="style.css?v=20260923-30">
+</head>
+
+<body class="lang-ru">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="Источники Надежды">
+        <span class="brand-mark"><i class="fas fa-heart"></i></span>
+        <span class="brand-title">
+          <span data-lang="ru">Источники Надежды</span>
+          <span data-lang="en">Streams of Hope</span>
+          <span data-lang="he" lang="he" dir="rtl">מקורות התקווה</span>
+        </span>
+      </a>
+
+      <nav class="top-nav" aria-label="Основная навигация">
+        <a href="#repatriants"><span data-lang="ru">Помощь</span><span data-lang="en">Support</span><span data-lang="he" lang="he" dir="rtl">סיוע</span></a>
+        <a href="#canteen"><span data-lang="ru">Столовая</span><span data-lang="en">Canteen</span><span data-lang="he" lang="he" dir="rtl">בית תמחוי</span></a>
+        <a href="#news"><span data-lang="ru">Новости</span><span data-lang="en">News</span><span data-lang="he" lang="he" dir="rtl">חדשות</span></a>
+        <a href="#projects"><span data-lang="ru">Проекты</span><span data-lang="en">Projects</span><span data-lang="he" lang="he" dir="rtl">פרויקטים</span></a>
+        <a href="#college"><span data-lang="ru">Колледж</span><span data-lang="en">College</span><span data-lang="he" lang="he" dir="rtl">מכללה</span></a>
+        <a href="#holocaust-survivors"><span data-lang="ru">Пережившие Холокост</span><span data-lang="en">Holocaust Survivors</span><span data-lang="he" lang="he" dir="rtl">ניצולי השואה</span></a>
+        <a href="gallery.html"><span data-lang="ru">Галерея</span><span data-lang="en">Gallery</span><span data-lang="he" lang="he" dir="rtl">גלריה</span></a>
+        <a href="#contacts"><span data-lang="ru">Контакты</span><span data-lang="en">Contacts</span><span data-lang="he" lang="he" dir="rtl">יצירת קשר</span></a>
+      </nav>
+
+      <div class="lang-switcher" aria-label="Language">
+        <button class="lang-btn active" id="btn-ru" type="button" onclick="setLanguage('ru')">RU</button>
+        <button class="lang-btn" id="btn-en" type="button" onclick="setLanguage('en')">EN</button><button class="lang-btn" id="btn-he" type="button" onclick="setLanguage('he')">HE</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="eyebrow">
+          <i class="fas fa-location-dot"></i>
+          <span data-lang="ru">Беэр-Шева • помощь от человека к человеку</span>
+          <span data-lang="en">Beersheba • person-to-person support</span>
+          <span data-lang="he" lang="he" dir="rtl">באר שבע • סיוע מאדם לאדם</span>
+        </div>
+
+        <h1>
+          <span data-lang="ru">Помощь, которая становится надеждой.</span>
+          <span data-lang="en">Support that becomes hope.</span>
+          <span data-lang="he" lang="he" dir="rtl">סיוע שהופך לתקווה.</span>
+        </h1>
+
+        <p>
+          <span data-lang="ru">Частная благотворительная помощь репатриантам, малоимущим, детям войны и матерям-одиночкам. Мы стараемся быть рядом там, где особенно нужна практическая поддержка.</span>
+          <span data-lang="en">Private charitable assistance for repatriates, low-income families, children of war and single mothers. We aim to be present where practical support is needed most.</span>
+          <span data-lang="he" lang="he" dir="rtl">סיוע צדקה פרטי לעולים חדשים, למעוטי יכולת, לילדי המלחמה ולאמהות חד־הוריות. אנו משתדלים להיות שם במקום שבו התמיכה המעשית נחוצה במיוחד.</span>
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#repatriants"><i class="fas fa-hands-holding-heart"></i><span data-lang="ru">Как мы помогаем</span><span data-lang="en">How we help</span><span data-lang="he" lang="he" dir="rtl">איך אנחנו עוזרים</span></a>
+          <a class="btn btn-secondary" href="#contacts"><i class="fas fa-phone"></i><span data-lang="ru">Связаться с нами</span><span data-lang="en">Contact us</span><span data-lang="he" lang="he" dir="rtl">צרו קשר</span></a>
+        </div>
+      </div>
+    </section>
+
+    <div class="quick-grid" aria-label="Разделы сайта">
+      <a href="#repatriants" class="quick-card repatriants">
+        <span class="icon"><i class="fas fa-people-carry-box"></i></span>
+        <strong><span data-lang="ru">Репатрианты</span><span data-lang="en">Repatriates</span><span data-lang="he" lang="he" dir="rtl">עולים חדשים</span></strong>
+        <small><span data-lang="ru">Помощь и адаптация в Беэр-Шеве</span><span data-lang="en">Support and adaptation in Beersheba</span><span data-lang="he" lang="he" dir="rtl">סיוע וקליטה בבאר שבע</span></small>
+      </a>
+
+      <a href="#canteen" class="quick-card canteen">
+        <span class="icon"><i class="fas fa-bowl-food"></i></span>
+        <strong><span data-lang="ru">Столовая</span><span data-lang="en">Canteen</span><span data-lang="he" lang="he" dir="rtl">בית תמחוי</span></strong>
+        <small><span data-lang="ru">Свежая еда и забота</span><span data-lang="en">Fresh meals and care</span><span data-lang="he" lang="he" dir="rtl">אוכל טרי ודאגה</span></small>
+      </a>
+
+      <a href="#news" class="quick-card news">
+        <span class="icon"><i class="fas fa-newspaper"></i></span>
+        <strong><span data-lang="ru">Новости</span><span data-lang="en">News</span><span data-lang="he" lang="he" dir="rtl">חדשות</span></strong>
+        <small><span data-lang="ru">Выпуски, события и обращения</span><span data-lang="en">Newsletters, events and appeals</span><span data-lang="he" lang="he" dir="rtl">עדכונים, אירועים ופניות</span></small>
+      </a>
+
+      <a href="#projects" class="quick-card projects">
+        <span class="icon"><i class="fas fa-seedling"></i></span>
+        <strong><span data-lang="ru">Проекты</span><span data-lang="en">Projects</span><span data-lang="he" lang="he" dir="rtl">פרויקטים</span></strong>
+        <small><span data-lang="ru">Рабочие материалы и инициативы</span><span data-lang="en">Project materials and initiatives</span><span data-lang="he" lang="he" dir="rtl">חומרים ויוזמות</span></small>
+      </a>
+
+      <a href="#college" class="quick-card college">
+        <span class="icon"><i class="fas fa-graduation-cap"></i></span>
+        <strong><span data-lang="ru">Колледж</span><span data-lang="en">College</span><span data-lang="he" lang="he" dir="rtl">מכללה</span></strong>
+        <small><span data-lang="ru">Учёба, встречи и мероприятия</span><span data-lang="en">Studies, meetings and activities</span><span data-lang="he" lang="he" dir="rtl">לימודים, מפגשים ופעילויות</span></small>
+      </a>
+
+      <a href="#holocaust-survivors" class="quick-card holocaust">
+        <span class="icon"><i class="fas fa-star-of-david"></i></span>
+        <strong><span data-lang="ru">Пережившие Холокост</span><span data-lang="en">Holocaust Survivors</span><span data-lang="he" lang="he" dir="rtl">ניצולי השואה</span></strong>
+        <small><span data-lang="ru">Забота, встречи и поддержка</span><span data-lang="en">Care, meetings and support</span><span data-lang="he" lang="he" dir="rtl">דאגה, מפגשים ותמיכה</span></small>
+      </a>
+
+      <a href="gallery.html" class="quick-card gallery">
+        <span class="icon"><i class="fas fa-images"></i></span>
+        <strong><span data-lang="ru">Галерея</span><span data-lang="en">Gallery</span><span data-lang="he" lang="he" dir="rtl">גלריה</span></strong>
+        <small><span data-lang="ru">Все фотогалереи организации</span><span data-lang="en">All organization photo galleries</span><span data-lang="he" lang="he" dir="rtl">כל גלריות התמונות של הארגון</span></small>
+      </a>
+    </div>
+
+    <section class="weekly-feature" id="jewish-week">
+      <div class="weekly-feature-inner">
+        <div class="weekly-feature-heading">
+          <div class="weekly-feature-symbol" aria-hidden="true">
+            <i class="fas fa-scroll"></i>
+          </div>
+
+          <div class="weekly-heading-copy">
+            <div class="weekly-feature-eyebrow">
+              <span data-lang="ru">Еврейская неделя</span>
+              <span data-lang="en">Jewish Week</span>
+              <span data-lang="he" lang="he" dir="rtl">השבוע היהודי</span>
+              <span class="weekly-feature-hebrew" lang="he" dir="rtl">השבוע</span>
+            </div>
+
+            <h2>
+              <span data-lang="ru">Тора и календарь Израиля</span>
+              <span data-lang="en">Torah & Israel Calendar</span>
+              <span data-lang="he" lang="he" dir="rtl">תורה ולוח השנה בישראל</span>
+            </h2>
+
+            <p id="weekly-week-label" class="weekly-date">☀ 23 сентября 2026 • 🌙 12 Тишрея 5787</p>
+          </div>
+
+          <div class="weekly-heading-star" aria-hidden="true">✡</div>
+        </div>
+
+        <div class="weekly-feature-grid">
+          <article class="weekly-panel torah-panel">
+            <div class="weekly-panel-top">
+              <span class="weekly-panel-icon"><i class="fas fa-book-open"></i></span>
+              <span class="weekly-panel-label">
+                <span data-lang="ru">Недельная глава Торы</span>
+                <span data-lang="en">Weekly Torah Portion</span>
+                <span data-lang="he" lang="he" dir="rtl">פרשת השבוע</span>
+              </span>
+            </div>
+
+            <div class="torah-title-row">
+              <div>
+                <h3 id="weekly-parasha-title">Суккот</h3>
+                <div id="weekly-parasha-he" class="torah-hebrew" lang="he" dir="rtl">סוכות</div>
+              </div>
+              <span class="torah-scroll-mark"><i class="fas fa-scroll"></i></span>
+            </div>
+
+            <div class="torah-reading-lines">
+              <p id="weekly-parasha-date" class="weekly-reading-date">☀ 26 сентября 2026 • 🌙 15 Тишрея 5787</p>
+              <p id="weekly-parasha-reference" class="torah-reference">Тора: Ваикра 22:26–23:44; Бемидбар 29:12–16</p>
+              <p id="weekly-haftarah-reference" class="torah-reference torah-haftarah">Афтара: Захария 14:1–21</p>
+            </div>
+            <p id="weekly-parasha-note" class="weekly-note">Расписание чтения для Израиля. Данные обновляются автоматически.</p>
+          </article>
+
+          <article class="weekly-panel holiday-panel">
+            <div class="weekly-panel-top">
+              <span class="weekly-panel-icon"><i class="fas fa-calendar-days"></i></span>
+              <span class="weekly-panel-label">
+                <span data-lang="ru">Праздники Израиля</span>
+                <span data-lang="en">Israel Holidays</span>
+                <span data-lang="he" lang="he" dir="rtl">חגי ישראל</span>
+              </span>
+            </div>
+
+            <div id="weekly-holiday-list" class="holiday-list">
+              <div class="holiday-item">
+                <div class="holiday-main">
+                  <div class="holiday-title-row">
+                    <strong>Суккот</strong>
+                    <span class="holiday-hebrew" lang="he" dir="rtl">סוכות</span>
+                  </div>
+                  <span class="holiday-date">☀ с вечера 25 сентября – 2 октября 2026 • 🌙 15–21 Тишрея 5787</span>
+                </div>
+                <span class="holiday-badge">Ближайший праздник</span>
+              </div>
+
+              <div class="holiday-item">
+                <div class="holiday-main">
+                  <div class="holiday-title-row">
+                    <strong>Шмини Ацерет и Симхат Тора</strong>
+                    <span class="holiday-hebrew" lang="he" dir="rtl">שמיני עצרת ושמחת תורה</span>
+                  </div>
+                  <span class="holiday-date">☀ с вечера 2 октября – 3 октября 2026 • 🌙 22 Тишрея 5787</span>
+                </div>
+                <span class="holiday-badge">Следующий праздник</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="weekly-source">
+          <span data-lang="ru">Календарные данные:</span>
+          <span data-lang="en">Calendar data:</span>
+          <span data-lang="he" lang="he" dir="rtl">נתוני לוח השנה:</span>
+          <a href="https://www.hebcal.com/" target="_blank" rel="noopener noreferrer">Hebcal.com</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-support" id="repatriants">
+      <div class="section-inner">
+        <div class="section-heading">
+          <div class="section-kicker"><i class="fas fa-people-group"></i></div>
+          <div>
+            <h2><span data-lang="ru">Поддержка репатриантов</span><span data-lang="en">Support for repatriates</span><span data-lang="he" lang="he" dir="rtl">תמיכה בעולים חדשים</span></h2>
+            <p><span data-lang="ru">Помогаем новым гражданам Израиля адаптироваться в Беэр-Шеве с первых дней: вещами, практической поддержкой и консультацией.</span><span data-lang="en">We help new citizens of Israel adapt in Beersheba from their first days with material assistance, practical support and guidance.</span><span data-lang="he" lang="he" dir="rtl">אנו מסייעים לאזרחים חדשים בישראל להיקלט בבאר שבע מהימים הראשונים: בביגוד, בתמיכה מעשית ובייעוץ.</span></p>
+          </div>
+        </div>
+
+        <article class="split-card">
+          <div class="split-copy">
+            <h3><span data-lang="ru">Центр помощи на Haisiyim 12</span><span data-lang="en">Support center at Haisiyim 12</span><span data-lang="he" lang="he" dir="rtl">מרכז הסיוע ברחוב Haisiyim 12</span></h3>
+            <p><span data-lang="ru">Здесь можно получить необходимую помощь и узнать, к кому обратиться по практическим вопросам. Мы стараемся работать просто и напрямую — от человека к человеку. Материальная помощь, адаптация и практическая поддержка в первые месяцы жизни в Израиле.</span><span data-lang="en">Here you can receive practical assistance and find out where to turn with everyday questions. We try to work simply and directly — person to person. Material assistance, adaptation and practical support during the first months in Israel.</span><span data-lang="he" lang="he" dir="rtl">כאן אפשר לקבל את הסיוע הנחוץ ולדעת למי לפנות בעניינים מעשיים. אנו משתדלים לפעול בפשטות ובישירות — מאדם לאדם. סיוע חומרי, קליטה ותמיכה מעשית בחודשי החיים הראשונים בישראל.</span></p>
+            <div class="info-pill"><i class="far fa-clock"></i><span data-lang="ru">Склад: 13:00–15:00, воскресенье и четверг</span><span data-lang="en">Warehouse: 13:00–15:00, Sunday and Thursday</span><span data-lang="he" lang="he" dir="rtl">מחסן: 13:00–15:00, ראשון וחמישי</span></div>
+            <div class="card-actions">
+              <a class="btn btn-accent" href="repatriants-gallery.html"><i class="fas fa-images"></i><span data-lang="ru">Галерея репатриантов</span><span data-lang="en">Repatriants gallery</span><span data-lang="he" lang="he" dir="rtl">גלריית העולים החדשים</span></a>
+            </div>
+          </div>
+          <div class="split-media section-icon-media"><img src="assets/icons/repatriants-final.webp" alt="" aria-hidden="true"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-canteen" id="canteen">
+      <div class="section-inner">
+        <div class="section-heading">
+          <div class="section-kicker"><i class="fas fa-utensils"></i></div>
+          <div>
+            <h2><span data-lang="ru">Благотворительная столовая</span><span data-lang="en">Charity canteen</span><span data-lang="he" lang="he" dir="rtl">בית התמחוי</span></h2>
+            <p><span data-lang="ru">Готовим из свежих продуктов для людей, которым сейчас нужна поддержка. Здесь важна не только еда, но и человеческое отношение.</span><span data-lang="en">We prepare meals from fresh ingredients for people who need support. Food matters, but so does human care.</span><span data-lang="he" lang="he" dir="rtl">אנו מכינים מזון טרי עבור אנשים הזקוקים כעת לתמיכה. לא רק האוכל חשוב, אלא גם היחס האנושי.</span></p>
+          </div>
+        </div>
+
+        <article class="split-card reverse">
+          <div class="split-copy">
+            <h3><span data-lang="ru">Тёплая еда и внимание</span><span data-lang="en">Warm meals and care</span><span data-lang="he" lang="he" dir="rtl">אוכל חם ותשומת לב</span></h3>
+            <p><span data-lang="ru">Столовая является одним из постоянных направлений нашей работы. Регулярная помощь горячим питанием.</span><span data-lang="en">The canteen is one of our ongoing areas of work. We provide regular hot-meal support.</span><span data-lang="he" lang="he" dir="rtl">בית התמחוי הוא אחד מתחומי הפעילות הקבועים שלנו. אנו מעניקים סיוע קבוע בארוחות חמות.</span></p>
+            <div class="info-pill"><i class="far fa-clock"></i><span data-lang="ru">Часы работы: 13:00–15:00, воскресенье и четверг</span><span data-lang="en">Opening hours: 13:00–15:00, Sunday and Thursday</span><span data-lang="he" lang="he" dir="rtl">שעות פעילות: 13:00–15:00, ראשון וחמישי</span></div>
+            <div class="card-actions">
+              <a class="btn btn-accent" href="canteen-gallery.html"><i class="fas fa-images"></i><span data-lang="ru">Галерея столовой</span><span data-lang="en">Canteen gallery</span><span data-lang="he" lang="he" dir="rtl">גלריית בית התמחוי</span></a>
+            </div>
+          </div>
+          <div class="split-media section-icon-media"><img src="assets/icons/canteen-final.webp" alt="" aria-hidden="true"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-college" id="college">
+      <div class="section-inner">
+        <div class="section-heading">
+          <div class="section-kicker"><i class="fas fa-graduation-cap"></i></div>
+          <div>
+            <h2><span data-lang="ru">Колледж</span><span data-lang="en">College</span><span data-lang="he" lang="he" dir="rtl">מכללה</span></h2>
+          </div>
+        </div>
+
+        <article class="split-card college-card">
+          <div class="split-copy">
+            <h3><span data-lang="ru">Учёба и события</span><span data-lang="en">Studies and events</span><span data-lang="he" lang="he" dir="rtl">לימודים ואירועים</span></h3>
+            <div class="card-actions">
+              <a class="btn btn-accent" href="college-gallery.html"><i class="fas fa-images"></i><span data-lang="ru">Галерея</span><span data-lang="en">Gallery</span><span data-lang="he" lang="he" dir="rtl">גלריה</span></a>
+            </div>
+          </div>
+          <div class="split-media section-icon-media"><img src="assets/icons/college-final.webp" alt="" aria-hidden="true"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-holocaust" id="holocaust-survivors">
+      <div class="section-inner">
+        <div class="section-heading">
+          <div class="section-kicker"><i class="fas fa-star-of-david"></i></div>
+          <div>
+            <h2><span data-lang="ru">Пережившие Холокост</span><span data-lang="en">Holocaust Survivors</span><span data-lang="he" lang="he" dir="rtl">ניצולי השואה</span></h2>
+            <p><span data-lang="ru">Помощь, встречи и поддержка переживших Холокост.</span><span data-lang="en">Support, meetings and assistance for Holocaust survivors.</span><span data-lang="he" lang="he" dir="rtl">סיוע, מפגשים ותמיכה בניצולי השואה.</span></p>
+          </div>
+        </div>
+
+        <article class="split-card holocaust-card">
+          <div class="split-copy">
+            <h3><span data-lang="ru">Память, уважение и забота</span><span data-lang="en">Memory, respect and care</span><span data-lang="he" lang="he" dir="rtl">זיכרון, כבוד ודאגה</span></h3>
+            <div class="card-actions">
+              <a class="btn btn-accent" href="holocaust-survivors-gallery.html"><i class="fas fa-images"></i><span data-lang="ru">Галерея</span><span data-lang="en">Gallery</span><span data-lang="he" lang="he" dir="rtl">גלריה</span></a>
+            </div>
+          </div>
+          <div class="split-media section-icon-media"><img src="assets/icons/holocaust-final.webp" alt="" aria-hidden="true"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-news" id="news">
+      <div class="section-inner">
+        <div class="section-heading">
+          <div class="section-kicker"><i class="fas fa-newspaper"></i></div>
+          <div>
+            <h2><span data-lang="ru">Последние новости</span><span data-lang="en">Latest news</span><span data-lang="he" lang="he" dir="rtl">חדשות אחרונות</span></h2>
+          </div>
+        </div>
+
+        <div class="news-grid news-grid-two">
+          <article class="news-card archive-entry-card">
+            <div class="archive-card-shell">
+              <div class="archive-card-top">
+                <span class="archive-card-icon"><i class="fas fa-newspaper"></i></span>
+                <span class="archive-card-label">
+                  <span data-lang="ru">Архив газеты</span>
+                  <span data-lang="en">Newsletter Archive</span>
+                  <span data-lang="he" lang="he" dir="rtl">ארכיון העיתון</span>
+                </span>
+              </div>
+
+              <div class="archive-card-decoration" aria-hidden="true">
+                <span></span><span></span><span></span>
+              </div>
+
+              <div class="archive-card-title">
+                <h3>Streams of Hope</h3>
+              </div>
+
+              <div class="archive-card-actions">
+                <a class="btn btn-document archive-open-btn" href="newsletter-archive.html">
+                  <i class="fas fa-folder-open"></i>
+                  <span data-lang="ru">Открыть выпуски</span>
+                  <span data-lang="en">Open issues</span>
+                  <span data-lang="he" lang="he" dir="rtl">פתיחת הגיליונות</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="news-card archive-entry-card">
+            <div class="archive-card-shell">
+              <div class="archive-card-top">
+                <span class="archive-card-icon"><i class="fas fa-file-lines"></i></span>
+                <span class="archive-card-label">
+                  <span data-lang="ru">Архив документов</span>
+                  <span data-lang="en">Document Archive</span>
+                  <span data-lang="he" lang="he" dir="rtl">ארכיון מסמכים</span>
+                </span>
+              </div>
+
+              <div class="archive-card-decoration" aria-hidden="true">
+                <span></span><span></span><span></span>
+              </div>
+
+              <div class="archive-card-title">
+                <h3>Needs of War</h3>
+              </div>
+
+              <div class="archive-card-actions">
+                <a class="btn btn-document archive-open-btn" href="documents.html">
+                  <i class="fas fa-folder-open"></i>
+                  <span data-lang="ru">Открыть документы</span>
+                  <span data-lang="en">Open documents</span>
+                  <span data-lang="he" lang="he" dir="rtl">פתיחת המסמכים</span>
+                  <i class="fas fa-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="section section-projects" id="projects">
+      <div class="section-inner">
+        <div class="section-heading">
+          <div class="section-kicker"><i class="fas fa-seedling"></i></div>
+          <div>
+            <h2><span data-lang="ru">Наши проекты</span><span data-lang="en">Our projects</span><span data-lang="he" lang="he" dir="rtl">הפרויקטים שלנו</span></h2>
+          </div>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card project-card-gold">
+            <div class="project-icon"><i class="fas fa-book-open"></i></div>
+            <div class="project-main">
+              <h3><span data-lang="ru">Книга проектов организации</span><span data-lang="en">Organization projects book</span><span data-lang="he" lang="he" dir="rtl">ספר הפרויקטים של הארגון</span></h3>
+              <div class="project-actions">
+                <a class="btn btn-accent" href="Organization%20book%202.pdf" target="_blank" rel="noopener"><i class="fas fa-file-pdf"></i><span data-lang="ru">Открыть PDF</span><span data-lang="en">Open PDF</span><span data-lang="he" lang="he" dir="rtl">פתיחת PDF</span></a>
+              </div>
+            </div>
+            <span class="status"><span data-lang="ru">Рабочий файл</span><span data-lang="en">Project file</span><span data-lang="he" lang="he" dir="rtl">קובץ עבודה</span></span>
+          </article>
+
+          <article class="project-card project-card-youtube">
+            <div class="project-icon"><i class="fab fa-youtube"></i></div>
+            <div class="project-main">
+              <h3>
+                <span data-lang="ru">Канал Общины «Дом Благодати»</span>
+                <span data-lang="en">“House of Grace” Community Channel</span>
+                <span data-lang="he" lang="he" dir="rtl">ערוץ קהילת ״בית החסד״</span>
+              </h3>
+              <p>
+                <span data-lang="ru">YouTube-канал общины «Дом Благодати»: видео встреч, служения, событий и жизни общины.</span>
+                <span data-lang="en">The “House of Grace” community YouTube channel: meetings, ministry, events and community life.</span>
+                <span data-lang="he" lang="he" dir="rtl">ערוץ היוטיוב של קהילת ״בית החסד״: סרטונים ממפגשים, שירות, אירועים וחיי הקהילה.</span>
+              </p>
+              <div class="project-actions">
+                <a class="btn btn-youtube" href="https://www.youtube.com/@streamshope" target="_blank" rel="noopener">
+                  <i class="fab fa-youtube"></i>
+                  <span data-lang="ru">Открыть YouTube</span>
+                  <span data-lang="en">Open YouTube</span>
+                  <span data-lang="he" lang="he" dir="rtl">פתיחת YouTube</span>
+                </a>
+              </div>
+            </div>
+            <span class="status status-youtube">YouTube</span>
+          </article>
+
+          <article class="project-card project-card-facebook">
+            <div class="project-icon"><i class="fab fa-facebook-f"></i></div>
+            <div class="project-main">
+              <h3>
+                <span data-lang="ru">Благотворительная организация Streams of Hope</span>
+                <span data-lang="en">Streams of Hope Charity Organization</span>
+                <span data-lang="he" lang="he" dir="rtl">ארגון הצדקה Streams of Hope</span>
+              </h3>
+              <p>
+                <span data-lang="ru">Наша группа в Facebook: новости, фотографии, события и материалы благотворительной организации Streams of Hope.</span>
+                <span data-lang="en">Our Facebook group with news, photos, events and updates from the Streams of Hope charity organization.</span>
+                <span data-lang="he" lang="he" dir="rtl">קבוצת הפייסבוק שלנו: חדשות, תמונות, אירועים וחומרים של ארגון הצדקה Streams of Hope.</span>
+              </p>
+              <div class="project-actions">
+                <a class="btn btn-facebook" href="https://www.facebook.com/groups/1521293599289232" target="_blank" rel="noopener">
+                  <i class="fab fa-facebook-f"></i>
+                  <span data-lang="ru">Открыть Facebook</span>
+                  <span data-lang="en">Open Facebook</span>
+                  <span data-lang="he" lang="he" dir="rtl">פתיחת Facebook</span>
+                </a>
+              </div>
+            </div>
+            <span class="status status-facebook">Facebook</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-friends" id="friends">
+      <div class="section-inner">
+        <div class="section-heading">
+          <div class="section-kicker"><i class="fas fa-handshake"></i></div>
+          <div>
+            <h2><span data-lang="ru">Наши друзья</span><span data-lang="en">Our Friends</span><span data-lang="he" lang="he" dir="rtl">החברים שלנו</span></h2>
+            <p><span data-lang="ru">Люди и организации, которые остаются рядом, помогают, поддерживают наши инициативы и участвуют в добрых делах вместе с нами.</span><span data-lang="en">People and organizations who stay close, support our initiatives and take part in good works together with us.</span><span data-lang="he" lang="he" dir="rtl">אנשים וארגונים שנמצאים לצדנו, מסייעים, תומכים ביוזמות שלנו ומשתתפים איתנו במעשים טובים.</span></p>
+          </div>
+        </div>
+
+        <article class="split-card friends-card">
+          <div class="split-copy">
+            <h3><span data-lang="ru">Вместе мы можем больше</span><span data-lang="en">Together we can do more</span><span data-lang="he" lang="he" dir="rtl">ביחד אנחנו יכולים יותר</span></h3>
+            <div class="card-actions">
+              <a class="btn btn-accent" href="friends-gallery.html"><i class="fas fa-images"></i><span data-lang="ru">Галерея</span><span data-lang="en">Gallery</span><span data-lang="he" lang="he" dir="rtl">גלריה</span></a>
+            </div>
+          </div>
+
+          <div class="split-media section-icon-media"><img src="assets/icons/friends-final.webp" alt="" aria-hidden="true"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-contacts" id="contacts">
+      <div class="section-inner">
+        <div class="section-heading">
+          <div class="section-kicker"><i class="fas fa-address-card"></i></div>
+          <div>
+            <h2><span data-lang="ru">О нас и контакты</span><span data-lang="en">About us & contacts</span><span data-lang="he" lang="he" dir="rtl">אודות ויצירת קשר</span></h2>
+            <p><span data-lang="ru">Частная благотворительная организация в Беэр-Шеве. Работаем напрямую и стараемся, чтобы помощь доходила до конкретного человека.</span><span data-lang="en">A private charitable organization in Beersheba. We work directly and aim to make sure support reaches real people.</span><span data-lang="he" lang="he" dir="rtl">ארגון צדקה פרטי בבאר שבע. אנו פועלים ישירות ומשתדלים שהסיוע יגיע לאדם הזקוק לו.</span></p>
+          </div>
+        </div>
+
+        <div class="contact-panel">
+          <div>
+            <h3><span data-lang="ru">Связаться с нами</span><span data-lang="en">Contact us</span><span data-lang="he" lang="he" dir="rtl">צרו קשר</span></h3>
+            <div class="contact-list">
+              <a class="contact-item contact-item-basic" href="https://www.google.com/maps/search/Haisiyim+12,+Beersheba" target="_blank" rel="noopener">
+                <i class="fas fa-location-dot" aria-hidden="true"></i>
+                <span>Haisiyim 12, Beersheba</span>
+                <span class="contact-link-cue" aria-hidden="true"><i class="fas fa-arrow-up-right-from-square"></i></span>
+              </a>
+              <a class="contact-item contact-item-basic" href="tel:0544679766">
+                <i class="fas fa-phone" aria-hidden="true"></i>
+                <span><span data-lang="ru">Куратор: </span><span data-lang="en">Coordinator: </span><span data-lang="he" lang="he" dir="rtl">רכז/ת: </span>054-467-9766</span>
+                <span class="contact-link-cue" aria-hidden="true"><i class="fas fa-phone-volume"></i></span>
+              </a>
+              <a class="contact-item contact-item-basic" href="tel:0545996843">
+                <i class="fas fa-phone" aria-hidden="true"></i>
+                <span><span data-lang="ru">Директор: </span><span data-lang="en">Director: </span><span data-lang="he" lang="he" dir="rtl">מנהל/ת: </span>054-599-6843</span>
+                <span class="contact-link-cue" aria-hidden="true"><i class="fas fa-phone-volume"></i></span>
+              </a>
+
+              <div class="contact-online-label">
+                <span data-lang="ru">Онлайн-связь — нажмите, чтобы открыть</span>
+                <span data-lang="en">Online contact — click to open</span>
+                <span data-lang="he" lang="he" dir="rtl">יצירת קשר אונליין — לחצו לפתיחה</span>
+              </div>
+
+              <a class="contact-item contact-item-featured contact-item-email" href="mailto:streamshope@yandex.ru" aria-label="Email streamshope@yandex.ru">
+                <i class="fas fa-envelope" aria-hidden="true"></i>
+                <span class="contact-copy">
+                  <strong>Email</strong>
+                  <small>streamshope@yandex.ru</small>
+                </span>
+                <span class="contact-link-cue" aria-hidden="true"><i class="fas fa-arrow-right"></i></span>
+              </a>
+              <a class="contact-item contact-item-featured contact-item-telegram" href="https://t.me/streamshope" target="_blank" rel="noopener noreferrer" aria-label="Open Telegram @streamshope">
+                <i class="fab fa-telegram-plane" aria-hidden="true"></i>
+                <span class="contact-copy">
+                  <strong>Telegram</strong>
+                  <small>@streamshope</small>
+                </span>
+                <span class="contact-link-cue" aria-hidden="true"><i class="fas fa-arrow-up-right-from-square"></i></span>
+              </a>
+              <a class="contact-item contact-item-featured contact-item-youtube" href="https://www.youtube.com/@streamshope" target="_blank" rel="noopener noreferrer" aria-label="Open YouTube @streamshope">
+                <i class="fab fa-youtube" aria-hidden="true"></i>
+                <span class="contact-copy">
+                  <strong>YouTube</strong>
+                  <small>@streamshope</small>
+                </span>
+                <span class="contact-link-cue" aria-hidden="true"><i class="fas fa-arrow-up-right-from-square"></i></span>
+              </a>
+            </div>
+          </div>
+          <div class="contact-visual"><img src="IMG-20241006-WA0001.JPG" alt="Источники Надежды"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© <span id="current-year">2026</span> </span>
+    <span data-lang="ru">«Источники Надежды». Сделано с заботой.</span>
+    <span data-lang="en">“Streams of Hope”. Made with care.</span>
+    <span data-lang="he" lang="he" dir="rtl">״מקורות התקווה״. נעשה באהבה.</span>
+  </footer>
+  <script src="weekly-content.js?v=20260923-19"></script>
+  <script src="script.js?v=20260923-18"></script>
+</body>
+</html>
