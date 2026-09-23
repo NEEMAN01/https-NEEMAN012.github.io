@@ -6,7 +6,6 @@ window.GALLERY_MANIFEST = {
       {"path":"assets/galleries/canteen/canteen-community-care-september-2026.jpg","name":"canteen-community-care-september-2026.jpg","kind":"photo","added":""},
       {"path":"assets/galleries/canteen/canteen-september-2026.jpg","name":"canteen-september-2026.jpg","kind":"photo","added":""},
       {"path":"assets/galleries/canteen/canteen-main.png","name":"canteen-main.png","kind":"legacy","added":""},
-      {"path":"assets/galleries/canteen/canteen-overview.png","name":"canteen-overview.png","kind":"legacy","added":""},
       {"path":"assets/galleries/canteen/canteen-gallery.jpg","name":"canteen-gallery.jpg","kind":"legacy","added":""}
     ],
     "college": [
