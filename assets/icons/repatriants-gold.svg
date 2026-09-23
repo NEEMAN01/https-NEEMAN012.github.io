@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 320">
+
+<defs>
+  <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#fff1a8"/>
+    <stop offset=".22" stop-color="#f4cf69"/>
+    <stop offset=".52" stop-color="#c98b2d"/>
+    <stop offset=".76" stop-color="#f0c65a"/>
+    <stop offset="1" stop-color="#9a5a16"/>
+  </linearGradient>
+  <linearGradient id="gold2" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#fff4bd"/>
+    <stop offset=".45" stop-color="#eab64b"/>
+    <stop offset="1" stop-color="#a8651d"/>
+  </linearGradient>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+    <feDropShadow dx="0" dy="10" stdDeviation="8" flood-color="#000000" flood-opacity=".30"/>
+  </filter>
+</defs>
+<g filter="url(#shadow)" stroke="#8c5318" stroke-width="5" stroke-linejoin="round" stroke-linecap="round">
+  <circle cx="108" cy="92" r="29" fill="url(#gold2)"/>
+  <circle cx="212" cy="92" r="29" fill="url(#gold2)"/>
+  <path d="M57 187c3-43 25-69 51-69s48 26 51 69" fill="url(#gold)"/>
+  <path d="M161 187c3-43 25-69 51-69s48 26 51 69" fill="url(#gold)"/>
+  <path d="M98 167h124l18 78H80z" fill="url(#gold2)"/>
+  <path d="M98 167l28-28h68l28 28" fill="url(#gold)" />
+  <path d="M143 186h34v22h-34z" fill="#fff2a7" opacity=".85" stroke-width="3"/>
+  <path d="M76 176c-17 7-29 20-37 39" fill="none"/>
+  <path d="M244 176c17 7 29 20 37 39" fill="none"/>
+</g>
+<path d="M160 223c-20-18-35-31-35-49 0-13 10-23 23-23 7 0 12 3 12 3s5-3 12-3c13 0 23 10 23 23 0 18-15 31-35 49z" fill="#ffe98f" opacity=".92"/>
+</svg>
