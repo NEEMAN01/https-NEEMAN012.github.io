@@ -1,7 +1,7 @@
 STREAMS OF HOPE — COMPLETE SOURCE CODE
 Repository: NEEMAN01/https-NEEMAN012.github.io
 Branch: main
-Snapshot commit at start: f2db9dc4f7c7da3b1397b92c42a4d4281205cb4e
+Snapshot commit at start: 9db4472dcb6436405b01a394efdffb7538f13f68
 Generated: 2026-09-23
 
 Open this file in VS Code, Notepad++, Sublime Text, or another code editor.
@@ -1306,7 +1306,7 @@ FILE: index.html
   <title>Источники Надежды — благотворительная помощь в Беэр-Шеве</title>
 <link rel="stylesheet" href="assets/icons/site-icons-a.css?v=20260923-1">
   <link rel="stylesheet" href="assets/icons/site-icons-b.css?v=20260923-1">
-  <link rel="stylesheet" href="style.css?v=20260923-30">
+  <link rel="stylesheet" href="style.css?v=20260923-31">
 </head>
 
 <body class="lang-ru">
@@ -1523,7 +1523,7 @@ FILE: index.html
 
         <article class="split-card">
           <div class="split-copy">
-            <h3><span data-lang="ru">Центр помощи на Haisiyim 12</span><span data-lang="en">Support center at Haisiyim 12</span><span data-lang="he" lang="he" dir="rtl">מרכז הסיוע ברחוב Haisiyim 12</span></h3>
+            <h3><span data-lang="ru">Центр помощи на Haisiyim 10</span><span data-lang="en">Support center at Haisiyim 10</span><span data-lang="he" lang="he" dir="rtl">מרכז הסיוע ברחוב Haisiyim 10</span></h3>
             <p><span data-lang="ru">Здесь можно получить необходимую помощь и узнать, к кому обратиться по практическим вопросам. Мы стараемся работать просто и напрямую — от человека к человеку. Материальная помощь, адаптация и практическая поддержка в первые месяцы жизни в Израиле.</span><span data-lang="en">Here you can receive practical assistance and find out where to turn with everyday questions. We try to work simply and directly — person to person. Material assistance, adaptation and practical support during the first months in Israel.</span><span data-lang="he" lang="he" dir="rtl">כאן אפשר לקבל את הסיוע הנחוץ ולדעת למי לפנות בעניינים מעשיים. אנו משתדלים לפעול בפשטות ובישירות — מאדם לאדם. סיוע חומרי, קליטה ותמיכה מעשית בחודשי החיים הראשונים בישראל.</span></p>
             <div class="info-pill"><i class="far fa-clock"></i><span data-lang="ru">Склад: 13:00–15:00, воскресенье и четверг</span><span data-lang="en">Warehouse: 13:00–15:00, Sunday and Thursday</span><span data-lang="he" lang="he" dir="rtl">מחסן: 13:00–15:00, ראשון וחמישי</span></div>
             <div class="card-actions">
@@ -1789,17 +1789,28 @@ FILE: index.html
           <div>
             <h3><span data-lang="ru">Связаться с нами</span><span data-lang="en">Contact us</span><span data-lang="he" lang="he" dir="rtl">צרו קשר</span></h3>
             <div class="contact-list">
-              <a class="contact-item contact-item-basic" href="https://www.google.com/maps/search/Haisiyim+12,+Beersheba" target="_blank" rel="noopener">
+              <div class="contact-item contact-item-basic contact-address-card">
                 <i class="fas fa-location-dot" aria-hidden="true"></i>
-                <span>Haisiyim 12, Beersheba</span>
-                <span class="contact-link-cue" aria-hidden="true"><i class="fas fa-arrow-up-right-from-square"></i></span>
-              </a>
-              <a class="contact-item contact-item-basic" href="tel:0544679766">
+                <div class="contact-address-copy">
+                  <strong>Haisiyim 10, Beersheba</strong>
+                  <span class="contact-address-note">
+                    <span data-lang="ru">Открыть адрес в картах:</span>
+                    <span data-lang="en">Open this address in maps:</span>
+                    <span data-lang="he" lang="he" dir="rtl">פתיחת הכתובת במפות:</span>
+                  </span>
+                  <div class="contact-map-links" aria-label="Map links">
+                    <a href="https://www.google.com/maps/search/?api=1&query=HaIsiyim+10%2C+Beersheba%2C+Israel" target="_blank" rel="noopener noreferrer">Google Maps</a>
+                    <a href="https://www.waze.com/ul?q=HaIsiyim%2010%2C%20Beersheba%2C%20Israel&navigate=yes" target="_blank" rel="noopener noreferrer">Waze</a>
+                    <a href="https://maps.apple.com/?q=HaIsiyim%2010%2C%20Beersheba%2C%20Israel" target="_blank" rel="noopener noreferrer">Apple Maps</a>
+                  </div>
+                </div>
+              </div>
+              <a class="contact-item contact-item-basic" href="tel:+972544679766">
                 <i class="fas fa-phone" aria-hidden="true"></i>
                 <span><span data-lang="ru">Куратор: </span><span data-lang="en">Coordinator: </span><span data-lang="he" lang="he" dir="rtl">רכז/ת: </span>054-467-9766</span>
                 <span class="contact-link-cue" aria-hidden="true"><i class="fas fa-phone-volume"></i></span>
               </a>
-              <a class="contact-item contact-item-basic" href="tel:0545996843">
+              <a class="contact-item contact-item-basic" href="tel:+972545996843">
                 <i class="fas fa-phone" aria-hidden="true"></i>
                 <span><span data-lang="ru">Директор: </span><span data-lang="en">Director: </span><span data-lang="he" lang="he" dir="rtl">מנהל/ת: </span>054-599-6843</span>
                 <span class="contact-link-cue" aria-hidden="true"><i class="fas fa-phone-volume"></i></span>
@@ -1853,7 +1864,6 @@ FILE: index.html
   <script src="script.js?v=20260923-18"></script>
 </body>
 </html>
-
 ====================================================================================================
 FILE: needs-of-war-03-2026.html
 ====================================================================================================
@@ -6461,6 +6471,66 @@ body.lang-he .weekly-source {
   }
 }
 
+
+/* ===== Contact map chooser 2026-09-23 ===== */
+.contact-address-card {
+  grid-template-columns: 44px minmax(0, 1fr);
+  align-items: start;
+}
+
+.contact-address-copy {
+  min-width: 0;
+  display: grid;
+  gap: 5px;
+  padding-top: 2px;
+}
+
+.contact-address-copy > strong {
+  color: var(--cream);
+  font-size: 1rem;
+  line-height: 1.25;
+}
+
+.contact-address-note {
+  color: rgba(238,244,237,.58);
+  font-size: .82rem;
+}
+
+.contact-map-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 4px;
+}
+
+.contact-map-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  padding: 6px 11px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: .79rem;
+  font-weight: 700;
+  color: var(--cream);
+  background: rgba(215,197,138,.08);
+  border: 1px solid rgba(215,197,138,.18);
+  transition: transform .2s ease, background .2s ease, border-color .2s ease;
+}
+
+.contact-map-links a:hover,
+.contact-map-links a:focus-visible {
+  transform: translateY(-1px);
+  background: rgba(215,197,138,.14);
+  border-color: rgba(215,197,138,.34);
+}
+
+@media (max-width: 640px) {
+  .contact-map-links a {
+    flex: 1 1 120px;
+  }
+}
 
 ====================================================================================================
 FILE: weekly-content.js
