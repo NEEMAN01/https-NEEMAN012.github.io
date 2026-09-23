@@ -1853,3 +1853,5175 @@ FILE: index.html
   <script src="script.js?v=20260923-18"></script>
 </body>
 </html>
+
+====================================================================================================
+FILE: needs-of-war-03-2026.html
+====================================================================================================
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Нужды войны — Источники Надежды</title>
+<link rel="stylesheet" href="assets/icons/site-icons-a.css?v=20260923-1">
+  <link rel="stylesheet" href="assets/icons/site-icons-b.css?v=20260923-1">
+  <link rel="stylesheet" href="style.css?v=20260921-14">
+</head>
+<body class="lang-ru">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark"><i class="fas fa-heart"></i></span>
+        <span class="brand-title">
+          <span data-lang="ru">Источники Надежды</span>
+          <span data-lang="en">Streams of Hope</span>
+          <span data-lang="he" lang="he" dir="rtl">מקורות התקווה</span>
+        </span>
+      </a>
+      <nav class="top-nav">
+        <a href="index.html#news">
+          <span data-lang="ru">Новости</span>
+          <span data-lang="en">News</span>
+          <span data-lang="he" lang="he" dir="rtl">חדשות</span>
+        </a>
+        <a href="index.html#projects">
+          <span data-lang="ru">Проекты</span>
+          <span data-lang="en">Projects</span>
+          <span data-lang="he" lang="he" dir="rtl">פרויקטים</span>
+        </a>
+      </nav>
+      <div class="lang-switcher">
+        <button class="lang-btn active" id="btn-ru" type="button" onclick="setLanguage('ru')">RU</button>
+        <button class="lang-btn" id="btn-en" type="button" onclick="setLanguage('en')">EN</button><button class="lang-btn" id="btn-he" type="button" onclick="setLanguage('he')">HE</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="subpage">
+    <section class="subpage-hero war-hero">
+      <div class="section-inner">
+        <div class="eyebrow">
+          <i class="fas fa-newspaper"></i>
+          <span>24/03/2026</span>
+        </div>
+        <h1>
+          <span data-lang="ru">Нужды войны</span>
+          <span data-lang="en">Needs of War</span>
+          <span data-lang="he" lang="he" dir="rtl">צרכי המלחמה</span>
+        </h1>
+        <p>
+          <span data-lang="ru">Обращение о помощи семье из Беэр-Шевы, чья квартира была разрушена в результате ракетного удара.</span>
+          <span data-lang="en">An appeal to help a family in Beersheba whose apartment was destroyed by a missile strike.</span>
+          <span data-lang="he" lang="he" dir="rtl">פנייה לסיוע למשפחה מבאר שבע, שדירתה נהרסה בעקבות פגיעת טיל.</span>
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-news">
+      <div class="section-inner article-wrap">
+        <article class="article-card">
+          <div class="article-archive-notice">
+            <div>
+              <span class="badge badge-document">
+                <span data-lang="ru">Архивный материал</span>
+                <span data-lang="en">Archived material</span>
+                <span data-lang="he" lang="he" dir="rtl">חומר ארכיוני</span>
+              </span>
+              <strong>24/03/2026</strong>
+            </div>
+            <p>
+              <span data-lang="ru">Это обращение было опубликовано 24 марта 2026 года. Текст ниже сохранён в первоначальном виде и относится к событиям того периода.</span>
+              <span data-lang="en">This appeal was published on 24 March 2026. The text below is preserved in its original form and refers to events from that period.</span>
+              <span data-lang="he" lang="he" dir="rtl">פנייה זו פורסמה ב־24 במרץ 2026. הטקסט שלהלן נשמר בנוסחו המקורי ומתייחס לאירועי אותה תקופה.</span>
+            </p>
+          </div>
+
+          <div class="article-mark"><i class="fas fa-hands-holding-heart"></i></div>
+
+          <div class="article-language" data-lang="ru">
+            <h2>Шалом, братья и сестры!</h2>
+            <p>В это тяжелое время для Израиля, время войны и прохождения трудностей, мы в уповании своем на Господа просим всех, кто не равнодушен к ближнему, принять участие в помощи сестре из города Беэр-Шева, Израиль, которая попала под удар иранской баллистической ракеты.</p>
+            <p>Ее квартира разрушена и не скоро придет в состояние проживания. Государство оказало первичную помощь, а далее она остается с проблемами одна с двумя детьми. Одной общине невозможно потянуть все нужды семьи. Поэтому мы просим помощи у всех, кто неравнодушен к проблемам ближнего.</p>
+            <blockquote>Мы благодарны всем, кто молится за Израиль, всем, кто не равнодушен к тому, что происходит на Ближнем Востоке.</blockquote>
+            <p><strong>Мир вам и благословение от Господа Иешуа. Аминь!</strong></p>
+          </div>
+
+          <div class="article-language" data-lang="en">
+            <h2>Shalom, brothers and sisters!</h2>
+            <p>In this difficult time for Israel, a time of war and great hardship, we place our trust in the Lord and reach out to everyone who cares for their neighbor. We ask for your help for a sister from the city of Beersheba, Israel, whose home was hit by an Iranian ballistic missile.</p>
+            <p>Her apartment is destroyed and will not be habitable anytime soon. While the state provided initial emergency aid, she is now left to face these overwhelming challenges alone with her two children. It is impossible for a single congregation to meet all the needs of this family. Therefore, we are asking for support from anyone who is not indifferent to the struggles of others.</p>
+            <blockquote>We are truly grateful to everyone praying for Israel and to all who care about what is happening in the Middle East.</blockquote>
+            <p><strong>Peace and blessings to you from the Lord Yeshua. Amen!</strong></p>
+          </div>
+
+          <div class="article-language" data-lang="he" lang="he" dir="rtl">
+            <h2>שלום, אחים ואחיות!</h2>
+            <p>בתקופה קשה זו לישראל, בזמן מלחמה והתמודדות עם קשיים, אנו שמים את מבטחנו באדון ופונים לכל מי שאינו אדיש לזולתו להשתתף בסיוע לאחות מבאר שבע, ישראל, שנפגעה מפגיעת טיל בליסטי איראני.</p>
+            <p>דירתה נהרסה ולא תהיה ראויה למגורים בזמן הקרוב. המדינה העניקה סיוע ראשוני, ובהמשך היא נותרת לבדה עם הקשיים ועם שני ילדים. קהילה אחת אינה יכולה לשאת לבדה בכל צורכי המשפחה. לכן אנו מבקשים את עזרתו של כל מי שאינו אדיש למצוקת הזולת.</p>
+            <blockquote>אנו מודים לכל מי שמתפלל למען ישראל ולכל מי שאכפת לו ממה שקורה במזרח התיכון.</blockquote>
+            <p><strong>שלום וברכה לכם מאת האדון ישוע. אמן!</strong></p>
+          </div>
+
+          <div class="article-actions">
+            <a class="btn btn-primary" href="documents.html">
+              <i class="fas fa-arrow-left"></i>
+              <span data-lang="ru">Вернуться в архив</span>
+              <span data-lang="en">Back to archive</span>
+              <span data-lang="he" lang="he" dir="rtl">חזרה לארכיון</span>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    © <span id="current-year">2026</span>
+    <span data-lang="ru"> «Источники Надежды».</span>
+    <span data-lang="en"> “Streams of Hope”.</span>
+    <span data-lang="he" lang="he" dir="rtl">״מקורות התקווה״.</span>
+  </footer>
+  <script src="script.js?v=20260923-18"></script>
+</body>
+</html>
+
+====================================================================================================
+FILE: newsletter-archive.html
+====================================================================================================
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Архив газеты — Источники Надежды</title>
+<link rel="stylesheet" href="assets/icons/site-icons-a.css?v=20260923-1">
+  <link rel="stylesheet" href="assets/icons/site-icons-b.css?v=20260923-1">
+  <link rel="stylesheet" href="style.css?v=20260923-17">
+</head>
+<body class="lang-ru">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark"><i class="fas fa-heart"></i></span>
+        <span class="brand-title">
+          <span data-lang="ru">Источники Надежды</span>
+          <span data-lang="en">Streams of Hope</span>
+          <span data-lang="he" lang="he" dir="rtl">מקורות התקווה</span>
+        </span>
+      </a>
+
+      <nav class="top-nav">
+        <a href="index.html#news"><span data-lang="ru">Новости</span><span data-lang="en">News</span><span data-lang="he" lang="he" dir="rtl">חדשות</span></a>
+        <a href="documents.html"><span data-lang="ru">Документы</span><span data-lang="en">Documents</span><span data-lang="he" lang="he" dir="rtl">מסמכים</span></a>
+      </nav>
+
+      <div class="lang-switcher">
+        <button class="lang-btn active" id="btn-ru" type="button" onclick="setLanguage('ru')">RU</button>
+        <button class="lang-btn" id="btn-en" type="button" onclick="setLanguage('en')">EN</button>
+        <button class="lang-btn" id="btn-he" type="button" onclick="setLanguage('he')">HE</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="subpage">
+    <section class="subpage-hero documents-hero">
+      <div class="section-inner">
+        <div class="eyebrow">
+          <i class="fas fa-newspaper"></i>
+          <span data-lang="ru">Архив газеты</span>
+          <span data-lang="en">Newsletter Archive</span>
+          <span data-lang="he" lang="he" dir="rtl">ארכיון העיתון</span>
+        </div>
+
+        <h1>
+          <span data-lang="ru">Газета «Источники Надежды»</span>
+          <span data-lang="en">Streams of Hope Newsletter</span>
+          <span data-lang="he" lang="he" dir="rtl">עיתון ״מקורות התקווה״</span>
+        </h1>
+
+        <p>
+          <span data-lang="ru">Все выпуски хранятся здесь. Новая газета будет добавляться в архив, а предыдущие выпуски останутся доступными для чтения.</span>
+          <span data-lang="en">All issues are kept here. New editions will be added to the archive while previous issues remain available to read.</span>
+          <span data-lang="he" lang="he" dir="rtl">כל הגיליונות נשמרים כאן. גיליונות חדשים יתווספו לארכיון והגיליונות הקודמים יישארו זמינים לקריאה.</span>
+        </p>
+
+        <a class="btn btn-secondary" href="index.html#news">
+          <i class="fas fa-arrow-left"></i>
+          <span data-lang="ru">Вернуться к новостям</span>
+          <span data-lang="en">Back to news</span>
+          <span data-lang="he" lang="he" dir="rtl">חזרה לחדשות</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section section-news">
+      <div class="section-inner documents-wrap">
+        <div class="documents-list" id="newsletter-archive-list">
+
+
+          <!-- Новые выпуски газеты добавляются выше старых. -->
+
+          <article class="archive-document-item">
+            <div class="archive-document-icon">
+              <i class="fas fa-newspaper"></i>
+            </div>
+
+            <div class="archive-document-copy">
+              <div class="archive-document-meta">
+                <span class="badge badge-document">
+                  <span data-lang="ru">Новый выпуск</span>
+                  <span data-lang="en">New issue</span>
+                  <span data-lang="he" lang="he" dir="rtl">גיליון חדש</span>
+                </span>
+                <time datetime="2026-09">09/2026</time>
+              </div>
+
+              <h2>
+                <span data-lang="ru">Выпуск 09/2026</span>
+                <span data-lang="en">September 2026 Issue</span>
+                <span data-lang="he" lang="he" dir="rtl">גיליון 09/2026</span>
+              </h2>
+
+              <p>
+                <span data-lang="ru">Новый выпуск «Источников Надежды» доступен на русском и английском языках.</span>
+                <span data-lang="en">The new Streams of Hope issue is available in Russian and English.</span>
+                <span data-lang="he" lang="he" dir="rtl">הגיליון החדש של ״מקורות התקווה״ זמין ברוסית ובאנגלית.</span>
+              </p>
+
+              <div class="archive-document-actions">
+                <a class="btn btn-document" href="streams-of-hope-09-2026-ru.pdf" target="_blank" rel="noopener">
+                  <i class="fas fa-book-open"></i>
+                  <span data-lang="ru">Русский PDF</span>
+                  <span data-lang="en">Russian PDF</span>
+                  <span data-lang="he" lang="he" dir="rtl">PDF ברוסית</span>
+                </a>
+                <a class="btn btn-document" href="streams-of-hope-09-2026-en.pdf" target="_blank" rel="noopener">
+                  <i class="fas fa-book-open"></i>
+                  <span data-lang="ru">Английский PDF</span>
+                  <span data-lang="en">English PDF</span>
+                  <span data-lang="he" lang="he" dir="rtl">PDF באנגלית</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="archive-document-item">
+            <div class="archive-document-icon">
+              <i class="fas fa-newspaper"></i>
+            </div>
+
+            <div class="archive-document-copy">
+              <div class="archive-document-meta">
+                <span class="badge badge-document">
+                  <span data-lang="ru">Выпуск газеты</span>
+                  <span data-lang="en">Newsletter issue</span>
+                  <span data-lang="he" lang="he" dir="rtl">גיליון העיתון</span>
+                </span>
+                <time datetime="2026-03">03/2026</time>
+              </div>
+
+              <h2>
+                <span data-lang="ru">Выпуск 03/2026</span>
+                <span data-lang="en">March 2026 Issue</span>
+                <span data-lang="he" lang="he" dir="rtl">גיליון 03/2026</span>
+              </h2>
+
+              <p>
+                <span data-lang="ru">Русско-английский выпуск о работе организации, событиях и помощи людям в Беэр-Шеве.</span>
+                <span data-lang="en">A Russian-English edition about the organization’s work, activities and assistance in Beersheba.</span>
+                <span data-lang="he" lang="he" dir="rtl">גיליון ברוסית ובאנגלית על פעילות הארגון, האירועים והסיוע לאנשים בבאר שבע.</span>
+              </p>
+
+              <div class="archive-document-actions">
+                <a class="btn btn-document" href="News%20Letter%2003%3A26%20russ%3Aeng.pdf" target="_blank" rel="noopener">
+                  <i class="fas fa-book-open"></i>
+                  <span data-lang="ru">Читать выпуск</span>
+                  <span data-lang="en">Read issue</span>
+                  <span data-lang="he" lang="he" dir="rtl">קריאת הגיליון</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    © <span id="current-year">2026</span>
+    <span data-lang="ru"> «Источники Надежды».</span>
+    <span data-lang="en"> “Streams of Hope”.</span>
+    <span data-lang="he" lang="he" dir="rtl">״מקורות התקווה״.</span>
+  </footer>
+
+  <script src="newsletter-archive.js?v=20260923-1"></script>
+  <script src="script.js?v=20260923-18"></script>
+</body>
+</html>
+
+====================================================================================================
+FILE: newsletter-archive.js
+====================================================================================================
+
+// Newsletter archive is rendered from local HTML only.
+// No external API is required for the public site.
+(function () {
+  "use strict";
+})();
+
+
+====================================================================================================
+FILE: repatriants-gallery.html
+====================================================================================================
+
+<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Галерея репатриантов — Источники Надежды</title>
+<link rel="stylesheet" href="assets/icons/site-icons-a.css?v=20260923-1">
+  <link rel="stylesheet" href="assets/icons/site-icons-b.css?v=20260923-1"><link rel="stylesheet" href="style.css?v=20260923-22"></head><body class="lang-ru">
+<header class="site-header"><div class="header-inner"><a class="brand" href="index.html"><span class="brand-mark"><i class="fas fa-heart"></i></span><span class="brand-title"><span data-lang="ru">Источники Надежды</span><span data-lang="en">Streams of Hope</span><span data-lang="he" lang="he" dir="rtl">מקורות התקווה</span></span></a><nav class="top-nav"><a href="index.html#repatriants"><span data-lang="ru">Назад к разделу</span><span data-lang="en">Back to section</span><span data-lang="he" lang="he" dir="rtl">חזרה למדור</span></a><a href="gallery.html"><span data-lang="ru">Общая галерея</span><span data-lang="en">Main gallery</span><span data-lang="he" lang="he" dir="rtl">גלריה כללית</span></a></nav><div class="lang-switcher"><button class="lang-btn active" id="btn-ru" type="button" onclick="setLanguage('ru')">RU</button><button class="lang-btn" id="btn-en" type="button" onclick="setLanguage('en')">EN</button><button class="lang-btn" id="btn-he" type="button" onclick="setLanguage('he')">HE</button></div></div></header>
+<main class="subpage"><section class="subpage-hero repatriants-gallery-hero"><div class="section-inner"><div class="eyebrow"><i class="fas fa-people-carry-box"></i><span data-lang="ru">Поддержка репатриантов</span><span data-lang="en">Support for repatriates</span><span data-lang="he" lang="he" dir="rtl">תמיכה בעולים חדשים</span></div><h1><span data-lang="ru">Галерея репатриантов</span><span data-lang="en">Repatriants gallery</span><span data-lang="he" lang="he" dir="rtl">גלריית העולים החדשים</span></h1><p><span data-lang="ru">Фотографии помощи и поддержки репатриантов.</span><span data-lang="en">Photos of assistance and support for repatriates.</span><span data-lang="he" lang="he" dir="rtl">תמונות של סיוע ותמיכה בעולים חדשים.</span></p><div class="subpage-actions"><a class="btn btn-secondary" href="index.html#repatriants"><i class="fas fa-arrow-left"></i><span data-lang="ru">Назад к разделу</span><span data-lang="en">Back to section</span><span data-lang="he" lang="he" dir="rtl">חזרה למדור</span></a><a class="btn btn-ghost" href="gallery.html"><i class="fas fa-images"></i><span data-lang="ru">Общая галерея</span><span data-lang="en">Main gallery</span><span data-lang="he" lang="he" dir="rtl">גלריה כללית</span></a></div></div></section>
+<section class="section section-support"><div class="section-inner"><div class="gallery-auto" data-gallery-category="repatriants">
+    <div class="gallery-auto-grid gallery-static-fallback">
+      <a class="gallery-auto-card gallery-static-card" href="assets/galleries/repatriants/repatriants-overview.png" target="_blank" rel="noopener">
+        <div class="gallery-auto-media">
+          <img src="assets/galleries/repatriants/repatriants-overview.png" alt="Repatriants Overview" loading="eager" decoding="async">
+          <span class="gallery-auto-open" aria-hidden="true"><i class="fas fa-up-right-from-square"></i></span>
+        </div>
+        <div class="gallery-auto-caption">
+          <span data-lang="ru"><strong>Repatriants Overview</strong></span>
+          <span data-lang="en"><strong>Repatriants Overview</strong></span>
+          <span data-lang="he" lang="he" dir="rtl"><strong>Repatriants Overview</strong></span>
+        </div>
+      </a>
+      <a class="gallery-auto-card gallery-static-card" href="assets/galleries/repatriants/repatriants-overview-1.png" target="_blank" rel="noopener">
+        <div class="gallery-auto-media">
+          <img src="assets/galleries/repatriants/repatriants-overview-1.png" alt="Repatriants Overview 1" loading="eager" decoding="async">
+          <span class="gallery-auto-open" aria-hidden="true"><i class="fas fa-up-right-from-square"></i></span>
+        </div>
+        <div class="gallery-auto-caption">
+          <span data-lang="ru"><strong>Repatriants Overview 1</strong></span>
+          <span data-lang="en"><strong>Repatriants Overview 1</strong></span>
+          <span data-lang="he" lang="he" dir="rtl"><strong>Repatriants Overview 1</strong></span>
+        </div>
+      </a>
+    </div>
+</div></div></section></main>
+<footer class="site-footer">© <span id="current-year">2026</span> <span data-lang="ru">«Источники Надежды».</span><span data-lang="en">“Streams of Hope”.</span><span data-lang="he" lang="he" dir="rtl">״מקורות התקווה״.</span></footer><script src="assets/galleries/gallery-manifest.js?v=20260923-1"></script>
+  <script src="gallery-auto.js?v=20260923-5"></script>
+  <script src="script.js?v=20260923-18"></script></body></html>
+
+
+====================================================================================================
+FILE: script.js
+====================================================================================================
+
+const PAGE_TITLES = {
+  "index.html": {
+    "ru": "Источники Надежды — благотворительная помощь в Беэр-Шеве",
+    "en": "Streams of Hope — Charity Support in Beersheba",
+    "he": "מקורות התקווה — סיוע צדקה בבאר שבע"
+  },
+  "gallery.html": {
+    "ru": "Галерея — Источники Надежды",
+    "en": "Gallery — Streams of Hope",
+    "he": "גלריה — מקורות התקווה"
+  },
+  "repatriants-gallery.html": {
+    "ru": "Галерея репатриантов — Источники Надежды",
+    "en": "Repatriants Gallery — Streams of Hope",
+    "he": "גלריית העולים החדשים — מקורות התקווה"
+  },
+  "canteen-gallery.html": {
+    "ru": "Галерея столовой — Источники Надежды",
+    "en": "Canteen Gallery — Streams of Hope",
+    "he": "גלריית בית התמחוי — מקורות התקווה"
+  },
+  "college-gallery.html": {
+    "ru": "Галерея колледжа — Источники Надежды",
+    "en": "College Gallery — Streams of Hope",
+    "he": "גלריית המכללה — מקורות התקווה"
+  },
+  "holocaust-survivors-gallery.html": {
+    "ru": "Пережившие Холокост — Галерея",
+    "en": "Holocaust Survivors — Gallery",
+    "he": "ניצולי השואה — גלריה"
+  },
+  "holidays-gallery.html": {
+    "ru": "Праздники — Галерея",
+    "en": "Holidays — Gallery",
+    "he": "חגים — גלריה"
+  },
+  "friends-gallery.html": {
+    "ru": "Галерея наших друзей — Источники Надежды",
+    "en": "Our Friends Gallery — Streams of Hope",
+    "he": "גלריית החברים שלנו — מקורות התקווה"
+  },
+  "documents.html": {
+    "ru": "Документы и обращения — Источники Надежды",
+    "en": "Documents & Appeals — Streams of Hope",
+    "he": "מסמכים ופניות — מקורות התקווה"
+  },
+  "needs-of-war-03-2026.html": {
+    "ru": "Нужды войны — Источники Надежды",
+    "en": "Needs of War — Streams of Hope",
+    "he": "צרכי המלחמה — מקורות התקווה"
+  }
+};
+
+function getLocalizedKey(lang, ru, en, he) {
+  if (lang === "he") return he;
+  if (lang === "en") return en;
+  return ru;
+}
+
+function renderHolidayReadings(details, holiday, lang) {
+  const readings = Array.isArray(holiday.readings) ? holiday.readings : [];
+  const nextContent = document.createDocumentFragment();
+
+  if (!readings.length) {
+    const empty = document.createElement("div");
+    empty.className = "holiday-reading-empty";
+    empty.textContent = lang === "he"
+      ? "ליום זה לא נמצאו פרטי קריאה."
+      : (lang === "en"
+        ? "No reading details were found for these dates."
+        : "Для этих дат подробности чтений не найдены.");
+    nextContent.append(empty);
+    details.replaceChildren(nextContent);
+    return;
+  }
+
+  readings.forEach((reading) => {
+    const row = document.createElement("div");
+    row.className = "holiday-reading-row";
+
+    const heading = document.createElement("strong");
+    const dateKey = getLocalizedKey(lang, "dateRu", "dateEn", "dateHe");
+    const hdateKey = getLocalizedKey(lang, "hdateRu", "hdateEn", "hdateHe");
+    heading.textContent = "☀ " + (reading[dateKey] || "") + " • 🌙 " + (reading[hdateKey] || "");
+
+    const torah = document.createElement("span");
+    const torahKey = getLocalizedKey(lang, "torahRu", "torahEn", "torahHe");
+    const torahLabel = lang === "he" ? "תורה" : (lang === "en" ? "Torah" : "Тора");
+    torah.textContent = torahLabel + ": " + (reading[torahKey] || "—");
+
+    const haft = document.createElement("span");
+    const haftKey = getLocalizedKey(lang, "haftarahRu", "haftarahEn", "haftarahHe");
+    const haftLabel = lang === "he" ? "הפטרה" : (lang === "en" ? "Haftarah" : "Афтара");
+    haft.textContent = haftLabel + ": " + (reading[haftKey] || "—");
+
+    row.append(heading, torah, haft);
+    nextContent.append(row);
+  });
+
+  // Replace only after the complete reading list is built.
+  details.replaceChildren(nextContent);
+}
+
+function renderWeeklyContent(lang) {
+  const data = window.WEEKLY_CONTENT;
+  if (!data) return;
+
+  const safeLang = ["ru", "en", "he"].includes(lang) ? lang : "ru";
+
+  const weekLabel = document.getElementById("weekly-week-label");
+  const parashaTitle = document.getElementById("weekly-parasha-title");
+  const parashaHe = document.getElementById("weekly-parasha-he");
+  const parashaDate = document.getElementById("weekly-parasha-date");
+  const parashaReference = document.getElementById("weekly-parasha-reference");
+  const haftarahReference = document.getElementById("weekly-haftarah-reference");
+  const parashaNote = document.getElementById("weekly-parasha-note");
+  const holidayList = document.getElementById("weekly-holiday-list");
+
+  const todayDateKey = getLocalizedKey(safeLang, "dateRu", "dateEn", "dateHe");
+  const todayHDateKey = getLocalizedKey(safeLang, "hdateRu", "hdateEn", "hdateHe");
+
+  if (weekLabel) {
+    const solar = data.today && data.today[todayDateKey] ? data.today[todayDateKey] : "";
+    const lunar = data.today && data.today[todayHDateKey] ? data.today[todayHDateKey] : "";
+    weekLabel.textContent = "☀ " + solar + " • 🌙 " + lunar;
+  }
+
+  if (parashaTitle) {
+    parashaTitle.textContent = data.parasha && data.parasha[safeLang] ? data.parasha[safeLang] : "";
+  }
+
+  if (parashaHe) {
+    parashaHe.hidden = safeLang === "he";
+    parashaHe.textContent = safeLang === "he" ? "" : ((data.parasha && data.parasha.he) || "");
+  }
+
+  const readingDateKey = getLocalizedKey(safeLang, "dateRu", "dateEn", "dateHe");
+  const readingHDateKey = getLocalizedKey(safeLang, "hdateRu", "hdateEn", "hdateHe");
+  const torahKey = getLocalizedKey(safeLang, "torahRu", "torahEn", "torahHe");
+  const haftarahKey = getLocalizedKey(safeLang, "haftarahRu", "haftarahEn", "haftarahHe");
+
+  if (parashaDate) {
+    const solar = data.parasha && data.parasha[readingDateKey] ? data.parasha[readingDateKey] : "";
+    const lunar = data.parasha && data.parasha[readingHDateKey] ? data.parasha[readingHDateKey] : "";
+    parashaDate.textContent = "☀ " + solar + " • 🌙 " + lunar;
+  }
+
+  if (parashaReference) {
+    const label = safeLang === "he" ? "תורה" : (safeLang === "en" ? "Torah" : "Тора");
+    parashaReference.textContent = label + ": " + ((data.parasha && data.parasha[torahKey]) || "—");
+  }
+
+  if (haftarahReference) {
+    const label = safeLang === "he" ? "הפטרה" : (safeLang === "en" ? "Haftarah" : "Афтара");
+    haftarahReference.textContent = label + ": " + ((data.parasha && data.parasha[haftarahKey]) || "—");
+  }
+
+  if (parashaNote) {
+    const noteKey = getLocalizedKey(safeLang, "noteRu", "noteEn", "noteHe");
+    parashaNote.textContent = (data.parasha && data.parasha[noteKey]) || "";
+  }
+
+  if (holidayList) {
+    const nextHolidayList = document.createDocumentFragment();
+
+    (data.holidays || []).forEach((holiday) => {
+      const item = document.createElement("div");
+      item.className = "holiday-item";
+
+      const main = document.createElement("div");
+      main.className = "holiday-main";
+
+      const titleRow = document.createElement("div");
+      titleRow.className = "holiday-title-row";
+
+      const title = document.createElement("strong");
+      title.textContent = holiday[safeLang] || "";
+      titleRow.append(title);
+
+      if (safeLang !== "he") {
+        const hebrew = document.createElement("span");
+        hebrew.className = "holiday-hebrew";
+        hebrew.lang = "he";
+        hebrew.dir = "rtl";
+        hebrew.textContent = holiday.he || "";
+        titleRow.append(hebrew);
+      }
+
+      const date = document.createElement("span");
+      date.className = "holiday-date";
+      const dateKey = getLocalizedKey(safeLang, "dateRu", "dateEn", "dateHe");
+      const hdateKey = getLocalizedKey(safeLang, "hdateRu", "hdateEn", "hdateHe");
+      date.textContent = "☀ " + (holiday[dateKey] || "") + " • 🌙 " + (holiday[hdateKey] || "");
+
+      main.append(titleRow, date);
+
+      const actions = document.createElement("div");
+      actions.className = "holiday-item-actions";
+
+      const badge = document.createElement("span");
+      badge.className = "holiday-badge";
+      const badgeKey = getLocalizedKey(safeLang, "badgeRu", "badgeEn", "badgeHe");
+      badge.textContent = holiday[badgeKey] || "";
+
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = "holiday-readings-btn";
+      button.setAttribute("aria-expanded", "false");
+
+      const bookIcon = document.createElement("i");
+      bookIcon.className = "fas fa-book-open";
+      bookIcon.setAttribute("aria-hidden", "true");
+
+      const buttonText = document.createElement("span");
+      buttonText.textContent = safeLang === "he" ? "קריאות" : (safeLang === "en" ? "Readings" : "Чтения");
+
+      const arrowIcon = document.createElement("i");
+      arrowIcon.className = "fas fa-chevron-down holiday-readings-chevron";
+      arrowIcon.setAttribute("aria-hidden", "true");
+
+      button.append(bookIcon, buttonText, arrowIcon);
+      actions.append(badge, button);
+
+      const details = document.createElement("div");
+      details.className = "holiday-reading-details";
+      details.hidden = true;
+      renderHolidayReadings(details, holiday, safeLang);
+
+      button.addEventListener("click", () => {
+        const opening = details.hidden;
+        details.hidden = !opening;
+        button.setAttribute("aria-expanded", opening ? "true" : "false");
+      });
+
+      item.append(main, actions, details);
+      nextHolidayList.append(item);
+    });
+
+    // Atomic swap: if rendering throws, the already visible static calendar remains.
+    holidayList.replaceChildren(nextHolidayList);
+  }
+}
+
+function setLanguage(lang) {
+  const safeLang = ["ru", "en", "he"].includes(lang) ? lang : "ru";
+
+  document.body.classList.remove("lang-ru", "lang-en", "lang-he");
+  document.body.classList.add("lang-" + safeLang);
+
+  ["ru", "en", "he"].forEach((code) => {
+    const button = document.getElementById("btn-" + code);
+    if (button) button.classList.toggle("active", safeLang === code);
+  });
+
+  document.documentElement.lang = safeLang;
+  document.documentElement.dir = safeLang === "he" ? "rtl" : "ltr";
+
+  const page = window.location.pathname.split("/").pop() || "index.html";
+  const titles = PAGE_TITLES[page] || PAGE_TITLES["index.html"];
+  document.title = (titles && titles[safeLang]) || (titles && titles.ru) || document.title;
+
+  localStorage.setItem("siteLang", safeLang);
+  renderWeeklyContent(safeLang);
+}
+
+window.addEventListener("weeklyContentUpdated", () => {
+  const lang = localStorage.getItem("siteLang") || "ru";
+  renderWeeklyContent(lang);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const savedLang = localStorage.getItem("siteLang") || "ru";
+  setLanguage(savedLang);
+
+  if (typeof window.loadWeeklyCalendarData === "function") {
+    window.loadWeeklyCalendarData().catch(() => {});
+  }
+
+  const year = document.getElementById("current-year");
+  if (year) year.textContent = new Date().getFullYear();
+});
+
+====================================================================================================
+FILE: scripts/update-weekly-snapshot.mjs
+====================================================================================================
+
+import fs from "node:fs/promises";
+
+globalThis.localStorage = {
+  getItem() { return null; },
+  setItem() {}
+};
+
+globalThis.CustomEvent = class CustomEvent {
+  constructor(type, options) {
+    this.type = type;
+    this.detail = options && options.detail;
+  }
+};
+
+globalThis.window = {
+  __SNAPSHOT_BUILD__: true,
+  WEEKLY_CONTENT: null,
+  setTimeout(fn, delay) {
+    // Keep short request timeouts, but do not leave long sunset timers running in CI.
+    return delay <= 5000 ? setTimeout(fn, delay) : 0;
+  },
+  clearTimeout(id) {
+    if (id) clearTimeout(id);
+  },
+  dispatchEvent() {}
+};
+
+const source = await fs.readFile("weekly-content.js", "utf8");
+(0, eval)(source);
+
+if (typeof window.loadWeeklyCalendarData !== "function") {
+  throw new Error("weekly-content.js did not expose loadWeeklyCalendarData");
+}
+
+const data = await window.loadWeeklyCalendarData();
+
+if (
+  !data ||
+  data.source !== "hebcal" ||
+  !data.today ||
+  !data.parasha ||
+  !Array.isArray(data.holidays)
+) {
+  throw new Error("Hebcal returned incomplete data; preserving the previous snapshot");
+}
+
+const snapshot = {
+  ...data,
+  source: "local-snapshot",
+  snapshotUpdatedAt: new Date().toISOString()
+};
+
+await fs.writeFile(
+  "weekly-snapshot.json",
+  JSON.stringify(snapshot, null, 2) + "\n",
+  "utf8"
+);
+
+console.log(
+  "Updated weekly snapshot:",
+  snapshot.today.dateEn,
+  "—",
+  snapshot.parasha.en
+);
+
+
+====================================================================================================
+FILE: style.css
+====================================================================================================
+
+:root {
+  --forest-950: #0d1b12;
+  --forest-900: #13251a;
+  --forest-800: #1d3525;
+  --forest-700: #2b4a32;
+  --forest-600: #46684b;
+  --sage: #9fb69f;
+  --mist: #eef4ed;
+  --cream: #f7f4e8;
+  --rose: #d78aa9;
+  --gold: #d7c58a;
+  --peach: #dba083;
+  --sky: #9db7c9;
+  --shadow: 0 24px 70px rgba(0, 0, 0, .30);
+  --radius-xl: 34px;
+  --radius-lg: 24px;
+  --radius-md: 18px;
+  --max: 1180px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--mist);
+  background:
+    radial-gradient(circle at 15% 10%, rgba(92, 132, 91, .18), transparent 30%),
+    linear-gradient(180deg, var(--forest-950), #102016 60%, #0c1810);
+  line-height: 1.65;
+}
+
+body.lang-ru [data-lang="en"],
+body.lang-ru [data-lang="he"],
+body.lang-en [data-lang="ru"],
+body.lang-en [data-lang="he"],
+body.lang-he [data-lang="ru"],
+body.lang-he [data-lang="en"] { display: none !important; }
+
+body.lang-he {
+  direction: rtl;
+  text-align: right;
+}
+
+[data-lang="he"] {
+  font-family: Arial, "Noto Sans Hebrew", sans-serif;
+}
+
+body.lang-he .contact-item span,
+body.lang-he .info-pill,
+body.lang-he .meta,
+body.lang-he .holiday-date {
+  unicode-bidi: plaintext;
+}
+
+img { max-width: 100%; }
+
+a { color: inherit; }
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: blur(18px);
+  background: rgba(13, 27, 18, .86);
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.header-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.brand-mark {
+  width: 42px;
+  height: 42px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  background: linear-gradient(145deg, rgba(215,138,169,.95), rgba(116,69,91,.95));
+  box-shadow: 0 8px 24px rgba(215,138,169,.18);
+}
+
+.brand-title {
+  font-weight: 700;
+  letter-spacing: .01em;
+  color: var(--cream);
+}
+
+.top-nav {
+  margin-left: 0;
+  margin-inline-start: auto;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.top-nav a {
+  text-decoration: none;
+  padding: 9px 12px;
+  border-radius: 12px;
+  color: rgba(238,244,237,.82);
+  font-size: .95rem;
+  transition: .25s ease;
+}
+
+.top-nav a:hover {
+  color: #fff;
+  background: rgba(255,255,255,.07);
+}
+
+.lang-switcher {
+  display: flex;
+  gap: 6px;
+  margin-left: 0;
+  margin-inline-start: 10px;
+}
+
+.lang-btn {
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(255,255,255,.05);
+  color: var(--mist);
+  padding: 8px 10px;
+  border-radius: 11px;
+  cursor: pointer;
+  font: inherit;
+  font-size: .82rem;
+  font-weight: 700;
+}
+
+.lang-btn:hover,
+.lang-btn.active {
+  background: var(--forest-600);
+  border-color: rgba(255,255,255,.28);
+}
+
+.hero {
+  min-height: 78vh;
+  position: relative;
+  display: grid;
+  align-items: end;
+  overflow: hidden;
+  background:
+    linear-gradient(90deg, rgba(7,18,11,.92) 0%, rgba(10,24,15,.72) 45%, rgba(10,24,15,.25) 100%),
+    url("view-spectacular-nature-landscape.jpg") center/cover no-repeat;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 160px;
+  background: linear-gradient(transparent, var(--forest-950));
+  pointer-events: none;
+}
+
+.hero-inner {
+  width: min(var(--max), calc(100% - 48px));
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+  padding: 90px 0 110px;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 8px 13px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.13);
+  color: var(--cream);
+  font-size: .88rem;
+}
+
+.hero h1 {
+  margin: 18px 0 16px;
+  max-width: 760px;
+  font-size: clamp(2.7rem, 7vw, 5.7rem);
+  line-height: .98;
+  letter-spacing: -.04em;
+  color: #fff;
+  text-shadow: 0 12px 35px rgba(0,0,0,.35);
+}
+
+.hero p {
+  max-width: 690px;
+  margin: 0;
+  font-size: clamp(1.05rem, 2vw, 1.3rem);
+  color: rgba(247,244,232,.88);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  min-height: 48px;
+  padding: 12px 20px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: transform .25s ease, background .25s ease, border-color .25s ease;
+}
+
+.btn:hover { transform: translateY(-2px); }
+
+.btn-primary {
+  background: var(--cream);
+  color: var(--forest-950);
+}
+
+.btn-secondary {
+  border: 1px solid rgba(255,255,255,.18);
+  background: rgba(255,255,255,.07);
+  color: #fff;
+}
+
+.section {
+  padding: 84px 24px;
+}
+
+.section-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+}
+
+.section-heading {
+  display: flex;
+  gap: 22px;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.section-kicker {
+  width: 62px;
+  height: 62px;
+  flex: 0 0 62px;
+  border-radius: 20px;
+  display: grid;
+  place-items: center;
+  font-size: 1.45rem;
+  border: 1px solid rgba(255,255,255,.12);
+  background: linear-gradient(145deg, rgba(255,255,255,.09), rgba(255,255,255,.025));
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.08);
+}
+
+.section-heading h2 {
+  margin: 0 0 7px;
+  font-size: clamp(2rem, 4vw, 3.1rem);
+  line-height: 1.05;
+  color: var(--cream);
+}
+
+.section-heading p {
+  max-width: 720px;
+  margin: 0;
+  color: rgba(238,244,237,.70);
+}
+
+.quick-grid {
+  max-width: var(--max);
+  margin: -58px auto 0;
+  padding: 0 24px;
+  position: relative;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+}
+
+.quick-card {
+  --accent: var(--sage);
+  min-height: 190px;
+  position: relative;
+  overflow: hidden;
+  padding: 24px;
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  background:
+    linear-gradient(145deg, rgba(63, 97, 68, .92), rgba(27, 54, 34, .94));
+  border: 1px solid rgba(255,255,255,.10);
+  box-shadow: var(--shadow);
+  transition: transform .28s ease, border-color .28s ease;
+}
+
+.quick-card:hover {
+  transform: translateY(-7px);
+  border-color: rgba(255,255,255,.24);
+}
+
+.quick-card::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  left: 22px;
+  right: 22px;
+  bottom: 0;
+  border-radius: 4px 4px 0 0;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  opacity: .92;
+}
+
+.quick-card .icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 17px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 22px;
+  background: rgba(255,255,255,.075);
+  border: 1px solid rgba(255,255,255,.10);
+  font-size: 1.35rem;
+}
+
+.quick-card strong {
+  display: block;
+  color: #fff;
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+}
+
+.quick-card small {
+  display: block;
+  color: rgba(238,244,237,.66);
+  font-size: .86rem;
+}
+
+.quick-card.repatriants { --accent: var(--gold); }
+.quick-card.canteen { --accent: var(--peach); }
+.quick-card.news { --accent: var(--sky); }
+.quick-card.projects { --accent: var(--rose); }
+
+.split-card {
+  display: grid;
+  grid-template-columns: 1.05fr .95fr;
+  gap: 34px;
+  align-items: stretch;
+  padding: 20px;
+  border-radius: var(--radius-xl);
+  background: linear-gradient(145deg, rgba(255,255,255,.045), rgba(255,255,255,.015));
+  border: 1px solid rgba(255,255,255,.085);
+}
+
+.split-card.reverse .split-media { order: -1; }
+
+.split-copy {
+  padding: 34px;
+  align-self: center;
+}
+
+.split-copy h3 {
+  margin: 0 0 12px;
+  color: var(--cream);
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+}
+
+.split-copy p {
+  color: rgba(238,244,237,.76);
+}
+
+.info-pill {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  padding: 9px 13px;
+  border-radius: 999px;
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.08);
+  margin-top: 8px;
+  color: var(--cream);
+  font-size: .92rem;
+}
+
+.split-media {
+  min-height: 390px;
+  border-radius: 26px;
+  overflow: hidden;
+}
+
+.split-media img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: 1.3fr .7fr;
+  gap: 22px;
+}
+
+.news-card,
+.news-side {
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(255,255,255,.09);
+  background: linear-gradient(145deg, rgba(41,74,50,.78), rgba(18,42,26,.84));
+}
+
+.news-card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}
+
+.news-body { padding: 26px; }
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  align-items: center;
+  color: rgba(238,244,237,.62);
+  font-size: .84rem;
+  margin-bottom: 12px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 999px;
+  background: rgba(157,183,201,.13);
+  color: #c9dbe7;
+  border: 1px solid rgba(157,183,201,.20);
+}
+
+.news-body h3 {
+  margin: 0 0 10px;
+  font-size: clamp(1.55rem, 3vw, 2.15rem);
+  color: var(--cream);
+}
+
+.news-body p { color: rgba(238,244,237,.73); }
+
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--cream);
+}
+
+.text-link:hover { gap: 13px; }
+
+.news-side {
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background:
+    radial-gradient(circle at 100% 0, rgba(215,138,169,.22), transparent 42%),
+    linear-gradient(145deg, rgba(43,74,50,.82), rgba(20,43,27,.90));
+}
+
+.news-side .big-icon {
+  font-size: 2.4rem;
+  color: var(--rose);
+}
+
+.news-side h3 {
+  font-size: 1.75rem;
+  color: var(--cream);
+  margin-bottom: 8px;
+}
+
+.news-side p { color: rgba(238,244,237,.70); }
+
+.projects-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.project-card {
+  display: grid;
+  grid-template-columns: 90px 1fr auto;
+  gap: 22px;
+  align-items: center;
+  padding: 24px;
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(255,255,255,.085);
+  background: rgba(255,255,255,.03);
+  transition: transform .25s ease, background .25s ease;
+}
+
+.project-card:hover {
+  transform: translateX(5px);
+  background: rgba(255,255,255,.045);
+}
+
+.project-icon {
+  width: 72px;
+  height: 72px;
+  display: grid;
+  place-items: center;
+  border-radius: 22px;
+  background: linear-gradient(145deg, rgba(215,197,138,.17), rgba(215,138,169,.10));
+  border: 1px solid rgba(255,255,255,.09);
+  font-size: 1.7rem;
+}
+
+.project-card h3 {
+  margin: 0 0 5px;
+  color: var(--cream);
+}
+
+.project-card p {
+  margin: 0;
+  color: rgba(238,244,237,.67);
+}
+
+.status {
+  white-space: nowrap;
+  padding: 7px 11px;
+  border-radius: 999px;
+  background: rgba(159,182,159,.10);
+  border: 1px solid rgba(159,182,159,.18);
+  color: #cfe0cf;
+  font-size: .82rem;
+}
+
+.contact-panel {
+  display: grid;
+  grid-template-columns: 1fr .9fr;
+  gap: 24px;
+  padding: 34px;
+  border-radius: var(--radius-xl);
+  background:
+    radial-gradient(circle at 90% 10%, rgba(215,138,169,.14), transparent 34%),
+    rgba(255,255,255,.035);
+  border: 1px solid rgba(255,255,255,.085);
+}
+
+.contact-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.contact-item {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  min-height: 58px;
+  padding: 9px 11px;
+  border-radius: 16px;
+  text-decoration: none;
+  color: rgba(238,244,237,.86);
+  background: rgba(255,255,255,.028);
+  border: 1px solid rgba(255,255,255,.075);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.025);
+  transition:
+    transform .22s ease,
+    background .22s ease,
+    border-color .22s ease,
+    box-shadow .22s ease,
+    color .22s ease;
+}
+
+.contact-item:hover,
+.contact-item:focus-visible {
+  transform: translateX(4px);
+  color: #fff;
+  background: rgba(255,255,255,.06);
+  border-color: rgba(215,197,138,.24);
+  box-shadow: 0 10px 24px rgba(0,0,0,.16);
+}
+
+body.lang-he .contact-item:hover,
+body.lang-he .contact-item:focus-visible {
+  transform: translateX(-4px);
+}
+
+.contact-item:focus-visible {
+  outline: 2px solid rgba(215,197,138,.70);
+  outline-offset: 3px;
+}
+
+.contact-item > i {
+  width: 42px;
+  height: 42px;
+  border-radius: 13px;
+  display: grid;
+  place-items: center;
+  background: rgba(255,255,255,.055);
+  border: 1px solid rgba(255,255,255,.065);
+  transition: transform .22s ease, background .22s ease, color .22s ease;
+}
+
+.contact-item:hover > i,
+.contact-item:focus-visible > i {
+  transform: scale(1.05);
+  background: rgba(255,255,255,.09);
+}
+
+.contact-item-featured {
+  min-height: 66px;
+  padding: 10px 12px;
+  background:
+    linear-gradient(90deg, rgba(255,255,255,.048), rgba(255,255,255,.018));
+}
+
+.contact-copy {
+  min-width: 0;
+  display: grid;
+  gap: 2px;
+  line-height: 1.2;
+}
+
+.contact-copy strong {
+  color: var(--cream);
+  font-size: 1rem;
+}
+
+.contact-copy small {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: rgba(238,244,237,.58);
+  font-size: .82rem;
+}
+
+.contact-link-cue {
+  width: 32px;
+  height: 32px;
+  flex: 0 0 32px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: rgba(247,244,232,.58);
+  background: rgba(255,255,255,.035);
+  border: 1px solid rgba(255,255,255,.075);
+  transition: transform .22s ease, color .22s ease, background .22s ease;
+}
+
+.contact-link-cue i {
+  font-size: .72rem;
+}
+
+.contact-item:hover .contact-link-cue,
+.contact-item:focus-visible .contact-link-cue {
+  transform: translateX(2px);
+  color: #fff;
+  background: rgba(215,197,138,.12);
+}
+
+body.lang-he .contact-item:hover .contact-link-cue,
+body.lang-he .contact-item:focus-visible .contact-link-cue {
+  transform: translateX(-2px);
+}
+
+.contact-online-label {
+  margin: 7px 0 2px;
+  padding: 0 4px;
+  color: rgba(238,244,237,.48);
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .045em;
+  text-transform: uppercase;
+}
+
+.contact-item-email {
+  border-color: rgba(215,197,138,.14);
+}
+.contact-item-email > i {
+  color: #dfca8e;
+  background: rgba(215,197,138,.075);
+}
+
+.contact-item-telegram {
+  border-color: rgba(157,183,201,.15);
+}
+.contact-item-telegram > i {
+  color: #b8cfdf;
+  background: rgba(157,183,201,.075);
+}
+
+.contact-item-youtube {
+  border-color: rgba(215,138,169,.15);
+}
+.contact-item-youtube > i {
+  color: #e3a9bf;
+  background: rgba(215,138,169,.075);
+}
+
+.contact-visual {
+  min-height: 300px;
+  overflow: hidden;
+  border-radius: 24px;
+}
+
+.contact-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.site-footer {
+  padding: 32px 24px 42px;
+  border-top: 1px solid rgba(255,255,255,.06);
+  color: rgba(238,244,237,.45);
+  text-align: center;
+}
+
+@media (max-width: 980px) {
+  .top-nav { display: none; }
+  .header-inner { gap: 12px; }
+  .lang-switcher { margin-left: auto; }
+  .quick-grid { grid-template-columns: repeat(2, 1fr); }
+  .split-card,
+  .news-grid,
+  .contact-panel { grid-template-columns: 1fr; }
+  .split-card.reverse .split-media { order: 0; }
+  .project-card { grid-template-columns: 72px 1fr; }
+  .project-card .status { grid-column: 2; justify-self: start; }
+}
+
+@media (max-width: 640px) {
+  .header-inner { padding: 12px 16px; }
+  .brand-title { font-size: .9rem; }
+  .brand-mark { width: 38px; height: 38px; }
+  .hero { min-height: 72vh; }
+  .hero-inner { width: min(100% - 32px, var(--max)); padding: 72px 0 96px; }
+  .quick-grid { grid-template-columns: 1fr; padding: 0 16px; margin-top: -44px; }
+  .quick-card { min-height: 150px; }
+  .section { padding: 66px 16px; }
+  .section-heading { gap: 14px; }
+  .section-kicker { width: 52px; height: 52px; flex-basis: 52px; border-radius: 16px; }
+  .split-card { padding: 12px; }
+  .split-copy { padding: 20px 16px 24px; }
+  .split-media { min-height: 260px; }
+  .news-card img { height: 230px; }
+  .project-card { grid-template-columns: 1fr; }
+  .project-card .status { grid-column: 1; }
+  .project-icon { width: 58px; height: 58px; border-radius: 18px; }
+  .contact-panel { padding: 24px; }
+}
+
+
+/* ===== Section palettes and functional content ===== */
+.section-support {
+  background:
+    radial-gradient(circle at 5% 15%, rgba(215,197,138,.08), transparent 26%),
+    linear-gradient(180deg, rgba(32,54,36,.42), rgba(13,27,18,.10));
+  border-top: 1px solid rgba(215,197,138,.10);
+  border-bottom: 1px solid rgba(215,197,138,.08);
+}
+
+.section-canteen {
+  background:
+    radial-gradient(circle at 95% 15%, rgba(219,160,131,.11), transparent 30%),
+    linear-gradient(180deg, rgba(63,45,31,.22), rgba(13,27,18,.08));
+  border-top: 1px solid rgba(219,160,131,.12);
+  border-bottom: 1px solid rgba(219,160,131,.08);
+}
+
+.section-news {
+  background:
+    radial-gradient(circle at 10% 10%, rgba(157,183,201,.12), transparent 30%),
+    linear-gradient(180deg, rgba(24,46,54,.26), rgba(13,27,18,.08));
+  border-top: 1px solid rgba(157,183,201,.12);
+  border-bottom: 1px solid rgba(157,183,201,.08);
+}
+
+.section-projects {
+  background:
+    radial-gradient(circle at 92% 12%, rgba(215,138,169,.10), transparent 28%),
+    linear-gradient(180deg, rgba(56,35,48,.20), rgba(13,27,18,.08));
+  border-top: 1px solid rgba(215,138,169,.11);
+  border-bottom: 1px solid rgba(215,138,169,.08);
+}
+
+.section-contacts {
+  background:
+    radial-gradient(circle at 8% 20%, rgba(159,182,159,.09), transparent 28%),
+    rgba(12,24,16,.36);
+}
+
+.section-support .section-kicker {
+  color: var(--gold);
+  background: linear-gradient(145deg, rgba(215,197,138,.15), rgba(255,255,255,.025));
+  border-color: rgba(215,197,138,.25);
+}
+
+.section-canteen .section-kicker {
+  color: var(--peach);
+  background: linear-gradient(145deg, rgba(219,160,131,.16), rgba(255,255,255,.025));
+  border-color: rgba(219,160,131,.25);
+}
+
+.section-news .section-kicker {
+  color: var(--sky);
+  background: linear-gradient(145deg, rgba(157,183,201,.16), rgba(255,255,255,.025));
+  border-color: rgba(157,183,201,.25);
+}
+
+.section-projects .section-kicker {
+  color: var(--rose);
+  background: linear-gradient(145deg, rgba(215,138,169,.16), rgba(255,255,255,.025));
+  border-color: rgba(215,138,169,.25);
+}
+
+.section-contacts .section-kicker {
+  color: var(--sage);
+  border-color: rgba(159,182,159,.24);
+}
+
+.quick-card.repatriants {
+  background: linear-gradient(145deg, rgba(74,92,61,.95), rgba(28,49,31,.96));
+}
+.quick-card.canteen {
+  background: linear-gradient(145deg, rgba(92,67,52,.92), rgba(37,52,35,.96));
+}
+.quick-card.news {
+  background: linear-gradient(145deg, rgba(51,78,83,.92), rgba(25,51,38,.96));
+}
+.quick-card.projects {
+  background: linear-gradient(145deg, rgba(75,56,67,.92), rgba(29,50,34,.96));
+}
+.quick-card.gallery {
+  --accent: #b9a8d8;
+  background: linear-gradient(145deg, rgba(72,65,91,.92), rgba(29,49,37,.96));
+}
+
+.section-support .split-card {
+  border-color: rgba(215,197,138,.20);
+  box-shadow: inset 5px 0 0 rgba(215,197,138,.30);
+}
+
+.section-canteen .split-card {
+  border-color: rgba(219,160,131,.20);
+  box-shadow: inset 5px 0 0 rgba(219,160,131,.30);
+}
+
+.card-actions,
+.news-actions,
+.project-actions,
+.follow-actions,
+.article-actions,
+.subpage-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn-accent {
+  background: var(--cream);
+  color: var(--forest-950);
+  border: 1px solid rgba(255,255,255,.20);
+}
+
+.btn-accent:hover {
+  background: #fff;
+}
+
+.btn-ghost {
+  color: var(--cream);
+  background: rgba(255,255,255,.045);
+  border: 1px solid rgba(255,255,255,.14);
+}
+
+.btn-ghost:hover {
+  background: rgba(255,255,255,.09);
+  border-color: rgba(255,255,255,.26);
+}
+
+.news-grid-two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.news-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.news-card-blue {
+  border-color: rgba(157,183,201,.19);
+  background: linear-gradient(145deg, rgba(35,65,72,.78), rgba(17,38,27,.90));
+}
+
+.news-card-rose {
+  border-color: rgba(215,138,169,.20);
+  background: linear-gradient(145deg, rgba(70,48,61,.76), rgba(25,40,28,.92));
+}
+
+.news-card .news-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.news-card .news-actions {
+  margin-top: auto;
+  padding-top: 12px;
+}
+
+.badge-rose {
+  background: rgba(215,138,169,.13);
+  color: #efbfd2;
+  border-color: rgba(215,138,169,.23);
+}
+
+.document-preview {
+  min-height: 320px;
+  padding: 34px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  overflow: hidden;
+  color: #213228;
+  background:
+    linear-gradient(rgba(255,255,255,.72), rgba(255,255,255,.72)),
+    repeating-linear-gradient(0deg, #ece9df 0 2px, #f5f2e8 2px 7px);
+  border-bottom: 8px solid #3f5944;
+}
+
+.document-preview::before,
+.document-preview::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: #1d281f;
+}
+
+.document-preview::before { top: 18px; }
+.document-preview::after { bottom: 18px; }
+
+.document-preview i {
+  font-size: 2.2rem;
+  color: #8b5269;
+  margin-bottom: 20px;
+}
+
+.document-preview strong {
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  line-height: .95;
+  letter-spacing: -.03em;
+  color: #3d5541;
+}
+
+.document-preview small {
+  margin-top: 15px;
+  max-width: 390px;
+  font-size: 1rem;
+  color: #4d574f;
+}
+
+.document-date {
+  position: absolute;
+  right: 26px;
+  top: 35px;
+  font-size: .85rem;
+  font-weight: 700;
+  color: #5f635f;
+}
+
+.news-follow {
+  margin-top: 22px;
+  padding: 22px 26px;
+  border-radius: var(--radius-lg);
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255,255,255,.032);
+  border: 1px solid rgba(157,183,201,.13);
+  color: rgba(238,244,237,.74);
+}
+
+.news-follow strong { color: var(--cream); }
+
+.project-card {
+  grid-template-columns: 90px minmax(0,1fr) auto;
+}
+
+.project-main { min-width: 0; }
+
+.project-card-gold {
+  border-color: rgba(215,197,138,.20);
+  background: linear-gradient(90deg, rgba(215,197,138,.065), rgba(255,255,255,.022));
+}
+
+.project-card-peach {
+  border-color: rgba(219,160,131,.19);
+  background: linear-gradient(90deg, rgba(219,160,131,.065), rgba(255,255,255,.022));
+}
+
+.project-card-sage {
+  border-color: rgba(159,182,159,.19);
+  background: linear-gradient(90deg, rgba(159,182,159,.065), rgba(255,255,255,.022));
+}
+
+.project-card-gold .project-icon { color: var(--gold); }
+.project-card-peach .project-icon { color: var(--peach); }
+.project-card-sage .project-icon { color: var(--sage); }
+
+.project-actions .btn,
+.news-actions .btn,
+.card-actions .btn {
+  min-height: 42px;
+  padding: 9px 16px;
+  font-size: .9rem;
+}
+
+/* ===== Subpages ===== */
+.subpage {
+  min-height: 75vh;
+}
+
+.subpage-hero {
+  padding: 92px 24px 72px;
+  background:
+    radial-gradient(circle at 80% 15%, rgba(157,183,201,.15), transparent 30%),
+    linear-gradient(160deg, #14291c, #0d1b12 70%);
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.gallery-hero {
+  background:
+    radial-gradient(circle at 85% 20%, rgba(219,160,131,.16), transparent 30%),
+    linear-gradient(160deg, #2d2b20, #102017 68%);
+}
+
+.war-hero {
+  background:
+    radial-gradient(circle at 82% 20%, rgba(215,138,169,.16), transparent 30%),
+    linear-gradient(160deg, #30232a, #102017 70%);
+}
+
+.subpage-hero h1 {
+  margin: 16px 0 12px;
+  max-width: 820px;
+  font-size: clamp(2.6rem, 7vw, 5.1rem);
+  line-height: 1;
+  color: #fff;
+}
+
+.subpage-hero p {
+  max-width: 760px;
+  color: rgba(247,244,232,.78);
+  font-size: 1.1rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 18px;
+}
+
+.gallery-item {
+  min-height: 270px;
+  overflow: hidden;
+  border-radius: 22px;
+  border: 1px solid rgba(255,255,255,.11);
+  box-shadow: 0 16px 36px rgba(0,0,0,.22);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  min-height: 270px;
+  object-fit: cover;
+  display: block;
+  transition: transform .35s ease, filter .35s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.035);
+  filter: brightness(1.06);
+}
+
+.article-wrap {
+  max-width: 900px;
+}
+
+.article-card {
+  padding: clamp(26px, 5vw, 52px);
+  border-radius: var(--radius-xl);
+  border: 1px solid rgba(215,138,169,.18);
+  background:
+    radial-gradient(circle at 100% 0, rgba(215,138,169,.08), transparent 30%),
+    rgba(255,255,255,.035);
+  box-shadow: var(--shadow);
+}
+
+.article-mark {
+  width: 64px;
+  height: 64px;
+  display: grid;
+  place-items: center;
+  border-radius: 20px;
+  margin-bottom: 28px;
+  color: var(--rose);
+  font-size: 1.6rem;
+  background: rgba(215,138,169,.09);
+  border: 1px solid rgba(215,138,169,.18);
+}
+
+.article-language h2 {
+  color: var(--cream);
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+}
+
+.article-language p {
+  color: rgba(238,244,237,.78);
+  font-size: 1.04rem;
+}
+
+.article-language blockquote {
+  margin: 28px 0;
+  padding: 18px 22px;
+  border-left: 4px solid var(--rose);
+  background: rgba(215,138,169,.065);
+  color: #f2dbe4;
+  border-radius: 0 16px 16px 0;
+}
+
+@media (max-width: 980px) {
+  .news-grid-two { grid-template-columns: 1fr; }
+  .news-follow { align-items: flex-start; flex-direction: column; }
+  .gallery-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .project-card {
+    grid-template-columns: 72px minmax(0,1fr);
+  }
+  .project-card .status {
+    grid-column: 2;
+  }
+}
+
+@media (max-width: 640px) {
+  .card-actions,
+  .news-actions,
+  .project-actions,
+  .follow-actions,
+  .article-actions,
+  .subpage-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .card-actions .btn,
+  .news-actions .btn,
+  .project-actions .btn,
+  .follow-actions .btn,
+  .article-actions .btn,
+  .subpage-actions .btn {
+    width: 100%;
+  }
+
+  .gallery-grid { grid-template-columns: 1fr; }
+  .gallery-item,
+  .gallery-item img { min-height: 240px; }
+
+  .project-card {
+    grid-template-columns: 1fr;
+  }
+  .project-card .status {
+    grid-column: 1;
+    justify-self: start;
+  }
+
+  .document-preview { min-height: 260px; padding: 30px 24px; }
+  .document-date { position: static; margin-bottom: 12px; }
+  .subpage-hero { padding: 72px 16px 54px; }
+}
+
+
+/* ===== Gallery categories ===== */
+.repatriants-gallery-hero {
+  background:
+    radial-gradient(circle at 85% 18%, rgba(215,197,138,.18), transparent 30%),
+    linear-gradient(160deg, #343321, #102017 68%);
+}
+
+.canteen-gallery-hero {
+  background:
+    radial-gradient(circle at 85% 18%, rgba(219,160,131,.18), transparent 30%),
+    linear-gradient(160deg, #3a2b23, #102017 68%);
+}
+
+.gallery-categories-section {
+  background:
+    radial-gradient(circle at 50% 0, rgba(185,168,216,.08), transparent 30%),
+    linear-gradient(180deg, rgba(255,255,255,.018), rgba(12,24,16,.35));
+}
+
+.gallery-category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0,1fr));
+  gap: 22px;
+}
+
+.gallery-category-card {
+  overflow: hidden;
+  border-radius: var(--radius-xl);
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(255,255,255,.028);
+  box-shadow: 0 18px 46px rgba(0,0,0,.22);
+}
+
+.gallery-category-preview,
+.holiday-preview {
+  height: 245px;
+  overflow: hidden;
+}
+
+.gallery-category-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform .35s ease;
+}
+
+.gallery-category-card:hover .gallery-category-preview img {
+  transform: scale(1.035);
+}
+
+.gallery-category-body {
+  padding: 26px;
+}
+
+.gallery-category-body h2 {
+  margin: 12px 0 8px;
+  color: var(--cream);
+  font-size: 1.75rem;
+}
+
+.gallery-category-body p {
+  min-height: 78px;
+  color: rgba(238,244,237,.70);
+}
+
+.gallery-category-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 15px;
+  display: grid;
+  place-items: center;
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.10);
+}
+
+.category-repatriants {
+  border-color: rgba(215,197,138,.18);
+  background: linear-gradient(180deg, rgba(215,197,138,.045), rgba(255,255,255,.025));
+}
+
+.category-repatriants .gallery-category-icon { color: var(--gold); }
+
+.category-canteen {
+  border-color: rgba(219,160,131,.18);
+  background: linear-gradient(180deg, rgba(219,160,131,.05), rgba(255,255,255,.025));
+}
+
+.category-canteen .gallery-category-icon { color: var(--peach); }
+
+.category-holidays {
+  border-color: rgba(185,168,216,.19);
+  background: linear-gradient(180deg, rgba(185,168,216,.055), rgba(255,255,255,.025));
+}
+
+.category-holidays .gallery-category-icon { color: #c7b9e2; }
+
+.holiday-preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  background:
+    radial-gradient(circle at 50% 25%, rgba(215,197,138,.16), transparent 28%),
+    linear-gradient(145deg, #303528, #213128);
+  color: #d9c98f;
+  font-size: 2.3rem;
+}
+
+.holiday-preview i:nth-child(2) {
+  color: #c8b9e5;
+  font-size: 3rem;
+}
+
+.gallery-coming-soon {
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 10px 15px;
+  border-radius: 999px;
+  color: #d8ccec;
+  background: rgba(185,168,216,.075);
+  border: 1px solid rgba(185,168,216,.16);
+  font-weight: 700;
+}
+
+.gallery-placeholder {
+  min-height: 270px;
+  padding: 28px;
+  border-radius: 22px;
+  border: 1px dashed rgba(255,255,255,.15);
+  background: rgba(255,255,255,.022);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  text-align: center;
+  color: rgba(238,244,237,.52);
+}
+
+.gallery-placeholder i {
+  font-size: 2rem;
+  opacity: .7;
+}
+
+.gallery-placeholder strong {
+  max-width: 220px;
+  font-size: .95rem;
+}
+
+@media (max-width: 1100px) {
+  .quick-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 980px) {
+  .gallery-category-grid { grid-template-columns: 1fr; }
+  .gallery-category-body p { min-height: auto; }
+}
+
+@media (max-width: 640px) {
+  .quick-grid { grid-template-columns: 1fr; }
+  .gallery-category-preview,
+  .holiday-preview { height: 220px; }
+}
+
+
+/* ===== Holocaust Survivors section ===== */
+.quick-card.holocaust {
+  --accent: #d0b36c;
+  background:
+    linear-gradient(145deg, rgba(82,70,49,.94), rgba(31,49,35,.96));
+}
+
+.section-holocaust {
+  background:
+    radial-gradient(circle at 88% 14%, rgba(208,179,108,.12), transparent 28%),
+    linear-gradient(180deg, rgba(57,47,31,.24), rgba(13,27,18,.08));
+  border-top: 1px solid rgba(208,179,108,.12);
+  border-bottom: 1px solid rgba(208,179,108,.08);
+}
+
+.section-holocaust .section-kicker {
+  color: #d8bd7b;
+  background: linear-gradient(145deg, rgba(208,179,108,.16), rgba(255,255,255,.025));
+  border-color: rgba(208,179,108,.25);
+}
+
+.holocaust-card {
+  border-color: rgba(208,179,108,.20);
+  box-shadow: inset 5px 0 0 rgba(208,179,108,.28);
+}
+
+.holocaust-placeholder {
+  min-height: 390px;
+  border-radius: 26px;
+  border: 1px solid rgba(208,179,108,.16);
+  background:
+    radial-gradient(circle at 50% 35%, rgba(208,179,108,.14), transparent 24%),
+    linear-gradient(145deg, rgba(62,55,38,.72), rgba(23,42,29,.88));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  color: rgba(247,244,232,.72);
+  text-align: center;
+  padding: 30px;
+}
+
+.holocaust-placeholder i {
+  font-size: 4rem;
+  color: #d8bd7b;
+  filter: drop-shadow(0 8px 20px rgba(0,0,0,.25));
+}
+
+.holocaust-gallery-hero {
+  background:
+    radial-gradient(circle at 84% 18%, rgba(208,179,108,.18), transparent 30%),
+    linear-gradient(160deg, #3b3322, #102017 70%);
+}
+
+.category-holocaust {
+  border-color: rgba(208,179,108,.20);
+  background:
+    linear-gradient(180deg, rgba(208,179,108,.055), rgba(255,255,255,.025));
+}
+
+.category-holocaust .gallery-category-icon {
+  color: #d8bd7b;
+}
+
+.holocaust-category-preview {
+  height: 245px;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(circle at 50% 40%, rgba(208,179,108,.18), transparent 25%),
+    linear-gradient(145deg, #393523, #223328);
+  color: #d8bd7b;
+  font-size: 4rem;
+}
+
+@media (max-width: 1180px) {
+  .quick-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 1050px) {
+  .gallery-category-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+}
+
+@media (max-width: 640px) {
+  .gallery-category-grid { grid-template-columns: 1fr; }
+  .holocaust-category-preview { height: 220px; }
+}
+
+
+/* ===== College section ===== */
+.quick-card.college {
+  --accent: #8fb4cf;
+  background:
+    linear-gradient(145deg, rgba(49,75,92,.94), rgba(29,49,37,.96));
+}
+
+.section-college {
+  background:
+    radial-gradient(circle at 86% 14%, rgba(143,180,207,.13), transparent 28%),
+    linear-gradient(180deg, rgba(31,52,65,.26), rgba(13,27,18,.08));
+  border-top: 1px solid rgba(143,180,207,.12);
+  border-bottom: 1px solid rgba(143,180,207,.08);
+}
+
+.section-college .section-kicker {
+  color: #a8cade;
+  background: linear-gradient(145deg, rgba(143,180,207,.16), rgba(255,255,255,.025));
+  border-color: rgba(143,180,207,.25);
+}
+
+.college-card {
+  border-color: rgba(143,180,207,.20);
+  box-shadow: inset 5px 0 0 rgba(143,180,207,.28);
+}
+
+.college-placeholder {
+  min-height: 390px;
+  border-radius: 26px;
+  border: 1px solid rgba(143,180,207,.16);
+  background:
+    radial-gradient(circle at 50% 35%, rgba(143,180,207,.15), transparent 24%),
+    linear-gradient(145deg, rgba(42,62,75,.76), rgba(22,42,30,.88));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  color: rgba(247,244,232,.72);
+  text-align: center;
+  padding: 30px;
+}
+
+.college-placeholder i {
+  font-size: 4rem;
+  color: #a8cade;
+  filter: drop-shadow(0 8px 20px rgba(0,0,0,.25));
+}
+
+.college-gallery-hero {
+  background:
+    radial-gradient(circle at 84% 18%, rgba(143,180,207,.18), transparent 30%),
+    linear-gradient(160deg, #283b47, #102017 70%);
+}
+
+.category-college {
+  border-color: rgba(143,180,207,.20);
+  background:
+    linear-gradient(180deg, rgba(143,180,207,.055), rgba(255,255,255,.025));
+}
+
+.category-college .gallery-category-icon {
+  color: #a8cade;
+}
+
+.college-category-preview {
+  height: 245px;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(circle at 50% 40%, rgba(143,180,207,.18), transparent 25%),
+    linear-gradient(145deg, #293c49, #223328);
+  color: #a8cade;
+  font-size: 4rem;
+}
+
+@media (max-width: 640px) {
+  .college-category-preview { height: 220px; }
+}
+
+
+/* ===== Our Friends section ===== */
+.section-friends {
+  background:
+    radial-gradient(circle at 90% 14%, rgba(178,142,106,.12), transparent 28%),
+    linear-gradient(180deg, rgba(56,43,33,.22), rgba(13,27,18,.08));
+  border-top: 1px solid rgba(178,142,106,.12);
+  border-bottom: 1px solid rgba(178,142,106,.08);
+}
+
+.section-friends .section-kicker {
+  color: #d3b18d;
+  background: linear-gradient(145deg, rgba(178,142,106,.16), rgba(255,255,255,.025));
+  border-color: rgba(178,142,106,.25);
+}
+
+.friends-card {
+  border-color: rgba(178,142,106,.20);
+  box-shadow: inset 5px 0 0 rgba(178,142,106,.28);
+}
+
+.friends-placeholder {
+  min-height: 390px;
+  border-radius: 26px;
+  border: 1px solid rgba(178,142,106,.16);
+  background:
+    radial-gradient(circle at 50% 35%, rgba(178,142,106,.15), transparent 24%),
+    linear-gradient(145deg, rgba(62,49,40,.76), rgba(22,42,30,.88));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  color: rgba(247,244,232,.72);
+  text-align: center;
+  padding: 30px;
+}
+
+.friends-placeholder i {
+  font-size: 4rem;
+  color: #d3b18d;
+  filter: drop-shadow(0 8px 20px rgba(0,0,0,.25));
+}
+
+.friends-gallery-hero {
+  background:
+    radial-gradient(circle at 84% 18%, rgba(178,142,106,.18), transparent 30%),
+    linear-gradient(160deg, #3a2e26, #102017 70%);
+}
+
+.category-friends {
+  border-color: rgba(178,142,106,.20);
+  background:
+    linear-gradient(180deg, rgba(178,142,106,.055), rgba(255,255,255,.025));
+}
+
+.category-friends .gallery-category-icon {
+  color: #d3b18d;
+}
+
+.friends-category-preview {
+  height: 245px;
+  display: grid;
+  place-items: center;
+  background:
+    radial-gradient(circle at 50% 40%, rgba(178,142,106,.18), transparent 25%),
+    linear-gradient(145deg, #3c3028, #223328);
+  color: #d3b18d;
+  font-size: 4rem;
+}
+
+@media (max-width: 640px) {
+  .friends-category-preview { height: 220px; }
+}
+
+
+/* ===== Jewish Week: Torah & Israel calendar ===== */
+.weekly-feature {
+  padding: 72px 24px 34px;
+  position: relative;
+}
+
+.weekly-feature::before {
+  content: "";
+  position: absolute;
+  inset: 20px 0 auto;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(214,190,137,.20), transparent);
+}
+
+.weekly-feature-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: clamp(24px, 4vw, 40px);
+  border-radius: 32px;
+  border: 1px solid rgba(214,190,137,.24);
+  background:
+    radial-gradient(circle at 88% 12%, rgba(215,197,138,.11), transparent 28%),
+    linear-gradient(145deg, rgba(39,56,39,.94), rgba(24,42,29,.96));
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.08),
+    0 22px 58px rgba(0,0,0,.24);
+  overflow: hidden;
+  position: relative;
+}
+
+.weekly-feature-inner::after {
+  content: "✡";
+  position: absolute;
+  right: 34px;
+  top: 18px;
+  font-size: 8.5rem;
+  line-height: 1;
+  color: rgba(215,197,138,.045);
+  pointer-events: none;
+}
+
+.weekly-feature-heading {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 28px;
+}
+
+.weekly-feature-symbol {
+  width: 62px;
+  height: 62px;
+  flex: 0 0 62px;
+  border-radius: 20px;
+  display: grid;
+  place-items: center;
+  color: #e4cf99;
+  background:
+    linear-gradient(145deg, rgba(215,197,138,.16), rgba(255,255,255,.025));
+  border: 1px solid rgba(215,197,138,.24);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.08);
+  font-size: 1.35rem;
+}
+
+.weekly-feature-eyebrow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  align-items: center;
+  color: #d7c58a;
+  font-size: .82rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.weekly-feature-hebrew {
+  padding-left: 9px;
+  border-left: 1px solid rgba(215,197,138,.24);
+  font-family: Arial, sans-serif;
+  letter-spacing: 0;
+  text-transform: none;
+  font-size: 1rem;
+}
+
+.weekly-feature-heading h2 {
+  margin: 4px 0 2px;
+  color: var(--cream);
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  line-height: 1.08;
+}
+
+.weekly-date {
+  margin: 4px 0 0;
+  color: rgba(238,244,237,.60);
+  font-size: .9rem;
+}
+
+.weekly-feature-grid {
+  display: grid;
+  grid-template-columns: 1.08fr .92fr;
+  gap: 18px;
+  position: relative;
+  z-index: 1;
+}
+
+.weekly-panel {
+  min-width: 0;
+  padding: 24px;
+  border-radius: 24px;
+  border: 1px solid rgba(255,255,255,.085);
+  background:
+    linear-gradient(145deg, rgba(255,255,255,.045), rgba(255,255,255,.018));
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.045);
+}
+
+.torah-panel {
+  border-color: rgba(215,197,138,.18);
+  background:
+    radial-gradient(circle at 100% 0, rgba(215,197,138,.09), transparent 36%),
+    linear-gradient(145deg, rgba(63,66,43,.32), rgba(255,255,255,.018));
+}
+
+.holiday-panel {
+  border-color: rgba(157,183,201,.15);
+  background:
+    radial-gradient(circle at 100% 0, rgba(157,183,201,.08), transparent 36%),
+    linear-gradient(145deg, rgba(36,58,63,.28), rgba(255,255,255,.018));
+}
+
+.weekly-panel-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.weekly-panel-icon {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: rgba(255,255,255,.055);
+  border: 1px solid rgba(255,255,255,.08);
+  color: #e4cf99;
+}
+
+.holiday-panel .weekly-panel-icon {
+  color: #b7cfdd;
+}
+
+.weekly-panel-label {
+  color: rgba(247,244,232,.72);
+  font-size: .88rem;
+  font-weight: 700;
+  letter-spacing: .035em;
+}
+
+.torah-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding-bottom: 17px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgba(215,197,138,.14);
+}
+
+.torah-title-row h3 {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(1.9rem, 4vw, 2.8rem);
+  line-height: 1;
+}
+
+.torah-hebrew {
+  margin-top: 8px;
+  color: #e4cf99;
+  font-family: Arial, sans-serif;
+  font-size: clamp(1.35rem, 3vw, 1.8rem);
+  font-weight: 700;
+}
+
+.torah-scroll-mark {
+  width: 58px;
+  height: 58px;
+  flex: 0 0 58px;
+  display: grid;
+  place-items: center;
+  border-radius: 18px;
+  color: #d7c58a;
+  background: rgba(215,197,138,.075);
+  border: 1px solid rgba(215,197,138,.13);
+  font-size: 1.4rem;
+}
+
+.torah-reference {
+  margin: 0 0 8px;
+  color: var(--cream);
+  font-weight: 700;
+}
+
+.weekly-note {
+  margin: 0;
+  color: rgba(238,244,237,.68);
+  font-size: .92rem;
+  line-height: 1.55;
+}
+
+.holiday-list {
+  display: grid;
+  gap: 12px;
+}
+
+.holiday-item {
+  display: grid;
+  grid-template-columns: minmax(0,1fr) auto;
+  gap: 14px;
+  align-items: center;
+  padding: 15px 16px;
+  border-radius: 17px;
+  border: 1px solid rgba(255,255,255,.075);
+  background: rgba(255,255,255,.032);
+}
+
+.holiday-main {
+  min-width: 0;
+}
+
+.holiday-title-row {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+.holiday-title-row strong {
+  color: #fff;
+  font-size: 1.03rem;
+}
+
+.holiday-hebrew {
+  color: #b7cfdd;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.holiday-date {
+  display: block;
+  margin-top: 3px;
+  color: rgba(238,244,237,.57);
+  font-size: .82rem;
+}
+
+.holiday-badge {
+  justify-self: end;
+  padding: 6px 10px;
+  border-radius: 999px;
+  white-space: nowrap;
+  color: #dce9ef;
+  background: rgba(157,183,201,.09);
+  border: 1px solid rgba(157,183,201,.16);
+  font-size: .72rem;
+  font-weight: 700;
+}
+
+.weekly-edit-note {
+  margin-top: 18px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  color: rgba(238,244,237,.43);
+  font-size: .78rem;
+  position: relative;
+  z-index: 1;
+}
+
+.weekly-edit-note i {
+  color: rgba(215,197,138,.58);
+}
+
+@media (max-width: 900px) {
+  .weekly-feature-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .weekly-feature {
+    padding: 58px 16px 26px;
+  }
+
+  .weekly-feature-inner {
+    padding: 22px 16px;
+    border-radius: 24px;
+  }
+
+  .weekly-feature-heading {
+    align-items: flex-start;
+    gap: 13px;
+  }
+
+  .weekly-feature-symbol {
+    width: 50px;
+    height: 50px;
+    flex-basis: 50px;
+    border-radius: 16px;
+  }
+
+  .weekly-panel {
+    padding: 18px;
+  }
+
+  .holiday-item {
+    grid-template-columns: 1fr;
+  }
+
+  .holiday-badge {
+    justify-self: start;
+  }
+
+  .weekly-edit-note {
+    align-items: flex-start;
+  }
+}
+
+
+/* ===== House of Mercy YouTube project ===== */
+.project-card-youtube {
+  border-color: rgba(255, 92, 92, .20);
+  background:
+    linear-gradient(90deg, rgba(255, 70, 70, .065), rgba(255,255,255,.022));
+}
+
+.project-card-youtube .project-icon {
+  color: #ff6b6b;
+  background:
+    linear-gradient(145deg, rgba(255, 70, 70, .14), rgba(255,255,255,.025));
+  border-color: rgba(255, 92, 92, .18);
+}
+
+.btn-youtube {
+  background: #fff;
+  color: #201515;
+  border: 1px solid rgba(255,255,255,.20);
+}
+
+.btn-youtube i {
+  color: #d92d2d;
+}
+
+.btn-youtube:hover {
+  background: rgba(255,255,255,.90);
+}
+
+.status-youtube {
+  color: #ffd0d0;
+  background: rgba(255, 70, 70, .085);
+  border-color: rgba(255, 92, 92, .18);
+}
+
+
+/* ===== Final responsive polish: navigation + Jewish Week ===== */
+
+/* The seven top cards now wrap symmetrically instead of leaving an awkward orphan. */
+.quick-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 18px;
+  max-width: var(--max);
+  margin: -58px auto 0;
+  padding: 0 24px;
+}
+
+.quick-card {
+  flex: 1 1 240px;
+  width: auto;
+  min-width: 230px;
+  max-width: 270px;
+  min-height: 178px;
+}
+
+@media (max-width: 900px) {
+  .quick-card {
+    flex-basis: 225px;
+    max-width: 265px;
+    min-width: 210px;
+  }
+}
+
+@media (max-width: 560px) {
+  .quick-grid {
+    gap: 14px;
+    padding: 0 16px;
+  }
+
+  .quick-card {
+    flex: 1 1 100%;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    min-height: 148px;
+  }
+}
+
+/* A framed editorial-style weekly card that remains easy to update. */
+.weekly-feature {
+  padding: 58px 24px 48px;
+}
+
+.weekly-feature::before {
+  display: none;
+}
+
+.weekly-feature-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+  border-radius: 30px;
+  border: 1px solid rgba(212, 184, 116, .52);
+  background:
+    linear-gradient(145deg, rgba(39, 60, 42, .98), rgba(18, 37, 25, .98));
+  box-shadow:
+    0 24px 65px rgba(0,0,0,.30),
+    inset 0 0 0 5px rgba(255,255,255,.025);
+}
+
+.weekly-feature-inner::after {
+  content: none;
+}
+
+.weekly-feature-inner::before {
+  content: "";
+  position: absolute;
+  inset: 10px;
+  border: 1px solid rgba(215,197,138,.16);
+  border-radius: 22px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.weekly-feature-heading {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 18px;
+  align-items: center;
+  margin: 0;
+  padding: 28px 34px 24px;
+  border-bottom: 1px solid rgba(215,197,138,.24);
+  background:
+    radial-gradient(circle at 90% 5%, rgba(215,197,138,.13), transparent 30%),
+    linear-gradient(90deg, rgba(255,255,255,.035), transparent);
+}
+
+.weekly-heading-copy {
+  min-width: 0;
+}
+
+.weekly-feature-symbol {
+  width: 58px;
+  height: 58px;
+  flex: none;
+  border-radius: 50%;
+  color: #ead6a5;
+  background: rgba(215,197,138,.09);
+  border: 1px solid rgba(215,197,138,.28);
+  font-size: 1.3rem;
+}
+
+.weekly-feature-eyebrow {
+  color: #d9c28b;
+  font-size: .74rem;
+  letter-spacing: .12em;
+}
+
+.weekly-feature-hebrew {
+  color: #f0ddb0;
+  border-left-color: rgba(215,197,138,.30);
+}
+
+.weekly-feature-heading h2 {
+  margin: 6px 0 4px;
+  color: #fff9e9;
+  font-size: clamp(1.75rem, 3.6vw, 2.7rem);
+  letter-spacing: -.02em;
+}
+
+.weekly-date {
+  color: rgba(255,249,233,.62);
+  font-size: .88rem;
+}
+
+.weekly-heading-star {
+  color: rgba(234,214,165,.80);
+  font-size: 2.4rem;
+  line-height: 1;
+  filter: drop-shadow(0 5px 12px rgba(0,0,0,.20));
+}
+
+.weekly-feature-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, .92fr);
+  gap: 20px;
+  padding: 24px;
+}
+
+.weekly-panel {
+  padding: 25px;
+  border-radius: 20px;
+  color: #24352a;
+  border: 1px solid rgba(120,98,49,.20);
+  box-shadow:
+    0 12px 28px rgba(0,0,0,.13),
+    inset 0 1px 0 rgba(255,255,255,.70);
+}
+
+.torah-panel {
+  background:
+    radial-gradient(circle at 100% 0, rgba(182,145,65,.11), transparent 36%),
+    linear-gradient(145deg, #fbf5e7, #eee0bd);
+  border-color: rgba(157,121,45,.26);
+}
+
+.holiday-panel {
+  background:
+    radial-gradient(circle at 100% 0, rgba(74,112,83,.09), transparent 38%),
+    linear-gradient(145deg, #f3f6eb, #dfe8d9);
+  border-color: rgba(65,100,74,.18);
+}
+
+.weekly-panel-top {
+  margin-bottom: 18px;
+}
+
+.weekly-panel-icon {
+  width: 40px;
+  height: 40px;
+  color: #715929;
+  background: rgba(120,90,38,.08);
+  border-color: rgba(120,90,38,.15);
+}
+
+.holiday-panel .weekly-panel-icon {
+  color: #355a43;
+  background: rgba(53,90,67,.075);
+  border-color: rgba(53,90,67,.14);
+}
+
+.weekly-panel-label {
+  color: #6c624d;
+  font-size: .82rem;
+  letter-spacing: .055em;
+  text-transform: uppercase;
+}
+
+.holiday-panel .weekly-panel-label {
+  color: #526454;
+}
+
+.torah-title-row {
+  margin-bottom: 15px;
+  padding-bottom: 17px;
+  border-bottom-color: rgba(120,90,38,.16);
+}
+
+.torah-title-row h3 {
+  color: #274333;
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: -.03em;
+}
+
+.torah-hebrew {
+  color: #8b6b2e;
+  font-size: clamp(1.45rem, 3vw, 1.95rem);
+}
+
+.torah-scroll-mark {
+  color: #80652c;
+  background: rgba(128,101,44,.08);
+  border-color: rgba(128,101,44,.14);
+}
+
+.torah-reference {
+  color: #324b3a;
+  font-size: .95rem;
+}
+
+.weekly-note {
+  color: #5a665c;
+  font-size: .9rem;
+  line-height: 1.55;
+}
+
+.holiday-list {
+  gap: 11px;
+}
+
+.holiday-item {
+  grid-template-columns: minmax(0,1fr) auto;
+  gap: 12px;
+  padding: 14px 15px;
+  border-radius: 15px;
+  background: rgba(255,255,255,.46);
+  border-color: rgba(54,86,64,.12);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.50);
+}
+
+.holiday-title-row strong {
+  color: #2b4736;
+  font-size: 1rem;
+}
+
+.holiday-hebrew {
+  color: #6e855f;
+}
+
+.holiday-date {
+  color: #677068;
+  font-size: .79rem;
+}
+
+.holiday-badge {
+  color: #355a43;
+  background: rgba(66,102,76,.08);
+  border-color: rgba(66,102,76,.15);
+  font-size: .68rem;
+}
+
+@media (max-width: 820px) {
+  .weekly-feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .weekly-feature-heading {
+    grid-template-columns: auto minmax(0,1fr);
+  }
+
+  .weekly-heading-star {
+    display: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .weekly-feature {
+    padding: 44px 16px 34px;
+  }
+
+  .weekly-feature-inner {
+    border-radius: 24px;
+  }
+
+  .weekly-feature-heading {
+    padding: 22px 20px 20px;
+    gap: 13px;
+  }
+
+  .weekly-feature-symbol {
+    width: 48px;
+    height: 48px;
+  }
+
+  .weekly-feature-grid {
+    padding: 16px;
+    gap: 14px;
+  }
+
+  .weekly-panel {
+    padding: 19px;
+    border-radius: 18px;
+  }
+
+  .holiday-item {
+    grid-template-columns: 1fr;
+  }
+
+  .holiday-badge {
+    justify-self: start;
+  }
+}
+
+
+/* ===== Organic dark palette for Torah & Israel Calendar ===== */
+.weekly-feature-inner {
+  border-color: rgba(176, 151, 88, .38);
+  background:
+    radial-gradient(circle at 88% 12%, rgba(167, 143, 82, .10), transparent 30%),
+    linear-gradient(145deg, #263b2c, #192d21 72%);
+}
+
+.weekly-feature-inner::before {
+  border-color: rgba(179, 154, 92, .12);
+}
+
+.weekly-feature-heading {
+  border-bottom-color: rgba(180, 153, 90, .18);
+  background:
+    radial-gradient(circle at 90% 5%, rgba(168,143,82,.09), transparent 30%),
+    linear-gradient(90deg, rgba(255,255,255,.025), transparent);
+}
+
+.weekly-feature-symbol {
+  color: #c9ad6a;
+  background: rgba(165,139,76,.07);
+  border-color: rgba(165,139,76,.20);
+}
+
+.weekly-feature-eyebrow,
+.weekly-feature-hebrew {
+  color: #bea363;
+}
+
+.weekly-heading-star {
+  color: rgba(196,167,100,.65);
+}
+
+.weekly-panel {
+  color: #e8eee6;
+  border-color: rgba(255,255,255,.07);
+  box-shadow:
+    0 12px 28px rgba(0,0,0,.16),
+    inset 0 1px 0 rgba(255,255,255,.035);
+}
+
+.torah-panel {
+  background:
+    radial-gradient(circle at 100% 0, rgba(174,145,78,.08), transparent 36%),
+    linear-gradient(145deg, #384833, #303d2d);
+  border-color: rgba(174,145,78,.16);
+}
+
+.holiday-panel {
+  background:
+    radial-gradient(circle at 100% 0, rgba(99,132,105,.08), transparent 38%),
+    linear-gradient(145deg, #304239, #29382f);
+  border-color: rgba(104,139,111,.13);
+}
+
+.weekly-panel-icon {
+  color: #c7ab6a;
+  background: rgba(191,160,88,.055);
+  border-color: rgba(191,160,88,.12);
+}
+
+.holiday-panel .weekly-panel-icon {
+  color: #9fbea8;
+  background: rgba(95,127,103,.065);
+  border-color: rgba(95,127,103,.12);
+}
+
+.weekly-panel-label {
+  color: rgba(238,233,213,.65);
+}
+
+.holiday-panel .weekly-panel-label {
+  color: rgba(215,230,217,.64);
+}
+
+.torah-title-row {
+  border-bottom-color: rgba(190,158,84,.12);
+}
+
+.torah-title-row h3 {
+  color: #f4f0df;
+}
+
+.torah-hebrew {
+  color: #c9ad6a;
+}
+
+.torah-scroll-mark {
+  color: #c2a565;
+  background: rgba(185,153,82,.055);
+  border-color: rgba(185,153,82,.11);
+}
+
+.torah-reference {
+  color: #dde6da;
+}
+
+.weekly-note {
+  color: rgba(224,231,222,.67);
+}
+
+.holiday-item {
+  background: rgba(255,255,255,.028);
+  border-color: rgba(164,190,169,.09);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.025);
+}
+
+.holiday-title-row strong {
+  color: #eef4ec;
+}
+
+.holiday-hebrew {
+  color: #9db9a2;
+}
+
+.holiday-date {
+  color: rgba(218,228,219,.58);
+}
+
+.holiday-badge {
+  color: #bfd0c1;
+  background: rgba(111,145,118,.08);
+  border-color: rgba(111,145,118,.13);
+}
+
+/* ===== Facebook project ===== */
+.project-card-facebook {
+  border-color: rgba(90, 117, 154, .18);
+  background:
+    linear-gradient(90deg, rgba(65, 87, 119, .07), rgba(255,255,255,.022));
+}
+
+.project-card-facebook .project-icon {
+  color: #9bb1cf;
+  background:
+    linear-gradient(145deg, rgba(80,105,143,.13), rgba(255,255,255,.025));
+  border-color: rgba(90,117,154,.16);
+}
+
+.btn-facebook {
+  background: #eef2f6;
+  color: #263345;
+  border: 1px solid rgba(255,255,255,.18);
+}
+
+.btn-facebook i {
+  color: #4267B2;
+}
+
+.btn-facebook:hover {
+  background: #fff;
+}
+
+.status-facebook {
+  color: #c7d7eb;
+  background: rgba(72,98,135,.09);
+  border-color: rgba(90,117,154,.16);
+}
+
+
+/* ===== News document cards ===== */
+.news-card-document {
+  border-color: rgba(151, 173, 151, .18);
+  background:
+    linear-gradient(145deg, rgba(42, 63, 47, .92), rgba(24, 43, 31, .96));
+}
+
+.document-file-preview {
+  min-height: 265px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background:
+    radial-gradient(circle at 100% 0, rgba(190, 167, 103, .10), transparent 34%),
+    linear-gradient(145deg, #354738, #2b3d31 62%, #25362b);
+  border-bottom: 1px solid rgba(190, 167, 103, .16);
+  position: relative;
+  overflow: hidden;
+}
+
+.document-file-preview::after {
+  content: "";
+  position: absolute;
+  inset: 14px;
+  border: 1px solid rgba(203, 183, 123, .11);
+  border-radius: 18px;
+  pointer-events: none;
+}
+
+.document-file-top,
+.document-file-title,
+.document-file-name {
+  position: relative;
+  z-index: 1;
+}
+
+.document-file-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.document-file-icon {
+  width: 56px;
+  height: 56px;
+  flex: 0 0 56px;
+  display: grid;
+  place-items: center;
+  border-radius: 17px;
+  color: #d8c183;
+  background: rgba(188, 158, 86, .08);
+  border: 1px solid rgba(188, 158, 86, .16);
+  font-size: 1.35rem;
+}
+
+.document-file-meta {
+  margin-left: auto;
+  text-align: right;
+  display: grid;
+  gap: 4px;
+}
+
+.document-file-type {
+  color: rgba(234, 239, 232, .62);
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.document-file-date {
+  color: rgba(234, 239, 232, .44);
+  font-size: .78rem;
+}
+
+.document-file-title {
+  margin: 30px 0;
+}
+
+.document-file-title strong {
+  display: block;
+  color: #f5f0df;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: .98;
+  letter-spacing: -.03em;
+}
+
+.document-file-title small {
+  display: block;
+  margin-top: 10px;
+  color: rgba(230, 238, 229, .64);
+  font-size: .98rem;
+}
+
+.document-file-name {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  align-self: flex-start;
+  max-width: 100%;
+  padding: 8px 11px;
+  border-radius: 999px;
+  color: rgba(233, 238, 231, .56);
+  background: rgba(255,255,255,.035);
+  border: 1px solid rgba(255,255,255,.07);
+  font-size: .75rem;
+}
+
+.document-file-name span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.badge-document {
+  color: #d5c59a;
+  background: rgba(181, 150, 77, .08);
+  border-color: rgba(181, 150, 77, .14);
+}
+
+.btn-document {
+  background: #e8e4d5;
+  color: #27362c;
+  border: 1px solid rgba(255,255,255,.18);
+}
+
+.btn-document:hover {
+  background: #f4f0e3;
+}
+
+.btn-document i {
+  color: #6b744c;
+}
+
+@media (max-width: 640px) {
+  .document-file-preview {
+    min-height: 235px;
+    padding: 22px;
+  }
+
+  .document-file-meta {
+    text-align: left;
+  }
+
+  .document-file-top {
+    align-items: center;
+  }
+
+  .document-file-title {
+    margin: 24px 0;
+  }
+}
+
+
+/* ===== Needs of War compact fix ===== */
+.news-grid-two {
+  align-items: start;
+}
+
+.news-grid-two > .news-card {
+  min-height: 0;
+  height: auto;
+}
+
+.news-card-document {
+  min-height: 0 !important;
+  align-self: start;
+}
+
+.news-card-document .news-body {
+  flex: none;
+}
+
+.news-card-document .news-actions {
+  margin-top: 18px;
+  padding-top: 0;
+}
+
+.document-strip {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 20px 22px;
+  min-height: 92px;
+  background:
+    radial-gradient(circle at 100% 0, rgba(185, 155, 84, .08), transparent 40%),
+    linear-gradient(145deg, #34483a, #2a3b30);
+  border-bottom: 1px solid rgba(190, 163, 96, .14);
+}
+
+.document-strip-icon {
+  width: 48px;
+  height: 48px;
+  flex: 0 0 48px;
+  display: grid;
+  place-items: center;
+  border-radius: 15px;
+  color: #d2bd82;
+  background: rgba(187, 155, 82, .07);
+  border: 1px solid rgba(187, 155, 82, .14);
+  font-size: 1.15rem;
+}
+
+.document-strip-copy {
+  min-width: 0;
+  display: grid;
+  gap: 4px;
+}
+
+.document-strip-copy strong {
+  color: #f2eddd;
+  font-size: .85rem;
+  letter-spacing: .03em;
+}
+
+.document-strip-copy > span {
+  color: rgba(231, 237, 229, .52);
+  font-size: .78rem;
+}
+
+.document-news-body {
+  padding: 26px;
+}
+
+.document-news-body h3 {
+  margin-bottom: 12px;
+}
+
+.document-news-body p {
+  margin-bottom: 0;
+}
+
+@media (max-width: 980px) {
+  .news-grid-two {
+    align-items: stretch;
+  }
+
+  .news-card-document {
+    width: 100%;
+  }
+}
+
+
+/* ===== Document archive ===== */
+.archive-entry-card .document-strip {
+  min-height: 92px;
+}
+
+.archive-strip .document-strip-icon {
+  color: #cfbb7d;
+}
+
+.documents-hero {
+  background:
+    radial-gradient(circle at 85% 18%, rgba(177,151,87,.15), transparent 30%),
+    linear-gradient(160deg, #354437, #162b1e 70%);
+}
+
+.documents-wrap {
+  max-width: 980px;
+}
+
+.documents-list {
+  display: grid;
+  gap: 20px;
+}
+
+.archive-document-item {
+  display: grid;
+  grid-template-columns: 76px minmax(0,1fr);
+  gap: 22px;
+  align-items: start;
+  padding: 26px;
+  border-radius: 24px;
+  border: 1px solid rgba(177,151,87,.16);
+  background:
+    radial-gradient(circle at 100% 0, rgba(177,151,87,.06), transparent 34%),
+    linear-gradient(145deg, rgba(44,63,48,.94), rgba(28,46,34,.97));
+  box-shadow: 0 16px 38px rgba(0,0,0,.20);
+}
+
+.archive-document-icon {
+  width: 66px;
+  height: 66px;
+  display: grid;
+  place-items: center;
+  border-radius: 19px;
+  color: #d4bd7d;
+  background: rgba(184,151,78,.08);
+  border: 1px solid rgba(184,151,78,.15);
+  font-size: 1.55rem;
+}
+
+.archive-document-copy h2 {
+  margin: 10px 0 8px;
+  color: var(--cream);
+  font-size: clamp(1.65rem, 3vw, 2.2rem);
+}
+
+.archive-document-copy p {
+  margin: 0;
+  color: rgba(238,244,237,.70);
+}
+
+.archive-document-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  color: rgba(238,244,237,.52);
+  font-size: .82rem;
+}
+
+.archive-file-row {
+  margin-top: 17px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  max-width: 100%;
+  color: rgba(238,244,237,.48);
+  font-size: .78rem;
+}
+
+.archive-file-row span {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.archive-document-actions {
+  margin-top: 20px;
+}
+
+.archive-add-note {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 18px 20px;
+  border-radius: 18px;
+  color: rgba(238,244,237,.55);
+  background: rgba(255,255,255,.026);
+  border: 1px dashed rgba(255,255,255,.10);
+  font-size: .86rem;
+}
+
+.archive-add-note i {
+  color: #c3aa6c;
+}
+
+.article-archive-notice {
+  margin-bottom: 28px;
+  padding: 18px 20px;
+  border-radius: 18px;
+  background:
+    linear-gradient(145deg, rgba(177,151,87,.08), rgba(255,255,255,.025));
+  border: 1px solid rgba(177,151,87,.14);
+}
+
+.article-archive-notice > div {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.article-archive-notice strong {
+  color: #d6c183;
+  font-size: .86rem;
+}
+
+.article-archive-notice p {
+  margin: 10px 0 0;
+  color: rgba(238,244,237,.67);
+  font-size: .92rem;
+}
+
+@media (max-width: 640px) {
+  .archive-document-item {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .archive-document-icon {
+    width: 56px;
+    height: 56px;
+  }
+}
+
+
+/* ===== Final Needs of War archive card ===== */
+.news-grid-two {
+  align-items: stretch;
+}
+
+.news-grid-two > .news-card {
+  height: 100%;
+}
+
+.archive-entry-card {
+  min-height: 100%;
+  border-color: rgba(184, 156, 88, .20);
+  background:
+    linear-gradient(145deg, rgba(37,62,46,.96), rgba(23,44,32,.98));
+}
+
+.archive-card-shell {
+  position: relative;
+  min-height: 100%;
+  height: 100%;
+  padding: 34px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border-radius: inherit;
+  background:
+    radial-gradient(circle at 90% 10%, rgba(190,158,83,.10), transparent 28%),
+    radial-gradient(circle at 12% 88%, rgba(105,145,112,.10), transparent 30%),
+    linear-gradient(145deg, #315340, #244534 62%, #203d2f);
+}
+
+.archive-card-shell::before {
+  content: "";
+  position: absolute;
+  inset: 14px;
+  border: 1px solid rgba(219,196,136,.13);
+  border-radius: 20px;
+  pointer-events: none;
+}
+
+.archive-card-shell::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 160px;
+  right: -42px;
+  bottom: -36px;
+  border-radius: 55% 45% 0 0;
+  border-top: 1px solid rgba(188,161,91,.14);
+  background:
+    radial-gradient(circle at 35% 35%, rgba(188,161,91,.08), transparent 60%);
+  transform: rotate(-7deg);
+  pointer-events: none;
+}
+
+.archive-card-top,
+.archive-card-title,
+.archive-card-actions {
+  position: relative;
+  z-index: 2;
+}
+
+.archive-card-top {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.archive-card-icon {
+  width: 62px;
+  height: 62px;
+  flex: 0 0 62px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: #e0c77f;
+  background: rgba(188,158,84,.09);
+  border: 1px solid rgba(188,158,84,.19);
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.05);
+  font-size: 1.35rem;
+}
+
+.archive-card-label {
+  color: rgba(232,238,230,.66);
+  font-size: .77rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.archive-card-decoration {
+  position: absolute;
+  z-index: 1;
+  top: 72px;
+  right: 38px;
+  width: 190px;
+  height: 150px;
+  opacity: .34;
+  pointer-events: none;
+}
+
+.archive-card-decoration span {
+  position: absolute;
+  display: block;
+  width: 82px;
+  height: 112px;
+  border-radius: 12px;
+  border: 1px solid rgba(216,196,139,.26);
+  background: linear-gradient(145deg, rgba(228,214,174,.08), rgba(255,255,255,.025));
+  transform: rotate(8deg);
+}
+
+.archive-card-decoration span:nth-child(1) { left: 12px; top: 26px; }
+.archive-card-decoration span:nth-child(2) { left: 58px; top: 4px; transform: rotate(11deg); }
+.archive-card-decoration span:nth-child(3) { left: 102px; top: 34px; transform: rotate(14deg); }
+
+.archive-card-title {
+  margin-top: auto;
+  margin-bottom: 34px;
+}
+
+.archive-card-title h3 {
+  margin: 0;
+  max-width: 520px;
+  color: #f7f1df;
+  font-size: clamp(2.5rem, 5vw, 4.2rem);
+  line-height: .98;
+  letter-spacing: -.035em;
+}
+
+.archive-card-actions {
+  margin-top: auto;
+}
+
+.archive-open-btn {
+  min-height: 54px;
+  padding: 13px 20px;
+  gap: 10px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.14);
+}
+
+.archive-open-btn .fa-arrow-right {
+  margin-left: 4px;
+}
+
+@media (max-width: 980px) {
+  .archive-card-shell {
+    min-height: 430px;
+  }
+}
+
+@media (max-width: 640px) {
+  .archive-card-shell {
+    min-height: 380px;
+    padding: 26px 22px;
+  }
+
+  .archive-card-decoration {
+    width: 150px;
+    right: 18px;
+    opacity: .23;
+  }
+
+  .archive-card-title h3 {
+    font-size: clamp(2.4rem, 12vw, 3.4rem);
+  }
+}
+
+/* ===== Gallery contact sheets ===== */
+.gallery-sheet-stack {
+  display: grid;
+  gap: 22px;
+  align-items: start;
+}
+
+.gallery-sheet {
+  display: block;
+  width: max-content;
+  max-width: 100%;
+  justify-self: center;
+  overflow: visible;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,.10);
+  background: rgba(255,255,255,.025);
+  box-shadow: 0 16px 38px rgba(0,0,0,.22);
+}
+
+.gallery-sheet img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.gallery-photo-note {
+  margin: 0 0 18px;
+  color: rgba(238,244,237,.58);
+  font-size: .9rem;
+}
+
+
+/* ===== Automatic Torah & Israel calendar details ===== */
+.torah-reading-lines {
+  display: grid;
+  gap: 7px;
+  margin-top: 2px;
+}
+
+.weekly-reading-date {
+  margin: 0;
+  color: rgba(226,233,224,.72);
+  font-size: .86rem;
+  line-height: 1.45;
+}
+
+.torah-reading-lines .torah-reference {
+  margin: 0;
+}
+
+.torah-haftarah {
+  color: rgba(226,233,224,.78);
+}
+
+.holiday-item-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 7px;
+}
+
+.holiday-readings-btn {
+  appearance: none;
+  border: 1px solid rgba(137,168,144,.16);
+  background: rgba(255,255,255,.035);
+  color: #d7e3d8;
+  min-height: 32px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font: inherit;
+  font-size: .72rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background .2s ease, border-color .2s ease, transform .2s ease;
+}
+
+.holiday-readings-btn:hover,
+.holiday-readings-btn:focus-visible {
+  background: rgba(124,158,132,.11);
+  border-color: rgba(157,190,164,.28);
+  transform: translateY(-1px);
+}
+
+.holiday-readings-btn:focus-visible {
+  outline: 2px solid rgba(190,167,103,.58);
+  outline-offset: 2px;
+}
+
+.holiday-readings-chevron {
+  transition: transform .2s ease;
+}
+
+.holiday-readings-btn[aria-expanded="true"] .holiday-readings-chevron {
+  transform: rotate(180deg);
+}
+
+.holiday-reading-details {
+  grid-column: 1 / -1;
+  margin-top: 2px;
+  padding: 12px 14px;
+  border-radius: 13px;
+  background: rgba(0,0,0,.10);
+  border: 1px solid rgba(157,190,164,.09);
+  color: rgba(229,236,228,.72);
+  font-size: .78rem;
+  line-height: 1.5;
+}
+
+.holiday-reading-details[hidden] {
+  display: none;
+}
+
+.holiday-reading-empty {
+  color: rgba(229,236,228,.62);
+}
+
+.holiday-reading-row {
+  display: grid;
+  gap: 3px;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255,255,255,.055);
+}
+
+.holiday-reading-row:first-child {
+  padding-top: 0;
+}
+
+.holiday-reading-row:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.holiday-reading-row strong {
+  color: #f0f4ed;
+  font-size: .79rem;
+}
+
+.holiday-reading-row span {
+  color: rgba(229,236,228,.67);
+}
+
+.weekly-source {
+  position: relative;
+  z-index: 1;
+  padding: 0 26px 19px;
+  color: rgba(229,236,228,.37);
+  font-size: .68rem;
+  text-align: right;
+}
+
+.weekly-source a {
+  color: rgba(205,187,133,.60);
+  text-decoration: none;
+  border-bottom: 1px dotted rgba(205,187,133,.35);
+}
+
+.weekly-source a:hover {
+  color: #e0cc93;
+}
+
+body.lang-he .weekly-source {
+  text-align: left;
+}
+
+@media (max-width: 560px) {
+  .holiday-item-actions {
+    align-items: flex-start;
+  }
+
+  .holiday-readings-btn {
+    min-height: 34px;
+  }
+
+  .weekly-source {
+    padding: 0 18px 16px;
+    text-align: left;
+  }
+
+  body.lang-he .weekly-source {
+    text-align: right;
+  }
+}
+
+
+/* ===== Automatic file-based photo galleries ===== */
+.gallery-auto {
+  width: 100%;
+}
+
+.gallery-auto-loading,
+.gallery-auto-empty {
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 28px;
+  border-radius: 22px;
+  color: rgba(238,244,237,.60);
+  background: rgba(255,255,255,.025);
+  border: 1px dashed rgba(255,255,255,.12);
+  text-align: center;
+}
+
+.gallery-auto-loading i,
+.gallery-auto-empty i {
+  color: #cbb879;
+  font-size: 1.4rem;
+}
+
+.gallery-auto-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  align-items: start;
+}
+
+.gallery-auto-card {
+  min-width: 0;
+  overflow: hidden;
+  border-radius: 20px;
+  text-decoration: none;
+  color: inherit;
+  background:
+    linear-gradient(145deg, rgba(255,255,255,.045), rgba(255,255,255,.018));
+  border: 1px solid rgba(255,255,255,.09);
+  box-shadow: 0 15px 34px rgba(0,0,0,.20);
+  transition: transform .24s ease, border-color .24s ease, box-shadow .24s ease;
+}
+
+.gallery-auto-card:hover,
+.gallery-auto-card:focus-visible {
+  transform: translateY(-4px);
+  border-color: rgba(215,197,138,.26);
+  box-shadow: 0 20px 42px rgba(0,0,0,.28);
+}
+
+.gallery-auto-card:focus-visible {
+  outline: 2px solid rgba(215,197,138,.65);
+  outline-offset: 3px;
+}
+
+.gallery-auto-media {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 50% 40%, rgba(215,197,138,.08), transparent 44%),
+    #122219;
+}
+
+.gallery-auto-media img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+  transition: transform .3s ease, filter .3s ease;
+}
+
+.gallery-auto-card:hover .gallery-auto-media img,
+.gallery-auto-card:focus-visible .gallery-auto-media img {
+  transform: scale(1.012);
+  filter: brightness(1.04);
+}
+
+.gallery-auto-open {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: #f5eed9;
+  background: rgba(12,24,16,.72);
+  border: 1px solid rgba(255,255,255,.14);
+  box-shadow: 0 6px 18px rgba(0,0,0,.20);
+  opacity: .82;
+  transition: opacity .2s ease, transform .2s ease;
+}
+
+.gallery-auto-card:hover .gallery-auto-open,
+.gallery-auto-card:focus-visible .gallery-auto-open {
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
+.gallery-auto-caption {
+  padding: 15px 17px 16px;
+  min-height: 70px;
+}
+
+.gallery-auto-caption > span {
+  display: grid;
+  gap: 3px;
+}
+
+.gallery-auto-caption strong {
+  overflow-wrap: anywhere;
+  color: var(--cream);
+  font-size: .94rem;
+  line-height: 1.25;
+}
+
+.gallery-auto-caption small {
+  color: rgba(238,244,237,.48);
+  font-size: .76rem;
+}
+
+.gallery-auto-card.is-legacy {
+  grid-column: auto;
+  width: 100%;
+  max-width: none;
+  justify-self: stretch;
+  opacity: .96;
+}
+
+.gallery-auto-card.is-legacy .gallery-auto-media {
+  aspect-ratio: 4 / 3;
+  min-height: 0;
+  background:
+    radial-gradient(circle at 50% 40%, rgba(215,197,138,.06), transparent 44%),
+    #122219;
+}
+
+.gallery-auto-card.is-legacy .gallery-auto-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.gallery-auto-card.is-legacy .gallery-auto-caption {
+  display: none;
+}
+
+.gallery-auto-archive-divider {
+  display: none;
+  grid-column: 1 / -1;
+}
+
+.gallery-auto-archive-badge {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  min-height: 28px;
+  padding: 5px 9px;
+  border-radius: 999px;
+  color: rgba(247,244,232,.92);
+  background: rgba(12,24,16,.76);
+  border: 1px solid rgba(255,255,255,.14);
+  font-size: .68rem;
+  font-weight: 700;
+  letter-spacing: .02em;
+  backdrop-filter: blur(8px);
+}
+
+@media (max-width: 980px) {
+  .gallery-auto-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .gallery-auto-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .gallery-auto-card {
+    border-radius: 14px;
+    box-shadow: 0 10px 24px rgba(0,0,0,.18);
+  }
+
+  .gallery-auto-media,
+  .gallery-auto-card.is-legacy .gallery-auto-media {
+    aspect-ratio: 4 / 3;
+  }
+
+  .gallery-auto-caption {
+    min-height: 0;
+    padding: 9px 10px 10px;
+  }
+
+  .gallery-auto-caption strong {
+    font-size: .72rem;
+    line-height: 1.2;
+  }
+
+  .gallery-auto-caption small {
+    font-size: .64rem;
+  }
+
+  .gallery-auto-open {
+    right: 7px;
+    top: 7px;
+    width: 27px;
+    height: 27px;
+    font-size: .72rem;
+  }
+
+  .gallery-auto-archive-badge {
+    left: 7px;
+    top: 7px;
+    min-height: 24px;
+    padding: 4px 7px;
+    font-size: .58rem;
+  }
+
+  .gallery-auto-archive-divider {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 8px;
+    padding: 9px 11px;
+    border-radius: 12px;
+    color: rgba(238,244,237,.58);
+    background: rgba(255,255,255,.025);
+    border: 1px solid rgba(255,255,255,.065);
+    font-size: .7rem;
+    line-height: 1.3;
+  }
+
+  .gallery-auto-archive-divider i {
+    color: #cbb879;
+    flex: 0 0 auto;
+  }
+}
+
+
+/* ===== Fixed icon covers for gallery hub ===== */
+.gallery-static-cover {
+  position: relative;
+  height: 245px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 50% 34%, rgba(215,197,138,.18), transparent 30%),
+    linear-gradient(145deg, #274331, #173022 72%);
+}
+
+.gallery-static-cover::before,
+.gallery-static-cover::after {
+  content: "";
+  position: absolute;
+  width: 110px;
+  height: 170px;
+  opacity: .16;
+  border-radius: 55% 45% 55% 45%;
+  border: 1px solid rgba(215,197,138,.25);
+}
+
+.gallery-static-cover::before {
+  left: -48px;
+  bottom: -65px;
+  transform: rotate(28deg);
+}
+
+.gallery-static-cover::after {
+  right: -48px;
+  top: -65px;
+  transform: rotate(-28deg);
+}
+
+.gallery-cover-symbol {
+  position: relative;
+  z-index: 2;
+  width: 118px;
+  height: 118px;
+  display: grid;
+  place-items: center;
+  border-radius: 34px;
+  color: #e2c87e;
+  background:
+    linear-gradient(145deg, rgba(215,197,138,.13), rgba(255,255,255,.035));
+  border: 1px solid rgba(215,197,138,.24);
+  box-shadow:
+    0 18px 38px rgba(0,0,0,.22),
+    inset 0 1px 0 rgba(255,255,255,.05);
+  font-size: 3.2rem;
+}
+
+.gallery-cover-secondary {
+  position: absolute;
+  z-index: 3;
+  right: calc(50% - 78px);
+  bottom: 46px;
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: #f0deb0;
+  background: #23402f;
+  border: 1px solid rgba(215,197,138,.22);
+  font-size: 1rem;
+  box-shadow: 0 8px 18px rgba(0,0,0,.18);
+}
+
+.cover-canteen .gallery-cover-symbol { color: #e3b889; }
+.cover-repatriants .gallery-cover-symbol { color: #d7c58a; }
+.cover-college .gallery-cover-symbol { color: #a8cade; }
+.cover-holocaust .gallery-cover-symbol { color: #d8bd7b; }
+.cover-friends .gallery-cover-symbol { color: #cbb7df; }
+.cover-holidays .gallery-cover-symbol { color: #d7c58a; }
+
+.gallery-category-card:hover .gallery-static-cover .gallery-cover-symbol {
+  transform: translateY(-3px) scale(1.02);
+}
+
+.gallery-static-cover .gallery-cover-symbol {
+  transition: transform .25s ease;
+}
+
+@media (max-width: 640px) {
+  .gallery-static-cover {
+    height: 190px;
+  }
+
+  .gallery-cover-symbol {
+    width: 92px;
+    height: 92px;
+    border-radius: 27px;
+    font-size: 2.45rem;
+  }
+
+  .gallery-cover-secondary {
+    right: calc(50% - 62px);
+    bottom: 34px;
+    width: 34px;
+    height: 34px;
+    font-size: .82rem;
+  }
+}
+
+
+/* ===== Custom gold artwork icons ===== */
+.gallery-cover-art {
+  position: relative;
+  z-index: 2;
+  width: min(66%, 164px);
+  height: min(66%, 164px);
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 16px 22px rgba(0,0,0,.28));
+  transition: transform .25s ease, filter .25s ease;
+}
+
+.gallery-category-card:hover .gallery-cover-art {
+  transform: translateY(-3px) scale(1.025);
+  filter: drop-shadow(0 20px 26px rgba(0,0,0,.32));
+}
+
+.section-icon-media {
+  display: grid;
+  place-items: center;
+  min-height: 390px;
+  padding: 42px;
+  background:
+    radial-gradient(circle at 50% 42%, rgba(215,197,138,.14), transparent 33%),
+    linear-gradient(145deg, rgba(38,72,49,.96), rgba(20,48,31,.98));
+  border: 1px solid rgba(215,197,138,.15);
+}
+
+.section-icon-media img {
+  width: min(70%, 280px);
+  height: auto;
+  max-height: 280px;
+  object-fit: contain;
+  filter: drop-shadow(0 22px 30px rgba(0,0,0,.30));
+}
+
+.section-canteen .section-icon-media {
+  background:
+    radial-gradient(circle at 50% 42%, rgba(219,160,131,.13), transparent 33%),
+    linear-gradient(145deg, rgba(66,55,38,.96), rgba(27,48,32,.98));
+}
+
+.section-college .section-icon-media {
+  background:
+    radial-gradient(circle at 50% 42%, rgba(143,180,207,.12), transparent 33%),
+    linear-gradient(145deg, rgba(39,61,67,.96), rgba(24,47,34,.98));
+}
+
+.section-holocaust .section-icon-media {
+  background:
+    radial-gradient(circle at 50% 42%, rgba(208,179,108,.14), transparent 33%),
+    linear-gradient(145deg, rgba(65,57,37,.96), rgba(27,47,32,.98));
+}
+
+.section-friends .section-icon-media {
+  background:
+    radial-gradient(circle at 50% 42%, rgba(203,183,223,.12), transparent 33%),
+    linear-gradient(145deg, rgba(60,52,67,.94), rgba(25,47,32,.98));
+}
+
+@media (max-width: 640px) {
+  .gallery-cover-art {
+    width: min(64%, 126px);
+    height: min(64%, 126px);
+  }
+
+  .section-icon-media {
+    min-height: 260px;
+    padding: 30px;
+  }
+
+  .section-icon-media img {
+    width: min(68%, 210px);
+    max-height: 210px;
+  }
+}
+
+/* ===== Gallery gold icon size + centering fix 2026-09-23 ===== */
+.gallery-static-cover {
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+/* Higher specificity than the old generic .gallery-category-preview img rule. */
+.gallery-category-preview.gallery-static-cover > img.gallery-cover-art {
+  width: min(42%, 108px);
+  height: auto;
+  max-width: 108px;
+  max-height: 108px;
+  object-fit: contain;
+  display: block;
+  margin: 0;
+  align-self: center;
+  justify-self: center;
+  transform: none;
+  filter: drop-shadow(0 12px 18px rgba(0,0,0,.26));
+  transition: transform .25s ease, filter .25s ease;
+}
+
+.gallery-category-card:hover .gallery-category-preview.gallery-static-cover > img.gallery-cover-art {
+  transform: translateY(-2px) scale(1.02);
+  filter: drop-shadow(0 15px 21px rgba(0,0,0,.30));
+}
+
+@media (max-width: 640px) {
+  .gallery-static-cover {
+    height: 180px;
+  }
+
+  .gallery-category-preview.gallery-static-cover > img.gallery-cover-art {
+    width: min(38%, 78px);
+    max-width: 78px;
+    max-height: 78px;
+  }
+}
+
+
+/* ===== FINAL polished gold icon layout 2026-09-23 ===== */
+
+/* Main gallery: keep every gold artwork fully visible and centered. */
+.gallery-static-cover {
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.gallery-category-preview.gallery-static-cover > img.gallery-cover-art {
+  width: min(42%, 108px);
+  height: auto;
+  max-width: 108px;
+  max-height: 108px;
+  object-fit: contain;
+  display: block;
+  margin: 0;
+  align-self: center;
+  justify-self: center;
+  transform: none;
+  filter: drop-shadow(0 12px 18px rgba(0,0,0,.26));
+  transition: transform .25s ease, filter .25s ease;
+}
+
+.gallery-category-card:hover .gallery-category-preview.gallery-static-cover > img.gallery-cover-art {
+  transform: translateY(-2px) scale(1.02);
+  filter: drop-shadow(0 15px 21px rgba(0,0,0,.30));
+}
+
+/* Home page section artwork: smaller, centered, never cropped. */
+.section-icon-media {
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.split-media.section-icon-media > img {
+  width: min(52%, 190px);
+  height: auto;
+  max-width: 190px;
+  max-height: 190px;
+  object-fit: contain;
+  display: block;
+  margin: auto;
+  align-self: center;
+  justify-self: center;
+  transform: none;
+  filter: drop-shadow(0 18px 26px rgba(0,0,0,.28));
+}
+
+@media (max-width: 640px) {
+  .gallery-static-cover {
+    height: 180px;
+  }
+
+  .gallery-category-preview.gallery-static-cover > img.gallery-cover-art {
+    width: min(38%, 78px);
+    max-width: 78px;
+    max-height: 78px;
+  }
+
+  .split-media.section-icon-media > img {
+    width: min(46%, 130px);
+    max-width: 130px;
+    max-height: 130px;
+  }
+}
+
+
+/* ===== Gallery botanical gold frame 2026-09-23 ===== */
+.gallery-category-preview.gallery-static-cover {
+  position: relative;
+  isolation: isolate;
+  box-shadow:
+    inset 0 0 0 1px rgba(224,198,124,.12),
+    inset 0 -28px 44px rgba(0,0,0,.06);
+}
+
+.gallery-category-preview.gallery-static-cover::before,
+.gallery-category-preview.gallery-static-cover::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 12px;
+  width: 142px;
+  height: 78px;
+  pointer-events: none;
+  opacity: .62;
+  border: 0;
+  border-radius: 0;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  filter: drop-shadow(0 2px 3px rgba(0,0,0,.18));
+}
+
+.gallery-category-preview.gallery-static-cover::before {
+  left: 10px;
+  right: auto;
+  bottom: auto;
+  transform: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 90'%3E%3Cg fill='none' stroke='%23d9c37d' stroke-width='2.1' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 83C35 70 49 39 86 28C112 20 138 22 174 6'/%3E%3Cpath d='M31 67C29 53 24 44 17 36'/%3E%3Cpath d='M58 48C54 35 49 27 40 18'/%3E%3Cpath d='M88 27C85 17 80 10 73 4'/%3E%3Cpath d='M116 24C122 15 130 9 139 4'/%3E%3Cpath d='M143 17C151 18 160 17 169 13'/%3E%3C/g%3E%3Cg fill='%23e6d497' opacity='.9'%3E%3Cellipse cx='15' cy='35' rx='4' ry='7' transform='rotate(-38 15 35)'/%3E%3Cellipse cx='34' cy='55' rx='4' ry='7' transform='rotate(25 34 55)'/%3E%3Cellipse cx='38' cy='17' rx='4' ry='7' transform='rotate(-32 38 17)'/%3E%3Cellipse cx='62' cy='38' rx='4' ry='7' transform='rotate(34 62 38)'/%3E%3Cellipse cx='72' cy='4' rx='4' ry='7' transform='rotate(-28 72 4)'/%3E%3Cellipse cx='93' cy='21' rx='4' ry='7' transform='rotate(35 93 21)'/%3E%3Cellipse cx='141' cy='5' rx='4' ry='7' transform='rotate(40 141 5)'/%3E%3Cellipse cx='153' cy='17' rx='4' ry='7' transform='rotate(-58 153 17)'/%3E%3C/g%3E%3Cg fill='%23f0e2b1'%3E%3Ccircle cx='25' cy='61' r='2.4'/%3E%3Ccircle cx='47' cy='45' r='2.2'/%3E%3Ccircle cx='103' cy='25' r='2.3'/%3E%3Ccircle cx='164' cy='13' r='2.2'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.gallery-category-preview.gallery-static-cover::after {
+  right: 10px;
+  left: auto;
+  bottom: auto;
+  transform: scaleX(-1);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 90'%3E%3Cg fill='none' stroke='%23d9c37d' stroke-width='2.1' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 83C35 70 49 39 86 28C112 20 138 22 174 6'/%3E%3Cpath d='M31 67C29 53 24 44 17 36'/%3E%3Cpath d='M58 48C54 35 49 27 40 18'/%3E%3Cpath d='M88 27C85 17 80 10 73 4'/%3E%3Cpath d='M116 24C122 15 130 9 139 4'/%3E%3Cpath d='M143 17C151 18 160 17 169 13'/%3E%3C/g%3E%3Cg fill='%23e6d497' opacity='.9'%3E%3Cellipse cx='15' cy='35' rx='4' ry='7' transform='rotate(-38 15 35)'/%3E%3Cellipse cx='34' cy='55' rx='4' ry='7' transform='rotate(25 34 55)'/%3E%3Cellipse cx='38' cy='17' rx='4' ry='7' transform='rotate(-32 38 17)'/%3E%3Cellipse cx='62' cy='38' rx='4' ry='7' transform='rotate(34 62 38)'/%3E%3Cellipse cx='72' cy='4' rx='4' ry='7' transform='rotate(-28 72 4)'/%3E%3Cellipse cx='93' cy='21' rx='4' ry='7' transform='rotate(35 93 21)'/%3E%3Cellipse cx='141' cy='5' rx='4' ry='7' transform='rotate(40 141 5)'/%3E%3Cellipse cx='153' cy='17' rx='4' ry='7' transform='rotate(-58 153 17)'/%3E%3C/g%3E%3Cg fill='%23f0e2b1'%3E%3Ccircle cx='25' cy='61' r='2.4'/%3E%3Ccircle cx='47' cy='45' r='2.2'/%3E%3Ccircle cx='103' cy='25' r='2.3'/%3E%3Ccircle cx='164' cy='13' r='2.2'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.gallery-category-preview.gallery-static-cover > img.gallery-cover-art {
+  z-index: 2;
+}
+
+@media (max-width: 640px) {
+  .gallery-category-preview.gallery-static-cover::before,
+  .gallery-category-preview.gallery-static-cover::after {
+    top: 9px;
+    width: 88px;
+    height: 52px;
+    opacity: .52;
+  }
+
+  .gallery-category-preview.gallery-static-cover::before {
+    left: 5px;
+  }
+
+  .gallery-category-preview.gallery-static-cover::after {
+    right: 5px;
+  }
+}
+
+
+/* ===== Homepage botanical gold frame 2026-09-23 ===== */
+.section-icon-media {
+  position: relative;
+  isolation: isolate;
+  box-shadow:
+    inset 0 0 0 1px rgba(224,198,124,.10),
+    inset 0 -34px 54px rgba(0,0,0,.07);
+}
+
+.section-icon-media::before,
+.section-icon-media::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 18px;
+  width: 172px;
+  height: 92px;
+  pointer-events: none;
+  opacity: .58;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  filter: drop-shadow(0 2px 3px rgba(0,0,0,.16));
+}
+
+.section-icon-media::before {
+  left: 18px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 90'%3E%3Cg fill='none' stroke='%23d9c37d' stroke-width='2.1' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 83C35 70 49 39 86 28C112 20 138 22 174 6'/%3E%3Cpath d='M31 67C29 53 24 44 17 36'/%3E%3Cpath d='M58 48C54 35 49 27 40 18'/%3E%3Cpath d='M88 27C85 17 80 10 73 4'/%3E%3Cpath d='M116 24C122 15 130 9 139 4'/%3E%3Cpath d='M143 17C151 18 160 17 169 13'/%3E%3C/g%3E%3Cg fill='%23e6d497' opacity='.9'%3E%3Cellipse cx='15' cy='35' rx='4' ry='7' transform='rotate(-38 15 35)'/%3E%3Cellipse cx='34' cy='55' rx='4' ry='7' transform='rotate(25 34 55)'/%3E%3Cellipse cx='38' cy='17' rx='4' ry='7' transform='rotate(-32 38 17)'/%3E%3Cellipse cx='62' cy='38' rx='4' ry='7' transform='rotate(34 62 38)'/%3E%3Cellipse cx='72' cy='4' rx='4' ry='7' transform='rotate(-28 72 4)'/%3E%3Cellipse cx='93' cy='21' rx='4' ry='7' transform='rotate(35 93 21)'/%3E%3Cellipse cx='141' cy='5' rx='4' ry='7' transform='rotate(40 141 5)'/%3E%3Cellipse cx='153' cy='17' rx='4' ry='7' transform='rotate(-58 153 17)'/%3E%3C/g%3E%3Cg fill='%23f0e2b1'%3E%3Ccircle cx='25' cy='61' r='2.4'/%3E%3Ccircle cx='47' cy='45' r='2.2'/%3E%3Ccircle cx='103' cy='25' r='2.3'/%3E%3Ccircle cx='164' cy='13' r='2.2'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.section-icon-media::after {
+  right: 18px;
+  transform: scaleX(-1);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 90'%3E%3Cg fill='none' stroke='%23d9c37d' stroke-width='2.1' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M4 83C35 70 49 39 86 28C112 20 138 22 174 6'/%3E%3Cpath d='M31 67C29 53 24 44 17 36'/%3E%3Cpath d='M58 48C54 35 49 27 40 18'/%3E%3Cpath d='M88 27C85 17 80 10 73 4'/%3E%3Cpath d='M116 24C122 15 130 9 139 4'/%3E%3Cpath d='M143 17C151 18 160 17 169 13'/%3E%3C/g%3E%3Cg fill='%23e6d497' opacity='.9'%3E%3Cellipse cx='15' cy='35' rx='4' ry='7' transform='rotate(-38 15 35)'/%3E%3Cellipse cx='34' cy='55' rx='4' ry='7' transform='rotate(25 34 55)'/%3E%3Cellipse cx='38' cy='17' rx='4' ry='7' transform='rotate(-32 38 17)'/%3E%3Cellipse cx='62' cy='38' rx='4' ry='7' transform='rotate(34 62 38)'/%3E%3Cellipse cx='72' cy='4' rx='4' ry='7' transform='rotate(-28 72 4)'/%3E%3Cellipse cx='93' cy='21' rx='4' ry='7' transform='rotate(35 93 21)'/%3E%3Cellipse cx='141' cy='5' rx='4' ry='7' transform='rotate(40 141 5)'/%3E%3Cellipse cx='153' cy='17' rx='4' ry='7' transform='rotate(-58 153 17)'/%3E%3C/g%3E%3Cg fill='%23f0e2b1'%3E%3Ccircle cx='25' cy='61' r='2.4'/%3E%3Ccircle cx='47' cy='45' r='2.2'/%3E%3Ccircle cx='103' cy='25' r='2.3'/%3E%3Ccircle cx='164' cy='13' r='2.2'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.split-media.section-icon-media > img {
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 640px) {
+  .section-icon-media::before,
+  .section-icon-media::after {
+    top: 12px;
+    width: 104px;
+    height: 60px;
+    opacity: .48;
+  }
+
+  .section-icon-media::before {
+    left: 8px;
+  }
+
+  .section-icon-media::after {
+    right: 8px;
+  }
+}
+
+
+====================================================================================================
+FILE: weekly-content.js
+====================================================================================================
+
+// Automatic Torah, Haftarah, Hebrew/Gregorian dates and Israel holidays.
+// Data source: Hebcal.com web APIs (CC BY 4.0).
+// Israel schedule is used. Hebrew "today" changes after sunset in Be'er Sheva.
+(function () {
+  "use strict";
+
+  var CONFIG = {
+    geonameId: 295530,
+    timeZone: "Asia/Jerusalem",
+    cacheKey: "streamsHopeHebcalAutoV4"
+  };
+
+  var MONTHS = {
+    "Nisan":   { ru: "Нисана", en: "Nisan", he: "ניסן" },
+    "Iyyar":   { ru: "Ияра", en: "Iyyar", he: "אייר" },
+    "Sivan":   { ru: "Сивана", en: "Sivan", he: "סיון" },
+    "Tamuz":   { ru: "Тамуза", en: "Tamuz", he: "תמוז" },
+    "Av":      { ru: "Ава", en: "Av", he: "אב" },
+    "Elul":    { ru: "Элула", en: "Elul", he: "אלול" },
+    "Tishrei": { ru: "Тишрея", en: "Tishrei", he: "תשרי" },
+    "Cheshvan":{ ru: "Хешвана", en: "Cheshvan", he: "חשון" },
+    "Kislev":  { ru: "Кислева", en: "Kislev", he: "כסלו" },
+    "Tevet":   { ru: "Тевета", en: "Tevet", he: "טבת" },
+    "Sh'vat":  { ru: "Швата", en: "Sh'vat", he: "שבט" },
+    "Shvat":   { ru: "Швата", en: "Sh'vat", he: "שבט" },
+    "Adar":    { ru: "Адара", en: "Adar", he: "אדר" },
+    "Adar I":  { ru: "Адара I", en: "Adar I", he: "אדר א׳" },
+    "Adar II": { ru: "Адара II", en: "Adar II", he: "אדר ב׳" }
+  };
+
+  var BOOKS = {
+    "Genesis":     { ru: "Берешит", he: "בראשית" },
+    "Exodus":      { ru: "Шмот", he: "שמות" },
+    "Leviticus":   { ru: "Ваикра", he: "ויקרא" },
+    "Numbers":     { ru: "Бемидбар", he: "במדבר" },
+    "Deuteronomy": { ru: "Дварим", he: "דברים" },
+    "Joshua":      { ru: "Иегошуа", he: "יהושע" },
+    "Judges":      { ru: "Шофтим", he: "שופטים" },
+    "I Samuel":    { ru: "Шмуэль I", he: "שמואל א׳" },
+    "II Samuel":   { ru: "Шмуэль II", he: "שמואל ב׳" },
+    "I Kings":     { ru: "Мелахим I", he: "מלכים א׳" },
+    "II Kings":    { ru: "Мелахим II", he: "מלכים ב׳" },
+    "Isaiah":      { ru: "Ишаягу", he: "ישעיהו" },
+    "Jeremiah":    { ru: "Иеремия", he: "ירמיהו" },
+    "Ezekiel":     { ru: "Иезекииль", he: "יחזקאל" },
+    "Hosea":       { ru: "Осия", he: "הושע" },
+    "Joel":        { ru: "Иоиль", he: "יואל" },
+    "Amos":        { ru: "Амос", he: "עמוס" },
+    "Obadiah":     { ru: "Овадия", he: "עובדיה" },
+    "Jonah":       { ru: "Иона", he: "יונה" },
+    "Micah":       { ru: "Михей", he: "מיכה" },
+    "Nahum":       { ru: "Наум", he: "נחום" },
+    "Habakkuk":    { ru: "Аввакум", he: "חבקוק" },
+    "Zephaniah":   { ru: "Софония", he: "צפניה" },
+    "Haggai":      { ru: "Аггей", he: "חגי" },
+    "Zechariah":   { ru: "Захария", he: "זכריה" },
+    "Malachi":     { ru: "Малахия", he: "מלאכי" },
+    "Ecclesiastes":{ ru: "Коэлет", he: "קהלת" }
+  };
+
+  var HOLIDAYS = {
+    "rosh-hashana": { ru: "Рош ха-Шана", en: "Rosh Hashana", he: "ראש השנה" },
+    "yom-kippur": { ru: "Йом-Кипур", en: "Yom Kippur", he: "יום כיפור" },
+    "sukkot": { ru: "Суккот", en: "Sukkot", he: "סוכות" },
+    "shmini-simchat": { ru: "Шмини Ацерет и Симхат Тора", en: "Shmini Atzeret & Simchat Torah", he: "שמיני עצרת ושמחת תורה" },
+    "chanukah": { ru: "Ханука", en: "Chanukah", he: "חנוכה" },
+    "purim": { ru: "Пурим", en: "Purim", he: "פורים" },
+    "pesach": { ru: "Песах", en: "Pesach", he: "פסח" },
+    "shavuot": { ru: "Шавуот", en: "Shavuot", he: "שבועות" }
+  };
+
+  var FALLBACK = {
+    source: "fallback",
+    today: {
+      dateRu: "23 сентября 2026",
+      dateEn: "23 September 2026",
+      dateHe: "23 בספטמבר 2026",
+      hdateRu: "12 Тишрея 5787",
+      hdateEn: "12 Tishrei 5787",
+      hdateHe: "י״ב בתשרי תשפ״ז"
+    },
+    parasha: {
+      ru: "Суккот",
+      en: "Sukkot",
+      he: "סוכות",
+      dateRu: "26 сентября 2026",
+      dateEn: "26 September 2026",
+      dateHe: "26 בספטמבר 2026",
+      hdateRu: "15 Тишрея 5787",
+      hdateEn: "15 Tishrei 5787",
+      hdateHe: "ט״ו בתשרי תשפ״ז",
+      torahRu: "Ваикра 22:26–23:44; Бемидбар 29:12–16",
+      torahEn: "Leviticus 22:26–23:44; Numbers 29:12–16",
+      torahHe: "ויקרא 22:26–23:44; במדבר 29:12–16",
+      haftarahRu: "Захария 14:1–21",
+      haftarahEn: "Zechariah 14:1–21",
+      haftarahHe: "זכריה 14:1–21",
+      noteRu: "Расписание чтения для Израиля. Данные обновляются автоматически.",
+      noteEn: "Israel reading schedule. Data updates automatically.",
+      noteHe: "סדר הקריאה בישראל. הנתונים מתעדכנים אוטומטית."
+    },
+    holidays: [
+      {
+        id: "sukkot-2026",
+        key: "sukkot",
+        ru: "Суккот",
+        en: "Sukkot",
+        he: "סוכות",
+        dateRu: "с вечера 25 сентября 2026 – 2 октября 2026",
+        dateEn: "evening of 25 September 2026 – 2 October 2026",
+        dateHe: "מערב 25 בספטמבר 2026 עד 2 באוקטובר 2026",
+        hdateRu: "15 Тишрея 5787 – 21 Тишрея 5787",
+        hdateEn: "15 Tishrei 5787 – 21 Tishrei 5787",
+        hdateHe: "15 תשרי 5787 – 21 תשרי 5787",
+        badgeRu: "Ближайший праздник",
+        badgeEn: "Upcoming holiday",
+        badgeHe: "החג הקרוב",
+        readings: [
+          {
+            dateRu: "26 сентября 2026",
+            dateEn: "26 September 2026",
+            dateHe: "26 בספטמבר 2026",
+            hdateRu: "15 Тишрея 5787",
+            hdateEn: "15 Tishrei 5787",
+            hdateHe: "15 תשרי 5787",
+            torahRu: "Ваикра 22:26–23:44; Бемидбар 29:12–16",
+            torahEn: "Leviticus 22:26–23:44; Numbers 29:12–16",
+            torahHe: "ויקרא 22:26–23:44; במדבר 29:12–16",
+            haftarahRu: "Захария 14:1–21",
+            haftarahEn: "Zechariah 14:1–21",
+            haftarahHe: "זכריה 14:1–21"
+          }
+        ]
+      },
+      {
+        id: "shmini-simchat-2026",
+        key: "shmini-simchat",
+        ru: "Шмини Ацерет и Симхат Тора",
+        en: "Shmini Atzeret & Simchat Torah",
+        he: "שמיני עצרת ושמחת תורה",
+        dateRu: "с вечера 2 октября 2026 – 3 октября 2026",
+        dateEn: "evening of 2 October 2026 – 3 October 2026",
+        dateHe: "מערב 2 באוקטובר 2026 עד 3 באוקטובר 2026",
+        hdateRu: "22 Тишрея 5787",
+        hdateEn: "22 Tishrei 5787",
+        hdateHe: "22 תשרי 5787",
+        badgeRu: "Следующий праздник",
+        badgeEn: "Next holiday",
+        badgeHe: "החג הבא",
+        readings: [
+          {
+            dateRu: "3 октября 2026",
+            dateEn: "3 October 2026",
+            dateHe: "3 באוקטובר 2026",
+            hdateRu: "22 Тишрея 5787",
+            hdateEn: "22 Tishrei 5787",
+            hdateHe: "22 תשרי 5787",
+            torahRu: "Дварим 33:1–34:12; Берешит 1:1–2:3; Бемидбар 29:35–30:1; Коэлет 1:1–12:14",
+            torahEn: "Deuteronomy 33:1–34:12; Genesis 1:1–2:3; Numbers 29:35–30:1; Ecclesiastes 1:1–12:14",
+            torahHe: "דברים 33:1–34:12; בראשית 1:1–2:3; במדבר 29:35–30:1; קהלת 1:1–12:14",
+            haftarahRu: "Иегошуа 1:1–18",
+            haftarahEn: "Joshua 1:1–18",
+            haftarahHe: "יהושע 1:1–18"
+          }
+        ]
+      }
+    ]
+  };
+
+  function pad2(n) {
+    return String(n).padStart(2, "0");
+  }
+
+  function localDateIso() {
+    var parts = new Intl.DateTimeFormat("en-CA", {
+      timeZone: CONFIG.timeZone,
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit"
+    }).formatToParts(new Date());
+    var map = {};
+    parts.forEach(function (part) { map[part.type] = part.value; });
+    return map.year + "-" + map.month + "-" + map.day;
+  }
+
+  function addDays(iso, days) {
+    var d = new Date(iso + "T12:00:00Z");
+    d.setUTCDate(d.getUTCDate() + days);
+    return d.getUTCFullYear() + "-" + pad2(d.getUTCMonth() + 1) + "-" + pad2(d.getUTCDate());
+  }
+
+  function dayOfWeek(iso) {
+    return new Date(iso + "T12:00:00Z").getUTCDay();
+  }
+
+  function formatGregorian(iso, lang) {
+    var locale = lang === "ru" ? "ru-RU" : (lang === "he" ? "he-IL" : "en-GB");
+    return new Intl.DateTimeFormat(locale, {
+      day: "numeric",
+      month: "long",
+      year: "numeric",
+      timeZone: "UTC"
+    }).format(new Date(iso + "T12:00:00Z"));
+  }
+
+  function parseHDate(hdate) {
+    var match = String(hdate || "").match(/^(\d+)\s+(.+?)\s+(\d+)$/);
+    if (!match) return null;
+    return { day: Number(match[1]), month: match[2], year: Number(match[3]) };
+  }
+
+  function formatHDate(parts, lang, hebrewText) {
+    if (!parts) return "";
+    if (lang === "he" && hebrewText) return hebrewText;
+    var month = MONTHS[parts.month] || { ru: parts.month, en: parts.month, he: parts.month };
+    if (lang === "ru") return parts.day + " " + month.ru + " " + parts.year;
+    if (lang === "he") return parts.day + " " + month.he + " " + parts.year;
+    return parts.day + " " + month.en + " " + parts.year;
+  }
+
+  function makeDateFields(iso, hdate, hebrewDate) {
+    var parsed = typeof hdate === "string" ? parseHDate(hdate) : hdate;
+    return {
+      dateRu: formatGregorian(iso, "ru"),
+      dateEn: formatGregorian(iso, "en"),
+      dateHe: formatGregorian(iso, "he"),
+      hdateRu: formatHDate(parsed, "ru", hebrewDate),
+      hdateEn: formatHDate(parsed, "en", hebrewDate),
+      hdateHe: formatHDate(parsed, "he", hebrewDate)
+    };
+  }
+
+  function translateBooks(text, lang) {
+    var result = String(text || "");
+    if (lang !== "en") {
+      Object.keys(BOOKS).sort(function (a, b) { return b.length - a.length; }).forEach(function (book) {
+        result = result.split(book).join(BOOKS[book][lang] || book);
+      });
+    }
+    return result.split("-").join("–");
+  }
+
+  function stripParashat(title) {
+    return String(title || "").replace(/^Parashat\s+/i, "").trim();
+  }
+
+  function holidayFamily(title) {
+    var t = String(title || "").toLowerCase();
+    if (t.indexOf("erev ") === 0) return null;
+    if (t.indexOf("sukkot") !== -1 || t.indexOf("hoshana raba") !== -1) return "sukkot";
+    if (t.indexOf("shmini atzeret") !== -1 || t.indexOf("shemini atzeret") !== -1 || t.indexOf("simchat torah") !== -1) return "shmini-simchat";
+    if (t.indexOf("rosh hashana") !== -1) return "rosh-hashana";
+    if (t.indexOf("yom kippur") !== -1) return "yom-kippur";
+    if (t.indexOf("chanukah") !== -1 || t.indexOf("hanukkah") !== -1) return "chanukah";
+    if (t.indexOf("purim") !== -1) return "purim";
+    if (t.indexOf("pesach") !== -1 || t.indexOf("passover") !== -1) return "pesach";
+    if (t.indexOf("shavuot") !== -1) return "shavuot";
+    return t.replace(/\s+[ivx]+.*$/i, "").replace(/[^a-z0-9]+/g, "-");
+  }
+
+  function holidayName(key, item) {
+    if (HOLIDAYS[key]) return HOLIDAYS[key];
+    return {
+      ru: stripParashat(item.title),
+      en: stripParashat(item.title),
+      he: item.hebrew || stripParashat(item.title)
+    };
+  }
+
+  function rangeDate(first, last, lang, field) {
+    var a = first[field];
+    var b = last[field];
+    return a === b ? a : a + " – " + b;
+  }
+
+  function holidaySolarRange(startIso, endIso, lang) {
+    var eveIso = addDays(startIso, -1);
+    var eve = formatGregorian(eveIso, lang);
+    var end = formatGregorian(endIso, lang);
+    if (lang === "ru") return "с вечера " + eve + " – " + end;
+    if (lang === "he") return "מערב " + eve + " עד " + end;
+    return "evening of " + eve + " – " + end;
+  }
+
+  function readingFromEvent(item) {
+    var dateFields = makeDateFields(item.date, item.hdate, item.hebrewDate);
+    var l = item.leyning || {};
+    return Object.assign({}, dateFields, {
+      titleEn: item.title || "",
+      titleHe: item.hebrew || "",
+      torahRu: translateBooks(l.torah || "", "ru"),
+      torahEn: translateBooks(l.torah || "", "en"),
+      torahHe: translateBooks(l.torah || "", "he"),
+      haftarahRu: translateBooks(l.haftarah || "", "ru"),
+      haftarahEn: translateBooks(l.haftarah || "", "en"),
+      haftarahHe: translateBooks(l.haftarah || "", "he")
+    });
+  }
+
+  function buildHolidayGroups(items, todayIso) {
+    var groups = {};
+
+    items.forEach(function (item) {
+      if (item.category !== "holiday" || item.subcat !== "major") return;
+      var key = holidayFamily(item.title);
+      if (!key) return;
+      if (!groups[key]) groups[key] = [];
+      groups[key].push(item);
+    });
+
+    var result = [];
+    Object.keys(groups).forEach(function (key) {
+      var events = groups[key].sort(function (a, b) { return a.date.localeCompare(b.date); });
+      var firstEvent = events[0];
+      var lastEvent = events[events.length - 1];
+      if (lastEvent.date < todayIso) return;
+
+      var name = holidayName(key, firstEvent);
+      var firstFields = makeDateFields(firstEvent.date, firstEvent.hdate, firstEvent.hebrewDate);
+      var lastFields = makeDateFields(lastEvent.date, lastEvent.hdate, lastEvent.hebrewDate);
+      var isCurrent = firstEvent.date <= todayIso && todayIso <= lastEvent.date;
+
+      result.push({
+        id: key + "-" + firstEvent.date,
+        key: key,
+        ru: name.ru,
+        en: name.en,
+        he: name.he,
+        start: firstEvent.date,
+        end: lastEvent.date,
+        dateRu: holidaySolarRange(firstEvent.date, lastEvent.date, "ru"),
+        dateEn: holidaySolarRange(firstEvent.date, lastEvent.date, "en"),
+        dateHe: holidaySolarRange(firstEvent.date, lastEvent.date, "he"),
+        hdateRu: rangeDate(firstFields, lastFields, "ru", "hdateRu"),
+        hdateEn: rangeDate(firstFields, lastFields, "en", "hdateEn"),
+        hdateHe: rangeDate(firstFields, lastFields, "he", "hdateHe"),
+        badgeRu: isCurrent ? "Текущий праздник" : "Ближайший праздник",
+        badgeEn: isCurrent ? "Current holiday" : "Upcoming holiday",
+        badgeHe: isCurrent ? "החג הנוכחי" : "החג הקרוב",
+        readings: events.filter(function (ev) {
+          return ev.leyning && (ev.leyning.torah || ev.leyning.haftarah);
+        }).map(readingFromEvent)
+      });
+    });
+
+    result.sort(function (a, b) { return a.start.localeCompare(b.start); });
+    result = result.slice(0, 2);
+    if (result.length > 1 && result[1].start > todayIso) {
+      result[1].badgeRu = "Следующий праздник";
+      result[1].badgeEn = "Next holiday";
+      result[1].badgeHe = "החג הבא";
+    }
+    return result;
+  }
+
+  function findNextShabbatReading(items, todayIso) {
+    var candidates = items.filter(function (item) {
+      return item.date >= todayIso &&
+        dayOfWeek(item.date) === 6 &&
+        item.leyning &&
+        item.leyning.torah;
+    }).sort(function (a, b) { return a.date.localeCompare(b.date); });
+
+    var item = candidates[0];
+    if (!item) throw new Error("No upcoming Shabbat reading found");
+
+    var fields = makeDateFields(item.date, item.hdate, item.hebrewDate);
+    var key = item.category === "holiday" ? holidayFamily(item.title) : null;
+    var names = key ? holidayName(key, item) : {
+      ru: stripParashat(item.title),
+      en: stripParashat(item.title),
+      he: item.hebrew || stripParashat(item.title)
+    };
+
+    return Object.assign({}, fields, {
+      ru: names.ru,
+      en: names.en,
+      he: names.he,
+      torahRu: translateBooks(item.leyning.torah || "", "ru"),
+      torahEn: translateBooks(item.leyning.torah || "", "en"),
+      torahHe: translateBooks(item.leyning.torah || "", "he"),
+      haftarahRu: translateBooks(item.leyning.haftarah || "", "ru"),
+      haftarahEn: translateBooks(item.leyning.haftarah || "", "en"),
+      haftarahHe: translateBooks(item.leyning.haftarah || "", "he"),
+      noteRu: "Расписание чтения для Израиля. Данные обновляются автоматически по календарю Беэр-Шевы.",
+      noteEn: "Israel reading schedule. Data updates automatically using the Be'er Sheva calendar.",
+      noteHe: "סדר הקריאה בישראל. הנתונים מתעדכנים אוטומטית לפי לוח באר שבע."
+    });
+  }
+
+  async function fetchJson(url) {
+    // Hebcal is an optional live refresh only. The page always has local fallback data.
+    // Abort quickly on blocked/slow networks so the site never waits on an external service.
+    var controller = typeof AbortController !== "undefined" ? new AbortController() : null;
+    var timer = window.setTimeout(function () {
+      if (controller) controller.abort();
+    }, 2500);
+
+    try {
+      var response = await fetch(url, {
+        method: "GET",
+        credentials: "omit",
+        cache: "default",
+        signal: controller ? controller.signal : undefined,
+        headers: { "Accept": "application/json" }
+      });
+      if (!response.ok) throw new Error("Calendar request failed: " + response.status);
+      return response.json();
+    } finally {
+      window.clearTimeout(timer);
+    }
+  }
+
+  async function getToday(todayIso) {
+    var zmanimUrl = "https://www.hebcal.com/zmanim?cfg=json&geonameid=" + CONFIG.geonameId + "&date=" + todayIso;
+    var zmanim = await fetchJson(zmanimUrl);
+    var sunset = zmanim && zmanim.times && zmanim.times.sunset ? new Date(zmanim.times.sunset) : null;
+    var afterSunset = sunset ? Date.now() >= sunset.getTime() : false;
+
+    var converterUrl = "https://www.hebcal.com/converter?cfg=json&g2h=1&strict=1&date=" + todayIso;
+    if (afterSunset) converterUrl += "&gs=on";
+    var h = await fetchJson(converterUrl);
+
+    return Object.assign({}, makeDateFields(todayIso, {
+      day: h.hd,
+      month: h.hm,
+      year: h.hy
+    }, h.hebrew), {
+      sunsetIso: sunset ? sunset.toISOString() : null,
+      afterSunset: afterSunset
+    });
+  }
+
+  async function buildLiveData() {
+    var todayIso = localDateIso();
+    var startIso = addDays(todayIso, -14);
+    var endIso = addDays(todayIso, 120);
+    var calendarUrl = "https://www.hebcal.com/hebcal?v=1&cfg=json&start=" + startIso +
+      "&end=" + endIso +
+      "&maj=on&s=on&D=on&i=on&leyning=on";
+
+    var results = await Promise.all([
+      getToday(todayIso),
+      fetchJson(calendarUrl)
+    ]);
+
+    var today = results[0];
+    var calendar = results[1];
+    var items = calendar.items || [];
+
+    return {
+      source: "hebcal",
+      generatedAt: new Date().toISOString(),
+      today: today,
+      parasha: findNextShabbatReading(items, todayIso),
+      holidays: buildHolidayGroups(items, todayIso)
+    };
+  }
+
+  function emit() {
+    window.dispatchEvent(new CustomEvent("weeklyContentUpdated", {
+      detail: window.WEEKLY_CONTENT
+    }));
+  }
+
+  function readCache() {
+    try {
+      var raw = localStorage.getItem(CONFIG.cacheKey);
+      if (!raw) return null;
+      var parsed = JSON.parse(raw);
+      return parsed && parsed.data ? parsed.data : null;
+    } catch (e) {
+      return null;
+    }
+  }
+
+  function writeCache(data) {
+    try {
+      localStorage.setItem(CONFIG.cacheKey, JSON.stringify({
+        savedAt: Date.now(),
+        data: data
+      }));
+    } catch (e) {}
+  }
+
+  function dataTimestamp(data) {
+    if (!data) return 0;
+    var raw = data.snapshotUpdatedAt || data.generatedAt || "";
+    var value = Date.parse(raw);
+    return Number.isFinite(value) ? value : 0;
+  }
+
+  async function readLocalSnapshot() {
+    if (window.__SNAPSHOT_BUILD__) return null;
+
+    try {
+      var response = await fetch("weekly-snapshot.json", {
+        method: "GET",
+        credentials: "same-origin",
+        cache: "no-store",
+        headers: { "Accept": "application/json" }
+      });
+      if (!response.ok) return null;
+
+      var data = await response.json();
+      if (!data || !data.today || !data.parasha || !Array.isArray(data.holidays)) {
+        return null;
+      }
+      return data;
+    } catch (e) {
+      return null;
+    }
+  }
+
+  function chooseStoredData(localSnapshot, cached) {
+    if (localSnapshot && cached) {
+      return dataTimestamp(cached) > dataTimestamp(localSnapshot) ? cached : localSnapshot;
+    }
+    return localSnapshot || cached || FALLBACK;
+  }
+
+  async function loadWeeklyCalendarData() {
+    // Always show the newest stored copy first. This is served from the same
+    // GitHub Pages site and remains available even if Hebcal is blocked.
+    var localSnapshot = await readLocalSnapshot();
+    var cached = readCache();
+    var stored = chooseStoredData(localSnapshot, cached);
+
+    window.WEEKLY_CONTENT = stored;
+    emit();
+
+    try {
+      // Live Hebcal remains the primary updater whenever it is reachable.
+      var live = await buildLiveData();
+      window.WEEKLY_CONTENT = live;
+      writeCache(live);
+      emit();
+
+      if (live.today && live.today.sunsetIso && !live.today.afterSunset) {
+        var wait = new Date(live.today.sunsetIso).getTime() - Date.now() + 65000;
+        if (wait > 0 && wait < 18 * 60 * 60 * 1000) {
+          window.setTimeout(function () {
+            loadWeeklyCalendarData().catch(function () {});
+          }, wait);
+        }
+      }
+
+      return live;
+    } catch (error) {
+      // Do not blank, reset or alter the visible block. Keep the latest stored
+      // snapshot exactly as it was until a later live refresh succeeds.
+      console.warn("Live Torah/holiday update unavailable; keeping the last saved calendar snapshot.", error);
+      return window.WEEKLY_CONTENT;
+    }
+  }
+
+  window.WEEKLY_CONTENT = FALLBACK;
+  window.loadWeeklyCalendarData = loadWeeklyCalendarData;
+})();
