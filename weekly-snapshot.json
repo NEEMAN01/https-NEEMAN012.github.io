@@ -1,73 +1,37 @@
 {
   "source": "local-snapshot",
-  "generatedAt": "2026-10-03T16:16:12.348Z",
+  "generatedAt": "2026-10-03T21:12:51.713Z",
   "today": {
-    "dateRu": "3 октября 2026 г.",
-    "dateEn": "3 October 2026",
-    "dateHe": "3 באוקטובר 2026",
+    "dateRu": "4 октября 2026 г.",
+    "dateEn": "4 October 2026",
+    "dateHe": "4 באוקטובר 2026",
     "hdateRu": "23 Тишрея 5787",
     "hdateEn": "23 Tishrei 5787",
     "hdateHe": "כ״ג בְּתִשְׁרֵי תשפ״ז",
-    "sunsetIso": "2026-10-03T15:24:00.000Z",
-    "afterSunset": true
+    "sunsetIso": "2026-10-04T15:22:00.000Z",
+    "afterSunset": false
   },
   "parasha": {
-    "dateRu": "3 октября 2026 г.",
-    "dateEn": "3 October 2026",
-    "dateHe": "3 באוקטובר 2026",
-    "hdateRu": "22 Тишрея 5787",
-    "hdateEn": "22 Tishrei 5787",
-    "hdateHe": "22 תשרי 5787",
-    "ru": "Шмини Ацерет и Симхат Тора",
-    "en": "Shmini Atzeret & Simchat Torah",
-    "he": "שמיני עצרת ושמחת תורה",
-    "torahRu": "Дварим 33:1–34:12; Берешит 1:1–2:3; Бемидбар 29:35–30:1",
-    "torahEn": "Deuteronomy 33:1–34:12; Genesis 1:1–2:3; Numbers 29:35–30:1",
-    "torahHe": "דברים 33:1–34:12; בראשית 1:1–2:3; במדבר 29:35–30:1",
-    "haftarahRu": "Иегошуа 1:1–18",
-    "haftarahEn": "Joshua 1:1–18",
-    "haftarahHe": "יהושע 1:1–18",
+    "dateRu": "10 октября 2026 г.",
+    "dateEn": "10 October 2026",
+    "dateHe": "10 באוקטובר 2026",
+    "hdateRu": "29 Тишрея 5787",
+    "hdateEn": "29 Tishrei 5787",
+    "hdateHe": "29 תשרי 5787",
+    "ru": "Bereshit",
+    "en": "Bereshit",
+    "he": "פרשת בראשית",
+    "torahRu": "Берешит 1:1–6:8",
+    "torahEn": "Genesis 1:1–6:8",
+    "torahHe": "בראשית 1:1–6:8",
+    "haftarahRu": "Шмуэль I 20:18–42 | Shabbat Machar Chodesh",
+    "haftarahEn": "I Samuel 20:18–42 | Shabbat Machar Chodesh",
+    "haftarahHe": "שמואל א׳ 20:18–42 | Shabbat Machar Chodesh",
     "noteRu": "Расписание чтения для Израиля. Данные обновляются автоматически по календарю Беэр-Шевы.",
     "noteEn": "Israel reading schedule. Data updates automatically using the Be'er Sheva calendar.",
     "noteHe": "סדר הקריאה בישראל. הנתונים מתעדכנים אוטומטית לפי לוח באר שבע."
   },
   "holidays": [
-    {
-      "id": "shmini-simchat-2026-10-03",
-      "key": "shmini-simchat",
-      "ru": "Шмини Ацерет и Симхат Тора",
-      "en": "Shmini Atzeret & Simchat Torah",
-      "he": "שמיני עצרת ושמחת תורה",
-      "start": "2026-10-03",
-      "end": "2026-10-03",
-      "dateRu": "с вечера 2 октября 2026 г. – 3 октября 2026 г.",
-      "dateEn": "evening of 2 October 2026 – 3 October 2026",
-      "dateHe": "מערב 2 באוקטובר 2026 עד 3 באוקטובר 2026",
-      "hdateRu": "22 Тишрея 5787",
-      "hdateEn": "22 Tishrei 5787",
-      "hdateHe": "22 תשרי 5787",
-      "badgeRu": "Текущий праздник",
-      "badgeEn": "Current holiday",
-      "badgeHe": "החג הנוכחי",
-      "readings": [
-        {
-          "dateRu": "3 октября 2026 г.",
-          "dateEn": "3 October 2026",
-          "dateHe": "3 באוקטובר 2026",
-          "hdateRu": "22 Тишрея 5787",
-          "hdateEn": "22 Tishrei 5787",
-          "hdateHe": "22 תשרי 5787",
-          "titleEn": "Shmini Atzeret",
-          "titleHe": "שמיני עצרת",
-          "torahRu": "Дварим 33:1–34:12; Берешит 1:1–2:3; Бемидбар 29:35–30:1",
-          "torahEn": "Deuteronomy 33:1–34:12; Genesis 1:1–2:3; Numbers 29:35–30:1",
-          "torahHe": "דברים 33:1–34:12; בראשית 1:1–2:3; במדבר 29:35–30:1",
-          "haftarahRu": "Иегошуа 1:1–18",
-          "haftarahEn": "Joshua 1:1–18",
-          "haftarahHe": "יהושע 1:1–18"
-        }
-      ]
-    },
     {
       "id": "chanukah-2026-12-04",
       "key": "chanukah",
@@ -82,9 +46,9 @@
       "hdateRu": "24 Кислева 5787 – 2 Тевета 5787",
       "hdateEn": "24 Kislev 5787 – 2 Tevet 5787",
       "hdateHe": "24 כסלו 5787 – 2 טבת 5787",
-      "badgeRu": "Следующий праздник",
-      "badgeEn": "Next holiday",
-      "badgeHe": "החג הבא",
+      "badgeRu": "Ближайший праздник",
+      "badgeEn": "Upcoming holiday",
+      "badgeHe": "החג הקרוב",
       "readings": [
         {
           "dateRu": "5 декабря 2026 г.",
@@ -217,5 +181,5 @@
       ]
     }
   ],
-  "snapshotUpdatedAt": "2026-10-03T16:16:12.368Z"
+  "snapshotUpdatedAt": "2026-10-03T21:12:51.731Z"
 }
