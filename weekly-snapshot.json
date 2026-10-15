@@ -1,15 +1,15 @@
 {
   "source": "local-snapshot",
-  "generatedAt": "2026-10-15T11:25:58.013Z",
+  "generatedAt": "2026-10-15T16:58:54.529Z",
   "today": {
     "dateRu": "15 октября 2026 г.",
     "dateEn": "15 October 2026",
     "dateHe": "15 באוקטובר 2026",
-    "hdateRu": "4 Хешвана 5787",
-    "hdateEn": "4 Cheshvan 5787",
-    "hdateHe": "ד׳ בְּחֶשְׁוָן תשפ״ז",
+    "hdateRu": "5 Хешвана 5787",
+    "hdateEn": "5 Cheshvan 5787",
+    "hdateHe": "ה׳ בְּחֶשְׁוָן תשפ״ז",
     "sunsetIso": "2026-10-15T15:09:00.000Z",
-    "afterSunset": false
+    "afterSunset": true
   },
   "parasha": {
     "dateRu": "17 октября 2026 г.",
@@ -181,5 +181,5 @@
       ]
     }
   ],
-  "snapshotUpdatedAt": "2026-10-15T11:25:58.027Z"
+  "snapshotUpdatedAt": "2026-10-15T16:58:54.542Z"
 }
