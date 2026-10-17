@@ -1,32 +1,32 @@
 {
   "source": "local-snapshot",
-  "generatedAt": "2026-10-17T20:34:42.382Z",
+  "generatedAt": "2026-10-17T23:07:03.978Z",
   "today": {
-    "dateRu": "17 октября 2026 г.",
-    "dateEn": "17 October 2026",
-    "dateHe": "17 באוקטובר 2026",
+    "dateRu": "18 октября 2026 г.",
+    "dateEn": "18 October 2026",
+    "dateHe": "18 באוקטובר 2026",
     "hdateRu": "7 Хешвана 5787",
     "hdateEn": "7 Cheshvan 5787",
     "hdateHe": "ז׳ בְּחֶשְׁוָן תשפ״ז",
-    "sunsetIso": "2026-10-17T15:07:00.000Z",
-    "afterSunset": true
+    "sunsetIso": "2026-10-18T15:06:00.000Z",
+    "afterSunset": false
   },
   "parasha": {
-    "dateRu": "17 октября 2026 г.",
-    "dateEn": "17 October 2026",
-    "dateHe": "17 באוקטובר 2026",
-    "hdateRu": "6 Хешвана 5787",
-    "hdateEn": "6 Cheshvan 5787",
-    "hdateHe": "6 חשון 5787",
-    "ru": "Noach",
-    "en": "Noach",
-    "he": "פרשת נח",
-    "torahRu": "Берешит 6:9–11:32",
-    "torahEn": "Genesis 6:9–11:32",
-    "torahHe": "בראשית 6:9–11:32",
-    "haftarahRu": "Ишаягу 54:1–55:5",
-    "haftarahEn": "Isaiah 54:1–55:5",
-    "haftarahHe": "ישעיהו 54:1–55:5",
+    "dateRu": "24 октября 2026 г.",
+    "dateEn": "24 October 2026",
+    "dateHe": "24 באוקטובר 2026",
+    "hdateRu": "13 Хешвана 5787",
+    "hdateEn": "13 Cheshvan 5787",
+    "hdateHe": "13 חשון 5787",
+    "ru": "Lech-Lecha",
+    "en": "Lech-Lecha",
+    "he": "פרשת לך־לך",
+    "torahRu": "Берешит 12:1–17:27",
+    "torahEn": "Genesis 12:1–17:27",
+    "torahHe": "בראשית 12:1–17:27",
+    "haftarahRu": "Ишаягу 40:27–41:16",
+    "haftarahEn": "Isaiah 40:27–41:16",
+    "haftarahHe": "ישעיהו 40:27–41:16",
     "noteRu": "Расписание чтения для Израиля. Данные обновляются автоматически по календарю Беэр-Шевы.",
     "noteEn": "Israel reading schedule. Data updates automatically using the Be'er Sheva calendar.",
     "noteHe": "סדר הקריאה בישראל. הנתונים מתעדכנים אוטומטית לפי לוח באר שבע."
@@ -181,5 +181,5 @@
       ]
     }
   ],
-  "snapshotUpdatedAt": "2026-10-17T20:34:42.401Z"
+  "snapshotUpdatedAt": "2026-10-17T23:07:03.997Z"
 }
