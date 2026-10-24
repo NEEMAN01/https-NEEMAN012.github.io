@@ -1,32 +1,32 @@
 {
   "source": "local-snapshot",
-  "generatedAt": "2026-10-24T20:46:44.507Z",
+  "generatedAt": "2026-10-24T23:11:43.374Z",
   "today": {
-    "dateRu": "24 октября 2026 г.",
-    "dateEn": "24 October 2026",
-    "dateHe": "24 באוקטובר 2026",
+    "dateRu": "25 октября 2026 г.",
+    "dateEn": "25 October 2026",
+    "dateHe": "25 באוקטובר 2026",
     "hdateRu": "14 Хешвана 5787",
     "hdateEn": "14 Cheshvan 5787",
     "hdateHe": "י״ד בְּחֶשְׁוָן תשפ״ז",
-    "sunsetIso": "2026-10-24T15:00:00.000Z",
-    "afterSunset": true
+    "sunsetIso": "2026-10-25T14:59:00.000Z",
+    "afterSunset": false
   },
   "parasha": {
-    "dateRu": "24 октября 2026 г.",
-    "dateEn": "24 October 2026",
-    "dateHe": "24 באוקטובר 2026",
-    "hdateRu": "13 Хешвана 5787",
-    "hdateEn": "13 Cheshvan 5787",
-    "hdateHe": "13 חשון 5787",
-    "ru": "Lech-Lecha",
-    "en": "Lech-Lecha",
-    "he": "פרשת לך־לך",
-    "torahRu": "Берешит 12:1–17:27",
-    "torahEn": "Genesis 12:1–17:27",
-    "torahHe": "בראשית 12:1–17:27",
-    "haftarahRu": "Ишаягу 40:27–41:16",
-    "haftarahEn": "Isaiah 40:27–41:16",
-    "haftarahHe": "ישעיהו 40:27–41:16",
+    "dateRu": "31 октября 2026 г.",
+    "dateEn": "31 October 2026",
+    "dateHe": "31 באוקטובר 2026",
+    "hdateRu": "20 Хешвана 5787",
+    "hdateEn": "20 Cheshvan 5787",
+    "hdateHe": "20 חשון 5787",
+    "ru": "Vayera",
+    "en": "Vayera",
+    "he": "פרשת וירא",
+    "torahRu": "Берешит 18:1–22:24",
+    "torahEn": "Genesis 18:1–22:24",
+    "torahHe": "בראשית 18:1–22:24",
+    "haftarahRu": "Мелахим II 4:1–37",
+    "haftarahEn": "II Kings 4:1–37",
+    "haftarahHe": "מלכים ב׳ 4:1–37",
     "noteRu": "Расписание чтения для Израиля. Данные обновляются автоматически по календарю Беэр-Шевы.",
     "noteEn": "Israel reading schedule. Data updates automatically using the Be'er Sheva calendar.",
     "noteHe": "סדר הקריאה בישראל. הנתונים מתעדכנים אוטומטית לפי לוח באר שבע."
@@ -181,5 +181,5 @@
       ]
     }
   ],
-  "snapshotUpdatedAt": "2026-10-24T20:46:44.592Z"
+  "snapshotUpdatedAt": "2026-10-24T23:11:43.383Z"
 }
