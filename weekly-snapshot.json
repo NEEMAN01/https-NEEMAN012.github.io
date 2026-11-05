@@ -1,15 +1,15 @@
 {
   "source": "local-snapshot",
-  "generatedAt": "2026-11-04T21:19:15.042Z",
+  "generatedAt": "2026-11-05T06:42:18.285Z",
   "today": {
-    "dateRu": "4 ноября 2026 г.",
-    "dateEn": "4 November 2026",
-    "dateHe": "4 בנובמבר 2026",
+    "dateRu": "5 ноября 2026 г.",
+    "dateEn": "5 November 2026",
+    "dateHe": "5 בנובמבר 2026",
     "hdateRu": "25 Хешвана 5787",
     "hdateEn": "25 Cheshvan 5787",
     "hdateHe": "כ״ה בְּחֶשְׁוָן תשפ״ז",
-    "sunsetIso": "2026-11-04T14:50:00.000Z",
-    "afterSunset": true
+    "sunsetIso": "2026-11-05T14:49:00.000Z",
+    "afterSunset": false
   },
   "parasha": {
     "dateRu": "7 ноября 2026 г.",
@@ -181,5 +181,5 @@
       ]
     }
   ],
-  "snapshotUpdatedAt": "2026-11-04T21:19:15.050Z"
+  "snapshotUpdatedAt": "2026-11-05T06:42:18.298Z"
 }
