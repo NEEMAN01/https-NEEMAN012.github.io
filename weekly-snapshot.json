@@ -1,32 +1,32 @@
 {
   "source": "local-snapshot",
-  "generatedAt": "2026-11-07T19:24:50.563Z",
+  "generatedAt": "2026-11-08T00:33:27.589Z",
   "today": {
-    "dateRu": "7 ноября 2026 г.",
-    "dateEn": "7 November 2026",
-    "dateHe": "7 בנובמבר 2026",
+    "dateRu": "8 ноября 2026 г.",
+    "dateEn": "8 November 2026",
+    "dateHe": "8 בנובמבר 2026",
     "hdateRu": "28 Хешвана 5787",
     "hdateEn": "28 Cheshvan 5787",
     "hdateHe": "כ״ח בְּחֶשְׁוָן תשפ״ז",
-    "sunsetIso": "2026-11-07T14:47:00.000Z",
-    "afterSunset": true
+    "sunsetIso": "2026-11-08T14:47:00.000Z",
+    "afterSunset": false
   },
   "parasha": {
-    "dateRu": "7 ноября 2026 г.",
-    "dateEn": "7 November 2026",
-    "dateHe": "7 בנובמבר 2026",
-    "hdateRu": "27 Хешвана 5787",
-    "hdateEn": "27 Cheshvan 5787",
-    "hdateHe": "27 חשון 5787",
-    "ru": "Chayei Sara",
-    "en": "Chayei Sara",
-    "he": "פרשת חיי שרה",
-    "torahRu": "Берешит 23:1–25:18",
-    "torahEn": "Genesis 23:1–25:18",
-    "torahHe": "בראשית 23:1–25:18",
-    "haftarahRu": "Мелахим I 1:1–31",
-    "haftarahEn": "I Kings 1:1–31",
-    "haftarahHe": "מלכים א׳ 1:1–31",
+    "dateRu": "14 ноября 2026 г.",
+    "dateEn": "14 November 2026",
+    "dateHe": "14 בנובמבר 2026",
+    "hdateRu": "4 Кислева 5787",
+    "hdateEn": "4 Kislev 5787",
+    "hdateHe": "4 כסלו 5787",
+    "ru": "Toldot",
+    "en": "Toldot",
+    "he": "פרשת תולדות",
+    "torahRu": "Берешит 25:19–28:9",
+    "torahEn": "Genesis 25:19–28:9",
+    "torahHe": "בראשית 25:19–28:9",
+    "haftarahRu": "Малахия 1:1–2:7",
+    "haftarahEn": "Malachi 1:1–2:7",
+    "haftarahHe": "מלאכי 1:1–2:7",
     "noteRu": "Расписание чтения для Израиля. Данные обновляются автоматически по календарю Беэр-Шевы.",
     "noteEn": "Israel reading schedule. Data updates automatically using the Be'er Sheva calendar.",
     "noteHe": "סדר הקריאה בישראל. הנתונים מתעדכנים אוטומטית לפי לוח באר שבע."
@@ -181,5 +181,5 @@
       ]
     }
   ],
-  "snapshotUpdatedAt": "2026-11-07T19:24:50.574Z"
+  "snapshotUpdatedAt": "2026-11-08T00:33:27.753Z"
 }
