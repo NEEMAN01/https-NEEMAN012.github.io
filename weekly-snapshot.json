@@ -1,32 +1,32 @@
 {
   "source": "local-snapshot",
-  "generatedAt": "2026-11-14T17:58:42.254Z",
+  "generatedAt": "2026-11-14T22:21:43.079Z",
   "today": {
-    "dateRu": "14 ноября 2026 г.",
-    "dateEn": "14 November 2026",
-    "dateHe": "14 בנובמבר 2026",
+    "dateRu": "15 ноября 2026 г.",
+    "dateEn": "15 November 2026",
+    "dateHe": "15 בנובמבר 2026",
     "hdateRu": "5 Кислева 5787",
     "hdateEn": "5 Kislev 5787",
     "hdateHe": "ה׳ בְּכִסְלֵו תשפ״ז",
-    "sunsetIso": "2026-11-14T14:43:00.000Z",
-    "afterSunset": true
+    "sunsetIso": "2026-11-15T14:43:00.000Z",
+    "afterSunset": false
   },
   "parasha": {
-    "dateRu": "14 ноября 2026 г.",
-    "dateEn": "14 November 2026",
-    "dateHe": "14 בנובמבר 2026",
-    "hdateRu": "4 Кислева 5787",
-    "hdateEn": "4 Kislev 5787",
-    "hdateHe": "4 כסלו 5787",
-    "ru": "Toldot",
-    "en": "Toldot",
-    "he": "פרשת תולדות",
-    "torahRu": "Берешит 25:19–28:9",
-    "torahEn": "Genesis 25:19–28:9",
-    "torahHe": "בראשית 25:19–28:9",
-    "haftarahRu": "Малахия 1:1–2:7",
-    "haftarahEn": "Malachi 1:1–2:7",
-    "haftarahHe": "מלאכי 1:1–2:7",
+    "dateRu": "21 ноября 2026 г.",
+    "dateEn": "21 November 2026",
+    "dateHe": "21 בנובמבר 2026",
+    "hdateRu": "11 Кислева 5787",
+    "hdateEn": "11 Kislev 5787",
+    "hdateHe": "11 כסלו 5787",
+    "ru": "Vayetzei",
+    "en": "Vayetzei",
+    "he": "פרשת ויצא",
+    "torahRu": "Берешит 28:10–32:3",
+    "torahEn": "Genesis 28:10–32:3",
+    "torahHe": "בראשית 28:10–32:3",
+    "haftarahRu": "Осия 12:13–14:10",
+    "haftarahEn": "Hosea 12:13–14:10",
+    "haftarahHe": "הושע 12:13–14:10",
     "noteRu": "Расписание чтения для Израиля. Данные обновляются автоматически по календарю Беэр-Шевы.",
     "noteEn": "Israel reading schedule. Data updates automatically using the Be'er Sheva calendar.",
     "noteHe": "סדר הקריאה בישראל. הנתונים מתעדכנים אוטומטית לפי לוח באר שבע."
@@ -181,5 +181,5 @@
       ]
     }
   ],
-  "snapshotUpdatedAt": "2026-11-14T17:58:42.273Z"
+  "snapshotUpdatedAt": "2026-11-14T22:21:43.171Z"
 }
