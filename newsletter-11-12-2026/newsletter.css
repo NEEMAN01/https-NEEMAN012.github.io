@@ -115,3 +115,8 @@
  .elder-verse{max-width:500px;margin:0 auto 0;width:100%}
 }
 @media print{.page1 .elder-art{break-inside:avoid;print-color-adjust:exact;-webkit-print-color-adjust:exact}}
+/* November 2026: show the original Bible-and-lantern illustration as a
+   real image so it remains visible when Safari prints or opens the PDF. */
+.page1 .intro-side-art {position:relative;flex:1;min-height:260px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:#f6ead0!important;border:1px solid #dbc49a;border-radius:9px;}
+.page1 .intro-side-art .intro-side-image {display:block;width:100%;height:100%;min-height:260px;object-fit:cover;object-position:52% center;}
+@media print {.page1 .intro-side-art,.page1 .intro-side-art .intro-side-image{display:block!important;min-height:260px!important;-webkit-print-color-adjust:exact;print-color-adjust:exact;}}
