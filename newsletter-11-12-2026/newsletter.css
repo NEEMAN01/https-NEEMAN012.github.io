@@ -1,0 +1,117 @@
+@page{size:900px 3600px;margin:0}*{box-sizing:border-box}html{background:#e9e5d9}body{margin:0;color:#222a19;font-family:Georgia,"DejaVu Serif",serif}.issue{width:900px;min-height:0;margin:20px auto 28px;background:linear-gradient(110deg,#fffdf5,#f8efd9 72%,#fff9eb);box-shadow:0 6px 26px #68583933;overflow:hidden;break-after:page}.mast{width:100%;height:auto;display:block}.inside{padding:12px 23px 18px;outline:none}.inside:focus{outline:1px dotted #a9a079}.brush{background:linear-gradient(95deg,#3b651e,#567c2c 50%,#2d541c);color:#fff9e8;text-align:center;padding:12px 10px;font-size:30px;line-height:1.2;margin:0 -16px 16px;font-weight:700;box-shadow:inset 0 2px #b5c98e,inset 0 -2px #9eae77}.brush.sm{font-size:26px;margin:19px -16px 12px}.intro{display:grid;grid-template-columns:1.08fr .92fr;gap:22px}.intro h2{font-size:24px;margin:0 0 10px;color:#23431d}.text p{font-size:15px;line-height:1.43;margin:0 0 10px}.quote{background:#f5e6c5;border:1px solid #c7a972;border-radius:13px;padding:17px 23px;margin:13px auto;text-align:center;font-size:18px;font-style:italic;box-shadow:0 2px 7px #967b4430}.quote small{display:block;font-size:13px;text-align:right;margin-top:8px;font-style:normal}.intro .quote{margin-top:9px}.olive{text-align:center;font-size:43px;color:#738f3e}.sectionhead{font-size:27px;color:#274c1e;margin:15px 0 10px}.feature{display:grid;grid-template-columns:1.1fr .9fr;gap:19px;align-items:start;margin-bottom:17px}.feature img{width:100%;height:auto;display:block;border:2px solid #cbb57d;border-radius:17px;object-fit:contain}.feature h3,.elder h3{font-size:24px;color:#274e20;margin:0 0 10px}.elder{border-top:1px solid #c6b27d;border-bottom:1px solid #c6b27d;margin:14px 0 18px;padding:13px 26px;text-align:center}.elder .branches{display:flex;justify-content:space-between;align-items:center;gap:10px}.elder .branches span{font-size:52px;color:#718d42}.elder p{max-width:740px;margin:0 auto 10px}.bottom-art{height:95px;background:linear-gradient(0deg,#d6c497bb,#fff9eb11),url('masthead_clean.jpg') center 58% / cover}.foot{background:linear-gradient(90deg,#365d1f,#567d2b,#365d1f);color:#fff6dc;text-align:center;font-size:25px;font-style:italic;padding:12px}.han{display:grid;grid-template-columns:290px 1fr;gap:19px}.han img{width:100%;height:auto;object-fit:contain;align-self:start;border:2px solid #cfb57d;border-radius:6px}.han h2{font-size:25px;color:#4e351f;background:#e9d1a2;margin:0 0 9px;padding:8px}.han h3{font-size:17px;margin:0 0 9px}.han .text p{font-size:14px;line-height:1.39}.israel,.twocol{display:grid;grid-template-columns:1fr 1fr;gap:23px}.twocol{margin-top:16px}.twocol h3{font-size:19px;color:#fff9e9;background:#4a732a;margin:0 0 11px;padding:9px}.twocol p,.israel p{font-size:14px}.page2 .inside{padding-bottom:18px}@media(max-width:920px){.issue{width:100%;margin:0 auto 18px}.inside{padding:12px 17px}.brush{font-size:clamp(20px,4vw,30px)}.intro,.feature,.han,.israel,.twocol{grid-template-columns:1fr}.han img{max-width:370px}.text p{font-size:15px}}@media print{html,body{background:white!important}.issue{margin:0;box-shadow:none;break-after:page;page-break-after:always}.page2{break-after:auto;page-break-after:auto}.inside{outline:none!important}.intro,.feature,.han,.israel,.twocol{break-inside:avoid}.quote{break-inside:avoid}}
+/* Approved layout refinement: separate illustrated endings, never duplicate masthead. */
+.issue{background:linear-gradient(120deg,#fffdf4,#f9efd9 75%,#fffaf0)}
+.bottom-art{background:none;height:0}
+.page1 .bottom-art{height:74px;background:linear-gradient(to bottom,#fffaf0 0%,#f9efd9 70%,#e6d7b2 100%);position:relative;border-top:1px solid #d6c08d}
+.page1 .bottom-art:before,.page1 .bottom-art:after{content:"";position:absolute;bottom:0;width:116px;height:74px;background:url('olive_corner.jpg') left bottom/cover no-repeat;mix-blend-mode:multiply}
+.page1 .bottom-art:after{right:0;transform:scaleX(-1)}
+.page2 .bottom-art{height:124px;background:url('jerusalem_panorama.jpg') center bottom/100% 100% no-repeat;border-top:1px solid #d2b77c}
+.foot{background:linear-gradient(95deg,#315a1b,#4d7926 50%,#315a1b);color:#fff9e9;text-align:center;font-size:27px;font-style:italic;padding:15px 8px 16px;text-shadow:0 1px 2px #183410}
+.quote{background:linear-gradient(135deg,#f7ebd3,#eed8aa 55%,#fbf0d9);border:1px solid #c7a16a;border-radius:8px;box-shadow:0 2px 9px #9e7b3c33;position:relative}
+.quote:before,.quote:after{content:'❦';color:#a77b2d;font-size:25px;position:absolute;top:3px;opacity:.45}
+.quote:before{left:9px}.quote:after{right:9px}
+.olive-ornament{height:92px;margin:14px auto;background:url('olive_corner.jpg') center center/contain no-repeat;opacity:.8;mix-blend-mode:multiply}
+.elder .branches .leaf-mark{display:block;width:95px;height:95px;background:url('olive_corner.jpg') center/cover no-repeat;mix-blend-mode:multiply}
+.elder .branches .leaf-mark.flip{transform:scaleX(-1)}
+.elder .branches{align-items:center}
+.elder .branches h3{flex:1}
+.brush,.twocol h3{background:linear-gradient(95deg,#345b1d,#56802a 50%,#345b1d)}
+@media print{.issue{break-after:page;page-break-after:always}.page2{break-after:auto;page-break-after:auto}}
+
+/* November refinement: first page shares the illustrated headline system of Hanukkah. */
+.page1 .intro h2,.page1 .sectionhead,.page1 .feature h3,.page1 .elder h3{background:linear-gradient(90deg,#f3dfb4,#e9c991 68%,#f7e8c9);border-left:4px solid #a97e36;color:#28461d;padding:8px 12px;box-shadow:0 2px 4px #aa82402b;border-radius:2px;margin-bottom:12px}
+.page1 .intro h2{font-size:23px}.page1 .sectionhead{text-align:center;margin:20px 0 14px;font-size:27px}
+.page1 .feature h3{font-size:23px}.page1 .elder{padding:20px 18px;background:linear-gradient(180deg,#fff8e8,#f5e8cd);border-top:2px solid #b89c60;border-bottom:2px solid #b89c60;border-radius:8px}
+.page1 .elder h3{width:100%;text-align:center;margin:0 0 15px}.page1 .elder .branches{display:block}
+.page1 .intro-art{width:100%;height:260px;object-fit:cover;object-position:center;border:2px solid #c9ad76;border-radius:12px;margin-top:16px;display:block}
+.page1 .feature img{border:3px solid #d4b46f;box-shadow:0 3px 12px #806e4229}
+.page1 .quote{background:linear-gradient(130deg,#f8ebce,#ecd19b,#f9ecd1)}
+.page1 .bottom-art{height:122px;background:url('israel_ornament.jpg') center 58%/cover no-repeat;border-top:2px solid #d0ad6e}
+.page1 .bottom-art:before,.page1 .bottom-art:after{display:none}
+@media(max-width:920px){.page1 .intro-art{height:180px}.page1 .sectionhead{font-size:23px}}
+
+/* Unified editorial layout: editable prose, no empty intro artwork, restrained gold accents */
+.page1 .intro-framed{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,.75fr);gap:20px;align-items:start;margin:8px 0 18px}
+.intro-frame{border:1.5px solid #c6a66a;border-radius:9px;background:linear-gradient(130deg,#fffaf0,#fffdf7 50%,#f9efda);box-shadow:inset 0 0 0 4px #f6ead2;padding:15px 20px 14px;min-width:0}
+.intro-frame .text h2{background:none;border:0;box-shadow:none;color:#34522d;text-align:center;font-size:23px;margin:8px 0 14px;padding:0}
+.intro-frame .text p{font-size:15px;line-height:1.46;margin-bottom:10px}
+.ornament-rule{color:#a98543;text-align:center;letter-spacing:3px;font-size:20px;line-height:1.2;white-space:nowrap}
+.ornament-rule:before,.ornament-rule:after{content:'────────';font-size:10px;color:#c5a56b;vertical-align:middle;letter-spacing:0;margin:0 12px}
+.ornament-rule.lower{margin-top:12px;transform:rotate(180deg)}
+.quote{border-radius:7px;box-shadow:none!important;background:linear-gradient(135deg,#fff8ea,#f4e5c8)!important;border:1px solid #c9ad79!important;color:#4a4b32;position:relative;padding:18px 26px!important;font-size:17px;line-height:1.45}
+.quote:before,.quote:after{content:none!important}
+.quote .quotation-open,.quote .quotation-close{font-style:normal;font-size:23px;line-height:0;color:#b68e4c;vertical-align:-.1em;padding:0 5px}
+.quote-intro{margin:10px 0!important;padding:24px 17px!important}
+.quote small{font-size:12px;color:#716044}
+.page1 .bottom-art{display:none!important}
+.page1 .foot{margin-top:12px}
+.page1 .sectionhead,.page1 .feature h3,.page1 .elder h3{border-left:3px solid #b68e4c;background:linear-gradient(90deg,#f3e4c6,#fbf2df)!important;box-shadow:none!important}
+.page1 .elder{background:linear-gradient(135deg,#fffaf0,#f8eed9);border:1px solid #d7c29a;box-shadow:none}
+.page1 .elder .leaf-mark{opacity:.6}
+.mast{border:0!important;outline:0!important}
+@media(max-width:920px){.page1 .intro-framed{grid-template-columns:1fr}.quote-intro{max-width:640px;margin:0 auto!important}}
+@media print{.page1 .intro-framed{grid-template-columns:1.45fr .75fr}.intro-frame,.quote,.feature,.elder{break-inside:avoid}.page1 .bottom-art{display:none}}
+
+/* Revision: no embedded black masthead border, no blank sidebar, balanced elder feature. */
+.mast{display:block;width:100%;border:none!important}
+.intro-aside{display:flex;flex-direction:column;gap:15px;min-width:0;align-self:stretch}
+.intro-aside .quote-intro{margin:0!important}
+.intro-side-art{flex:1;min-height:260px;border:1px solid #c8a76d;border-radius:9px;background:linear-gradient(180deg,#fff9e8cc,#fff9e833),url('israel_ornament.jpg') 65% center / cover no-repeat;box-shadow:inset 0 0 0 5px #fff9e89c}
+.page1 .elder{padding:16px 19px 18px;text-align:left}
+.page1 .elder h3{margin:0 0 14px!important;text-align:center;width:100%}
+.elder-body{display:grid;grid-template-columns:32% 1fr;gap:22px;align-items:center}
+.elder-illustration{min-height:190px;align-self:stretch;border-radius:8px;border:1px solid #cdb783;background:url('israel_ornament.jpg') 73% center / cover no-repeat}
+.elder-body .text p{max-width:none;text-align:left;margin:0 0 10px}
+@media(max-width:920px){.intro-side-art{min-height:220px;flex:none}.elder-body{grid-template-columns:1fr}.elder-illustration{min-height:160px}}
+@media print{.intro-aside{align-self:stretch}.intro-side-art{min-height:260px}.elder-body{grid-template-columns:32% 1fr}}
+
+/* Section designed from the user's one-page visual example; editable text over real background artwork. */
+.page1 .elder{
+  margin: 22px 0 23px !important; padding:0 !important; text-align:initial !important;
+  border:0 !important; border-radius:0 !important; box-shadow:none !important;
+  background:none !important;
+}
+.page1 .elder-art{
+  isolation:isolate; position:relative; overflow:hidden;
+  min-height:380px; padding:23px 26px 27px;
+  background:#f8edcf url('elderly_jerusalem_art.jpg') center center / 100% 100% no-repeat;
+  border:1px solid #cbaa67; border-radius:10px;
+  box-shadow:0 2px 7px #7b633b2a;
+}
+.page1 .elder-art h3{
+  display:block; width:auto; max-width:600px; margin:2px auto 16px !important;
+  padding:7px 14px !important; border:0 !important; border-radius:5px !important;
+  background:rgba(255,249,232,.91) !important; box-shadow:none !important;
+  font-size:27px; line-height:1.25; color:#315026; text-align:center;
+}
+.elder-composition{display:grid;grid-template-columns:minmax(0,1.32fr) minmax(0,.8fr);gap:21px;align-items:start}
+.elder-prose{
+  padding:15px 17px 10px; border-radius:8px;
+  background:linear-gradient(90deg,rgba(255,252,243,.94),rgba(255,250,236,.88));
+  box-shadow:0 1px 5px #a07b3818;
+}
+.elder-prose p{margin:0 0 12px !important;max-width:none !important;
+  color:#282f23; font-size:16px !important; line-height:1.55 !important;
+  text-align:left !important; text-shadow:none !important}
+.elder-prose p:last-child{margin-bottom:0 !important}
+.elder-verse{
+  padding:16px 13px 13px;margin-top:6px;
+  background:rgba(250,235,199,.93);border:1px solid #cbab70;border-radius:7px;
+  text-align:center;color:#463b24;font-size:16px;line-height:1.48;font-style:italic;
+  box-shadow:0 2px 7px #8b653333;
+}
+.elder-verse small{font-style:normal;font-size:13px;display:block;margin-top:8px;text-align:right;color:#4b5239}
+/* The opening uses different imagery: the same Jerusalem banner no longer appears twice. */
+.intro-side-art{
+ background:linear-gradient(180deg,#fffaf0aa,#fffaf000),url('open_bible_lantern.jpg') center center/cover no-repeat !important;
+ border-color:#dbc49a !important;
+}
+@media(max-width:920px){
+ .page1 .elder-art{min-height:0;padding:19px 16px 23px;background-size:100% 100%}
+ .page1 .elder-art h3{font-size:23px}
+ .elder-composition{grid-template-columns:1fr;gap:10px}
+ .elder-prose{padding:13px}
+ .elder-prose p{font-size:15px !important}
+ .elder-verse{max-width:500px;margin:0 auto 0;width:100%}
+}
+@media print{.page1 .elder-art{break-inside:avoid;print-color-adjust:exact;-webkit-print-color-adjust:exact}}
