@@ -3,6 +3,7 @@ window.GALLERY_MANIFEST = {
   "generatedAt": "2026-09-23T00:00:00Z",
   "categories": {
     "canteen": [
+      {"path":"assets/galleries/canteen/2026-11-canteen.webp","name":"2026-11-canteen.webp","kind":"photo","added":"2026-11-15"},
       {"path":"assets/galleries/canteen/canteen-community-care-september-2026.jpg","name":"canteen-community-care-september-2026.jpg","kind":"photo","added":""},
       {"path":"assets/galleries/canteen/canteen-september-2026.jpg","name":"canteen-september-2026.jpg","kind":"photo","added":""},
       {"path":"assets/galleries/canteen/canteen-main.png","name":"canteen-main.png","kind":"legacy","added":""},
@@ -36,6 +37,7 @@ window.GALLERY_MANIFEST = {
       {"path":"assets/galleries/holocaust/holocaust-gallery.jpg","name":"holocaust-gallery.jpg","kind":"legacy","added":""}
     ],
     "repatriants": [
+      {"path":"assets/galleries/repatriants/2026-11-repatriants.webp","name":"2026-11-repatriants.webp","kind":"photo","added":"2026-11-15"},
       {"path":"assets/galleries/repatriants/repatriants-overview.png","name":"repatriants-overview.png","kind":"legacy","added":""},
       {"path":"assets/galleries/repatriants/repatriants-overview-1.png","name":"repatriants-overview-1.png","kind":"legacy","added":""},
       {"path":"assets/galleries/repatriants/repatriants-gallery-1.jpg","name":"repatriants-gallery-1.jpg","kind":"legacy","added":""},
