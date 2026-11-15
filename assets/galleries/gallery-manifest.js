@@ -33,6 +33,7 @@ window.GALLERY_MANIFEST = {
       {"path":"assets/galleries/holidays/holidays-overview.png","name":"holidays-overview.png","kind":"legacy","added":""}
     ],
     "holocaust": [
+      {"path":"assets/galleries/holocaust/2026-11-holocaust-survivors.webp","name":"2026-11-holocaust-survivors.webp","kind":"photo","added":"2026-11-15"},
       {"path":"assets/galleries/holocaust/holocaust-overview.png","name":"holocaust-overview.png","kind":"legacy","added":""},
       {"path":"assets/galleries/holocaust/holocaust-gallery.jpg","name":"holocaust-gallery.jpg","kind":"legacy","added":""}
     ],
