@@ -1,32 +1,32 @@
 {
   "source": "local-snapshot",
-  "generatedAt": "2026-11-21T19:13:06.679Z",
+  "generatedAt": "2026-11-22T01:16:34.217Z",
   "today": {
-    "dateRu": "21 ноября 2026 г.",
-    "dateEn": "21 November 2026",
-    "dateHe": "21 בנובמבר 2026",
+    "dateRu": "22 ноября 2026 г.",
+    "dateEn": "22 November 2026",
+    "dateHe": "22 בנובמבר 2026",
     "hdateRu": "12 Кислева 5787",
     "hdateEn": "12 Kislev 5787",
     "hdateHe": "י״ב בְּכִסְלֵו תשפ״ז",
-    "sunsetIso": "2026-11-21T14:40:00.000Z",
-    "afterSunset": true
+    "sunsetIso": "2026-11-22T14:40:00.000Z",
+    "afterSunset": false
   },
   "parasha": {
-    "dateRu": "21 ноября 2026 г.",
-    "dateEn": "21 November 2026",
-    "dateHe": "21 בנובמבר 2026",
-    "hdateRu": "11 Кислева 5787",
-    "hdateEn": "11 Kislev 5787",
-    "hdateHe": "11 כסלו 5787",
-    "ru": "Vayetzei",
-    "en": "Vayetzei",
-    "he": "פרשת ויצא",
-    "torahRu": "Берешит 28:10–32:3",
-    "torahEn": "Genesis 28:10–32:3",
-    "torahHe": "בראשית 28:10–32:3",
-    "haftarahRu": "Осия 12:13–14:10",
-    "haftarahEn": "Hosea 12:13–14:10",
-    "haftarahHe": "הושע 12:13–14:10",
+    "dateRu": "28 ноября 2026 г.",
+    "dateEn": "28 November 2026",
+    "dateHe": "28 בנובמבר 2026",
+    "hdateRu": "18 Кислева 5787",
+    "hdateEn": "18 Kislev 5787",
+    "hdateHe": "18 כסלו 5787",
+    "ru": "Vayishlach",
+    "en": "Vayishlach",
+    "he": "פרשת וישלח",
+    "torahRu": "Берешит 32:4–36:43",
+    "torahEn": "Genesis 32:4–36:43",
+    "torahHe": "בראשית 32:4–36:43",
+    "haftarahRu": "Овадия 1:1–21",
+    "haftarahEn": "Obadiah 1:1–21",
+    "haftarahHe": "עובדיה 1:1–21",
     "noteRu": "Расписание чтения для Израиля. Данные обновляются автоматически по календарю Беэр-Шевы.",
     "noteEn": "Israel reading schedule. Data updates automatically using the Be'er Sheva calendar.",
     "noteHe": "סדר הקריאה בישראל. הנתונים מתעדכנים אוטומטית לפי לוח באר שבע."
@@ -181,5 +181,5 @@
       ]
     }
   ],
-  "snapshotUpdatedAt": "2026-11-21T19:13:06.692Z"
+  "snapshotUpdatedAt": "2026-11-22T01:16:34.397Z"
 }
