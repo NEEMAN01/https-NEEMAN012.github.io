@@ -1,15 +1,15 @@
 {
   "source": "local-snapshot",
-  "generatedAt": "2026-11-22T19:35:39.018Z",
+  "generatedAt": "2026-11-23T01:40:01.344Z",
   "today": {
-    "dateRu": "22 ноября 2026 г.",
-    "dateEn": "22 November 2026",
-    "dateHe": "22 בנובמבר 2026",
+    "dateRu": "23 ноября 2026 г.",
+    "dateEn": "23 November 2026",
+    "dateHe": "23 בנובמבר 2026",
     "hdateRu": "13 Кислева 5787",
     "hdateEn": "13 Kislev 5787",
     "hdateHe": "י״ג בְּכִסְלֵו תשפ״ז",
-    "sunsetIso": "2026-11-22T14:40:00.000Z",
-    "afterSunset": true
+    "sunsetIso": "2026-11-23T14:39:00.000Z",
+    "afterSunset": false
   },
   "parasha": {
     "dateRu": "28 ноября 2026 г.",
@@ -179,7 +179,43 @@
           "haftarahHe": "מלכים א׳ 7:40–50"
         }
       ]
+    },
+    {
+      "id": "purim-2027-03-23",
+      "key": "purim",
+      "ru": "Пурим",
+      "en": "Purim",
+      "he": "פורים",
+      "start": "2027-03-23",
+      "end": "2027-03-23",
+      "dateRu": "с вечера 22 марта 2027 г. – 23 марта 2027 г.",
+      "dateEn": "evening of 22 March 2027 – 23 March 2027",
+      "dateHe": "מערב 22 במרץ 2027 עד 23 במרץ 2027",
+      "hdateRu": "14 Адара II 5787",
+      "hdateEn": "14 Adar II 5787",
+      "hdateHe": "14 אדר ב׳ 5787",
+      "badgeRu": "Следующий праздник",
+      "badgeEn": "Next holiday",
+      "badgeHe": "החג הבא",
+      "readings": [
+        {
+          "dateRu": "23 марта 2027 г.",
+          "dateEn": "23 March 2027",
+          "dateHe": "23 במרץ 2027",
+          "hdateRu": "14 Адара II 5787",
+          "hdateEn": "14 Adar II 5787",
+          "hdateHe": "14 אדר ב׳ 5787",
+          "titleEn": "Purim",
+          "titleHe": "פורים",
+          "torahRu": "Шмот 17:8–16; Esther 1:1–10:3",
+          "torahEn": "Exodus 17:8–16; Esther 1:1–10:3",
+          "torahHe": "שמות 17:8–16; Esther 1:1–10:3",
+          "haftarahRu": "",
+          "haftarahEn": "",
+          "haftarahHe": ""
+        }
+      ]
     }
   ],
-  "snapshotUpdatedAt": "2026-11-22T19:35:39.031Z"
+  "snapshotUpdatedAt": "2026-11-23T01:40:01.358Z"
 }
